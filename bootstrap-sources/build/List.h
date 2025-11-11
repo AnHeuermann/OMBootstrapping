@@ -1088,6 +1088,13 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_List_mapCheckReferenceEq,2,0) {(void*) 
 
 
 DLLDirection
+modelica_metatype omc_List_mapArray(threadData_t *threadData, modelica_metatype _inArray, modelica_fnptr _inFunc);
+#define boxptr_List_mapArray omc_List_mapArray
+static const MMC_DEFSTRUCTLIT(boxvar_lit_List_mapArray,2,0) {(void*) boxptr_List_mapArray,0}};
+#define boxvar_List_mapArray MMC_REFSTRUCTLIT(boxvar_lit_List_mapArray)
+
+
+DLLDirection
 modelica_metatype omc_List_map(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFunc);
 #define boxptr_List_map omc_List_map
 static const MMC_DEFSTRUCTLIT(boxvar_lit_List_map,2,0) {(void*) boxptr_List_map,0}};

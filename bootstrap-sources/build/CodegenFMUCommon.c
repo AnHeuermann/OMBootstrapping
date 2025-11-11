@@ -4198,7 +4198,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__149(thread
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT117);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);
@@ -4316,7 +4316,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__147(thread
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT119);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);
@@ -4335,7 +4335,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__147(thread
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT119);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);
@@ -4354,7 +4354,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__147(thread
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT119);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);
@@ -4373,7 +4373,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__147(thread
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT119);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);
@@ -4392,7 +4392,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__147(thread
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT119);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);
@@ -4510,7 +4510,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__145(thread
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT121);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);
@@ -4529,7 +4529,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__145(thread
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT121);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);
@@ -4548,7 +4548,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__145(thread
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT121);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);
@@ -4567,7 +4567,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__145(thread
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT121);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);
@@ -4586,7 +4586,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__145(thread
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT121);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);
@@ -4648,7 +4648,7 @@ modelica_metatype omc_CodegenFMUCommon_startString2Helper(threadData_t *threadDa
           _i_e = tmpMeta6;
           _txt = tmp4_1;
           /* Pattern matching succeeded */
-          tmpMeta1 = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          tmpMeta1 = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
           goto tmp3_done;
         }
         case 1: {
@@ -4764,7 +4764,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__142(thread
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT123);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);
@@ -4783,7 +4783,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__142(thread
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT123);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);
@@ -4802,7 +4802,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__142(thread
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT123);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);
@@ -4821,7 +4821,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__142(thread
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT123);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);
@@ -4840,7 +4840,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__142(thread
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT123);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);
@@ -9048,7 +9048,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__85(threadD
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT123);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);
@@ -9067,7 +9067,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__85(threadD
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT123);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);
@@ -9086,7 +9086,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__85(threadD
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT123);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);
@@ -9105,7 +9105,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__85(threadD
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT123);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);
@@ -9124,7 +9124,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CodegenFMUCommon_fun__85(threadD
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT123);
 
-          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e);
+          _txt = omc_CodegenUtil_initValXml(threadData, _txt, _i_e, _OMC_LIT50);
 
           _txt = omc_Tpl_writeTok(threadData, _txt, _OMC_LIT7);
           tmpMeta1 = omc_Tpl_popBlock(threadData, _txt);

@@ -553,6 +553,28 @@ PROTECTED_FUNCTION_STATIC void omc_NFAlgorithm_statementInputsOutputs(threadData
 }
 
 DLLDirection
+modelica_boolean omc_NFAlgorithm_isDiscrete(threadData_t *threadData, modelica_metatype _alg)
+{
+  modelica_boolean _b;
+  MMC_SO();
+  _tailrecursive: OMC_LABEL_UNUSED
+  // _b has no default value.
+  _b = omc_List_any(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_alg), 4))), boxvar_NFComponentRef_isDiscrete);
+
+  _b = (_b?_b:omc_List_any(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_alg), 2))), boxvar_NFStatement_isDiscrete));
+  _return: OMC_LABEL_UNUSED
+  return _b;
+}
+modelica_metatype boxptr_NFAlgorithm_isDiscrete(threadData_t *threadData, modelica_metatype _alg)
+{
+  modelica_boolean _b;
+  modelica_metatype out_b;
+  _b = omc_NFAlgorithm_isDiscrete(threadData, _alg);
+  out_b = mmc_mk_icon(_b);
+  return out_b;
+}
+
+DLLDirection
 modelica_boolean omc_NFAlgorithm_isEmpty(threadData_t *threadData, modelica_metatype _alg)
 {
   modelica_boolean _b;

@@ -73,10 +73,10 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT25,1,_OMC_LIT25_data);
 #define _OMC_LIT26_data "$FUN"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT26,4,_OMC_LIT26_data);
 #define _OMC_LIT26 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT26)
-#define _OMC_LIT27_data "/home/adrpo33/OpenModelica/OMCompiler/Compiler/NBackEnd/Modules/2_Pre/NBFunctionAlias.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT27,88,_OMC_LIT27_data);
+#define _OMC_LIT27_data "/OpenModelica/OMCompiler/Compiler/NBackEnd/Modules/2_Pre/NBFunctionAlias.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT27,75,_OMC_LIT27_data);
 #define _OMC_LIT27 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT27)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT28_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT28_6,1.76286855e9);
 #define _OMC_LIT28_6 MMC_REFREALLIT(_OMC_LIT_STRUCT28_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT28,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT27,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(181)),MMC_IMMEDIATE(MMC_TAGFIXNUM(37)),MMC_IMMEDIATE(MMC_TAGFIXNUM(182)),MMC_IMMEDIATE(MMC_TAGFIXNUM(11)),_OMC_LIT28_6}};
 #define _OMC_LIT28 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT28)
@@ -1446,7 +1446,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_NBFunctionAlias_functionAliasDef
       modelica_metatype _tpl_loopVar = 0;
       modelica_metatype _tpl;
       _tpl_loopVar = _debug_str;
-      __omcQ_24tmpVar21 = ((modelica_integer) -4611686018427387903); /* defaultValue */
+      __omcQ_24tmpVar21 = ((modelica_integer) -1073741823); /* defaultValue */
       while(1) {
         tmp44 = 1;
         if (!listEmpty(_tpl_loopVar)) {
@@ -1515,7 +1515,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_NBFunctionAlias_functionAliasDef
       modelica_metatype _tpl_loopVar = 0;
       modelica_metatype _tpl;
       _tpl_loopVar = _debug_str;
-      __omcQ_24tmpVar25 = ((modelica_integer) -4611686018427387903); /* defaultValue */
+      __omcQ_24tmpVar25 = ((modelica_integer) -1073741823); /* defaultValue */
       while(1) {
         tmp52 = 1;
         if (!listEmpty(_tpl_loopVar)) {
@@ -1584,7 +1584,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_NBFunctionAlias_functionAliasDef
       modelica_metatype _tpl_loopVar = 0;
       modelica_metatype _tpl;
       _tpl_loopVar = _debug_str;
-      __omcQ_24tmpVar29 = ((modelica_integer) -4611686018427387903); /* defaultValue */
+      __omcQ_24tmpVar29 = ((modelica_integer) -1073741823); /* defaultValue */
       while(1) {
         tmp60 = 1;
         if (!listEmpty(_tpl_loopVar)) {
@@ -1689,7 +1689,7 @@ modelica_metatype omc_NBFunctionAlias_Call__Aux_createName(threadData_t *threadD
 
     omc_NBVariable_makeAuxVar(threadData, _OMC_LIT26, mmc_unbox_integer(omc_Pointer_access(threadData, _aux_index)), _new_ty, _init ,&_name);
 
-    _name = omc_NFComponentRef_mergeSubscripts(threadData, omc_NBEquation_Iterator_normalizedSubscripts(threadData, _iter), _name, 1 /* true */, 1 /* true */);
+    _name = omc_NFComponentRef_mergeSubscripts(threadData, omc_NBEquation_Iterator_normalizedSubscripts(threadData, _iter, omc_UnorderedMap_new(threadData, boxvar_NFComponentRef_hash, boxvar_NFComponentRef_isEqual, ((modelica_integer) 1))), _name, 1 /* true */, 1 /* true */, 0 /* false */);
   }
   else
   {

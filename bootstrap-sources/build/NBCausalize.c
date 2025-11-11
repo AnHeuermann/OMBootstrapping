@@ -2,14 +2,14 @@
 #include "NBCausalize.h"
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT0,1,5) {&NBEquation_Iterator_EMPTY__desc,}};
 #define _OMC_LIT0 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT0)
-#define _OMC_LIT1_data "/home/adrpo33/OpenModelica/OMCompiler/Compiler/NBackEnd/Modules/1_Main/NBCausalize.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT1,85,_OMC_LIT1_data);
+#define _OMC_LIT1_data "/OpenModelica/OMCompiler/Compiler/NBackEnd/Modules/1_Main/NBCausalize.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT1,72,_OMC_LIT1_data);
 #define _OMC_LIT1 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT1)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT2_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT2_6,1.76286855e9);
 #define _OMC_LIT2_6 MMC_REFREALLIT(_OMC_LIT_STRUCT2_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT2,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT1,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(286)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(286)),MMC_IMMEDIATE(MMC_TAGFIXNUM(55)),_OMC_LIT2_6}};
 #define _OMC_LIT2 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT2)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT3_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT3_6,1.76286855e9);
 #define _OMC_LIT3_6 MMC_REFREALLIT(_OMC_LIT_STRUCT3_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT3,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT1,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(287)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(287)),MMC_IMMEDIATE(MMC_TAGFIXNUM(55)),_OMC_LIT3_6}};
 #define _OMC_LIT3 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT3)
@@ -328,36 +328,18 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_NBCausalize_causalizePseudoArray
 static const MMC_DEFSTRUCTLIT(boxvar_lit_NBCausalize_causalizePseudoArray,2,0) {(void*) boxptr_NBCausalize_causalizePseudoArray,0}};
 #define boxvar_NBCausalize_causalizePseudoArray MMC_REFSTRUCTLIT(boxvar_lit_NBCausalize_causalizePseudoArray)
 
-static modelica_metatype closure0_NBStrongComponent_makeDAEModeResidualTraverse(threadData_t *thData, modelica_metatype closure, modelica_metatype $in_eq_ptr)
-{
-  modelica_metatype acc = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(closure),1));
-  return boxptr_NBStrongComponent_makeDAEModeResidualTraverse(thData, $in_eq_ptr, acc);
-}
 PROTECTED_FUNCTION_STATIC modelica_metatype omc_NBCausalize_causalizeDAEMode(threadData_t *threadData, modelica_metatype __omcQ_24in_5Fpartition, modelica_metatype __omcQ_24in_5FvarData, modelica_metatype __omcQ_24in_5FeqData, modelica_metatype __omcQ_24in_5FfuncTree, modelica_metatype *out_varData, modelica_metatype *out_eqData, modelica_metatype *out_funcTree)
 {
   modelica_metatype _partition = NULL;
   modelica_metatype _varData = NULL;
   modelica_metatype _eqData = NULL;
   modelica_metatype _funcTree = NULL;
-  modelica_metatype _acc = NULL;
-  modelica_metatype tmpMeta1;
-  modelica_metatype tmpMeta2;
-  modelica_metatype tmpMeta3;
   MMC_SO();
   _tailrecursive: OMC_LABEL_UNUSED
   _partition = __omcQ_24in_5Fpartition;
   _varData = __omcQ_24in_5FvarData;
   _eqData = __omcQ_24in_5FeqData;
   _funcTree = __omcQ_24in_5FfuncTree;
-  tmpMeta1 = MMC_REFSTRUCTLIT(mmc_nil);
-  _acc = omc_Pointer_create(threadData, tmpMeta1);
-  tmpMeta2 = mmc_mk_box1(0, _acc);
-  omc_NBEquation_EquationPointers_mapPtr(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_partition), 6))), (modelica_fnptr) mmc_mk_box2(0,closure0_NBStrongComponent_makeDAEModeResidualTraverse,tmpMeta2));
-
-  tmpMeta3 = MMC_TAGPTR(mmc_alloc_words(10));
-  memcpy(MMC_UNTAGPTR(tmpMeta3), MMC_UNTAGPTR(_partition), 10*sizeof(modelica_metatype));
-  ((modelica_metatype*)MMC_UNTAGPTR(tmpMeta3))[9] = mmc_mk_some(omc_List_listArrayReverse(threadData, omc_Pointer_access(threadData, _acc)));
-  _partition = tmpMeta3;
   _return: OMC_LABEL_UNUSED
   if (out_varData) { *out_varData = _varData; }
   if (out_eqData) { *out_eqData = _eqData; }

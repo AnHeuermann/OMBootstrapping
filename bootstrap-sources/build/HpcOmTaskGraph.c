@@ -27,12 +27,12 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT7,17,_OMC_LIT7_data);
 #define _OMC_LIT8_data "HpcOmTaskGraph.getIndexBySimCodeEq failed"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT8,41,_OMC_LIT8_data);
 #define _OMC_LIT8 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT8)
-#define _OMC_LIT9_data "/home/adrpo33/OpenModelica/OMCompiler/Compiler/BackEnd/HpcOmTaskGraph.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT9,72,_OMC_LIT9_data);
+#define _OMC_LIT9_data "/OpenModelica/OMCompiler/Compiler/BackEnd/HpcOmTaskGraph.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT9,59,_OMC_LIT9_data);
 #define _OMC_LIT9 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT9)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT10_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT10_6,1.762868549e9);
 #define _OMC_LIT10_6 MMC_REFREALLIT(_OMC_LIT_STRUCT10_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT10,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT9,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(6877)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(6877)),MMC_IMMEDIATE(MMC_TAGFIXNUM(74)),_OMC_LIT10_6}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT10,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT9,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(6875)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(6875)),MMC_IMMEDIATE(MMC_TAGFIXNUM(74)),_OMC_LIT10_6}};
 #define _OMC_LIT10 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT10)
 #define _OMC_LIT11_data "getSimCodeEqByIndex failed. Looking for Index "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT11,46,_OMC_LIT11_data);
@@ -82,9 +82,9 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT25,39,_OMC_LIT25_data);
 #define _OMC_LIT26_data "HpcOmTaskGraph.getNodeForVarIdx failed (there is a loop somewhere)"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT26,66,_OMC_LIT26_data);
 #define _OMC_LIT26 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT26)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT27_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT27_6,1.762868549e9);
 #define _OMC_LIT27_6 MMC_REFREALLIT(_OMC_LIT_STRUCT27_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT27,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT9,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(6294)),MMC_IMMEDIATE(MMC_TAGFIXNUM(7)),MMC_IMMEDIATE(MMC_TAGFIXNUM(6294)),MMC_IMMEDIATE(MMC_TAGFIXNUM(102)),_OMC_LIT27_6}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT27,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT9,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(6292)),MMC_IMMEDIATE(MMC_TAGFIXNUM(7)),MMC_IMMEDIATE(MMC_TAGFIXNUM(6292)),MMC_IMMEDIATE(MMC_TAGFIXNUM(102)),_OMC_LIT27_6}};
 #define _OMC_LIT27 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT27)
 #define _OMC_LIT28_data "Check if there is a assert or something that is dependent of arrayEquations"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT28,75,_OMC_LIT28_data);
@@ -2741,7 +2741,7 @@ PROTECTED_FUNCTION_STATIC void omc_HpcOmTaskGraph_dumpStateAssign(threadData_t *
   modelica_metatype tmpMeta2;
   MMC_SO();
   _tailrecursive: OMC_LABEL_UNUSED
-  tmpMeta1 = stringAppend(_OMC_LIT21,stringDelimitList(omc_List_map(threadData, arrayList(_stateAssign), boxvar_HpcOmTaskGraph_intLstString), _OMC_LIT5));
+  tmpMeta1 = stringAppend(_OMC_LIT21,stringDelimitList(omc_List_mapArray(threadData, _stateAssign, boxvar_HpcOmTaskGraph_intLstString), _OMC_LIT5));
   tmpMeta2 = stringAppend(tmpMeta1,_OMC_LIT5);
   fputs(MMC_STRINGDATA(tmpMeta2),stdout);
   _return: OMC_LABEL_UNUSED
@@ -12177,7 +12177,6 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmTaskGraph_mergeSingleNodes(
       modelica_metatype _singleNodes1 = NULL;
       modelica_metatype _pos = NULL;
       modelica_metatype _exeCosts = NULL;
-      modelica_metatype _cluster = NULL;
       modelica_metatype _taskGraphT = NULL;
       volatile mmc_switch_type tmp4;
       int tmp5;
@@ -12186,7 +12185,6 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmTaskGraph_mergeSingleNodes(
       // _singleNodes1 has no default value.
       // _pos has no default value.
       // _exeCosts has no default value.
-      // _cluster has no default value.
       // _taskGraphT has no default value.
       tmp4 = 0;
       MMC_TRY_INTERNAL(mmc_jumper)
@@ -12218,9 +12216,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmTaskGraph_mergeSingleNodes(
 
           _exeCosts = listReverse(_exeCosts);
 
-          _cluster = omc_HpcOmTaskGraph_distributeToClusters(threadData, _singleNodes, _exeCosts, _numProc, NULL);
-
-          arrayList(_cluster);
+          omc_HpcOmTaskGraph_distributeToClusters(threadData, _singleNodes, _exeCosts, _numProc, NULL);
 
           _changed = (listLength(_singleNodes) > _numProc);
           tmpMeta[0+0] = _iTaskGraph;
@@ -16702,13 +16698,11 @@ modelica_metatype omc_HpcOmTaskGraph_updateContinuousEntriesInList(threadData_t 
     tmp4_2 = _deleteEntriesIn;
     {
       modelica_integer _start;
-      modelica_metatype _deleteEntries = NULL;
       modelica_metatype _rest = NULL;
       modelica_metatype _deleteArr = NULL;
       volatile mmc_switch_type tmp4;
       int tmp5;
       // _start has no default value.
-      // _deleteEntries has no default value.
       // _rest has no default value.
       // _deleteArr has no default value.
       tmp4 = 0;
@@ -16746,9 +16740,7 @@ modelica_metatype omc_HpcOmTaskGraph_updateContinuousEntriesInList(threadData_t 
 
           omc_List_map2__0(threadData, _deleteEntriesIn, boxvar_Array_updateIndexFirst, mmc_mk_integer(((modelica_integer) 1)), _deleteArr);
 
-          _deleteEntries = omc_List_mapFold(threadData, arrayList(_deleteArr), boxvar_HpcOmTaskGraph_setDeleteArr, mmc_mk_integer(((modelica_integer) 0)), NULL);
-
-          _deleteArr = listArray(_deleteEntries);
+          _deleteArr = omc_Array_mapFold(threadData, _deleteArr, boxvar_HpcOmTaskGraph_setDeleteArr, mmc_mk_integer(((modelica_integer) 0)), NULL);
           tmpMeta1 = omc_List_map1(threadData, _lstIn, boxvar_HpcOmTaskGraph_removeContinuousEntries1, _deleteArr);
           goto tmp3_done;
         }

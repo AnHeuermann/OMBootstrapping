@@ -35,6 +35,7 @@ extern "C" {
 #include "NFAlgorithm.h"
 #include "NFBackendExtension.h"
 #include "NFBinding.h"
+#include "NFCall.h"
 #include "NFClass.h"
 #include "NFComponentRef.h"
 #include "NFEquation.h"

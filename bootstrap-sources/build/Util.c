@@ -119,15 +119,18 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT38,6,_OMC_LIT38_data);
 #define _OMC_LIT39_data "- stringDelimitListAndSeparate2 failed\n"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT39,39,_OMC_LIT39_data);
 #define _OMC_LIT39 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT39)
-#define _OMC_LIT40_data "linux"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT40,5,_OMC_LIT40_data);
+#define _OMC_LIT40_data "linuxeabihf"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT40,11,_OMC_LIT40_data);
 #define _OMC_LIT40 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT40)
-#define _OMC_LIT41_data "darwin"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT41,6,_OMC_LIT41_data);
+#define _OMC_LIT41_data "linux"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT41,5,_OMC_LIT41_data);
 #define _OMC_LIT41 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT41)
-#define _OMC_LIT42_data "./"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT42,2,_OMC_LIT42_data);
+#define _OMC_LIT42_data "darwin"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT42,6,_OMC_LIT42_data);
 #define _OMC_LIT42 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT42)
+#define _OMC_LIT43_data "./"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT43,2,_OMC_LIT43_data);
+#define _OMC_LIT43 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT43)
 #include "util/modelica.h"
 
 #include "Util_includes.h"
@@ -781,6 +784,17 @@ modelica_string omc_Util_intLstString(threadData_t *threadData, modelica_metatyp
   _s = stringDelimitList(omc_List_map(threadData, _lst, boxvar_intString), _OMC_LIT7);
   _return: OMC_LABEL_UNUSED
   return _s;
+}
+
+DLLDirection
+modelica_string omc_Util_hashFileNamePrefix(threadData_t *threadData, modelica_string _inFileNamePrefix)
+{
+  modelica_string _hashStr = NULL;
+  MMC_SO();
+  _tailrecursive: OMC_LABEL_UNUSED
+  _hashStr = substring(intString(stringHashDjb2(_inFileNamePrefix)), ((modelica_integer) 1), ((modelica_integer) 3));
+  _return: OMC_LABEL_UNUSED
+  return _hashStr;
 }
 
 DLLDirection
@@ -4263,7 +4277,7 @@ modelica_string omc_Util_linuxDotSlash(threadData_t *threadData)
   // _str has no default value.
   _str = _OMC_LIT40;
 
-  _str = (((stringEqual(_str, _OMC_LIT40)) || (stringEqual(_str, _OMC_LIT41)))?_OMC_LIT42:_OMC_LIT6);
+  _str = (((stringEqual(_str, _OMC_LIT41)) || (stringEqual(_str, _OMC_LIT42)))?_OMC_LIT43:_OMC_LIT6);
   _return: OMC_LABEL_UNUSED
   return _str;
 }

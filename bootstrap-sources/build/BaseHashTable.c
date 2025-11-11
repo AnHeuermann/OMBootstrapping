@@ -12,10 +12,10 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT2,9,_OMC_LIT2_data);
 #define _OMC_LIT3_data " failed\n"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT3,8,_OMC_LIT3_data);
 #define _OMC_LIT3 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT3)
-#define _OMC_LIT4_data "/home/adrpo33/OpenModelica/OMCompiler/Compiler/Util/BaseHashTable.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT4,68,_OMC_LIT4_data);
+#define _OMC_LIT4_data "/OpenModelica/OMCompiler/Compiler/Util/BaseHashTable.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT4,55,_OMC_LIT4_data);
 #define _OMC_LIT4 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT4)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT5_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT5_6,1.76286855e9);
 #define _OMC_LIT5_6 MMC_REFREALLIT(_OMC_LIT_STRUCT5_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT5,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT4,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(602)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(602)),MMC_IMMEDIATE(MMC_TAGFIXNUM(161)),_OMC_LIT5_6}};
 #define _OMC_LIT5 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT5)
@@ -1912,7 +1912,7 @@ void omc_BaseHashTable_dumpHashTableStatistics(threadData_t *threadData, modelic
             modelica_metatype _l;
             _l_loopVar = _hvec;
             tmp23 = 1;
-            __omcQ_24tmpVar13 = ((modelica_integer) -4611686018427387903); /* defaultValue */
+            __omcQ_24tmpVar13 = ((modelica_integer) -1073741823); /* defaultValue */
             while(1) {
               tmp22 = 1;
               if (tmp23 <= arrayLength(_l_loopVar)) {

@@ -62,6 +62,9 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_NBJacobian_SparsityColoring_PartialD2Co
 #define boxvar_NBJacobian_SparsityColoring_PartialD2ColoringAlg MMC_REFSTRUCTLIT(boxvar_lit_NBJacobian_SparsityColoring_PartialD2ColoringAlg)
 
 
+#define boxptr_NBJacobian_SparsityColoring_PartialD2ColoringAlgC_getIndices omc_NBJacobian_SparsityColoring_PartialD2ColoringAlgC_getIndices
+
+
 DLLDirection
 modelica_metatype omc_NBJacobian_SparsityColoring_PartialD2ColoringAlgC(threadData_t *threadData, modelica_metatype _sparsityPattern, modelica_integer _jacType);
 DLLDirection
@@ -144,9 +147,9 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_NBJacobian_combine,2,0) {(void*) boxptr
 
 
 DLLDirection
-modelica_metatype omc_NBJacobian_nonlinear(threadData_t *threadData, modelica_metatype _variables, modelica_metatype _equations, modelica_metatype _comps, modelica_metatype __omcQ_24in_5FfuncTree, modelica_string _name, modelica_boolean _init, modelica_metatype *out_funcTree);
+modelica_metatype omc_NBJacobian_nonlinear(threadData_t *threadData, modelica_metatype _seedCandidates, modelica_metatype _partialCandidates, modelica_metatype _equations, modelica_metatype _comps, modelica_metatype __omcQ_24in_5FfuncTree, modelica_string _name, modelica_boolean _init, modelica_metatype *out_funcTree);
 DLLDirection
-modelica_metatype boxptr_NBJacobian_nonlinear(threadData_t *threadData, modelica_metatype _variables, modelica_metatype _equations, modelica_metatype _comps, modelica_metatype __omcQ_24in_5FfuncTree, modelica_metatype _name, modelica_metatype _init, modelica_metatype *out_funcTree);
+modelica_metatype boxptr_NBJacobian_nonlinear(threadData_t *threadData, modelica_metatype _seedCandidates, modelica_metatype _partialCandidates, modelica_metatype _equations, modelica_metatype _comps, modelica_metatype __omcQ_24in_5FfuncTree, modelica_metatype _name, modelica_metatype _init, modelica_metatype *out_funcTree);
 static const MMC_DEFSTRUCTLIT(boxvar_lit_NBJacobian_nonlinear,2,0) {(void*) boxptr_NBJacobian_nonlinear,0}};
 #define boxvar_NBJacobian_nonlinear MMC_REFSTRUCTLIT(boxvar_lit_NBJacobian_nonlinear)
 

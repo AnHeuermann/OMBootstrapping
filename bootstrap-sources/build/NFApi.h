@@ -626,8 +626,9 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_NFApi_dumpJSONNodeEnclosingPath,2,0) {(
 
 
 DLLDirection
-modelica_metatype omc_NFApi_dumpJSONNodePath(threadData_t *threadData, modelica_metatype _node);
-#define boxptr_NFApi_dumpJSONNodePath omc_NFApi_dumpJSONNodePath
+modelica_metatype omc_NFApi_dumpJSONNodePath(threadData_t *threadData, modelica_metatype _node, modelica_boolean _ignoreBaseClass);
+DLLDirection
+modelica_metatype boxptr_NFApi_dumpJSONNodePath(threadData_t *threadData, modelica_metatype _node, modelica_metatype _ignoreBaseClass);
 static const MMC_DEFSTRUCTLIT(boxvar_lit_NFApi_dumpJSONNodePath,2,0) {(void*) boxptr_NFApi_dumpJSONNodePath,0}};
 #define boxvar_NFApi_dumpJSONNodePath MMC_REFSTRUCTLIT(boxvar_lit_NFApi_dumpJSONNodePath)
 
@@ -647,9 +648,9 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_NFApi_dumpJSONInstanceAnnotation,2,0) {
 
 
 DLLDirection
-modelica_metatype omc_NFApi_dumpJSONInstanceTree(threadData_t *threadData, modelica_metatype _tree, modelica_metatype _scope, modelica_boolean _root, modelica_boolean _isDeleted);
+modelica_metatype omc_NFApi_dumpJSONInstanceTree(threadData_t *threadData, modelica_metatype _tree, modelica_metatype _scope, modelica_boolean _root, modelica_boolean _isDeleted, modelica_boolean _isExtends);
 DLLDirection
-modelica_metatype boxptr_NFApi_dumpJSONInstanceTree(threadData_t *threadData, modelica_metatype _tree, modelica_metatype _scope, modelica_metatype _root, modelica_metatype _isDeleted);
+modelica_metatype boxptr_NFApi_dumpJSONInstanceTree(threadData_t *threadData, modelica_metatype _tree, modelica_metatype _scope, modelica_metatype _root, modelica_metatype _isDeleted, modelica_metatype _isExtends);
 static const MMC_DEFSTRUCTLIT(boxvar_lit_NFApi_dumpJSONInstanceTree,2,0) {(void*) boxptr_NFApi_dumpJSONInstanceTree,0}};
 #define boxvar_NFApi_dumpJSONInstanceTree MMC_REFSTRUCTLIT(boxvar_lit_NFApi_dumpJSONInstanceTree)
 

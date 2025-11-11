@@ -174,6 +174,20 @@ extern struct record_description SourceInfo_SOURCEINFO__desc;
 
 
 DLLDirection
+modelica_metatype omc_NFFlatten_evaluateIfWithConnects2(threadData_t *threadData, modelica_metatype _eq, modelica_metatype __omcQ_24in_5Fequations);
+#define boxptr_NFFlatten_evaluateIfWithConnects2 omc_NFFlatten_evaluateIfWithConnects2
+static const MMC_DEFSTRUCTLIT(boxvar_lit_NFFlatten_evaluateIfWithConnects2,2,0) {(void*) boxptr_NFFlatten_evaluateIfWithConnects2,0}};
+#define boxvar_NFFlatten_evaluateIfWithConnects2 MMC_REFSTRUCTLIT(boxvar_lit_NFFlatten_evaluateIfWithConnects2)
+
+
+DLLDirection
+modelica_metatype omc_NFFlatten_evaluateIfWithConnects(threadData_t *threadData, modelica_metatype _eql);
+#define boxptr_NFFlatten_evaluateIfWithConnects omc_NFFlatten_evaluateIfWithConnects
+static const MMC_DEFSTRUCTLIT(boxvar_lit_NFFlatten_evaluateIfWithConnects,2,0) {(void*) boxptr_NFFlatten_evaluateIfWithConnects,0}};
+#define boxvar_NFFlatten_evaluateIfWithConnects MMC_REFSTRUCTLIT(boxvar_lit_NFFlatten_evaluateIfWithConnects)
+
+
+DLLDirection
 modelica_metatype omc_NFFlatten_updateVariability(threadData_t *threadData, modelica_metatype __omcQ_24in_5Fvar);
 #define boxptr_NFFlatten_updateVariability omc_NFFlatten_updateVariability
 static const MMC_DEFSTRUCTLIT(boxvar_lit_NFFlatten_updateVariability,2,0) {(void*) boxptr_NFFlatten_updateVariability,0}};
@@ -407,7 +421,7 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_NFFlatten_flattenAlgorithms,2,0) {(void
 
 
 DLLDirection
-modelica_metatype omc_NFFlatten_splitForLoop2(threadData_t *threadData, modelica_metatype _forBody, modelica_metatype *out_nonConnects);
+modelica_metatype omc_NFFlatten_splitForLoop2(threadData_t *threadData, modelica_metatype _forBody, modelica_metatype _settings, modelica_metatype *out_nonConnects);
 #define boxptr_NFFlatten_splitForLoop2 omc_NFFlatten_splitForLoop2
 static const MMC_DEFSTRUCTLIT(boxvar_lit_NFFlatten_splitForLoop2,2,0) {(void*) boxptr_NFFlatten_splitForLoop2,0}};
 #define boxvar_NFFlatten_splitForLoop2 MMC_REFSTRUCTLIT(boxvar_lit_NFFlatten_splitForLoop2)
@@ -544,6 +558,9 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_NFFlatten_flattenBinding,2,0) {(void*) 
 #define boxptr_NFFlatten_subscriptBindingOpt omc_NFFlatten_subscriptBindingOpt
 
 
+#define boxptr_NFFlatten_mergeIterator omc_NFFlatten_mergeIterator
+
+
 #define boxptr_NFFlatten_addIterator__traverse omc_NFFlatten_addIterator__traverse
 
 
@@ -561,6 +578,9 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_NFFlatten_makeIterators,2,0) {(void*) b
 
 
 #define boxptr_NFFlatten_vectorizeAlgorithms omc_NFFlatten_vectorizeAlgorithms
+
+
+#define boxptr_NFFlatten_vectorizeEquationGeneric omc_NFFlatten_vectorizeEquationGeneric
 
 
 #define boxptr_NFFlatten_vectorizeEquation omc_NFFlatten_vectorizeEquation

@@ -11825,8 +11825,8 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT4773,2,1) {_OMC_LIT4769,_OMC_LIT477
 #define _OMC_LIT4773 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT4773)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT4774,3,6) {&Tpl_StringToken_ST__STRING__LIST__desc,_OMC_LIT4773,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */))}};
 #define _OMC_LIT4774 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT4774)
-#define _OMC_LIT4775_data "x86_64-linux-gnu"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT4775,16,_OMC_LIT4775_data);
+#define _OMC_LIT4775_data "arm-linux-gnueabihf"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT4775,19,_OMC_LIT4775_data);
 #define _OMC_LIT4775 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT4775)
 #define _OMC_LIT4776_data "/omc/omsicpp\" $(BASE_LIB) "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT4776,26,_OMC_LIT4776_data);
@@ -13561,7 +13561,7 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT5506,8,3) {&Flags_ConfigFlag_CONFIG
 #define _OMC_LIT5507_data "loadPackageFile"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT5507,15,_OMC_LIT5507_data);
 #define _OMC_LIT5507 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT5507)
-#define _OMC_LIT5508_data "used when the outside name is different with the inside name of the packge, in cpp-runtime (for labeled model reduction)."
+#define _OMC_LIT5508_data "Used when the outside name is different with the inside name of the packge, in cpp-runtime (for labeled model reduction)."
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT5508,121,_OMC_LIT5508_data);
 #define _OMC_LIT5508 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT5508)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT5509,2,3) {&Gettext_TranslatableContent_gettext__desc,_OMC_LIT5508}};

@@ -610,6 +610,13 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_NFCeval_evalBinaryPow,2,0) {(void*) box
 
 
 DLLDirection
+modelica_metatype omc_NFCeval_evalMultaryMulDiv(threadData_t *threadData, modelica_metatype _arguments, modelica_metatype _inv_arguments, modelica_metatype _operator_ty);
+#define boxptr_NFCeval_evalMultaryMulDiv omc_NFCeval_evalMultaryMulDiv
+static const MMC_DEFSTRUCTLIT(boxvar_lit_NFCeval_evalMultaryMulDiv,2,0) {(void*) boxptr_NFCeval_evalMultaryMulDiv,0}};
+#define boxvar_NFCeval_evalMultaryMulDiv MMC_REFSTRUCTLIT(boxvar_lit_NFCeval_evalMultaryMulDiv)
+
+
+DLLDirection
 modelica_metatype omc_NFCeval_evalBinaryDiv(threadData_t *threadData, modelica_metatype _exp1, modelica_metatype _exp2, modelica_metatype _target);
 #define boxptr_NFCeval_evalBinaryDiv omc_NFCeval_evalBinaryDiv
 static const MMC_DEFSTRUCTLIT(boxvar_lit_NFCeval_evalBinaryDiv,2,0) {(void*) boxptr_NFCeval_evalBinaryDiv,0}};
@@ -621,6 +628,13 @@ modelica_metatype omc_NFCeval_evalBinaryMul(threadData_t *threadData, modelica_m
 #define boxptr_NFCeval_evalBinaryMul omc_NFCeval_evalBinaryMul
 static const MMC_DEFSTRUCTLIT(boxvar_lit_NFCeval_evalBinaryMul,2,0) {(void*) boxptr_NFCeval_evalBinaryMul,0}};
 #define boxvar_NFCeval_evalBinaryMul MMC_REFSTRUCTLIT(boxvar_lit_NFCeval_evalBinaryMul)
+
+
+DLLDirection
+modelica_metatype omc_NFCeval_evalMultaryAddSub(threadData_t *threadData, modelica_metatype _arguments, modelica_metatype _inv_arguments, modelica_metatype _operator_ty);
+#define boxptr_NFCeval_evalMultaryAddSub omc_NFCeval_evalMultaryAddSub
+static const MMC_DEFSTRUCTLIT(boxvar_lit_NFCeval_evalMultaryAddSub,2,0) {(void*) boxptr_NFCeval_evalMultaryAddSub,0}};
+#define boxvar_NFCeval_evalMultaryAddSub MMC_REFSTRUCTLIT(boxvar_lit_NFCeval_evalMultaryAddSub)
 
 
 DLLDirection

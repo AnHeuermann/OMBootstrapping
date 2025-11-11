@@ -139,8 +139,8 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT53,4,_OMC_LIT53_data);
 #define _OMC_LIT54_data "OMDEV"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT54,5,_OMC_LIT54_data);
 #define _OMC_LIT54 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT54)
-#define _OMC_LIT55_data "linux"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT55,5,_OMC_LIT55_data);
+#define _OMC_LIT55_data "linuxeabihf"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT55,11,_OMC_LIT55_data);
 #define _OMC_LIT55 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT55)
 #define _OMC_LIT56_data "omc.checksettings.create_file_test"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT56,34,_OMC_LIT56_data);
@@ -154,8 +154,8 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT58,8,_OMC_LIT58_data);
 #define _OMC_LIT59_data "rm "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT59,3,_OMC_LIT59_data);
 #define _OMC_LIT59 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT59)
-#define _OMC_LIT60_data " -Wl,--no-as-needed -Wl,--disable-new-dtags -lOpenModelicaRuntimeC -llapack -lblas -lm -lomcgc -lryu -lpthread -rdynamic"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT60,120,_OMC_LIT60_data);
+#define _OMC_LIT60_data " -Wl,--no-as-needed -Wl,--disable-new-dtags -lOpenModelicaRuntimeC -llapack -lblas  -lm -lomcgc -lryu -lpthread -rdynamic"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT60,121,_OMC_LIT60_data);
 #define _OMC_LIT60 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT60)
 #define _OMC_LIT61_data "rm -f "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT61,6,_OMC_LIT61_data);
@@ -163,8 +163,8 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT61,6,_OMC_LIT61_data);
 #define _OMC_LIT62_data " --version"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT62,10,_OMC_LIT62_data);
 #define _OMC_LIT62 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT62)
-#define _OMC_LIT63_data "Configured 2025-09-26 22:21:13 using arguments:  '--disable-option-checking' '--prefix=/home/adrpo33/OpenModelica/build' '--without-omc' 'CC=clang' 'CXX=clang++' '--with-ombuilddir=/home/adrpo33/OpenModelica/build' '--cache-file=/dev/null' '--srcdir=.'"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT63,252,_OMC_LIT63_data);
+#define _OMC_LIT63_data "Configured 2025-11-11 13:47:33 using arguments:  '--disable-option-checking' '--prefix=/OpenModelica/install' 'CC=clang' 'CXX=clang++' 'FC=gfortran' 'CFLAGS=-Os' '--host=arm-linux-gnueabihf' '--build=arm-linux-gnueabihf' '--with-lapack=-llapack -lblas -lm' '--without-omc' '--without-cppruntime' '--without-omlibrary' '--without-omniORB' 'build_alias=arm-linux-gnueabihf' 'host_alias=arm-linux-gnueabihf' '--with-ombuilddir=/OpenModelica/build' '--cache-file=/dev/null' '--srcdir=.'"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT63,482,_OMC_LIT63_data);
 #define _OMC_LIT63 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT63)
 #define _OMC_LIT64_data "OpenModelica.Scripting.CheckSettingsResult"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT64,42,_OMC_LIT64_data);
@@ -516,10 +516,10 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT194,46,_OMC_LIT194_data);
 #define _OMC_LIT195_data "...\n"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT195,4,_OMC_LIT195_data);
 #define _OMC_LIT195 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT195)
-#define _OMC_LIT196_data "/home/adrpo33/OpenModelica/OMCompiler/Compiler/Script/CevalScript.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT196,68,_OMC_LIT196_data);
+#define _OMC_LIT196_data "/OpenModelica/OMCompiler/Compiler/Script/CevalScript.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT196,55,_OMC_LIT196_data);
 #define _OMC_LIT196 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT196)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT197_6,1.758917908e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT197_6,1.76286855e9);
 #define _OMC_LIT197_6 MMC_REFREALLIT(_OMC_LIT_STRUCT197_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT197,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT196,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2210)),MMC_IMMEDIATE(MMC_TAGFIXNUM(257)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2210)),MMC_IMMEDIATE(MMC_TAGFIXNUM(276)),_OMC_LIT197_6}};
 #define _OMC_LIT197 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT197)

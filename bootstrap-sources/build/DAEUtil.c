@@ -416,10 +416,10 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT168,2,3) {&DAE_DAElist_DAE__desc,MM
 #define _OMC_LIT169_data "DAEUtil.splitDAEIntoVarsAndEquations failed for "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT169,48,_OMC_LIT169_data);
 #define _OMC_LIT169 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT169)
-#define _OMC_LIT170_data "/home/adrpo33/OpenModelica/OMCompiler/Compiler/FrontEnd/DAEUtil.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT170,66,_OMC_LIT170_data);
+#define _OMC_LIT170_data "/OpenModelica/OMCompiler/Compiler/FrontEnd/DAEUtil.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT170,53,_OMC_LIT170_data);
 #define _OMC_LIT170 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT170)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT171_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT171_6,1.76286855e9);
 #define _OMC_LIT171_6 MMC_REFREALLIT(_OMC_LIT_STRUCT171_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT171,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT170,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(549)),MMC_IMMEDIATE(MMC_TAGFIXNUM(11)),MMC_IMMEDIATE(MMC_TAGFIXNUM(549)),MMC_IMMEDIATE(MMC_TAGFIXNUM(128)),_OMC_LIT171_6}};
 #define _OMC_LIT171 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT171)
@@ -12573,7 +12573,7 @@ PROTECTED_FUNCTION_STATIC void omc_DAEUtil_verifyClockWhenEquation(threadData_t 
   MMC_SO();
   _tailrecursive: OMC_LABEL_UNUSED
   // _info has no default value.
-  if((!isNone(_ew)))
+  if(isSome(_ew))
   {
     _info = omc_ElementSource_getElementSourceFileInfo(threadData, _source);
 

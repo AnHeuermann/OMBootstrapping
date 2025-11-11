@@ -964,6 +964,14 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_NFExpression_isLiteralReplace,2,0) {(vo
 
 
 DLLDirection
+modelica_boolean omc_NFExpression_isLiteralXML(threadData_t *threadData, modelica_metatype _exp);
+DLLDirection
+modelica_metatype boxptr_NFExpression_isLiteralXML(threadData_t *threadData, modelica_metatype _exp);
+static const MMC_DEFSTRUCTLIT(boxvar_lit_NFExpression_isLiteralXML,2,0) {(void*) boxptr_NFExpression_isLiteralXML,0}};
+#define boxvar_NFExpression_isLiteralXML MMC_REFSTRUCTLIT(boxvar_lit_NFExpression_isLiteralXML)
+
+
+DLLDirection
 modelica_boolean omc_NFExpression_isLiteral(threadData_t *threadData, modelica_metatype _exp);
 DLLDirection
 modelica_metatype boxptr_NFExpression_isLiteral(threadData_t *threadData, modelica_metatype _exp);
@@ -1394,20 +1402,6 @@ modelica_metatype omc_NFExpression_toDAERecord(threadData_t *threadData, modelic
 #define boxptr_NFExpression_toDAERecord omc_NFExpression_toDAERecord
 static const MMC_DEFSTRUCTLIT(boxvar_lit_NFExpression_toDAERecord,2,0) {(void*) boxptr_NFExpression_toDAERecord,0}};
 #define boxvar_NFExpression_toDAERecord MMC_REFSTRUCTLIT(boxvar_lit_NFExpression_toDAERecord)
-
-
-DLLDirection
-modelica_metatype omc_NFExpression_toDAEMultaryArgs(threadData_t *threadData, modelica_metatype _arguments, modelica_metatype _operator);
-#define boxptr_NFExpression_toDAEMultaryArgs omc_NFExpression_toDAEMultaryArgs
-static const MMC_DEFSTRUCTLIT(boxvar_lit_NFExpression_toDAEMultaryArgs,2,0) {(void*) boxptr_NFExpression_toDAEMultaryArgs,0}};
-#define boxvar_NFExpression_toDAEMultaryArgs MMC_REFSTRUCTLIT(boxvar_lit_NFExpression_toDAEMultaryArgs)
-
-
-DLLDirection
-modelica_metatype omc_NFExpression_toDAEMultary(threadData_t *threadData, modelica_metatype _arguments, modelica_metatype _inv_arguments, modelica_metatype _operator);
-#define boxptr_NFExpression_toDAEMultary omc_NFExpression_toDAEMultary
-static const MMC_DEFSTRUCTLIT(boxvar_lit_NFExpression_toDAEMultary,2,0) {(void*) boxptr_NFExpression_toDAEMultary,0}};
-#define boxvar_NFExpression_toDAEMultary MMC_REFSTRUCTLIT(boxvar_lit_NFExpression_toDAEMultary)
 
 
 DLLDirection
@@ -1995,6 +1989,14 @@ DLLDirection
 modelica_metatype boxptr_NFExpression_isTrue(threadData_t *threadData, modelica_metatype _exp);
 static const MMC_DEFSTRUCTLIT(boxvar_lit_NFExpression_isTrue,2,0) {(void*) boxptr_NFExpression_isTrue,0}};
 #define boxvar_NFExpression_isTrue MMC_REFSTRUCTLIT(boxvar_lit_NFExpression_isTrue)
+
+
+DLLDirection
+modelica_boolean omc_NFExpression_isConnectionCall(threadData_t *threadData, modelica_metatype _exp);
+DLLDirection
+modelica_metatype boxptr_NFExpression_isConnectionCall(threadData_t *threadData, modelica_metatype _exp);
+static const MMC_DEFSTRUCTLIT(boxvar_lit_NFExpression_isConnectionCall,2,0) {(void*) boxptr_NFExpression_isConnectionCall,0}};
+#define boxvar_NFExpression_isConnectionCall MMC_REFSTRUCTLIT(boxvar_lit_NFExpression_isConnectionCall)
 
 
 DLLDirection

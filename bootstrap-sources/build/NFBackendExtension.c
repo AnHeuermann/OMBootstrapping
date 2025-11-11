@@ -73,12 +73,12 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT27,5,3) {&ErrorTypes_Message_MESSAG
 #define _OMC_LIT28_data "NFBackendExtension.VariableAttributes.lookupStateSelectMember got unknown StateSelect literal "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT28,94,_OMC_LIT28_data);
 #define _OMC_LIT28 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT28)
-#define _OMC_LIT29_data "/home/adrpo33/OpenModelica/OMCompiler/Compiler/NFFrontEnd/NFBackendExtension.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT29,79,_OMC_LIT29_data);
+#define _OMC_LIT29_data "/OpenModelica/OMCompiler/Compiler/NFFrontEnd/NFBackendExtension.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT29,66,_OMC_LIT29_data);
 #define _OMC_LIT29 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT29)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT30_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT30_6,1.76286855e9);
 #define _OMC_LIT30_6 MMC_REFREALLIT(_OMC_LIT_STRUCT30_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT30,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT29,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1375)),MMC_IMMEDIATE(MMC_TAGFIXNUM(13)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1375)),MMC_IMMEDIATE(MMC_TAGFIXNUM(113)),_OMC_LIT30_6}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT30,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT29,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1381)),MMC_IMMEDIATE(MMC_TAGFIXNUM(13)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1381)),MMC_IMMEDIATE(MMC_TAGFIXNUM(113)),_OMC_LIT30_6}};
 #define _OMC_LIT30 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT30)
 #define _OMC_LIT31_data "."
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT31,1,_OMC_LIT31_data);
@@ -89,25 +89,25 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT32,4,_OMC_LIT32_data);
 #define _OMC_LIT33_data "NFBackendExtension.VariableAttributes.getStateSelectName cannot handle array StateSelect with different values yet:"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT33,115,_OMC_LIT33_data);
 #define _OMC_LIT33 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT33)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT34_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT34_6,1.76286855e9);
 #define _OMC_LIT34_6 MMC_REFREALLIT(_OMC_LIT_STRUCT34_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT34,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT29,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1351)),MMC_IMMEDIATE(MMC_TAGFIXNUM(13)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1352)),MMC_IMMEDIATE(MMC_TAGFIXNUM(118)),_OMC_LIT34_6}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT34,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT29,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1357)),MMC_IMMEDIATE(MMC_TAGFIXNUM(13)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1358)),MMC_IMMEDIATE(MMC_TAGFIXNUM(118)),_OMC_LIT34_6}};
 #define _OMC_LIT34 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT34)
 #define _OMC_LIT35_data "NFBackendExtension.VariableAttributes.getStateSelectName got invalid StateSelect expression "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT35,92,_OMC_LIT35_data);
 #define _OMC_LIT35 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT35)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT36_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT36_6,1.76286855e9);
 #define _OMC_LIT36_6 MMC_REFREALLIT(_OMC_LIT_STRUCT36_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT36,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT29,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1357)),MMC_IMMEDIATE(MMC_TAGFIXNUM(11)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1358)),MMC_IMMEDIATE(MMC_TAGFIXNUM(93)),_OMC_LIT36_6}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT36,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT29,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1363)),MMC_IMMEDIATE(MMC_TAGFIXNUM(11)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1364)),MMC_IMMEDIATE(MMC_TAGFIXNUM(93)),_OMC_LIT36_6}};
 #define _OMC_LIT36 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT36)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT37,17,3) {&NFBackendExtension_VariableAttributes_VAR__ATTR__REAL__desc,MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none)}};
 #define _OMC_LIT37 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT37)
 #define _OMC_LIT38_data "NFBackendExtension.VariableAttributes.createEnum got unknown type attribute "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT38,76,_OMC_LIT38_data);
 #define _OMC_LIT38 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT38)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT39_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT39_6,1.76286855e9);
 #define _OMC_LIT39_6 MMC_REFREALLIT(_OMC_LIT_STRUCT39_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT39,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT29,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1279)),MMC_IMMEDIATE(MMC_TAGFIXNUM(17)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1279)),MMC_IMMEDIATE(MMC_TAGFIXNUM(112)),_OMC_LIT39_6}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT39,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT29,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1285)),MMC_IMMEDIATE(MMC_TAGFIXNUM(17)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1285)),MMC_IMMEDIATE(MMC_TAGFIXNUM(112)),_OMC_LIT39_6}};
 #define _OMC_LIT39 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT39)
 #define _OMC_LIT40_data "fixed"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT40,5,_OMC_LIT40_data);
@@ -127,36 +127,36 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT44,5,_OMC_LIT44_data);
 #define _OMC_LIT45_data "NFBackendExtension.VariableAttributes.createString got unknown type attribute "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT45,78,_OMC_LIT45_data);
 #define _OMC_LIT45 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT45)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT46_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT46_6,1.76286855e9);
 #define _OMC_LIT46_6 MMC_REFREALLIT(_OMC_LIT_STRUCT46_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT46,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT29,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1241)),MMC_IMMEDIATE(MMC_TAGFIXNUM(17)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1241)),MMC_IMMEDIATE(MMC_TAGFIXNUM(112)),_OMC_LIT46_6}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT46,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT29,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1247)),MMC_IMMEDIATE(MMC_TAGFIXNUM(17)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1247)),MMC_IMMEDIATE(MMC_TAGFIXNUM(112)),_OMC_LIT46_6}};
 #define _OMC_LIT46 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT46)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT47,8,7) {&NFBackendExtension_VariableAttributes_VAR__ATTR__STRING__desc,MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none)}};
 #define _OMC_LIT47 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT47)
 #define _OMC_LIT48_data "NFBackendExtension.VariableAttributes.createBool got unknown type attribute "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT48,76,_OMC_LIT48_data);
 #define _OMC_LIT48 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT48)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT49_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT49_6,1.76286855e9);
 #define _OMC_LIT49_6 MMC_REFREALLIT(_OMC_LIT_STRUCT49_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT49,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT29,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1206)),MMC_IMMEDIATE(MMC_TAGFIXNUM(17)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1206)),MMC_IMMEDIATE(MMC_TAGFIXNUM(112)),_OMC_LIT49_6}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT49,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT29,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1212)),MMC_IMMEDIATE(MMC_TAGFIXNUM(17)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1212)),MMC_IMMEDIATE(MMC_TAGFIXNUM(112)),_OMC_LIT49_6}};
 #define _OMC_LIT49 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT49)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT50,8,5) {&NFBackendExtension_VariableAttributes_VAR__ATTR__BOOL__desc,MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none)}};
 #define _OMC_LIT50 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT50)
 #define _OMC_LIT51_data "NFBackendExtension.VariableAttributes.createInt got unknown type attribute "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT51,75,_OMC_LIT51_data);
 #define _OMC_LIT51 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT51)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT52_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT52_6,1.76286855e9);
 #define _OMC_LIT52_6 MMC_REFREALLIT(_OMC_LIT_STRUCT52_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT52,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT29,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1170)),MMC_IMMEDIATE(MMC_TAGFIXNUM(17)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1170)),MMC_IMMEDIATE(MMC_TAGFIXNUM(112)),_OMC_LIT52_6}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT52,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT29,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1176)),MMC_IMMEDIATE(MMC_TAGFIXNUM(17)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1176)),MMC_IMMEDIATE(MMC_TAGFIXNUM(112)),_OMC_LIT52_6}};
 #define _OMC_LIT52 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT52)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT53,12,4) {&NFBackendExtension_VariableAttributes_VAR__ATTR__INT__desc,MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none),MMC_REFSTRUCTLIT(mmc_none)}};
 #define _OMC_LIT53 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT53)
 #define _OMC_LIT54_data "NFBackendExtension.VariableAttributes.createReal got unknown type attribute "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT54,76,_OMC_LIT54_data);
 #define _OMC_LIT54 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT54)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT55_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT55_6,1.76286855e9);
 #define _OMC_LIT55_6 MMC_REFREALLIT(_OMC_LIT_STRUCT55_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT55,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT29,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1130)),MMC_IMMEDIATE(MMC_TAGFIXNUM(17)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1130)),MMC_IMMEDIATE(MMC_TAGFIXNUM(112)),_OMC_LIT55_6}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT55,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT29,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1137)),MMC_IMMEDIATE(MMC_TAGFIXNUM(15)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1137)),MMC_IMMEDIATE(MMC_TAGFIXNUM(110)),_OMC_LIT55_6}};
 #define _OMC_LIT55 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT55)
 #define _OMC_LIT56_data "displayUnit"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT56,11,_OMC_LIT56_data);
@@ -222,16 +222,16 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT77,1,5) {&NFType_STRING__desc,}};
 #define _OMC_LIT78_data "NFBackendExtension.VariableAttributes.elemType cannot create type from attributes: "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT78,83,_OMC_LIT78_data);
 #define _OMC_LIT78 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT78)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT79_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT79_6,1.76286855e9);
 #define _OMC_LIT79_6 MMC_REFREALLIT(_OMC_LIT_STRUCT79_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT79,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT29,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(995)),MMC_IMMEDIATE(MMC_TAGFIXNUM(11)),MMC_IMMEDIATE(MMC_TAGFIXNUM(995)),MMC_IMMEDIATE(MMC_TAGFIXNUM(125)),_OMC_LIT79_6}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT79,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT29,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1005)),MMC_IMMEDIATE(MMC_TAGFIXNUM(11)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1005)),MMC_IMMEDIATE(MMC_TAGFIXNUM(125)),_OMC_LIT79_6}};
 #define _OMC_LIT79 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT79)
 #define _OMC_LIT80_data "NFBackendExtension.VariableAttributes.scalarizefailed. Not yet handled: "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT80,72,_OMC_LIT80_data);
 #define _OMC_LIT80 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT80)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT81_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT81_6,1.76286855e9);
 #define _OMC_LIT81_6 MMC_REFREALLIT(_OMC_LIT_STRUCT81_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT81,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT29,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(978)),MMC_IMMEDIATE(MMC_TAGFIXNUM(11)),MMC_IMMEDIATE(MMC_TAGFIXNUM(978)),MMC_IMMEDIATE(MMC_TAGFIXNUM(119)),_OMC_LIT81_6}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT81,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT29,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(988)),MMC_IMMEDIATE(MMC_TAGFIXNUM(11)),MMC_IMMEDIATE(MMC_TAGFIXNUM(988)),MMC_IMMEDIATE(MMC_TAGFIXNUM(119)),_OMC_LIT81_6}};
 #define _OMC_LIT81 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT81)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT82,2,3) {&NFExpression_INTEGER__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(1))}};
 #define _OMC_LIT82 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT82)
@@ -1637,121 +1637,114 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_NFBackendExtension_VariableAttri
   _nominal = mmc_mk_none();
   _state_select = mmc_mk_none();
   _tearing_select = mmc_mk_none();
-  if((listEmpty(_attrs) && (!_isFinal)))
   {
-    _attributes = _OMC_LIT37;
-  }
-  else
-  {
+    modelica_metatype _attr;
+    for (tmpMeta1 = _attrs; !listEmpty(tmpMeta1); tmpMeta1=MMC_CDR(tmpMeta1))
     {
-      modelica_metatype _attr;
-      for (tmpMeta1 = _attrs; !listEmpty(tmpMeta1); tmpMeta1=MMC_CDR(tmpMeta1))
-      {
-        _attr = MMC_CAR(tmpMeta1);
-        /* Pattern-matching assignment */
-        tmpMeta2 = _attr;
-        tmpMeta3 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta2), 1));
-        tmpMeta4 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta2), 2));
-        _name = tmpMeta3;
-        _b = tmpMeta4;
+      _attr = MMC_CAR(tmpMeta1);
+      /* Pattern-matching assignment */
+      tmpMeta2 = _attr;
+      tmpMeta3 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta2), 1));
+      tmpMeta4 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta2), 2));
+      _name = tmpMeta3;
+      _b = tmpMeta4;
 
-        { /* match expression */
-          modelica_string tmp7_1;
-          tmp7_1 = _name;
-          {
-            volatile mmc_switch_type tmp7;
-            int tmp8;
-            tmp7 = 0;
-            for (; tmp7 < 11; tmp7++) {
-              switch (MMC_SWITCH_CAST(tmp7)) {
-              case 0: {
-                if (11 != MMC_STRLEN(tmp7_1) || strcmp(MMC_STRINGDATA(_OMC_LIT56), MMC_STRINGDATA(tmp7_1)) != 0) goto tmp6_end;
-                /* Pattern matching succeeded */
-                _displayUnit = omc_NFBackendExtension_VariableAttributes_createAttribute(threadData, _b);
-                goto tmp6_done;
-              }
-              case 1: {
-                if (5 != MMC_STRLEN(tmp7_1) || strcmp(MMC_STRINGDATA(_OMC_LIT40), MMC_STRINGDATA(tmp7_1)) != 0) goto tmp6_end;
-                /* Pattern matching succeeded */
-                _fixed = omc_NFBackendExtension_VariableAttributes_createAttribute(threadData, _b);
-                goto tmp6_done;
-              }
-              case 2: {
-                if (3 != MMC_STRLEN(tmp7_1) || strcmp(MMC_STRINGDATA(_OMC_LIT41), MMC_STRINGDATA(tmp7_1)) != 0) goto tmp6_end;
-                /* Pattern matching succeeded */
-                _max = omc_NFBackendExtension_VariableAttributes_createAttribute(threadData, _b);
-                goto tmp6_done;
-              }
-              case 3: {
-                if (3 != MMC_STRLEN(tmp7_1) || strcmp(MMC_STRINGDATA(_OMC_LIT42), MMC_STRINGDATA(tmp7_1)) != 0) goto tmp6_end;
-                /* Pattern matching succeeded */
-                _min = omc_NFBackendExtension_VariableAttributes_createAttribute(threadData, _b);
-                goto tmp6_done;
-              }
-              case 4: {
-                if (7 != MMC_STRLEN(tmp7_1) || strcmp(MMC_STRINGDATA(_OMC_LIT57), MMC_STRINGDATA(tmp7_1)) != 0) goto tmp6_end;
-                /* Pattern matching succeeded */
-                _nominal = omc_NFBackendExtension_VariableAttributes_createAttribute(threadData, _b);
-                goto tmp6_done;
-              }
-              case 5: {
-                if (8 != MMC_STRLEN(tmp7_1) || strcmp(MMC_STRINGDATA(_OMC_LIT43), MMC_STRINGDATA(tmp7_1)) != 0) goto tmp6_end;
-                /* Pattern matching succeeded */
-                _quantity = omc_NFBackendExtension_VariableAttributes_createAttribute(threadData, _b);
-                goto tmp6_done;
-              }
-              case 6: {
-                if (5 != MMC_STRLEN(tmp7_1) || strcmp(MMC_STRINGDATA(_OMC_LIT44), MMC_STRINGDATA(tmp7_1)) != 0) goto tmp6_end;
-                /* Pattern matching succeeded */
-                _start = omc_NFBackendExtension_VariableAttributes_createAttribute(threadData, _b);
-                goto tmp6_done;
-              }
-              case 7: {
-                if (11 != MMC_STRLEN(tmp7_1) || strcmp(MMC_STRINGDATA(_OMC_LIT58), MMC_STRINGDATA(tmp7_1)) != 0) goto tmp6_end;
-                /* Pattern matching succeeded */
-                _state_select = omc_NFBackendExtension_VariableAttributes_createStateSelect(threadData, _b);
-                goto tmp6_done;
-              }
-              case 8: {
-                if (9 != MMC_STRLEN(tmp7_1) || strcmp(MMC_STRINGDATA(_OMC_LIT59), MMC_STRINGDATA(tmp7_1)) != 0) goto tmp6_end;
-                /* Pattern matching succeeded */
-                goto tmp6_done;
-              }
-              case 9: {
-                if (4 != MMC_STRLEN(tmp7_1) || strcmp(MMC_STRINGDATA(_OMC_LIT60), MMC_STRINGDATA(tmp7_1)) != 0) goto tmp6_end;
-                /* Pattern matching succeeded */
-                _unit = omc_NFBackendExtension_VariableAttributes_createAttribute(threadData, _b);
-                goto tmp6_done;
-              }
-              case 10: {
-                modelica_metatype tmpMeta9;
-                
-                /* Pattern matching succeeded */
-                tmpMeta9 = stringAppend(_OMC_LIT54,_name);
-                omc_Error_assertion(threadData, 0 /* false */, tmpMeta9, _OMC_LIT55);
-                goto goto_5;
-                goto tmp6_done;
-              }
-              }
-              goto tmp6_end;
-              tmp6_end: ;
+      { /* match expression */
+        modelica_string tmp7_1;
+        tmp7_1 = _name;
+        {
+          volatile mmc_switch_type tmp7;
+          int tmp8;
+          tmp7 = 0;
+          for (; tmp7 < 11; tmp7++) {
+            switch (MMC_SWITCH_CAST(tmp7)) {
+            case 0: {
+              if (11 != MMC_STRLEN(tmp7_1) || strcmp(MMC_STRINGDATA(_OMC_LIT56), MMC_STRINGDATA(tmp7_1)) != 0) goto tmp6_end;
+              /* Pattern matching succeeded */
+              _displayUnit = omc_NFBackendExtension_VariableAttributes_createAttribute(threadData, _b);
+              goto tmp6_done;
             }
-            goto goto_5;
-            goto_5:;
-            MMC_THROW_INTERNAL();
-            goto tmp6_done;
-            tmp6_done:;
+            case 1: {
+              if (5 != MMC_STRLEN(tmp7_1) || strcmp(MMC_STRINGDATA(_OMC_LIT40), MMC_STRINGDATA(tmp7_1)) != 0) goto tmp6_end;
+              /* Pattern matching succeeded */
+              _fixed = omc_NFBackendExtension_VariableAttributes_createAttribute(threadData, _b);
+              goto tmp6_done;
+            }
+            case 2: {
+              if (3 != MMC_STRLEN(tmp7_1) || strcmp(MMC_STRINGDATA(_OMC_LIT41), MMC_STRINGDATA(tmp7_1)) != 0) goto tmp6_end;
+              /* Pattern matching succeeded */
+              _max = omc_NFBackendExtension_VariableAttributes_createAttribute(threadData, _b);
+              goto tmp6_done;
+            }
+            case 3: {
+              if (3 != MMC_STRLEN(tmp7_1) || strcmp(MMC_STRINGDATA(_OMC_LIT42), MMC_STRINGDATA(tmp7_1)) != 0) goto tmp6_end;
+              /* Pattern matching succeeded */
+              _min = omc_NFBackendExtension_VariableAttributes_createAttribute(threadData, _b);
+              goto tmp6_done;
+            }
+            case 4: {
+              if (7 != MMC_STRLEN(tmp7_1) || strcmp(MMC_STRINGDATA(_OMC_LIT57), MMC_STRINGDATA(tmp7_1)) != 0) goto tmp6_end;
+              /* Pattern matching succeeded */
+              _nominal = omc_NFBackendExtension_VariableAttributes_createAttribute(threadData, _b);
+              goto tmp6_done;
+            }
+            case 5: {
+              if (8 != MMC_STRLEN(tmp7_1) || strcmp(MMC_STRINGDATA(_OMC_LIT43), MMC_STRINGDATA(tmp7_1)) != 0) goto tmp6_end;
+              /* Pattern matching succeeded */
+              _quantity = omc_NFBackendExtension_VariableAttributes_createAttribute(threadData, _b);
+              goto tmp6_done;
+            }
+            case 6: {
+              if (5 != MMC_STRLEN(tmp7_1) || strcmp(MMC_STRINGDATA(_OMC_LIT44), MMC_STRINGDATA(tmp7_1)) != 0) goto tmp6_end;
+              /* Pattern matching succeeded */
+              _start = omc_NFBackendExtension_VariableAttributes_createAttribute(threadData, _b);
+              goto tmp6_done;
+            }
+            case 7: {
+              if (11 != MMC_STRLEN(tmp7_1) || strcmp(MMC_STRINGDATA(_OMC_LIT58), MMC_STRINGDATA(tmp7_1)) != 0) goto tmp6_end;
+              /* Pattern matching succeeded */
+              _state_select = omc_NFBackendExtension_VariableAttributes_createStateSelect(threadData, _b);
+              goto tmp6_done;
+            }
+            case 8: {
+              if (9 != MMC_STRLEN(tmp7_1) || strcmp(MMC_STRINGDATA(_OMC_LIT59), MMC_STRINGDATA(tmp7_1)) != 0) goto tmp6_end;
+              /* Pattern matching succeeded */
+              goto tmp6_done;
+            }
+            case 9: {
+              if (4 != MMC_STRLEN(tmp7_1) || strcmp(MMC_STRINGDATA(_OMC_LIT60), MMC_STRINGDATA(tmp7_1)) != 0) goto tmp6_end;
+              /* Pattern matching succeeded */
+              _unit = omc_NFBackendExtension_VariableAttributes_createAttribute(threadData, _b);
+              goto tmp6_done;
+            }
+            case 10: {
+              modelica_metatype tmpMeta9;
+              
+              /* Pattern matching succeeded */
+              tmpMeta9 = stringAppend(_OMC_LIT54,_name);
+              omc_Error_assertion(threadData, 0 /* false */, tmpMeta9, _OMC_LIT55);
+              goto goto_5;
+              goto tmp6_done;
+            }
+            }
+            goto tmp6_end;
+            tmp6_end: ;
           }
+          goto goto_5;
+          goto_5:;
+          MMC_THROW_INTERNAL();
+          goto tmp6_done;
+          tmp6_done:;
         }
-        ;
       }
+      ;
     }
-
-    _tearing_select = omc_NFBackendExtension_VariableAttributes_createTearingSelect(threadData, _comment);
-
-    tmpMeta11 = mmc_mk_box17(3, &NFBackendExtension_VariableAttributes_VAR__ATTR__REAL__desc, _quantity, _unit, _displayUnit, _min, _max, _start, _fixed, _nominal, _state_select, _tearing_select, mmc_mk_none(), mmc_mk_none(), mmc_mk_none(), mmc_mk_none(), mmc_mk_some(mmc_mk_boolean(_isFinal)), mmc_mk_none());
-    _attributes = tmpMeta11;
   }
+
+  _tearing_select = omc_NFBackendExtension_VariableAttributes_createTearingSelect(threadData, _comment);
+
+  tmpMeta11 = mmc_mk_box17(3, &NFBackendExtension_VariableAttributes_VAR__ATTR__REAL__desc, _quantity, _unit, _displayUnit, _min, _max, _start, _fixed, _nominal, _state_select, _tearing_select, mmc_mk_none(), mmc_mk_none(), mmc_mk_none(), mmc_mk_none(), mmc_mk_some(mmc_mk_boolean(_isFinal)), mmc_mk_none());
+  _attributes = tmpMeta11;
   _return: OMC_LABEL_UNUSED
   return _attributes;
 }
@@ -2725,6 +2718,68 @@ modelica_metatype omc_NFBackendExtension_VariableAttributes_getNominal(threadDat
 }
 
 DLLDirection
+modelica_integer omc_NFBackendExtension_VariableAttributes_getTearingSelect(threadData_t *threadData, modelica_metatype _attributes)
+{
+  modelica_integer _tearingSelect;
+  modelica_integer tmp1 = 0;
+  MMC_SO();
+  _tailrecursive: OMC_LABEL_UNUSED
+  // _tearingSelect has no default value.
+  { /* match expression */
+    modelica_metatype tmp4_1;
+    tmp4_1 = _attributes;
+    {
+      volatile mmc_switch_type tmp4;
+      int tmp5;
+      tmp4 = 0;
+      for (; tmp4 < 2; tmp4++) {
+        switch (MMC_SWITCH_CAST(tmp4)) {
+        case 0: {
+          modelica_metatype tmpMeta6;
+          modelica_metatype tmpMeta7;
+          modelica_integer tmp8;
+          if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,0,16) == 0) goto tmp3_end;
+          tmpMeta6 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 11));
+          if (optionNone(tmpMeta6)) goto tmp3_end;
+          tmpMeta7 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta6), 1));
+          tmp8 = mmc_unbox_integer(tmpMeta7);
+          
+          _tearingSelect = tmp8  /* pattern as ty=enumeration(NEVER, AVOID, DEFAULT, PREFER, ALWAYS) */;
+          /* Pattern matching succeeded */
+          tmp1 = (modelica_integer)_tearingSelect;
+          goto tmp3_done;
+        }
+        case 1: {
+          
+          /* Pattern matching succeeded */
+          tmp1 = 3;
+          goto tmp3_done;
+        }
+        }
+        goto tmp3_end;
+        tmp3_end: ;
+      }
+      goto goto_2;
+      goto_2:;
+      MMC_THROW_INTERNAL();
+      goto tmp3_done;
+      tmp3_done:;
+    }
+  }
+  _tearingSelect = tmp1;
+  _return: OMC_LABEL_UNUSED
+  return _tearingSelect;
+}
+modelica_metatype boxptr_NFBackendExtension_VariableAttributes_getTearingSelect(threadData_t *threadData, modelica_metatype _attributes)
+{
+  modelica_integer _tearingSelect;
+  modelica_metatype out_tearingSelect;
+  _tearingSelect = omc_NFBackendExtension_VariableAttributes_getTearingSelect(threadData, _attributes);
+  out_tearingSelect = mmc_mk_icon(_tearingSelect);
+  return out_tearingSelect;
+}
+
+DLLDirection
 modelica_metatype omc_NFBackendExtension_VariableAttributes_setTearingSelect(threadData_t *threadData, modelica_metatype __omcQ_24in_5Fattributes, modelica_integer _tearingSelect_val, modelica_boolean _overwrite)
 {
   modelica_metatype _attributes = NULL;
@@ -2786,6 +2841,68 @@ modelica_metatype boxptr_NFBackendExtension_VariableAttributes_setTearingSelect(
   _attributes = omc_NFBackendExtension_VariableAttributes_setTearingSelect(threadData, __omcQ_24in_5Fattributes, tmp1, tmp2);
   /* skip box _attributes; NFBackendExtension.VariableAttributes */
   return _attributes;
+}
+
+DLLDirection
+modelica_integer omc_NFBackendExtension_VariableAttributes_getStateSelect(threadData_t *threadData, modelica_metatype _attributes)
+{
+  modelica_integer _stateSelect;
+  modelica_integer tmp1 = 0;
+  MMC_SO();
+  _tailrecursive: OMC_LABEL_UNUSED
+  // _stateSelect has no default value.
+  { /* match expression */
+    modelica_metatype tmp4_1;
+    tmp4_1 = _attributes;
+    {
+      volatile mmc_switch_type tmp4;
+      int tmp5;
+      tmp4 = 0;
+      for (; tmp4 < 2; tmp4++) {
+        switch (MMC_SWITCH_CAST(tmp4)) {
+        case 0: {
+          modelica_metatype tmpMeta6;
+          modelica_metatype tmpMeta7;
+          modelica_integer tmp8;
+          if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,0,16) == 0) goto tmp3_end;
+          tmpMeta6 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 10));
+          if (optionNone(tmpMeta6)) goto tmp3_end;
+          tmpMeta7 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta6), 1));
+          tmp8 = mmc_unbox_integer(tmpMeta7);
+          
+          _stateSelect = tmp8  /* pattern as ty=enumeration(NEVER, AVOID, DEFAULT, PREFER, ALWAYS) */;
+          /* Pattern matching succeeded */
+          tmp1 = (modelica_integer)_stateSelect;
+          goto tmp3_done;
+        }
+        case 1: {
+          
+          /* Pattern matching succeeded */
+          tmp1 = 3;
+          goto tmp3_done;
+        }
+        }
+        goto tmp3_end;
+        tmp3_end: ;
+      }
+      goto goto_2;
+      goto_2:;
+      MMC_THROW_INTERNAL();
+      goto tmp3_done;
+      tmp3_done:;
+    }
+  }
+  _stateSelect = tmp1;
+  _return: OMC_LABEL_UNUSED
+  return _stateSelect;
+}
+modelica_metatype boxptr_NFBackendExtension_VariableAttributes_getStateSelect(threadData_t *threadData, modelica_metatype _attributes)
+{
+  modelica_integer _stateSelect;
+  modelica_metatype out_stateSelect;
+  _stateSelect = omc_NFBackendExtension_VariableAttributes_getStateSelect(threadData, _attributes);
+  out_stateSelect = mmc_mk_icon(_stateSelect);
+  return out_stateSelect;
 }
 
 DLLDirection
@@ -3030,68 +3147,6 @@ modelica_metatype boxptr_NFBackendExtension_VariableAttributes_setMin(threadData
   _attributes = omc_NFBackendExtension_VariableAttributes_setMin(threadData, __omcQ_24in_5Fattributes, _min_val, tmp1);
   /* skip box _attributes; NFBackendExtension.VariableAttributes */
   return _attributes;
-}
-
-DLLDirection
-modelica_integer omc_NFBackendExtension_VariableAttributes_getStateSelect(threadData_t *threadData, modelica_metatype _attributes)
-{
-  modelica_integer _stateSelect;
-  modelica_integer tmp1 = 0;
-  MMC_SO();
-  _tailrecursive: OMC_LABEL_UNUSED
-  // _stateSelect has no default value.
-  { /* match expression */
-    modelica_metatype tmp4_1;
-    tmp4_1 = _attributes;
-    {
-      volatile mmc_switch_type tmp4;
-      int tmp5;
-      tmp4 = 0;
-      for (; tmp4 < 2; tmp4++) {
-        switch (MMC_SWITCH_CAST(tmp4)) {
-        case 0: {
-          modelica_metatype tmpMeta6;
-          modelica_metatype tmpMeta7;
-          modelica_integer tmp8;
-          if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,0,16) == 0) goto tmp3_end;
-          tmpMeta6 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 10));
-          if (optionNone(tmpMeta6)) goto tmp3_end;
-          tmpMeta7 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta6), 1));
-          tmp8 = mmc_unbox_integer(tmpMeta7);
-          
-          _stateSelect = tmp8  /* pattern as ty=enumeration(NEVER, AVOID, DEFAULT, PREFER, ALWAYS) */;
-          /* Pattern matching succeeded */
-          tmp1 = (modelica_integer)_stateSelect;
-          goto tmp3_done;
-        }
-        case 1: {
-          
-          /* Pattern matching succeeded */
-          tmp1 = 3;
-          goto tmp3_done;
-        }
-        }
-        goto tmp3_end;
-        tmp3_end: ;
-      }
-      goto goto_2;
-      goto_2:;
-      MMC_THROW_INTERNAL();
-      goto tmp3_done;
-      tmp3_done:;
-    }
-  }
-  _stateSelect = tmp1;
-  _return: OMC_LABEL_UNUSED
-  return _stateSelect;
-}
-modelica_metatype boxptr_NFBackendExtension_VariableAttributes_getStateSelect(threadData_t *threadData, modelica_metatype _attributes)
-{
-  modelica_integer _stateSelect;
-  modelica_metatype out_stateSelect;
-  _stateSelect = omc_NFBackendExtension_VariableAttributes_getStateSelect(threadData, _attributes);
-  out_stateSelect = mmc_mk_icon(_stateSelect);
-  return out_stateSelect;
 }
 
 DLLDirection

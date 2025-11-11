@@ -122,11 +122,11 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_NBPartition_Partition_categorize,2,0) {
 
 
 DLLDirection
-modelica_boolean omc_NBPartition_Partition_isAlgebraicContinuous(threadData_t *threadData, modelica_metatype _part, modelica_boolean *out_con);
+modelica_boolean omc_NBPartition_Partition_isODEorDAE(threadData_t *threadData, modelica_metatype _part);
 DLLDirection
-modelica_metatype boxptr_NBPartition_Partition_isAlgebraicContinuous(threadData_t *threadData, modelica_metatype _part, modelica_metatype *out_con);
-static const MMC_DEFSTRUCTLIT(boxvar_lit_NBPartition_Partition_isAlgebraicContinuous,2,0) {(void*) boxptr_NBPartition_Partition_isAlgebraicContinuous,0}};
-#define boxvar_NBPartition_Partition_isAlgebraicContinuous MMC_REFSTRUCTLIT(boxvar_lit_NBPartition_Partition_isAlgebraicContinuous)
+modelica_metatype boxptr_NBPartition_Partition_isODEorDAE(threadData_t *threadData, modelica_metatype _part);
+static const MMC_DEFSTRUCTLIT(boxvar_lit_NBPartition_Partition_isODEorDAE,2,0) {(void*) boxptr_NBPartition_Partition_isODEorDAE,0}};
+#define boxvar_NBPartition_Partition_isODEorDAE MMC_REFSTRUCTLIT(boxvar_lit_NBPartition_Partition_isODEorDAE)
 
 
 DLLDirection

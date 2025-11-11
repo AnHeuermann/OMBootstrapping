@@ -183,14 +183,6 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_NFStatement_makeIf,2,0) {(void*) boxptr
 
 
 DLLDirection
-modelica_boolean omc_NFStatement_isWhen(threadData_t *threadData, modelica_metatype _stmt);
-DLLDirection
-modelica_metatype boxptr_NFStatement_isWhen(threadData_t *threadData, modelica_metatype _stmt);
-static const MMC_DEFSTRUCTLIT(boxvar_lit_NFStatement_isWhen,2,0) {(void*) boxptr_NFStatement_isWhen,0}};
-#define boxvar_NFStatement_isWhen MMC_REFSTRUCTLIT(boxvar_lit_NFStatement_isWhen)
-
-
-DLLDirection
 modelica_boolean omc_NFStatement_isAssignment(threadData_t *threadData, modelica_metatype _stmt);
 DLLDirection
 modelica_metatype boxptr_NFStatement_isAssignment(threadData_t *threadData, modelica_metatype _stmt);

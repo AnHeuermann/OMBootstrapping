@@ -135,10 +135,10 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT50,2,7) {&DAE_Type_T__CLOCK__desc,M
 #define _OMC_LIT51_data "  - createReturnExp failed for "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT51,31,_OMC_LIT51_data);
 #define _OMC_LIT51 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT51)
-#define _OMC_LIT52_data "/home/adrpo33/OpenModelica/OMCompiler/Compiler/BackEnd/CommonSubExpression.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT52,77,_OMC_LIT52_data);
+#define _OMC_LIT52_data "/OpenModelica/OMCompiler/Compiler/BackEnd/CommonSubExpression.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT52,64,_OMC_LIT52_data);
 #define _OMC_LIT52 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT52)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT53_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT53_6,1.762868549e9);
 #define _OMC_LIT53_6 MMC_REFREALLIT(_OMC_LIT_STRUCT53_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT53,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT52,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1486)),MMC_IMMEDIATE(MMC_TAGFIXNUM(7)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1486)),MMC_IMMEDIATE(MMC_TAGFIXNUM(114)),_OMC_LIT53_6}};
 #define _OMC_LIT53 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT53)
@@ -341,7 +341,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT122,37,_OMC_LIT122_data);
 #define _OMC_LIT123_data "addConstantCseVarsToGlobalKnownVarHT failed. Reached else case that should not be reachable while handling CSE expression:\n"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT123,123,_OMC_LIT123_data);
 #define _OMC_LIT123 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT123)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT124_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT124_6,1.762868549e9);
 #define _OMC_LIT124_6 MMC_REFREALLIT(_OMC_LIT_STRUCT124_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT124,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT52,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(696)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(696)),MMC_IMMEDIATE(MMC_TAGFIXNUM(215)),_OMC_LIT124_6}};
 #define _OMC_LIT124 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT124)
@@ -2031,7 +2031,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CommonSubExpression_shortenPaths
           /* Pattern matching succeeded */
           _numVars = omc_BackendVariable_varsSize(threadData, _allVars);
 
-          omc_List_filter1OnTrueSync(threadData, omc_List_map(threadData, arrayList(_mTIn), boxvar_listLength), boxvar_intEq, mmc_mk_integer(((modelica_integer) 2)), omc_List_intRange(threadData, _numVars) ,&_pathVarIdcs);
+          omc_List_filter1OnTrueSync(threadData, omc_List_mapArray(threadData, _mTIn, boxvar_listLength), boxvar_intEq, mmc_mk_integer(((modelica_integer) 2)), omc_List_intRange(threadData, _numVars) ,&_pathVarIdcs);
 
           _pathVars = omc_BackendVariable_listVar1(threadData, omc_List_map1(threadData, _pathVarIdcs, boxvar_BackendVariable_getVarAtIndexFirst, _allVars));
 
@@ -2214,7 +2214,6 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CommonSubExpression_commonSubExp
   modelica_metatype _varIdcs = NULL;
   modelica_metatype _lengthLst = NULL;
   modelica_metatype _range = NULL;
-  modelica_metatype _arrLst = NULL;
   modelica_metatype _partitions = NULL;
   modelica_metatype _vars = NULL;
   modelica_metatype _linPathVars = NULL;
@@ -2238,7 +2237,6 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CommonSubExpression_commonSubExp
   // _varIdcs has no default value.
   // _lengthLst has no default value.
   // _range has no default value.
-  // _arrLst has no default value.
   // _partitions has no default value.
   // _vars has no default value.
   // _linPathVars has no default value.
@@ -2278,9 +2276,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_CommonSubExpression_commonSubExp
           /* Pattern matching succeeded */
           _range = omc_List_intRange(threadData, arrayLength(_mIn));
 
-          _arrLst = arrayList(_mIn);
-
-          _lengthLst = omc_List_map(threadData, _arrLst, boxvar_listLength);
+          _lengthLst = omc_List_mapArray(threadData, _mIn, boxvar_listLength);
 
           omc_List_filter1OnTrueSync(threadData, _lengthLst, boxvar_intEq, mmc_mk_integer(((modelica_integer) 2)), _range ,&_eqIdcs);
 

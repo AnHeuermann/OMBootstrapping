@@ -68,10 +68,10 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT26,1,7) {&DAE_Dimension_DIM__UNKNOW
 #define _OMC_LIT27_data "NFDimension.fromRange got non-range expression: "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT27,48,_OMC_LIT27_data);
 #define _OMC_LIT27 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT27)
-#define _OMC_LIT28_data "/home/adrpo33/OpenModelica/OMCompiler/Compiler/NFFrontEnd/NFDimension.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT28,72,_OMC_LIT28_data);
+#define _OMC_LIT28_data "/OpenModelica/OMCompiler/Compiler/NFFrontEnd/NFDimension.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT28,59,_OMC_LIT28_data);
 #define _OMC_LIT28 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT28)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT29_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT29_6,1.76286855e9);
 #define _OMC_LIT29_6 MMC_REFREALLIT(_OMC_LIT_STRUCT29_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT29,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT28,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(161)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(161)),MMC_IMMEDIATE(MMC_TAGFIXNUM(125)),_OMC_LIT29_6}};
 #define _OMC_LIT29 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT29)
@@ -80,7 +80,7 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT30,1,6) {&NFDimension_BOOLEAN__desc
 #define _OMC_LIT31_data "NFDimension.fromExp got invalid typename"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT31,40,_OMC_LIT31_data);
 #define _OMC_LIT31 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT31)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT32_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT32_6,1.76286855e9);
 #define _OMC_LIT32_6 MMC_REFREALLIT(_OMC_LIT_STRUCT32_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT32,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT28,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(114)),MMC_IMMEDIATE(MMC_TAGFIXNUM(17)),MMC_IMMEDIATE(MMC_TAGFIXNUM(114)),MMC_IMMEDIATE(MMC_TAGFIXNUM(98)),_OMC_LIT32_6}};
 #define _OMC_LIT32 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT32)
@@ -1119,6 +1119,35 @@ modelica_metatype boxptr_NFDimension_toStringList(threadData_t *threadData, mode
   _str = omc_NFDimension_toStringList(threadData, _dims, tmp1);
   /* skip box _str; String */
   return _str;
+}
+
+DLLDirection
+modelica_integer omc_NFDimension_hashList(threadData_t *threadData, modelica_metatype _dims)
+{
+  modelica_integer _hash;
+  modelica_metatype tmpMeta1;
+  modelica_metatype tmpMeta2;
+  MMC_SO();
+  _tailrecursive: OMC_LABEL_UNUSED
+  _hash = ((modelica_integer) 5381);
+  {
+    modelica_metatype _dim;
+    for (tmpMeta1 = _dims; !listEmpty(tmpMeta1); tmpMeta1=MMC_CDR(tmpMeta1))
+    {
+      _dim = MMC_CAR(tmpMeta1);
+      _hash = stringHashDjb2Continue(omc_NFDimension_toString(threadData, _dim), _hash);
+    }
+  }
+  _return: OMC_LABEL_UNUSED
+  return _hash;
+}
+modelica_metatype boxptr_NFDimension_hashList(threadData_t *threadData, modelica_metatype _dims)
+{
+  modelica_integer _hash;
+  modelica_metatype out_hash;
+  _hash = omc_NFDimension_hashList(threadData, _dims);
+  out_hash = mmc_mk_icon(_hash);
+  return out_hash;
 }
 
 DLLDirection

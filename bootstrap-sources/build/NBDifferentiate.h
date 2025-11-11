@@ -54,8 +54,6 @@ extern struct record_description NBEquation_WhenEquationBody_WHEN__EQUATION__BOD
 
 extern struct record_description NBEquation_WhenStatement_ASSIGN__desc;
 
-extern struct record_description NBSlice_SLICE__desc;
-
 extern struct record_description NBStrongComponent_ALGEBRAIC__LOOP__desc;
 
 extern struct record_description NBStrongComponent_GENERIC__COMPONENT__desc;

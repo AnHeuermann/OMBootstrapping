@@ -633,10 +633,10 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT224,70,_OMC_LIT224_data);
 #define _OMC_LIT225_data "Unknown tearing heuristic: "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT225,27,_OMC_LIT225_data);
 #define _OMC_LIT225 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT225)
-#define _OMC_LIT226_data "/home/adrpo33/OpenModelica/OMCompiler/Compiler/BackEnd/Tearing.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT226,65,_OMC_LIT226_data);
+#define _OMC_LIT226_data "/OpenModelica/OMCompiler/Compiler/BackEnd/Tearing.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT226,52,_OMC_LIT226_data);
 #define _OMC_LIT226 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT226)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT227_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT227_6,1.762868549e9);
 #define _OMC_LIT227_6 MMC_REFREALLIT(_OMC_LIT_STRUCT227_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT227,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT226,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2635)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2635)),MMC_IMMEDIATE(MMC_TAGFIXNUM(88)),_OMC_LIT227_6}};
 #define _OMC_LIT227 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT227)
@@ -911,28 +911,28 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT322,65,_OMC_LIT322_data);
 #define _OMC_LIT323_data "function getTearingSetfromAssign failed"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT323,39,_OMC_LIT323_data);
 #define _OMC_LIT323 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT323)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT324_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT324_6,1.762868549e9);
 #define _OMC_LIT324_6 MMC_REFREALLIT(_OMC_LIT_STRUCT324_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT324,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT226,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1957)),MMC_IMMEDIATE(MMC_TAGFIXNUM(5)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1957)),MMC_IMMEDIATE(MMC_TAGFIXNUM(84)),_OMC_LIT324_6}};
 #define _OMC_LIT324 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT324)
 #define _OMC_LIT325_data "function pathFound failed"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT325,25,_OMC_LIT325_data);
 #define _OMC_LIT325 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT325)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT326_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT326_6,1.762868549e9);
 #define _OMC_LIT326_6 MMC_REFREALLIT(_OMC_LIT_STRUCT326_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT326,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT226,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1931)),MMC_IMMEDIATE(MMC_TAGFIXNUM(6)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1931)),MMC_IMMEDIATE(MMC_TAGFIXNUM(71)),_OMC_LIT326_6}};
 #define _OMC_LIT326 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT326)
 #define _OMC_LIT327_data "function matchDiscreteVars failed"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT327,33,_OMC_LIT327_data);
 #define _OMC_LIT327 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT327)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT328_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT328_6,1.762868549e9);
 #define _OMC_LIT328_6 MMC_REFREALLIT(_OMC_LIT_STRUCT328_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT328,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT226,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1877)),MMC_IMMEDIATE(MMC_TAGFIXNUM(5)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1877)),MMC_IMMEDIATE(MMC_TAGFIXNUM(78)),_OMC_LIT328_6}};
 #define _OMC_LIT328 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT328)
 #define _OMC_LIT329_data "function minimalTearing failed"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT329,30,_OMC_LIT329_data);
 #define _OMC_LIT329 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT329)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT330_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT330_6,1.762868549e9);
 #define _OMC_LIT330_6 MMC_REFREALLIT(_OMC_LIT_STRUCT330_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT330,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT226,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1854)),MMC_IMMEDIATE(MMC_TAGFIXNUM(3)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1854)),MMC_IMMEDIATE(MMC_TAGFIXNUM(73)),_OMC_LIT330_6}};
 #define _OMC_LIT330 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT330)
@@ -947,7 +947,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT333,15,_OMC_LIT333_data);
 #define _OMC_LIT334_data "SOLVABILITY_PARAMETER is not handled yet. Requires revision."
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT334,60,_OMC_LIT334_data);
 #define _OMC_LIT334 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT334)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT335_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT335_6,1.762868549e9);
 #define _OMC_LIT335_6 MMC_REFREALLIT(_OMC_LIT_STRUCT335_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT335,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT226,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1490)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1490)),MMC_IMMEDIATE(MMC_TAGFIXNUM(109)),_OMC_LIT335_6}};
 #define _OMC_LIT335 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT335)
@@ -1321,7 +1321,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT472,43,_OMC_LIT472_data);
 #define _OMC_LIT473_data "\"."
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT473,2,_OMC_LIT473_data);
 #define _OMC_LIT473 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT473)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT474_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT474_6,1.762868549e9);
 #define _OMC_LIT474_6 MMC_REFREALLIT(_OMC_LIT_STRUCT474_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT474,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT226,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(148)),MMC_IMMEDIATE(MMC_TAGFIXNUM(7)),MMC_IMMEDIATE(MMC_TAGFIXNUM(148)),MMC_IMMEDIATE(MMC_TAGFIXNUM(113)),_OMC_LIT474_6}};
 #define _OMC_LIT474 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT474)
@@ -1355,7 +1355,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT484,2,_OMC_LIT484_data);
 #define _OMC_LIT485_data "Tearing.tearingSystem failed"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT485,28,_OMC_LIT485_data);
 #define _OMC_LIT485 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT485)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT486_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT486_6,1.762868549e9);
 #define _OMC_LIT486_6 MMC_REFREALLIT(_OMC_LIT_STRUCT486_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT486,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT226,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(127)),MMC_IMMEDIATE(MMC_TAGFIXNUM(5)),MMC_IMMEDIATE(MMC_TAGFIXNUM(127)),MMC_IMMEDIATE(MMC_TAGFIXNUM(72)),_OMC_LIT486_6}};
 #define _OMC_LIT486 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT486)
@@ -2201,7 +2201,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_userDefinedTearing(threa
 
     omc_BackendDump_dumpAdjacencyMatrix(threadData, _mapEqnIncRow);
 
-    tmpMeta20 = stringAppend(_OMC_LIT37,stringDelimitList(omc_List_map(threadData, arrayList(_mapIncRowEqn), boxvar_intString), _OMC_LIT8));
+    tmpMeta20 = stringAppend(_OMC_LIT37,stringDelimitList(omc_List_mapArray(threadData, _mapIncRowEqn, boxvar_intString), _OMC_LIT8));
     tmpMeta21 = stringAppend(tmpMeta20,_OMC_LIT38);
     fputs(MMC_STRINGDATA(tmpMeta21),stdout);
 
@@ -2227,11 +2227,11 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_userDefinedTearing(threa
 
   if(omc_Flags_isSet(threadData, _OMC_LIT4))
   {
-    tmpMeta27 = stringAppend(_OMC_LIT41,stringDelimitList(omc_List_map(threadData, arrayList(_ass1), boxvar_intString), _OMC_LIT8));
+    tmpMeta27 = stringAppend(_OMC_LIT41,stringDelimitList(omc_List_mapArray(threadData, _ass1, boxvar_intString), _OMC_LIT8));
     tmpMeta28 = stringAppend(tmpMeta27,_OMC_LIT11);
     fputs(MMC_STRINGDATA(tmpMeta28),stdout);
 
-    tmpMeta29 = stringAppend(_OMC_LIT42,stringDelimitList(omc_List_map(threadData, arrayList(_ass2), boxvar_intString), _OMC_LIT8));
+    tmpMeta29 = stringAppend(_OMC_LIT42,stringDelimitList(omc_List_mapArray(threadData, _ass2, boxvar_intString), _OMC_LIT8));
     tmpMeta30 = stringAppend(tmpMeta29,_OMC_LIT11);
     fputs(MMC_STRINGDATA(tmpMeta30),stdout);
   }
@@ -2363,11 +2363,11 @@ PROTECTED_FUNCTION_STATIC void omc_Tearing_dumpMatchingList(threadData_t *thread
       tmpMeta7 = stringAppend(tmpMeta6,_OMC_LIT48);
       fputs(MMC_STRINGDATA(tmpMeta7),stdout);
 
-      tmpMeta8 = stringAppend(_OMC_LIT49,stringDelimitList(omc_List_map(threadData, arrayList(_ass1), boxvar_intString), _OMC_LIT8));
+      tmpMeta8 = stringAppend(_OMC_LIT49,stringDelimitList(omc_List_mapArray(threadData, _ass1, boxvar_intString), _OMC_LIT8));
       tmpMeta9 = stringAppend(tmpMeta8,_OMC_LIT11);
       fputs(MMC_STRINGDATA(tmpMeta9),stdout);
 
-      tmpMeta10 = stringAppend(_OMC_LIT42,stringDelimitList(omc_List_map(threadData, arrayList(_ass2), boxvar_intString), _OMC_LIT8));
+      tmpMeta10 = stringAppend(_OMC_LIT42,stringDelimitList(omc_List_mapArray(threadData, _ass2, boxvar_intString), _OMC_LIT8));
       tmpMeta11 = stringAppend(tmpMeta10,_OMC_LIT11);
       fputs(MMC_STRINGDATA(tmpMeta11),stdout);
 
@@ -2786,7 +2786,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_totalTearing(threadData_
 
     omc_BackendDump_dumpAdjacencyMatrix(threadData, _mapEqnIncRow);
 
-    tmpMeta7 = stringAppend(_OMC_LIT37,stringDelimitList(omc_List_map(threadData, arrayList(_mapIncRowEqn), boxvar_intString), _OMC_LIT8));
+    tmpMeta7 = stringAppend(_OMC_LIT37,stringDelimitList(omc_List_mapArray(threadData, _mapIncRowEqn, boxvar_intString), _OMC_LIT8));
     tmpMeta8 = stringAppend(tmpMeta7,_OMC_LIT38);
     fputs(MMC_STRINGDATA(tmpMeta8),stdout);
 
@@ -3235,8 +3235,6 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_getUnassigned(threadData
 PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_recursiveTearingReplace(threadData_t *threadData, modelica_metatype _inExp, modelica_metatype _inSourceExp, modelica_metatype _inTargetExp, modelica_boolean _isDer)
 {
   modelica_metatype _res = NULL;
-  modelica_metatype tmpMeta1;
-  modelica_metatype tmpMeta2;
   MMC_SO();
   _tailrecursive: OMC_LABEL_UNUSED
   // _res has no default value.
@@ -3246,10 +3244,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_recursiveTearingReplace(
 
     _res = omc_Expression_expDer(threadData, _res);
 
-    /* Pattern-matching assignment */
-    tmpMeta1 = omc_Expression_replaceExp(threadData, _inExp, _res, _inTargetExp);
-    tmpMeta2 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta1), 1));
-    _res = tmpMeta2;
+    _res = omc_Expression_replaceExp(threadData, _inExp, _res, _inTargetExp, NULL);
   }
   else
   {
@@ -4573,7 +4568,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_getMostNonlinearEquation(
     modelica_metatype _i_loopVar = 0;
     modelica_metatype _i;
     _i_loopVar = _inList;
-    __omcQ_24tmpVar17 = ((modelica_integer) -4611686018427387903); /* defaultValue */
+    __omcQ_24tmpVar17 = ((modelica_integer) -1073741823); /* defaultValue */
     while(1) {
       tmp2 = 1;
       if (!listEmpty(_i_loopVar)) {
@@ -4644,7 +4639,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_maxListInt(threadData_t 
     modelica_metatype _i_loopVar = 0;
     modelica_metatype _i;
     _i_loopVar = _inList;
-    __omcQ_24tmpVar19 = ((modelica_integer) -4611686018427387903); /* defaultValue */
+    __omcQ_24tmpVar19 = ((modelica_integer) -1073741823); /* defaultValue */
     while(1) {
       tmp3 = 1;
       if (!listEmpty(_i_loopVar)) {
@@ -5923,7 +5918,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_getOneVarWithMostPoints(
     modelica_metatype _i_loopVar = 0;
     modelica_metatype _i;
     _i_loopVar = _inPointsLst;
-    __omcQ_24tmpVar23 = ((modelica_integer) -4611686018427387903); /* defaultValue */
+    __omcQ_24tmpVar23 = ((modelica_integer) -1073741823); /* defaultValue */
     while(1) {
       tmp3 = 1;
       if (!listEmpty(_i_loopVar)) {
@@ -7879,11 +7874,11 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing2(threadDa
           {
             fputs(MMC_STRINGDATA(_OMC_LIT251),stdout);
 
-            tmpMeta10 = stringAppend(_OMC_LIT252,stringDelimitList(omc_List_map(threadData, arrayList(_ass1In), boxvar_intString), _OMC_LIT8));
+            tmpMeta10 = stringAppend(_OMC_LIT252,stringDelimitList(omc_List_mapArray(threadData, _ass1In, boxvar_intString), _OMC_LIT8));
             tmpMeta11 = stringAppend(tmpMeta10,_OMC_LIT11);
             fputs(MMC_STRINGDATA(tmpMeta11),stdout);
 
-            tmpMeta12 = stringAppend(_OMC_LIT253,stringDelimitList(omc_List_map(threadData, arrayList(_ass2In), boxvar_intString), _OMC_LIT8));
+            tmpMeta12 = stringAppend(_OMC_LIT253,stringDelimitList(omc_List_mapArray(threadData, _ass2In, boxvar_intString), _OMC_LIT8));
             tmpMeta13 = stringAppend(tmpMeta12,_OMC_LIT11);
             fputs(MMC_STRINGDATA(tmpMeta13),stdout);
 
@@ -7993,11 +7988,11 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing2(threadDa
           {
             fputs(MMC_STRINGDATA(_OMC_LIT251),stdout);
 
-            tmpMeta26 = stringAppend(_OMC_LIT252,stringDelimitList(omc_List_map(threadData, arrayList(_ass1In), boxvar_intString), _OMC_LIT8));
+            tmpMeta26 = stringAppend(_OMC_LIT252,stringDelimitList(omc_List_mapArray(threadData, _ass1In, boxvar_intString), _OMC_LIT8));
             tmpMeta27 = stringAppend(tmpMeta26,_OMC_LIT11);
             fputs(MMC_STRINGDATA(tmpMeta27),stdout);
 
-            tmpMeta28 = stringAppend(_OMC_LIT253,stringDelimitList(omc_List_map(threadData, arrayList(_ass2In), boxvar_intString), _OMC_LIT8));
+            tmpMeta28 = stringAppend(_OMC_LIT253,stringDelimitList(omc_List_mapArray(threadData, _ass2In, boxvar_intString), _OMC_LIT8));
             tmpMeta29 = stringAppend(tmpMeta28,_OMC_LIT11);
             fputs(MMC_STRINGDATA(tmpMeta29),stdout);
 
@@ -8962,7 +8957,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
 
     omc_BackendDump_dumpAdjacencyMatrixTEnhanced(threadData, _meT);
 
-    tmpMeta13 = stringAppend(_OMC_LIT299,stringDelimitList(omc_List_map(threadData, arrayList(_eqnNonlinPoints), boxvar_intString), _OMC_LIT8));
+    tmpMeta13 = stringAppend(_OMC_LIT299,stringDelimitList(omc_List_mapArray(threadData, _eqnNonlinPoints, boxvar_intString), _OMC_LIT8));
     tmpMeta14 = stringAppend(tmpMeta13,_OMC_LIT38);
     fputs(MMC_STRINGDATA(tmpMeta14),stdout);
   }
@@ -8973,7 +8968,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
 
     omc_BackendDump_dumpAdjacencyMatrix(threadData, _mapEqnIncRow);
 
-    tmpMeta15 = stringAppend(_OMC_LIT37,stringDelimitList(omc_List_map(threadData, arrayList(_mapIncRowEqn), boxvar_intString), _OMC_LIT8));
+    tmpMeta15 = stringAppend(_OMC_LIT37,stringDelimitList(omc_List_mapArray(threadData, _mapIncRowEqn, boxvar_intString), _OMC_LIT8));
     tmpMeta16 = stringAppend(tmpMeta15,_OMC_LIT38);
     fputs(MMC_STRINGDATA(tmpMeta16),stdout);
 
@@ -9075,7 +9070,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
 
       omc_BackendDump_dumpAdjacencyMatrixTEnhanced(threadData, _meT);
 
-      tmpMeta25 = stringAppend(_OMC_LIT299,stringDelimitList(omc_List_map(threadData, arrayList(_eqnNonlinPoints), boxvar_intString), _OMC_LIT8));
+      tmpMeta25 = stringAppend(_OMC_LIT299,stringDelimitList(omc_List_mapArray(threadData, _eqnNonlinPoints, boxvar_intString), _OMC_LIT8));
       tmpMeta26 = stringAppend(tmpMeta25,_OMC_LIT38);
       fputs(MMC_STRINGDATA(tmpMeta26),stdout);
     }
@@ -9086,7 +9081,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
 
       omc_BackendDump_dumpAdjacencyMatrix(threadData, _mapEqnIncRow);
 
-      tmpMeta27 = stringAppend(_OMC_LIT37,stringDelimitList(omc_List_map(threadData, arrayList(_mapIncRowEqn), boxvar_intString), _OMC_LIT8));
+      tmpMeta27 = stringAppend(_OMC_LIT37,stringDelimitList(omc_List_mapArray(threadData, _mapIncRowEqn, boxvar_intString), _OMC_LIT8));
       tmpMeta28 = stringAppend(tmpMeta27,_OMC_LIT38);
       fputs(MMC_STRINGDATA(tmpMeta28),stdout);
 
@@ -10287,11 +10282,11 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_tearingBFS2(threadData_t
 
           if(omc_Flags_isSet(threadData, _OMC_LIT4))
           {
-            tmpMeta17 = stringAppend(_OMC_LIT49,stringDelimitList(omc_List_map(threadData, arrayList(_ass1), boxvar_intString), _OMC_LIT8));
+            tmpMeta17 = stringAppend(_OMC_LIT49,stringDelimitList(omc_List_mapArray(threadData, _ass1, boxvar_intString), _OMC_LIT8));
             tmpMeta18 = stringAppend(tmpMeta17,_OMC_LIT11);
             fputs(MMC_STRINGDATA(tmpMeta18),stdout);
 
-            tmpMeta19 = stringAppend(_OMC_LIT42,stringDelimitList(omc_List_map(threadData, arrayList(_ass2), boxvar_intString), _OMC_LIT8));
+            tmpMeta19 = stringAppend(_OMC_LIT42,stringDelimitList(omc_List_mapArray(threadData, _ass2, boxvar_intString), _OMC_LIT8));
             tmpMeta20 = stringAppend(tmpMeta19,_OMC_LIT11);
             fputs(MMC_STRINGDATA(tmpMeta20),stdout);
           }
@@ -11569,7 +11564,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_omcTearingSelectTearingVa
 
           if(omc_Flags_isSet(threadData, _OMC_LIT4))
           {
-            tmpMeta11 = stringAppend(_OMC_LIT371,stringDelimitList(omc_List_map(threadData, arrayList(_points), boxvar_intString), _OMC_LIT8));
+            tmpMeta11 = stringAppend(_OMC_LIT371,stringDelimitList(omc_List_mapArray(threadData, _points, boxvar_intString), _OMC_LIT8));
             tmpMeta12 = stringAppend(tmpMeta11,_OMC_LIT38);
             fputs(MMC_STRINGDATA(tmpMeta12),stdout);
           }
@@ -11581,7 +11576,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_omcTearingSelectTearingVa
 
           if(omc_Flags_isSet(threadData, _OMC_LIT4))
           {
-            tmpMeta14 = stringAppend(_OMC_LIT372,stringDelimitList(omc_List_map(threadData, arrayList(_points), boxvar_intString), _OMC_LIT8));
+            tmpMeta14 = stringAppend(_OMC_LIT372,stringDelimitList(omc_List_mapArray(threadData, _points, boxvar_intString), _OMC_LIT8));
             tmpMeta15 = stringAppend(tmpMeta14,_OMC_LIT38);
             fputs(MMC_STRINGDATA(tmpMeta15),stdout);
           }
@@ -11590,7 +11585,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_omcTearingSelectTearingVa
 
           if(omc_Flags_isSet(threadData, _OMC_LIT4))
           {
-            tmpMeta16 = stringAppend(_OMC_LIT373,stringDelimitList(omc_List_map(threadData, arrayList(_points), boxvar_intString), _OMC_LIT8));
+            tmpMeta16 = stringAppend(_OMC_LIT373,stringDelimitList(omc_List_mapArray(threadData, _points, boxvar_intString), _OMC_LIT8));
             tmpMeta17 = stringAppend(tmpMeta16,_OMC_LIT38);
             fputs(MMC_STRINGDATA(tmpMeta17),stdout);
           }
@@ -12664,7 +12659,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing(threadData_t 
 
     omc_BackendDump_dumpAdjacencyMatrix(threadData, _mapEqnIncRow);
 
-    tmpMeta2 = stringAppend(_OMC_LIT37,stringDelimitList(omc_List_map(threadData, arrayList(_mapIncRowEqn), boxvar_intString), _OMC_LIT8));
+    tmpMeta2 = stringAppend(_OMC_LIT37,stringDelimitList(omc_List_mapArray(threadData, _mapIncRowEqn, boxvar_intString), _OMC_LIT8));
     tmpMeta3 = stringAppend(tmpMeta2,_OMC_LIT38);
     fputs(MMC_STRINGDATA(tmpMeta3),stdout);
   }
@@ -12704,11 +12699,11 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing(threadData_t 
 
   if((omc_Flags_isSet(threadData, _OMC_LIT31) || omc_Flags_isSet(threadData, _OMC_LIT4)))
   {
-    tmpMeta6 = stringAppend(_OMC_LIT394,stringDelimitList(omc_List_map(threadData, arrayList(_ass1), boxvar_intString), _OMC_LIT8));
+    tmpMeta6 = stringAppend(_OMC_LIT394,stringDelimitList(omc_List_mapArray(threadData, _ass1, boxvar_intString), _OMC_LIT8));
     tmpMeta7 = stringAppend(tmpMeta6,_OMC_LIT11);
     fputs(MMC_STRINGDATA(tmpMeta7),stdout);
 
-    tmpMeta8 = stringAppend(_OMC_LIT253,stringDelimitList(omc_List_map(threadData, arrayList(_ass2), boxvar_intString), _OMC_LIT8));
+    tmpMeta8 = stringAppend(_OMC_LIT253,stringDelimitList(omc_List_mapArray(threadData, _ass2, boxvar_intString), _OMC_LIT8));
     tmpMeta9 = stringAppend(tmpMeta8,_OMC_LIT11);
     tmpMeta10 = stringAppend(tmpMeta9,_OMC_LIT77);
     tmpMeta11 = stringAppend(tmpMeta10,_OMC_LIT38);

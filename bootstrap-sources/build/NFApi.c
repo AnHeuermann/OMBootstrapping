@@ -226,12 +226,12 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT76,9,_OMC_LIT76_data);
 #define _OMC_LIT77_data "NFApi.dumpJSONComponent got unknown component "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT77,46,_OMC_LIT77_data);
 #define _OMC_LIT77 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT77)
-#define _OMC_LIT78_data "/home/adrpo33/OpenModelica/OMCompiler/Compiler/Script/NFApi.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT78,62,_OMC_LIT78_data);
+#define _OMC_LIT78_data "/OpenModelica/OMCompiler/Compiler/Script/NFApi.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT78,49,_OMC_LIT78_data);
 #define _OMC_LIT78 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT78)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT79_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT79_6,1.76286855e9);
 #define _OMC_LIT79_6 MMC_REFREALLIT(_OMC_LIT_STRUCT79_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT79,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT78,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1358)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1359)),MMC_IMMEDIATE(MMC_TAGFIXNUM(45)),_OMC_LIT79_6}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT79,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT78,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1370)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1371)),MMC_IMMEDIATE(MMC_TAGFIXNUM(45)),_OMC_LIT79_6}};
 #define _OMC_LIT79 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT79)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT80,1,5) {&SCode_Mod_NOMOD__desc,}};
 #define _OMC_LIT80 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT80)
@@ -261,9 +261,9 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT90,2,1) {_OMC_LIT89,MMC_REFSTRUCTLI
 #define _OMC_LIT91_data "NFApi.buildInstanceTree got unknown class tree"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT91,46,_OMC_LIT91_data);
 #define _OMC_LIT91 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT91)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT92_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT92_6,1.76286855e9);
 #define _OMC_LIT92_6 MMC_REFREALLIT(_OMC_LIT_STRUCT92_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT92,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT78,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(927)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(927)),MMC_IMMEDIATE(MMC_TAGFIXNUM(92)),_OMC_LIT92_6}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT92,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT78,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(937)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(937)),MMC_IMMEDIATE(MMC_TAGFIXNUM(92)),_OMC_LIT92_6}};
 #define _OMC_LIT92 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT92)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT93,2,3) {&NFModifier_ModifierScope_COMPONENT__desc,_OMC_LIT5}};
 #define _OMC_LIT93 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT93)
@@ -2801,7 +2801,7 @@ modelica_metatype omc_NFApi_dumpJSONRedeclareType(threadData_t *threadData, mode
 
           _cls = omc_NFLookup_lookupName(threadData, _path, _scope, _context, 0 /* false */, NULL);
 
-          _json = omc_JSON_addPair(threadData, _OMC_LIT26, omc_NFApi_dumpJSONNodePath(threadData, _cls), _json);
+          _json = omc_JSON_addPair(threadData, _OMC_LIT26, omc_NFApi_dumpJSONNodePath(threadData, _cls, 0 /* false */), _json);
           goto tmp2_done;
         }
         case 1: {
@@ -4844,7 +4844,7 @@ modelica_metatype omc_NFApi_dumpJSONEnumType(threadData_t *threadData, modelica_
 
   _json = omc_JSON_makeNull(threadData);
 
-  _json = omc_JSON_addPair(threadData, _OMC_LIT14, omc_NFApi_dumpJSONNodePath(threadData, _node), _json);
+  _json = omc_JSON_addPair(threadData, _OMC_LIT14, omc_NFApi_dumpJSONNodePath(threadData, _node, 0 /* false */), _json);
 
   _json = omc_JSON_addPairNotNull(threadData, _OMC_LIT11, omc_NFApi_dumpJSONClassDims(threadData, _node, _def), _json);
 
@@ -4953,7 +4953,7 @@ modelica_metatype omc_NFApi_dumpJSONComponentType(threadData_t *threadData, mode
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,1,3) == 0) goto tmp3_end;
           
           /* Pattern matching succeeded */
-          tmpMeta1 = omc_NFApi_dumpJSONInstanceTree(threadData, _cls, _node, 1 /* true */, _isDeleted);
+          tmpMeta1 = omc_NFApi_dumpJSONInstanceTree(threadData, _cls, _node, 1 /* true */, _isDeleted, 0 /* false */);
           goto tmp3_done;
         }
         case 3: {
@@ -5274,7 +5274,7 @@ modelica_metatype omc_NFApi_dumpJSONExtends(threadData_t *threadData, modelica_m
   }
   else
   {
-    _json = omc_JSON_addPair(threadData, _OMC_LIT10, omc_NFApi_dumpJSONInstanceTree(threadData, _ext, _node, 0 /* false */, _isDeleted), _json);
+    _json = omc_JSON_addPair(threadData, _OMC_LIT10, omc_NFApi_dumpJSONInstanceTree(threadData, _ext, _node, 0 /* false */, _isDeleted, 1 /* true */), _json);
   }
   _return: OMC_LABEL_UNUSED
   return _json;
@@ -5455,19 +5455,28 @@ modelica_metatype omc_NFApi_dumpJSONNodeEnclosingPath(threadData_t *threadData, 
   modelica_metatype _json = NULL;
   MMC_SO();
   _tailrecursive: OMC_LABEL_UNUSED
-  _json = omc_NFApi_dumpJSONPath(threadData, omc_NFInstNode_InstNode_enclosingScopePath(threadData, _node, 1 /* true */));
+  _json = omc_NFApi_dumpJSONPath(threadData, omc_NFInstNode_InstNode_enclosingScopePath(threadData, _node, 1 /* true */, 0 /* false */));
   _return: OMC_LABEL_UNUSED
   return _json;
 }
 
 DLLDirection
-modelica_metatype omc_NFApi_dumpJSONNodePath(threadData_t *threadData, modelica_metatype _node)
+modelica_metatype omc_NFApi_dumpJSONNodePath(threadData_t *threadData, modelica_metatype _node, modelica_boolean _ignoreBaseClass)
 {
   modelica_metatype _json = NULL;
   MMC_SO();
   _tailrecursive: OMC_LABEL_UNUSED
-  _json = omc_NFApi_dumpJSONPath(threadData, omc_NFInstNode_InstNode_fullPath(threadData, _node, 1 /* true */));
+  _json = omc_NFApi_dumpJSONPath(threadData, omc_NFInstNode_InstNode_enclosingScopePath(threadData, _node, 0 /* false */, _ignoreBaseClass));
   _return: OMC_LABEL_UNUSED
+  return _json;
+}
+modelica_metatype boxptr_NFApi_dumpJSONNodePath(threadData_t *threadData, modelica_metatype _node, modelica_metatype _ignoreBaseClass)
+{
+  modelica_integer tmp1;
+  modelica_metatype _json = NULL;
+  tmp1 = mmc_unbox_integer(_ignoreBaseClass);
+  _json = omc_NFApi_dumpJSONNodePath(threadData, _node, tmp1);
+  /* skip box _json; JSON */
   return _json;
 }
 
@@ -5522,7 +5531,7 @@ modelica_metatype omc_NFApi_dumpJSONInstanceAnnotation(threadData_t *threadData,
 
   _def = omc_NFInstNode_InstNode_definition(threadData, _node);
 
-  _json = omc_JSON_addPair(threadData, _OMC_LIT14, omc_NFApi_dumpJSONNodePath(threadData, _node), _json);
+  _json = omc_JSON_addPair(threadData, _OMC_LIT14, omc_NFApi_dumpJSONNodePath(threadData, _node, 0 /* false */), _json);
 
   _json = omc_JSON_addPair(threadData, _OMC_LIT15, omc_JSON_makeString(threadData, omc_NFRestriction_toString(threadData, omc_NFInstNode_InstNode_restriction(threadData, _node))), _json);
 
@@ -5676,7 +5685,7 @@ modelica_metatype omc_NFApi_dumpJSONInstanceAnnotation(threadData_t *threadData,
 }
 
 DLLDirection
-modelica_metatype omc_NFApi_dumpJSONInstanceTree(threadData_t *threadData, modelica_metatype _tree, modelica_metatype _scope, modelica_boolean _root, modelica_boolean _isDeleted)
+modelica_metatype omc_NFApi_dumpJSONInstanceTree(threadData_t *threadData, modelica_metatype _tree, modelica_metatype _scope, modelica_boolean _root, modelica_boolean _isDeleted, modelica_boolean _isExtends)
 {
   modelica_metatype _json = NULL;
   modelica_metatype _node = NULL;
@@ -5711,7 +5720,7 @@ modelica_metatype omc_NFApi_dumpJSONInstanceTree(threadData_t *threadData, model
 
   _cmt = omc_SCodeUtil_getElementComment(threadData, _def);
 
-  _json = omc_JSON_addPair(threadData, _OMC_LIT14, omc_NFApi_dumpJSONNodePath(threadData, _node), _json);
+  _json = omc_JSON_addPair(threadData, _OMC_LIT14, omc_NFApi_dumpJSONNodePath(threadData, _node, (!_isExtends)), _json);
 
   _json = omc_JSON_addPairNotNull(threadData, _OMC_LIT11, omc_NFApi_dumpJSONClassDims(threadData, _node, _def), _json);
 
@@ -5736,14 +5745,16 @@ modelica_metatype omc_NFApi_dumpJSONInstanceTree(threadData_t *threadData, model
   _return: OMC_LABEL_UNUSED
   return _json;
 }
-modelica_metatype boxptr_NFApi_dumpJSONInstanceTree(threadData_t *threadData, modelica_metatype _tree, modelica_metatype _scope, modelica_metatype _root, modelica_metatype _isDeleted)
+modelica_metatype boxptr_NFApi_dumpJSONInstanceTree(threadData_t *threadData, modelica_metatype _tree, modelica_metatype _scope, modelica_metatype _root, modelica_metatype _isDeleted, modelica_metatype _isExtends)
 {
   modelica_integer tmp1;
   modelica_integer tmp2;
+  modelica_integer tmp3;
   modelica_metatype _json = NULL;
   tmp1 = mmc_unbox_integer(_root);
   tmp2 = mmc_unbox_integer(_isDeleted);
-  _json = omc_NFApi_dumpJSONInstanceTree(threadData, _tree, _scope, tmp1, tmp2);
+  tmp3 = mmc_unbox_integer(_isExtends);
+  _json = omc_NFApi_dumpJSONInstanceTree(threadData, _tree, _scope, tmp1, tmp2, tmp3);
   /* skip box _json; JSON */
   return _json;
 }
@@ -6227,7 +6238,6 @@ modelica_metatype omc_NFApi_getModelInstanceAnnotation(threadData_t *threadData,
   modelica_metatype _cls_node = NULL;
   modelica_integer _context;
   modelica_metatype _json = NULL;
-  modelica_metatype tmpMeta1;
   MMC_SO();
   _tailrecursive: OMC_LABEL_UNUSED
   // _res has no default value.
@@ -6235,22 +6245,63 @@ modelica_metatype omc_NFApi_getModelInstanceAnnotation(threadData_t *threadData,
   // _cls_node has no default value.
   // _context has no default value.
   // _json has no default value.
-  _context = omc_NFInstContext_set(threadData, ((modelica_integer) 1), ((modelica_integer) 8));
+  { /* matchcontinue expression */
+    {
+      volatile mmc_switch_type tmp3;
+      int tmp4;
+      tmp3 = 0;
+      MMC_TRY_INTERNAL(mmc_jumper)
+      tmp2_top:
+      threadData->mmc_jumper = &new_mmc_jumper;
+      for (; tmp3 < 2; tmp3++) {
+        switch (MMC_SWITCH_CAST(tmp3)) {
+        case 0: {
+          modelica_metatype tmpMeta5;
+          /* Pattern matching succeeded */
+          _context = omc_NFInstContext_set(threadData, ((modelica_integer) 1), ((modelica_integer) 8));
 
-  _context = omc_NFInstContext_set(threadData, _context, ((modelica_integer) 2));
+          _context = omc_NFInstContext_set(threadData, _context, ((modelica_integer) 2));
 
-  omc_NFApi_mkTop(threadData, omc_SymbolTable_getAbsyn(threadData), omc_AbsynUtil_pathString(threadData, _classPath, _OMC_LIT0, 1 /* true */, 0 /* false */) ,&_top);
+          omc_NFApi_mkTop(threadData, omc_SymbolTable_getAbsyn(threadData), omc_AbsynUtil_pathString(threadData, _classPath, _OMC_LIT0, 1 /* true */, 0 /* false */) ,&_top);
 
-  _cls_node = omc_NFInst_lookupRootClass(threadData, _classPath, _top, _context);
+          _cls_node = omc_NFInst_lookupRootClass(threadData, _classPath, _top, _context);
 
-  _cls_node = omc_NFInstNode_InstNode_resolveInner(threadData, _cls_node);
+          _cls_node = omc_NFInstNode_InstNode_resolveInner(threadData, _cls_node);
 
-  _json = omc_NFApi_dumpJSONInstanceAnnotation(threadData, _cls_node, _filter);
+          _json = omc_NFApi_dumpJSONInstanceAnnotation(threadData, _cls_node, _filter);
 
-  tmpMeta1 = mmc_mk_box2(5, &Values_Value_STRING__desc, omc_JSON_toString(threadData, _json, _prettyPrint));
-  _res = tmpMeta1;
+          tmpMeta5 = mmc_mk_box2(5, &Values_Value_STRING__desc, omc_JSON_toString(threadData, _json, _prettyPrint));
+          _res = tmpMeta5;
 
-  omc_NFInst_clearCaches(threadData);
+          omc_NFInst_clearCaches(threadData);
+          goto tmp2_done;
+        }
+        case 1: {
+          /* Pattern matching succeeded */
+          omc_NFInst_clearCaches(threadData);
+
+          goto goto_1;
+          goto tmp2_done;
+        }
+        }
+        goto tmp2_end;
+        tmp2_end: ;
+      }
+      goto goto_1;
+      tmp2_done:
+      (void)tmp3;
+      MMC_RESTORE_INTERNAL(mmc_jumper);
+      goto tmp2_done2;
+      goto_1:;
+      MMC_CATCH_INTERNAL(mmc_jumper);
+      if (++tmp3 < 2) {
+        goto tmp2_top;
+      }
+      MMC_THROW_INTERNAL();
+      tmp2_done2:;
+    }
+  }
+  ;
   _return: OMC_LABEL_UNUSED
   return _res;
 }
@@ -6276,7 +6327,6 @@ modelica_metatype omc_NFApi_getModelInstance(threadData_t *threadData, modelica_
   modelica_metatype _inst_settings = NULL;
   modelica_string _str = NULL;
   modelica_metatype _mod = NULL;
-  modelica_metatype tmpMeta1;
   MMC_SO();
   _tailrecursive: OMC_LABEL_UNUSED
   // _res has no default value.
@@ -6288,59 +6338,100 @@ modelica_metatype omc_NFApi_getModelInstance(threadData_t *threadData, modelica_
   // _inst_settings has no default value.
   // _str has no default value.
   // _mod has no default value.
-  _context = omc_NFInstContext_set(threadData, ((modelica_integer) 1), ((modelica_integer) 8));
+  { /* matchcontinue expression */
+    {
+      volatile mmc_switch_type tmp3;
+      int tmp4;
+      tmp3 = 0;
+      MMC_TRY_INTERNAL(mmc_jumper)
+      tmp2_top:
+      threadData->mmc_jumper = &new_mmc_jumper;
+      for (; tmp3 < 2; tmp3++) {
+        switch (MMC_SWITCH_CAST(tmp3)) {
+        case 0: {
+          modelica_metatype tmpMeta5;
+          /* Pattern matching succeeded */
+          _context = omc_NFInstContext_set(threadData, ((modelica_integer) 1), ((modelica_integer) 8));
 
-  _context = omc_NFInstContext_set(threadData, _context, ((modelica_integer) 2));
+          _context = omc_NFInstContext_set(threadData, _context, ((modelica_integer) 2));
 
-  _inst_settings = _OMC_LIT94;
+          _inst_settings = _OMC_LIT94;
 
-  omc_NFApi_mkTop(threadData, omc_SymbolTable_getAbsyn(threadData), omc_AbsynUtil_pathString(threadData, _classPath, _OMC_LIT0, 1 /* true */, 0 /* false */) ,&_top);
+          omc_NFApi_mkTop(threadData, omc_SymbolTable_getAbsyn(threadData), omc_AbsynUtil_pathString(threadData, _classPath, _OMC_LIT0, 1 /* true */, 0 /* false */) ,&_top);
 
-  _mod = omc_NFApi_parseModifier(threadData, _modifier, _top);
+          _mod = omc_NFApi_parseModifier(threadData, _modifier, _top);
 
-  _cls_node = omc_NFInst_lookupRootClass(threadData, _classPath, _top, _context);
+          _cls_node = omc_NFInst_lookupRootClass(threadData, _classPath, _top, _context);
 
-  if(omc_SCodeUtil_isFunction(threadData, omc_NFInstNode_InstNode_definition(threadData, _cls_node)))
-  {
-    _context = omc_NFInstContext_unset(threadData, _context, ((modelica_integer) 8));
+          if(omc_SCodeUtil_isFunction(threadData, omc_NFInstNode_InstNode_definition(threadData, _cls_node)))
+          {
+            _context = omc_NFInstContext_unset(threadData, _context, ((modelica_integer) 8));
 
-    _context = omc_NFInstContext_set(threadData, _context, ((modelica_integer) 16));
+            _context = omc_NFInstContext_set(threadData, _context, ((modelica_integer) 16));
+          }
+
+          _cls_node = omc_NFInst_instantiateRootClass(threadData, _cls_node, _context, _mod);
+
+          omc_ExecStat_execStat(threadData, _OMC_LIT95);
+
+          _inst_tree = omc_NFApi_buildInstanceTree(threadData, _cls_node, 0 /* false */);
+
+          omc_ExecStat_execStat(threadData, _OMC_LIT96);
+
+          omc_NFInst_instExpressions(threadData, _cls_node, _cls_node, _OMC_LIT85, _context, _inst_settings);
+
+          omc_NFInst_updateImplicitVariability(threadData, _cls_node, omc_Flags_isSet(threadData, _OMC_LIT100), _context);
+
+          omc_ExecStat_execStat(threadData, _OMC_LIT101);
+
+          omc_NFTyping_typeClassType(threadData, _cls_node, _OMC_LIT102, _context, _cls_node);
+
+          omc_NFTyping_typeComponents(threadData, _cls_node, _context, 0 /* false */);
+
+          omc_ExecStat_execStat(threadData, _OMC_LIT103);
+
+          omc_NFTyping_typeBindings(threadData, _cls_node, _context);
+
+          omc_ExecStat_execStat(threadData, _OMC_LIT104);
+
+          _json = omc_NFApi_dumpJSONInstanceTree(threadData, _inst_tree, _cls_node, 1 /* true */, 0 /* false */, 0 /* false */);
+
+          omc_ExecStat_execStat(threadData, _OMC_LIT105);
+
+          tmpMeta5 = mmc_mk_box2(5, &Values_Value_STRING__desc, omc_JSON_toString(threadData, _json, _prettyPrint));
+          _res = tmpMeta5;
+
+          omc_ExecStat_execStat(threadData, _OMC_LIT106);
+
+          omc_NFInst_clearCaches(threadData);
+          goto tmp2_done;
+        }
+        case 1: {
+          /* Pattern matching succeeded */
+          omc_NFInst_clearCaches(threadData);
+
+          goto goto_1;
+          goto tmp2_done;
+        }
+        }
+        goto tmp2_end;
+        tmp2_end: ;
+      }
+      goto goto_1;
+      tmp2_done:
+      (void)tmp3;
+      MMC_RESTORE_INTERNAL(mmc_jumper);
+      goto tmp2_done2;
+      goto_1:;
+      MMC_CATCH_INTERNAL(mmc_jumper);
+      if (++tmp3 < 2) {
+        goto tmp2_top;
+      }
+      MMC_THROW_INTERNAL();
+      tmp2_done2:;
+    }
   }
-
-  _cls_node = omc_NFInst_instantiateRootClass(threadData, _cls_node, _context, _mod);
-
-  omc_ExecStat_execStat(threadData, _OMC_LIT95);
-
-  _inst_tree = omc_NFApi_buildInstanceTree(threadData, _cls_node, 0 /* false */);
-
-  omc_ExecStat_execStat(threadData, _OMC_LIT96);
-
-  omc_NFInst_instExpressions(threadData, _cls_node, _cls_node, _OMC_LIT85, _context, _inst_settings);
-
-  omc_NFInst_updateImplicitVariability(threadData, _cls_node, omc_Flags_isSet(threadData, _OMC_LIT100), _context);
-
-  omc_ExecStat_execStat(threadData, _OMC_LIT101);
-
-  omc_NFTyping_typeClassType(threadData, _cls_node, _OMC_LIT102, _context, _cls_node);
-
-  omc_NFTyping_typeComponents(threadData, _cls_node, _context, 0 /* false */);
-
-  omc_ExecStat_execStat(threadData, _OMC_LIT103);
-
-  omc_NFTyping_typeBindings(threadData, _cls_node, _context);
-
-  omc_ExecStat_execStat(threadData, _OMC_LIT104);
-
-  _json = omc_NFApi_dumpJSONInstanceTree(threadData, _inst_tree, _cls_node, 1 /* true */, 0 /* false */);
-
-  omc_ExecStat_execStat(threadData, _OMC_LIT105);
-
-  tmpMeta1 = mmc_mk_box2(5, &Values_Value_STRING__desc, omc_JSON_toString(threadData, _json, _prettyPrint));
-  _res = tmpMeta1;
-
-  omc_ExecStat_execStat(threadData, _OMC_LIT106);
-
-  omc_NFInst_clearCaches(threadData);
+  ;
   _return: OMC_LABEL_UNUSED
   return _res;
 }
@@ -6710,7 +6801,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_NFApi_frontEndBack(threadData_t 
 
   if(omc_Flags_isSet(threadData, _OMC_LIT118))
   {
-    tmpMeta5 = stringAppend(_OMC_LIT123,omc_AbsynUtil_pathString(threadData, omc_NFInstNode_InstNode_enclosingScopePath(threadData, _inst_cls, 0 /* false */), _OMC_LIT0, 1 /* true */, 0 /* false */));
+    tmpMeta5 = stringAppend(_OMC_LIT123,omc_AbsynUtil_pathString(threadData, omc_NFInstNode_InstNode_enclosingScopePath(threadData, _inst_cls, 0 /* false */, 0 /* false */), _OMC_LIT0, 1 /* true */, 0 /* false */));
     tmpMeta6 = stringAppend(tmpMeta5,_OMC_LIT124);
     tmpMeta7 = stringAppend(tmpMeta6,_name);
     tmpMeta8 = stringAppend(tmpMeta7,_OMC_LIT125);

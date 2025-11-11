@@ -72,10 +72,10 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT26,1,3) {&NFType_INTEGER__desc,}};
 #define _OMC_LIT27_data "$"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT27,1,_OMC_LIT27_data);
 #define _OMC_LIT27 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT27)
-#define _OMC_LIT28_data "/home/adrpo33/OpenModelica/OMCompiler/Compiler/NBackEnd/Modules/2_Pre/NBInline.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT28,81,_OMC_LIT28_data);
+#define _OMC_LIT28_data "/OpenModelica/OMCompiler/Compiler/NBackEnd/Modules/2_Pre/NBInline.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT28,68,_OMC_LIT28_data);
 #define _OMC_LIT28 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT28)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT29_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT29_6,1.76286855e9);
 #define _OMC_LIT29_6 MMC_REFREALLIT(_OMC_LIT_STRUCT29_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT29,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT28,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(244)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(244)),MMC_IMMEDIATE(MMC_TAGFIXNUM(97)),_OMC_LIT29_6}};
 #define _OMC_LIT29 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT29)
@@ -498,9 +498,9 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_NBInline_inlineArrayConstructor(
 
   omc_UnorderedSet_merge(threadData, _set, _local_set);
 
-  _subs = omc_NBEquation_Iterator_normalizedSubscripts(threadData, omc_NBEquation_Iterator_fromFrames(threadData, _frames));
+  _subs = omc_NBEquation_Iterator_normalizedSubscripts(threadData, omc_NBEquation_Iterator_fromFrames(threadData, _frames), omc_UnorderedMap_new(threadData, boxvar_NFComponentRef_hash, boxvar_NFComponentRef_isEqual, ((modelica_integer) 1)));
 
-  _cref_exp = omc_NFExpression_fromCref(threadData, omc_NFComponentRef_mergeSubscripts(threadData, _subs, _cref, 1 /* true */, 0 /* false */), 0 /* false */);
+  _cref_exp = omc_NFExpression_fromCref(threadData, omc_NFComponentRef_mergeSubscripts(threadData, _subs, _cref, 1 /* true */, 0 /* false */, 0 /* false */), 0 /* false */);
 
   _local_it = omc_NBVariable_VariablePointers_fromList(threadData, omc_UnorderedSet_toList(threadData, _local_set), 0 /* false */);
 
@@ -1474,7 +1474,7 @@ modelica_metatype omc_NBInline_inlineArrayIterator(threadData_t *threadData, mod
           tmpMeta12 = mmc_mk_box2(3, &NFExpression_INTEGER__desc, mmc_mk_integer(omc_NFType_sizeOf(threadData, omc_NFExpression_typeOf(threadData, _range), 0 /* false */)));
           _range2 = omc_NFExpression_makeRange(threadData, _OMC_LIT30, mmc_mk_none(), tmpMeta12);
 
-          tmpMeta14 = mmc_mk_box3(0, omc_NFComponentRef_makeIterator(threadData, _node, _OMC_LIT26), _range, mmc_mk_none());
+          tmpMeta14 = mmc_mk_box3(0, omc_NFComponentRef_makeIterator(threadData, _node, omc_NFType_arrayElementType(threadData, omc_NFExpression_typeOf(threadData, _range))), _range, mmc_mk_none());
           tmpMeta13 = mmc_mk_cons(tmpMeta14, MMC_REFSTRUCTLIT(mmc_nil));
           _map = omc_NBEquation_Iterator_fromFrames(threadData, tmpMeta13);
 

@@ -3,17 +3,17 @@
 #define _OMC_LIT0_data "Tried to append cref prefix from a non FUNCTION_CONTEXT() context. cref_pref is only avaiable in FUNCTION_CONTEXT."
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT0,114,_OMC_LIT0_data);
 #define _OMC_LIT0 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT0)
-#define _OMC_LIT1_data "/home/adrpo33/OpenModelica/OMCompiler/Compiler/SimCode/SimCodeFunctionUtil.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT1,77,_OMC_LIT1_data);
+#define _OMC_LIT1_data "/OpenModelica/OMCompiler/Compiler/SimCode/SimCodeFunctionUtil.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT1,64,_OMC_LIT1_data);
 #define _OMC_LIT1 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT1)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT2_6,1.758755687e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT2_6,1.76286855e9);
 #define _OMC_LIT2_6 MMC_REFREALLIT(_OMC_LIT_STRUCT2_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT2,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT1,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2707)),MMC_IMMEDIATE(MMC_TAGFIXNUM(20)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2707)),MMC_IMMEDIATE(MMC_TAGFIXNUM(174)),_OMC_LIT2_6}};
 #define _OMC_LIT2 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT2)
 #define _OMC_LIT3_data "Tried to get cref prefix from a non FUNCTION_CONTEXT() context. cref_pref is only avaiable in FUNCTION_CONTEXT."
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT3,111,_OMC_LIT3_data);
 #define _OMC_LIT3 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT3)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT4_6,1.758755687e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT4_6,1.76286855e9);
 #define _OMC_LIT4_6 MMC_REFREALLIT(_OMC_LIT_STRUCT4_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT4,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT1,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2693)),MMC_IMMEDIATE(MMC_TAGFIXNUM(20)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2693)),MMC_IMMEDIATE(MMC_TAGFIXNUM(171)),_OMC_LIT4_6}};
 #define _OMC_LIT4 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT4)
@@ -80,14 +80,14 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT26,2,3) {&Gettext_TranslatableConte
 #define _OMC_LIT26 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT26)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT27,8,3) {&Flags_ConfigFlag_CONFIG__FLAG__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(141)),_OMC_LIT22,MMC_REFSTRUCTLIT(mmc_none),_OMC_LIT23,_OMC_LIT24,MMC_REFSTRUCTLIT(mmc_none),_OMC_LIT26}};
 #define _OMC_LIT27 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT27)
-#define _OMC_LIT28_data " -Wl,--no-as-needed -Wl,--disable-new-dtags -lOpenModelicaRuntimeC -llapack -lblas -lm -lomcgc -lryu -lpthread -rdynamic"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT28,120,_OMC_LIT28_data);
+#define _OMC_LIT28_data " -Wl,--no-as-needed -Wl,--disable-new-dtags -lOpenModelicaRuntimeC -llapack -lblas  -lm -lomcgc -lryu -lpthread -rdynamic"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT28,121,_OMC_LIT28_data);
 #define _OMC_LIT28 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT28)
-#define _OMC_LIT29_data " -Wl,--no-as-needed -Wl,--disable-new-dtags -llapack -lblas -lm -lpthread -lryu -rdynamic  -Wl,--no-undefined"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT29,109,_OMC_LIT29_data);
+#define _OMC_LIT29_data " -Wl,--no-as-needed -Wl,--disable-new-dtags -llapack -lblas  -lm -lpthread -lryu -rdynamic  -Wl,--no-undefined"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT29,110,_OMC_LIT29_data);
 #define _OMC_LIT29 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT29)
-#define _OMC_LIT30_data " -Wl,--no-as-needed -Wl,--disable-new-dtags -lSimulationRuntimeC -llapack -lblas -lm -lomcgc -lryu -lpthread -rdynamic -Wl,--no-undefined"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT30,137,_OMC_LIT30_data);
+#define _OMC_LIT30_data " -Wl,--no-as-needed -Wl,--disable-new-dtags -lSimulationRuntimeC -llapack -lblas  -lm -lomcgc -lryu -lpthread -rdynamic -Wl,--no-undefined"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT30,138,_OMC_LIT30_data);
 #define _OMC_LIT30 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT30)
 #define _OMC_LIT31_data "/"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT31,1,_OMC_LIT31_data);
@@ -164,7 +164,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT59,46,_OMC_LIT59_data);
 #define _OMC_LIT60_data " not found in global scope."
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT60,27,_OMC_LIT60_data);
 #define _OMC_LIT60 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT60)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT61_6,1.758755687e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT61_6,1.76286855e9);
 #define _OMC_LIT61_6 MMC_REFREALLIT(_OMC_LIT_STRUCT61_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT61,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT1,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2431)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2431)),MMC_IMMEDIATE(MMC_TAGFIXNUM(50)),_OMC_LIT61_6}};
 #define _OMC_LIT61 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT61)
@@ -270,7 +270,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT98,1,_OMC_LIT98_data);
 #define _OMC_LIT99_data "Failed to process Library annotation for external function"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT99,58,_OMC_LIT99_data);
 #define _OMC_LIT99 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT99)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT100_6,1.758755687e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT100_6,1.76286855e9);
 #define _OMC_LIT100_6 MMC_REFREALLIT(_OMC_LIT_STRUCT100_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT100,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT1,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2246)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2246)),MMC_IMMEDIATE(MMC_TAGFIXNUM(107)),_OMC_LIT100_6}};
 #define _OMC_LIT100 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT100)
@@ -394,7 +394,7 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT145,2,1) {_OMC_LIT142,_OMC_LIT144}}
 #define _OMC_LIT146_data ".lib"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT146,4,_OMC_LIT146_data);
 #define _OMC_LIT146 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT146)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT147_6,1.758755687e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT147_6,1.76286855e9);
 #define _OMC_LIT147_6 MMC_REFREALLIT(_OMC_LIT_STRUCT147_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT147,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT1,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2139)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2139)),MMC_IMMEDIATE(MMC_TAGFIXNUM(107)),_OMC_LIT147_6}};
 #define _OMC_LIT147 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT147)
@@ -483,8 +483,8 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT179,8,3) {&Flags_ConfigFlag_CONFIG_
 #define _OMC_LIT180_data "/lib/"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT180,5,_OMC_LIT180_data);
 #define _OMC_LIT180 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT180)
-#define _OMC_LIT181_data "x86_64-linux-gnu"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT181,16,_OMC_LIT181_data);
+#define _OMC_LIT181_data "arm-linux-gnueabihf"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT181,19,_OMC_LIT181_data);
 #define _OMC_LIT181 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT181)
 #define _OMC_LIT182_data "/omc"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT182,4,_OMC_LIT182_data);
@@ -501,11 +501,11 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT185,3,_OMC_LIT185_data);
 #define _OMC_LIT186_data "/Resources/Include"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT186,18,_OMC_LIT186_data);
 #define _OMC_LIT186 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT186)
-#define _OMC_LIT187_data "/usr/lib/x86_64-linux-gnu"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT187,25,_OMC_LIT187_data);
+#define _OMC_LIT187_data "/usr/lib/arm-linux-gnueabihf"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT187,28,_OMC_LIT187_data);
 #define _OMC_LIT187 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT187)
-#define _OMC_LIT188_data "/lib/x86_64-linux-gnu"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT188,21,_OMC_LIT188_data);
+#define _OMC_LIT188_data "/lib/arm-linux-gnueabihf"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT188,24,_OMC_LIT188_data);
 #define _OMC_LIT188 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT188)
 #define _OMC_LIT189_data "/usr/lib/"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT189,9,_OMC_LIT189_data);
@@ -629,7 +629,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT233,10,_OMC_LIT233_data);
 #define _OMC_LIT234_data "function getCrefFromExp failed: input was not of type DAE.CREF"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT234,62,_OMC_LIT234_data);
 #define _OMC_LIT234 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT234)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT235_6,1.758755687e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT235_6,1.76286855e9);
 #define _OMC_LIT235_6 MMC_REFREALLIT(_OMC_LIT_STRUCT235_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT235,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT1,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1525)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1525)),MMC_IMMEDIATE(MMC_TAGFIXNUM(111)),_OMC_LIT235_6}};
 #define _OMC_LIT235 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT235)
@@ -651,7 +651,7 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT241,2,31) {&DAE_Exp_LIST__desc,MMC_
 #define _OMC_LIT242_data "function replaceLiteralExp failed. Falling back to not replacing "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT242,65,_OMC_LIT242_data);
 #define _OMC_LIT242 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT242)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT243_6,1.758755687e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT243_6,1.76286855e9);
 #define _OMC_LIT243_6 MMC_REFREALLIT(_OMC_LIT_STRUCT243_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT243,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT1,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1249)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1249)),MMC_IMMEDIATE(MMC_TAGFIXNUM(50)),_OMC_LIT243_6}};
 #define _OMC_LIT243 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT243)
@@ -673,7 +673,7 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT250,1,5) {&DAE_Const_C__VAR__desc,}
 #define _OMC_LIT251_data "function daeInOutSimVar failed\n"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT251,31,_OMC_LIT251_data);
 #define _OMC_LIT251 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT251)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT252_6,1.758755687e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT252_6,1.76286855e9);
 #define _OMC_LIT252_6 MMC_REFREALLIT(_OMC_LIT_STRUCT252_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT252,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT1,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(887)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(887)),MMC_IMMEDIATE(MMC_TAGFIXNUM(81)),_OMC_LIT252_6}};
 #define _OMC_LIT252 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT252)
@@ -682,7 +682,7 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT253,1,3) {&SCode_Visibility_PUBLIC_
 #define _OMC_LIT254_data "function elaborateFunction failed for function:\n"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT254,48,_OMC_LIT254_data);
 #define _OMC_LIT254 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT254)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT255_6,1.758755687e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT255_6,1.76286855e9);
 #define _OMC_LIT255_6 MMC_REFREALLIT(_OMC_LIT_STRUCT255_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT255,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT1,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(798)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(798)),MMC_IMMEDIATE(MMC_TAGFIXNUM(128)),_OMC_LIT255_6}};
 #define _OMC_LIT255 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT255)
@@ -3240,7 +3240,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_SimCodeFunctionUtil_generateExtF
 
           _platform3 = omc_System_modelicaPlatform(threadData);
 
-          _isLinux = 1 /* true */;
+          _isLinux = 0 /* false */;
 
           tmpMeta10 = MMC_REFSTRUCTLIT(mmc_nil);
           _libs = omc_SimCodeFunctionUtil_generateExtFunctionLibraryDirectoryPaths2(threadData, 1 /* true */, _str, _isLinux, tmpMeta10);
@@ -3280,7 +3280,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_SimCodeFunctionUtil_generateExtF
 
           _platform3 = omc_System_modelicaPlatform(threadData);
 
-          _isLinux = 1 /* true */;
+          _isLinux = 0 /* false */;
 
           tmpMeta19 = MMC_REFSTRUCTLIT(mmc_nil);
           _libs = omc_SimCodeFunctionUtil_generateExtFunctionLibraryDirectoryPaths2(threadData, 1 /* true */, _str, _isLinux, tmpMeta19);
@@ -3532,7 +3532,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_SimCodeFunctionUtil_generateExtF
           tmpMeta20 = stringAppend(tmpMeta19,_OMC_LIT155);
           _resourcesStr = omc_CevalScript_getFullPathFromUri(threadData, _program, tmpMeta20, 0 /* false */);
 
-          _isLinux = 1 /* true */;
+          _isLinux = 0 /* false */;
 
           _target = omc_Flags_getConfigString(threadData, _OMC_LIT179);
 

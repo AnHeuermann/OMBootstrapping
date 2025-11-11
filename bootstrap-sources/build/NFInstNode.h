@@ -829,17 +829,25 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_NFInstNode_InstNode_classScope,2,0) {(v
 
 
 DLLDirection
-modelica_metatype omc_NFInstNode_InstNode_enclosingScopeList(threadData_t *threadData, modelica_metatype _node, modelica_boolean _ignoreRedeclare);
+modelica_metatype omc_NFInstNode_InstNode_enclosingScope(threadData_t *threadData, modelica_metatype _node, modelica_boolean _ignoreRedeclare, modelica_boolean _ignoreBaseClass);
 DLLDirection
-modelica_metatype boxptr_NFInstNode_InstNode_enclosingScopeList(threadData_t *threadData, modelica_metatype _node, modelica_metatype _ignoreRedeclare);
+modelica_metatype boxptr_NFInstNode_InstNode_enclosingScope(threadData_t *threadData, modelica_metatype _node, modelica_metatype _ignoreRedeclare, modelica_metatype _ignoreBaseClass);
+static const MMC_DEFSTRUCTLIT(boxvar_lit_NFInstNode_InstNode_enclosingScope,2,0) {(void*) boxptr_NFInstNode_InstNode_enclosingScope,0}};
+#define boxvar_NFInstNode_InstNode_enclosingScope MMC_REFSTRUCTLIT(boxvar_lit_NFInstNode_InstNode_enclosingScope)
+
+
+DLLDirection
+modelica_metatype omc_NFInstNode_InstNode_enclosingScopeList(threadData_t *threadData, modelica_metatype _node, modelica_boolean _ignoreRedeclare, modelica_boolean _ignoreBaseClass);
+DLLDirection
+modelica_metatype boxptr_NFInstNode_InstNode_enclosingScopeList(threadData_t *threadData, modelica_metatype _node, modelica_metatype _ignoreRedeclare, modelica_metatype _ignoreBaseClass);
 static const MMC_DEFSTRUCTLIT(boxvar_lit_NFInstNode_InstNode_enclosingScopeList,2,0) {(void*) boxptr_NFInstNode_InstNode_enclosingScopeList,0}};
 #define boxvar_NFInstNode_InstNode_enclosingScopeList MMC_REFSTRUCTLIT(boxvar_lit_NFInstNode_InstNode_enclosingScopeList)
 
 
 DLLDirection
-modelica_metatype omc_NFInstNode_InstNode_enclosingScopePath(threadData_t *threadData, modelica_metatype _node, modelica_boolean _ignoreRedeclare);
+modelica_metatype omc_NFInstNode_InstNode_enclosingScopePath(threadData_t *threadData, modelica_metatype _node, modelica_boolean _ignoreRedeclare, modelica_boolean _ignoreBaseClass);
 DLLDirection
-modelica_metatype boxptr_NFInstNode_InstNode_enclosingScopePath(threadData_t *threadData, modelica_metatype _node, modelica_metatype _ignoreRedeclare);
+modelica_metatype boxptr_NFInstNode_InstNode_enclosingScopePath(threadData_t *threadData, modelica_metatype _node, modelica_metatype _ignoreRedeclare, modelica_metatype _ignoreBaseClass);
 static const MMC_DEFSTRUCTLIT(boxvar_lit_NFInstNode_InstNode_enclosingScopePath,2,0) {(void*) boxptr_NFInstNode_InstNode_enclosingScopePath,0}};
 #define boxvar_NFInstNode_InstNode_enclosingScopePath MMC_REFSTRUCTLIT(boxvar_lit_NFInstNode_InstNode_enclosingScopePath)
 

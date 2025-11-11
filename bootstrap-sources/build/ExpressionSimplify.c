@@ -194,10 +194,10 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT77,5,_OMC_LIT77_data);
 #define _OMC_LIT78_data "ExpressionSimplify.evalCatGetFlatArray: Got unbalanced array from "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT78,66,_OMC_LIT78_data);
 #define _OMC_LIT78 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT78)
-#define _OMC_LIT79_data "/home/adrpo33/OpenModelica/OMCompiler/Compiler/FrontEnd/ExpressionSimplify.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT79,77,_OMC_LIT79_data);
+#define _OMC_LIT79_data "/OpenModelica/OMCompiler/Compiler/FrontEnd/ExpressionSimplify.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT79,64,_OMC_LIT79_data);
 #define _OMC_LIT79 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT79)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT80_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT80_6,1.76286855e9);
 #define _OMC_LIT80_6 MMC_REFREALLIT(_OMC_LIT_STRUCT80_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT80,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT79,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1788)),MMC_IMMEDIATE(MMC_TAGFIXNUM(7)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1788)),MMC_IMMEDIATE(MMC_TAGFIXNUM(109)),_OMC_LIT80_6}};
 #define _OMC_LIT80 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT80)
@@ -207,7 +207,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT81,62,_OMC_LIT81_data);
 #define _OMC_LIT82_data ", "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT82,2,_OMC_LIT82_data);
 #define _OMC_LIT82 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT82)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT83_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT83_6,1.76286855e9);
 #define _OMC_LIT83_6 MMC_REFREALLIT(_OMC_LIT_STRUCT83_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT83,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT79,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1727)),MMC_IMMEDIATE(MMC_TAGFIXNUM(7)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1727)),MMC_IMMEDIATE(MMC_TAGFIXNUM(180)),_OMC_LIT83_6}};
 #define _OMC_LIT83 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT83)
@@ -16919,7 +16919,7 @@ modelica_metatype omc_ExpressionSimplify_evalCat(threadData_t *threadData, model
         modelica_metatype _d_loopVar = 0;
         modelica_metatype _d;
         _d_loopVar = _dimsLst;
-        __omcQ_24tmpVar33 = ((modelica_integer) 4611686018427387903); /* defaultValue */
+        __omcQ_24tmpVar33 = ((modelica_integer) 1073741823); /* defaultValue */
         while(1) {
           tmp15 = 1;
           if (!listEmpty(_d_loopVar)) {
@@ -16947,7 +16947,7 @@ modelica_metatype omc_ExpressionSimplify_evalCat(threadData_t *threadData, model
         modelica_metatype _d_loopVar = 0;
         modelica_metatype _d;
         _d_loopVar = _dimsLst;
-        __omcQ_24tmpVar35 = ((modelica_integer) -4611686018427387903); /* defaultValue */
+        __omcQ_24tmpVar35 = ((modelica_integer) -1073741823); /* defaultValue */
         while(1) {
           tmp17 = 1;
           if (!listEmpty(_d_loopVar)) {
@@ -19882,7 +19882,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ExpressionSimplify_simplifyBuilt
 
                   omc_ExpressionSimplify_simplifySymmetric(threadData, _marr, ((modelica_integer) -1) + arrayLength(_marr), arrayLength(_marr));
 
-                  _mexpl = omc_List_map(threadData, arrayList(_marr), boxvar_arrayList);
+                  _mexpl = omc_List_mapArray(threadData, _marr, boxvar_arrayList);
 
                   _tp1 = omc_Expression_unliftArray(threadData, _tp);
 

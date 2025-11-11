@@ -19397,7 +19397,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Interactive_deleteOrUpdateCompon
 
           _l1_1 = ((modelica_integer) -1) + _l1;
 
-          if(((((_l1_1 == _l2) && (!isSome(_item))) && _success) || (((!(_l1_1 == _l2)) && isSome(_item)) && _success)))
+          if(((((_l1_1 == _l2) && isNone(_item)) && _success) || (((!(_l1_1 == _l2)) && isSome(_item)) && _success)))
           {
             _parts2 = omc_InteractiveUtil_replacePublicList(threadData, _parts, _publst2);
           }
@@ -19453,7 +19453,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Interactive_deleteOrUpdateCompon
 
           _l1_1 = ((modelica_integer) -1) + _l1;
 
-          if(((((_l1_1 == _l2) && (!isSome(_item))) && _success) || (((!(_l1_1 == _l2)) && isSome(_item)) && _success)))
+          if(((((_l1_1 == _l2) && isNone(_item)) && _success) || (((!(_l1_1 == _l2)) && isSome(_item)) && _success)))
           {
             _parts2 = omc_InteractiveUtil_replacePublicList(threadData, _parts, _publst2);
           }

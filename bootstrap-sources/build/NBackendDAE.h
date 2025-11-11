@@ -124,6 +124,8 @@ extern struct record_description NFInstNode_InstNode_VAR__NODE__desc;
 
 extern struct record_description NFPrefixes_Replaceable_NOT__REPLACEABLE__desc;
 
+extern struct record_description NFStatement_ASSERT__desc;
+
 extern struct record_description NFStatement_NORETCALL__desc;
 
 extern struct record_description NFType_ANY__desc;

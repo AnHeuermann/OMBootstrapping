@@ -6,10 +6,10 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT0,61,_OMC_LIT0_data);
 #define _OMC_LIT1_data "\n"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT1,1,_OMC_LIT1_data);
 #define _OMC_LIT1 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT1)
-#define _OMC_LIT2_data "/home/adrpo33/OpenModelica/OMCompiler/Compiler/NFFrontEnd/NFConnectEquations.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT2,79,_OMC_LIT2_data);
+#define _OMC_LIT2_data "/OpenModelica/OMCompiler/Compiler/NFFrontEnd/NFConnectEquations.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT2,66,_OMC_LIT2_data);
 #define _OMC_LIT2 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT2)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT3_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT3_6,1.76286855e9);
 #define _OMC_LIT3_6 MMC_REFREALLIT(_OMC_LIT_STRUCT3_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT3,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT2,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1141)),MMC_IMMEDIATE(MMC_TAGFIXNUM(5)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1142)),MMC_IMMEDIATE(MMC_TAGFIXNUM(59)),_OMC_LIT3_6}};
 #define _OMC_LIT3 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT3)
@@ -76,7 +76,7 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT30,8,3) {&Flags_ConfigFlag_CONFIG__
 #define _OMC_LIT31_data "NFConnectEquations.evaluateOperatorArrayConstructorExp failed to expand call containing stream operator: "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT31,105,_OMC_LIT31_data);
 #define _OMC_LIT31 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT31)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT32_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT32_6,1.76286855e9);
 #define _OMC_LIT32_6 MMC_REFREALLIT(_OMC_LIT_STRUCT32_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT32,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT2,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(802)),MMC_IMMEDIATE(MMC_TAGFIXNUM(5)),MMC_IMMEDIATE(MMC_TAGFIXNUM(804)),MMC_IMMEDIATE(MMC_TAGFIXNUM(46)),_OMC_LIT32_6}};
 #define _OMC_LIT32 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT32)
@@ -210,7 +210,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT84,2,_OMC_LIT84_data);
 #define _OMC_LIT85_data "}"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT85,1,_OMC_LIT85_data);
 #define _OMC_LIT85 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT85)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT86_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT86_6,1.76286855e9);
 #define _OMC_LIT86_6 MMC_REFREALLIT(_OMC_LIT_STRUCT86_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT86,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT2,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(116)),MMC_IMMEDIATE(MMC_TAGFIXNUM(7)),MMC_IMMEDIATE(MMC_TAGFIXNUM(118)),MMC_IMMEDIATE(MMC_TAGFIXNUM(88)),_OMC_LIT86_6}};
 #define _OMC_LIT86 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT86)
@@ -2475,9 +2475,9 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_NFConnectEquations_makeEqualityA
 
     _subs = listReverseInPlace(_subs);
 
-    _lhs_exp = omc_NFExpression_fromCref(threadData, omc_NFComponentRef_mergeSubscripts(threadData, _subs, _lhsCref, 0 /* false */, 0 /* false */), 0 /* false */);
+    _lhs_exp = omc_NFExpression_fromCref(threadData, omc_NFComponentRef_mergeSubscripts(threadData, _subs, _lhsCref, 0 /* false */, 0 /* false */, 0 /* false */), 0 /* false */);
 
-    _rhs_exp = omc_NFExpression_fromCref(threadData, omc_NFComponentRef_mergeSubscripts(threadData, _subs, _rhsCref, 0 /* false */, 0 /* false */), 0 /* false */);
+    _rhs_exp = omc_NFExpression_fromCref(threadData, omc_NFComponentRef_mergeSubscripts(threadData, _subs, _rhsCref, 0 /* false */, 0 /* false */, 0 /* false */), 0 /* false */);
   }
   else
   {

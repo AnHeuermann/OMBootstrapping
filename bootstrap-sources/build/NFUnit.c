@@ -3576,14 +3576,9 @@ DLLDirection
 modelica_integer omc_NFUnit_hashUnit(threadData_t *threadData, modelica_metatype _inKey)
 {
   modelica_integer _outHash;
-  modelica_string _str = NULL;
   MMC_SO();
   _tailrecursive: OMC_LABEL_UNUSED
-  // _outHash has no default value.
-  // _str has no default value.
-  _str = omc_NFUnit_unit2string(threadData, _inKey);
-
-  _outHash = stringHashDjb2(_str);
+  _outHash = stringHashDjb2(omc_NFUnit_unit2string(threadData, _inKey));
   _return: OMC_LABEL_UNUSED
   return _outHash;
 }

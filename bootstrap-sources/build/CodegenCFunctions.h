@@ -60,10 +60,10 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_CodegenCFunctions_typeCastContextInt,2,
 #define boxvar_CodegenCFunctions_typeCastContextInt MMC_REFSTRUCTLIT(boxvar_lit_CodegenCFunctions_typeCastContextInt)
 
 
+#define boxptr_CodegenCFunctions_fun__1246 omc_CodegenCFunctions_fun__1246
+
+
 #define boxptr_CodegenCFunctions_fun__1245 omc_CodegenCFunctions_fun__1245
-
-
-#define boxptr_CodegenCFunctions_fun__1244 omc_CodegenCFunctions_fun__1244
 
 
 DLLDirection
@@ -73,10 +73,10 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_CodegenCFunctions_typeCastContext,2,0) 
 #define boxvar_CodegenCFunctions_typeCastContext MMC_REFSTRUCTLIT(boxvar_lit_CodegenCFunctions_typeCastContext)
 
 
+#define boxptr_CodegenCFunctions_fun__1243 omc_CodegenCFunctions_fun__1243
+
+
 #define boxptr_CodegenCFunctions_fun__1242 omc_CodegenCFunctions_fun__1242
-
-
-#define boxptr_CodegenCFunctions_fun__1241 omc_CodegenCFunctions_fun__1241
 
 
 DLLDirection
@@ -86,7 +86,7 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_CodegenCFunctions_crefAttributes,2,0) {
 #define boxvar_CodegenCFunctions_crefAttributes MMC_REFSTRUCTLIT(boxvar_lit_CodegenCFunctions_crefAttributes)
 
 
-#define boxptr_CodegenCFunctions_fun__1239 omc_CodegenCFunctions_fun__1239
+#define boxptr_CodegenCFunctions_fun__1240 omc_CodegenCFunctions_fun__1240
 
 
 DLLDirection
@@ -96,7 +96,7 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_CodegenCFunctions_varAttributes,2,0) {(
 #define boxvar_CodegenCFunctions_varAttributes MMC_REFSTRUCTLIT(boxvar_lit_CodegenCFunctions_varAttributes)
 
 
-#define boxptr_CodegenCFunctions_fun__1236 omc_CodegenCFunctions_fun__1236
+#define boxptr_CodegenCFunctions_fun__1237 omc_CodegenCFunctions_fun__1237
 
 
 DLLDirection
@@ -106,7 +106,7 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_CodegenCFunctions_crefIndexWithComment,
 #define boxvar_CodegenCFunctions_crefIndexWithComment MMC_REFSTRUCTLIT(boxvar_lit_CodegenCFunctions_crefIndexWithComment)
 
 
-#define boxptr_CodegenCFunctions_fun__1233 omc_CodegenCFunctions_fun__1233
+#define boxptr_CodegenCFunctions_fun__1234 omc_CodegenCFunctions_fun__1234
 
 
 DLLDirection
@@ -124,7 +124,7 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_CodegenCFunctions_initializeStaticLSVar
 #define boxvar_CodegenCFunctions_initializeStaticLSVars MMC_REFSTRUCTLIT(boxvar_lit_CodegenCFunctions_initializeStaticLSVars)
 
 
-#define boxptr_CodegenCFunctions_lm__1230 omc_CodegenCFunctions_lm__1230
+#define boxptr_CodegenCFunctions_lm__1231 omc_CodegenCFunctions_lm__1231
 
 
 DLLDirection
@@ -134,7 +134,7 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_CodegenCFunctions_crefVarInfo,2,0) {(vo
 #define boxvar_CodegenCFunctions_crefVarInfo MMC_REFSTRUCTLIT(boxvar_lit_CodegenCFunctions_crefVarInfo)
 
 
-#define boxptr_CodegenCFunctions_fun__1228 omc_CodegenCFunctions_fun__1228
+#define boxptr_CodegenCFunctions_fun__1229 omc_CodegenCFunctions_fun__1229
 
 
 DLLDirection
@@ -150,6 +150,9 @@ DLLDirection
 modelica_metatype boxptr_CodegenCFunctions_varArrayNameValues(threadData_t *threadData, modelica_metatype _txt, modelica_metatype _a_var, modelica_metatype _a_ix, modelica_metatype _a_isPre, modelica_metatype _a_isStart, modelica_metatype _a_sub, modelica_metatype *out_out_a_sub);
 static const MMC_DEFSTRUCTLIT(boxvar_lit_CodegenCFunctions_varArrayNameValues,2,0) {(void*) boxptr_CodegenCFunctions_varArrayNameValues,0}};
 #define boxvar_CodegenCFunctions_varArrayNameValues MMC_REFSTRUCTLIT(boxvar_lit_CodegenCFunctions_varArrayNameValues)
+
+
+#define boxptr_CodegenCFunctions_fun__1223 omc_CodegenCFunctions_fun__1223
 
 
 DLLDirection

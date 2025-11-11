@@ -105,80 +105,94 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT44,1,5) {&AvlTreeCRToInt_Tree_EMPTY
 #define _OMC_LIT44 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT44)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT45,5,3) {&SimCode_PartitionData_PARTITIONDATA__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(-1)),MMC_REFSTRUCTLIT(mmc_nil),MMC_REFSTRUCTLIT(mmc_nil),MMC_REFSTRUCTLIT(mmc_nil)}};
 #define _OMC_LIT45 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT45)
-#define _OMC_LIT46_data "B"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT46,1,_OMC_LIT46_data);
+#define _OMC_LIT46_data "simCodeScalarize"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT46,16,_OMC_LIT46_data);
 #define _OMC_LIT46 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT46)
-#define _OMC_LIT47_data "C"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT47,1,_OMC_LIT47_data);
-#define _OMC_LIT47 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT47)
-#define _OMC_LIT48_data "D"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT48,1,_OMC_LIT48_data);
-#define _OMC_LIT48 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT48)
-#define _OMC_LIT49_data "F"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT49,1,_OMC_LIT49_data);
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT47,1,4) {&Flags_FlagVisibility_EXTERNAL__desc,}};
+#define _OMC_LIT47 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT47)
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT48,2,4) {&Flags_FlagData_BOOL__FLAG__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(1 /* true */))}};
+#define _OMC_LIT48 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT48)
+#define _OMC_LIT49_data "Sclarizes variables during simcode phase."
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT49,41,_OMC_LIT49_data);
 #define _OMC_LIT49 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT49)
-#define _OMC_LIT50_data "H"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT50,1,_OMC_LIT50_data);
-#define _OMC_LIT50 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT50)
-#define _OMC_LIT51_data "NSimCode.SimCode.create failed."
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT51,31,_OMC_LIT51_data);
-#define _OMC_LIT51 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT51)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT52,2,1) {_OMC_LIT51,MMC_REFSTRUCTLIT(mmc_nil)}};
-#define _OMC_LIT52 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT52)
-#define _OMC_LIT53_data "SimCode "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT53,8,_OMC_LIT53_data);
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT50,2,3) {&Gettext_TranslatableContent_gettext__desc,_OMC_LIT49}};
+#define _OMC_LIT50 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT50)
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT51,8,3) {&Flags_ConfigFlag_CONFIG__FLAG__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(161)),_OMC_LIT46,MMC_REFSTRUCTLIT(mmc_none),_OMC_LIT47,_OMC_LIT48,MMC_REFSTRUCTLIT(mmc_none),_OMC_LIT50}};
+#define _OMC_LIT51 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT51)
+#define _OMC_LIT52_data "B"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT52,1,_OMC_LIT52_data);
+#define _OMC_LIT52 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT52)
+#define _OMC_LIT53_data "C"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT53,1,_OMC_LIT53_data);
 #define _OMC_LIT53 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT53)
-#define _OMC_LIT54_data "("
+#define _OMC_LIT54_data "D"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT54,1,_OMC_LIT54_data);
 #define _OMC_LIT54 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT54)
-#define _OMC_LIT55_data ")"
+#define _OMC_LIT55_data "F"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT55,1,_OMC_LIT55_data);
 #define _OMC_LIT55 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT55)
-#define _OMC_LIT56_data "Initial Partition (Lambda = 0)"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT56,30,_OMC_LIT56_data);
+#define _OMC_LIT56_data "H"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT56,1,_OMC_LIT56_data);
 #define _OMC_LIT56 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT56)
-#define _OMC_LIT57_data "Initial Partition"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT57,17,_OMC_LIT57_data);
+#define _OMC_LIT57_data "NSimCode.SimCode.create failed."
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT57,31,_OMC_LIT57_data);
 #define _OMC_LIT57 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT57)
-#define _OMC_LIT58_data "ODE Partition "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT58,14,_OMC_LIT58_data);
-#define _OMC_LIT58 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT58)
-#define _OMC_LIT59_data "Algebraic Partition "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT59,20,_OMC_LIT59_data);
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT58,2,1) {_OMC_LIT57,MMC_REFSTRUCTLIT(mmc_nil)}};
+#define _OMC_LIT58 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT58)
+#define _OMC_LIT59_data "SimCode "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT59,8,_OMC_LIT59_data);
 #define _OMC_LIT59 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT59)
-#define _OMC_LIT60_data "Event Partition"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT60,15,_OMC_LIT60_data);
+#define _OMC_LIT60_data "("
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT60,1,_OMC_LIT60_data);
 #define _OMC_LIT60 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT60)
-#define _OMC_LIT61_data "Clocked Partitions"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT61,18,_OMC_LIT61_data);
+#define _OMC_LIT61_data ")"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT61,1,_OMC_LIT61_data);
 #define _OMC_LIT61 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT61)
-#define _OMC_LIT62_data "Shared Literals"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT62,15,_OMC_LIT62_data);
+#define _OMC_LIT62_data "Initial Partition (Lambda = 0)"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT62,30,_OMC_LIT62_data);
 #define _OMC_LIT62 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT62)
-#define _OMC_LIT63_data "\n  "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT63,3,_OMC_LIT63_data);
+#define _OMC_LIT63_data "Initial Partition"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT63,17,_OMC_LIT63_data);
 #define _OMC_LIT63 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT63)
-#define _OMC_LIT64_data "\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT64,2,_OMC_LIT64_data);
+#define _OMC_LIT64_data "ODE Partition "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT64,14,_OMC_LIT64_data);
 #define _OMC_LIT64 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT64)
-#define _OMC_LIT65_data "Generic Calls"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT65,13,_OMC_LIT65_data);
+#define _OMC_LIT65_data "Algebraic Partition "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT65,20,_OMC_LIT65_data);
 #define _OMC_LIT65 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT65)
-#define _OMC_LIT66_data "cref: "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT66,6,_OMC_LIT66_data);
+#define _OMC_LIT66_data "Event Partition"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT66,15,_OMC_LIT66_data);
 #define _OMC_LIT66 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT66)
-#define _OMC_LIT67_data "\neqn: "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT67,6,_OMC_LIT67_data);
+#define _OMC_LIT67_data "Clocked Partitions"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT67,18,_OMC_LIT67_data);
 #define _OMC_LIT67 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT67)
-#define _OMC_LIT68_data "\n(resizable="
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT68,12,_OMC_LIT68_data);
+#define _OMC_LIT68_data "Shared Literals"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT68,15,_OMC_LIT68_data);
 #define _OMC_LIT68 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT68)
-#define _OMC_LIT69_data "true"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT69,4,_OMC_LIT69_data);
+#define _OMC_LIT69_data "\n  "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT69,3,_OMC_LIT69_data);
 #define _OMC_LIT69 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT69)
-#define _OMC_LIT70_data "false"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT70,5,_OMC_LIT70_data);
+#define _OMC_LIT70_data "\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT70,2,_OMC_LIT70_data);
 #define _OMC_LIT70 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT70)
+#define _OMC_LIT71_data "Generic Calls"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT71,13,_OMC_LIT71_data);
+#define _OMC_LIT71 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT71)
+#define _OMC_LIT72_data "cref: "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT72,6,_OMC_LIT72_data);
+#define _OMC_LIT72 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT72)
+#define _OMC_LIT73_data "\neqn: "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT73,6,_OMC_LIT73_data);
+#define _OMC_LIT73 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT73)
+#define _OMC_LIT74_data "\n(resizable="
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT74,12,_OMC_LIT74_data);
+#define _OMC_LIT74 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT74)
+#define _OMC_LIT75_data "true"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT75,4,_OMC_LIT75_data);
+#define _OMC_LIT75 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT75)
+#define _OMC_LIT76_data "false"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT76,5,_OMC_LIT76_data);
+#define _OMC_LIT76 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT76)
 #include "util/modelica.h"
 
 #include "NSimCode_includes.h"
@@ -1109,7 +1123,7 @@ modelica_metatype omc_NSimCode_SimCode_convert(threadData_t *threadData, modelic
     tmpMeta23 = __omcQ_24tmpVar7;
   }
   tmpMeta27 = MMC_REFSTRUCTLIT(mmc_nil);
-  tmpMeta28 = mmc_mk_box(52, 3, &SimCode_SimCode_SIMCODE__desc, _modelInfo, tmpMeta8, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 4))), (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 5))), tmpMeta12, omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 7)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 8)))), omc_NSimStrongComponent_Block_convertListList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 9)))), omc_NSimStrongComponent_Block_convertListList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 10)))), tmpMeta16, omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 21)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 22)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 23)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 20)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 12)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 13)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 14)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 15)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 16)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 17)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 18)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 19)))), tmpMeta20, tmpMeta21, tmpMeta22, _zeroCrossings, _relations, _timeEvents, _discreteModelVars, omc_NSimVar_ExtObjInfo_convert(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 25)))), (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 26))), _OMC_LIT41, _OMC_LIT42, tmpMeta23, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 28))), (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 29))), _OMC_LIT14, _OMC_LIT14, _OMC_LIT43, _OMC_LIT44, _varToArrayIndexMapping, _varToIndexMapping, _crefToSimVarHT, _crefToClockIndexHT, mmc_mk_none(), mmc_mk_none(), mmc_mk_none(), _OMC_LIT45, (isSome((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 33))))?mmc_mk_some(omc_NSimCode_DaeModeData_convert(threadData, omc_Util_getOption(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 33)))))):mmc_mk_none()), tmpMeta27, mmc_mk_none());
+  tmpMeta28 = mmc_mk_box(53, 3, &SimCode_SimCode_SIMCODE__desc, _modelInfo, tmpMeta8, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 4))), (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 5))), tmpMeta12, omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 7)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 8)))), omc_NSimStrongComponent_Block_convertListList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 9)))), omc_NSimStrongComponent_Block_convertListList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 10)))), tmpMeta16, omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 21)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 22)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 23)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 20)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 12)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 13)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 14)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 15)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 16)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 17)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 18)))), omc_NSimStrongComponent_Block_convertList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 19)))), tmpMeta20, tmpMeta21, tmpMeta22, _zeroCrossings, _relations, _timeEvents, _discreteModelVars, omc_NSimVar_ExtObjInfo_convert(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 25)))), (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 26))), _OMC_LIT41, _OMC_LIT42, tmpMeta23, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 28))), (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 29))), _OMC_LIT14, _OMC_LIT14, _OMC_LIT43, _OMC_LIT44, _varToArrayIndexMapping, _varToIndexMapping, _crefToSimVarHT, _crefToClockIndexHT, mmc_mk_none(), mmc_mk_none(), mmc_mk_none(), _OMC_LIT45, (isSome((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 33))))?mmc_mk_some(omc_NSimCode_DaeModeData_convert(threadData, omc_Util_getOption(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 33)))))):mmc_mk_none()), tmpMeta27, mmc_mk_none(), mmc_mk_boolean(omc_Flags_getConfigBool(threadData, _OMC_LIT51)));
   _oldSimCode = tmpMeta28;
   _return: OMC_LABEL_UNUSED
   return _oldSimCode;
@@ -1480,15 +1494,15 @@ modelica_metatype omc_NSimCode_SimCode_create(threadData_t *threadData, modelica
             _jacA = omc_NSimJacobian_SimJacobian_createSimulationJacobian(threadData, listAppend((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_bdae), 2))), (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_bdae), 4)))), _simCodeIndices, _simcode_map ,&_simCodeIndices);
           }
 
-          _jacB = omc_NSimJacobian_SimJacobian_empty(threadData, _OMC_LIT46, _simCodeIndices ,&_simCodeIndices);
+          _jacB = omc_NSimJacobian_SimJacobian_empty(threadData, _OMC_LIT52, _simCodeIndices ,&_simCodeIndices);
 
-          _jacC = omc_NSimJacobian_SimJacobian_empty(threadData, _OMC_LIT47, _simCodeIndices ,&_simCodeIndices);
+          _jacC = omc_NSimJacobian_SimJacobian_empty(threadData, _OMC_LIT53, _simCodeIndices ,&_simCodeIndices);
 
-          _jacD = omc_NSimJacobian_SimJacobian_empty(threadData, _OMC_LIT48, _simCodeIndices ,&_simCodeIndices);
+          _jacD = omc_NSimJacobian_SimJacobian_empty(threadData, _OMC_LIT54, _simCodeIndices ,&_simCodeIndices);
 
-          _jacF = omc_NSimJacobian_SimJacobian_empty(threadData, _OMC_LIT49, _simCodeIndices ,&_simCodeIndices);
+          _jacF = omc_NSimJacobian_SimJacobian_empty(threadData, _OMC_LIT55, _simCodeIndices ,&_simCodeIndices);
 
-          _jacH = omc_NSimJacobian_SimJacobian_empty(threadData, _OMC_LIT50, _simCodeIndices ,&_simCodeIndices);
+          _jacH = omc_NSimJacobian_SimJacobian_empty(threadData, _OMC_LIT56, _simCodeIndices ,&_simCodeIndices);
 
           tmpMeta40 = mmc_mk_cons(_jacA, _jacobians);
           tmpMeta39 = mmc_mk_cons(_jacB, tmpMeta40);
@@ -1594,7 +1608,7 @@ modelica_metatype omc_NSimCode_SimCode_create(threadData_t *threadData, modelica
         case 1: {
           
           /* Pattern matching succeeded */
-          omc_Error_addMessage(threadData, _OMC_LIT30, _OMC_LIT52);
+          omc_Error_addMessage(threadData, _OMC_LIT30, _OMC_LIT58);
           goto goto_2;
           goto tmp5_done;
         }
@@ -1657,10 +1671,10 @@ modelica_string omc_NSimCode_SimCode_toString(threadData_t *threadData, modelica
   _tailrecursive: OMC_LABEL_UNUSED
   _str = __omcQ_24in_5Fstr;
   _idx = ((modelica_integer) 1);
-  tmpMeta1 = stringAppend(_OMC_LIT53,_str);
-  tmpMeta2 = stringAppend(tmpMeta1,_OMC_LIT54);
+  tmpMeta1 = stringAppend(_OMC_LIT59,_str);
+  tmpMeta2 = stringAppend(tmpMeta1,_OMC_LIT60);
   tmpMeta3 = stringAppend(tmpMeta2,(MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 29))));
-  tmpMeta4 = stringAppend(tmpMeta3,_OMC_LIT55);
+  tmpMeta4 = stringAppend(tmpMeta3,_OMC_LIT61);
   _str = omc_StringUtil_headline__1(threadData, tmpMeta4);
 
   tmpMeta5 = stringAppend(_str,omc_NSimCode_ModelInfo_toString(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 2)))));
@@ -1671,12 +1685,12 @@ modelica_string omc_NSimCode_SimCode_toString(threadData_t *threadData, modelica
 
   if((!listEmpty((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 22))))))
   {
-    tmpMeta7 = stringAppend(_str,omc_NSimStrongComponent_Block_listToString(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 22))), _OMC_LIT35, _OMC_LIT56));
+    tmpMeta7 = stringAppend(_str,omc_NSimStrongComponent_Block_listToString(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 22))), _OMC_LIT35, _OMC_LIT62));
     tmpMeta8 = stringAppend(tmpMeta7,_OMC_LIT24);
     _str = tmpMeta8;
   }
 
-  tmpMeta9 = stringAppend(_str,omc_NSimStrongComponent_Block_listToString(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 21))), _OMC_LIT35, _OMC_LIT57));
+  tmpMeta9 = stringAppend(_str,omc_NSimStrongComponent_Block_listToString(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 21))), _OMC_LIT35, _OMC_LIT63));
   tmpMeta10 = stringAppend(tmpMeta9,_OMC_LIT24);
   _str = tmpMeta10;
 
@@ -1685,7 +1699,7 @@ modelica_string omc_NSimCode_SimCode_toString(threadData_t *threadData, modelica
     for (tmpMeta11 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 9))); !listEmpty(tmpMeta11); tmpMeta11=MMC_CDR(tmpMeta11))
     {
       _blck_lst = MMC_CAR(tmpMeta11);
-      tmpMeta12 = stringAppend(_OMC_LIT58,intString(_idx));
+      tmpMeta12 = stringAppend(_OMC_LIT64,intString(_idx));
       tmpMeta13 = stringAppend(_str,omc_NSimStrongComponent_Block_listToString(threadData, _blck_lst, _OMC_LIT35, tmpMeta12));
       tmpMeta14 = stringAppend(tmpMeta13,_OMC_LIT24);
       _str = tmpMeta14;
@@ -1701,7 +1715,7 @@ modelica_string omc_NSimCode_SimCode_toString(threadData_t *threadData, modelica
     for (tmpMeta16 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 10))); !listEmpty(tmpMeta16); tmpMeta16=MMC_CDR(tmpMeta16))
     {
       _blck_lst = MMC_CAR(tmpMeta16);
-      tmpMeta17 = stringAppend(_OMC_LIT59,intString(_idx));
+      tmpMeta17 = stringAppend(_OMC_LIT65,intString(_idx));
       tmpMeta18 = stringAppend(_str,omc_NSimStrongComponent_Block_listToString(threadData, _blck_lst, _OMC_LIT35, tmpMeta17));
       tmpMeta19 = stringAppend(tmpMeta18,_OMC_LIT24);
       _str = tmpMeta19;
@@ -1710,32 +1724,32 @@ modelica_string omc_NSimCode_SimCode_toString(threadData_t *threadData, modelica
     }
   }
 
-  tmpMeta21 = stringAppend(_str,omc_NSimStrongComponent_Block_listToString(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 8))), _OMC_LIT35, _OMC_LIT60));
+  tmpMeta21 = stringAppend(_str,omc_NSimStrongComponent_Block_listToString(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 18))), _OMC_LIT35, _OMC_LIT66));
   tmpMeta22 = stringAppend(tmpMeta21,_OMC_LIT24);
   _str = tmpMeta22;
 
   if((!listEmpty((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 11))))))
   {
-    tmpMeta23 = stringAppend(_str,omc_NSimPartition_listToString(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 11))), _OMC_LIT35, _OMC_LIT61));
+    tmpMeta23 = stringAppend(_str,omc_NSimPartition_listToString(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 11))), _OMC_LIT35, _OMC_LIT67));
     tmpMeta24 = stringAppend(tmpMeta23,_OMC_LIT24);
     _str = tmpMeta24;
   }
 
   if((!listEmpty((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 3))))))
   {
-    tmpMeta25 = stringAppend(_str,omc_StringUtil_headline__3(threadData, _OMC_LIT62));
+    tmpMeta25 = stringAppend(_str,omc_StringUtil_headline__3(threadData, _OMC_LIT68));
     _str = tmpMeta25;
 
-    tmpMeta26 = stringAppend(_str,omc_List_toString(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 3))), boxvar_NFExpression_toString, _OMC_LIT14, _OMC_LIT35, _OMC_LIT63, _OMC_LIT64, 1 /* true */, ((modelica_integer) 0)));
+    tmpMeta26 = stringAppend(_str,omc_List_toString(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 3))), boxvar_NFExpression_toString, _OMC_LIT14, _OMC_LIT35, _OMC_LIT69, _OMC_LIT70, 1 /* true */, ((modelica_integer) 0)));
     _str = tmpMeta26;
   }
 
   if((!listEmpty((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 6))))))
   {
-    tmpMeta27 = stringAppend(_str,omc_StringUtil_headline__3(threadData, _OMC_LIT65));
+    tmpMeta27 = stringAppend(_str,omc_StringUtil_headline__3(threadData, _OMC_LIT71));
     _str = tmpMeta27;
 
-    tmpMeta28 = stringAppend(_str,omc_List_toString(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 6))), boxvar_NSimGenericCall_toString, _OMC_LIT14, _OMC_LIT35, _OMC_LIT63, _OMC_LIT64, 1 /* true */, ((modelica_integer) 0)));
+    tmpMeta28 = stringAppend(_str,omc_List_toString(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCode), 6))), boxvar_NSimGenericCall_toString, _OMC_LIT14, _OMC_LIT35, _OMC_LIT69, _OMC_LIT70, 1 /* true */, ((modelica_integer) 0)));
     _str = tmpMeta28;
   }
 
@@ -1825,12 +1839,12 @@ modelica_string omc_NSimCode_Identifier_toString(threadData_t *threadData, model
   modelica_metatype tmpMeta6;
   MMC_SO();
   _tailrecursive: OMC_LABEL_UNUSED
-  tmpMeta1 = stringAppend(_OMC_LIT66,omc_NFComponentRef_toString(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_ident), 3)))));
-  tmpMeta2 = stringAppend(tmpMeta1,_OMC_LIT67);
+  tmpMeta1 = stringAppend(_OMC_LIT72,omc_NFComponentRef_toString(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_ident), 3)))));
+  tmpMeta2 = stringAppend(tmpMeta1,_OMC_LIT73);
   tmpMeta3 = stringAppend(tmpMeta2,omc_NBEquation_Equation_pointerToString(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_ident), 2))), _OMC_LIT14));
-  tmpMeta4 = stringAppend(tmpMeta3,_OMC_LIT68);
-  tmpMeta5 = stringAppend(tmpMeta4,(mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_ident), 4))))?_OMC_LIT69:_OMC_LIT70));
-  tmpMeta6 = stringAppend(tmpMeta5,_OMC_LIT55);
+  tmpMeta4 = stringAppend(tmpMeta3,_OMC_LIT74);
+  tmpMeta5 = stringAppend(tmpMeta4,(mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_ident), 4))))?_OMC_LIT75:_OMC_LIT76));
+  tmpMeta6 = stringAppend(tmpMeta5,_OMC_LIT61);
   _str = tmpMeta6;
   _return: OMC_LABEL_UNUSED
   return _str;

@@ -35,6 +35,14 @@ extern struct record_description Gettext_TranslatableContent_notrans__desc;
 
 
 DLLDirection
+modelica_boolean omc_NFAlgorithm_isDiscrete(threadData_t *threadData, modelica_metatype _alg);
+DLLDirection
+modelica_metatype boxptr_NFAlgorithm_isDiscrete(threadData_t *threadData, modelica_metatype _alg);
+static const MMC_DEFSTRUCTLIT(boxvar_lit_NFAlgorithm_isDiscrete,2,0) {(void*) boxptr_NFAlgorithm_isDiscrete,0}};
+#define boxvar_NFAlgorithm_isDiscrete MMC_REFSTRUCTLIT(boxvar_lit_NFAlgorithm_isDiscrete)
+
+
+DLLDirection
 modelica_boolean omc_NFAlgorithm_isEmpty(threadData_t *threadData, modelica_metatype _alg);
 DLLDirection
 modelica_metatype boxptr_NFAlgorithm_isEmpty(threadData_t *threadData, modelica_metatype _alg);

@@ -9,6 +9,7 @@ extern "C" {
 #include "ComponentReference.h"
 #include "Error.h"
 #include "Expression.h"
+#include "Flags.h"
 #include "HashTable.h"
 #include "HashTableCrefSimVar.h"
 #include "List.h"

@@ -172,6 +172,14 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_NFDimension_toStringList,2,0) {(void*) 
 
 
 DLLDirection
+modelica_integer omc_NFDimension_hashList(threadData_t *threadData, modelica_metatype _dims);
+DLLDirection
+modelica_metatype boxptr_NFDimension_hashList(threadData_t *threadData, modelica_metatype _dims);
+static const MMC_DEFSTRUCTLIT(boxvar_lit_NFDimension_hashList,2,0) {(void*) boxptr_NFDimension_hashList,0}};
+#define boxvar_NFDimension_hashList MMC_REFSTRUCTLIT(boxvar_lit_NFDimension_hashList)
+
+
+DLLDirection
 modelica_string omc_NFDimension_toString(threadData_t *threadData, modelica_metatype _dim);
 #define boxptr_NFDimension_toString omc_NFDimension_toString
 static const MMC_DEFSTRUCTLIT(boxvar_lit_NFDimension_toString,2,0) {(void*) boxptr_NFDimension_toString,0}};

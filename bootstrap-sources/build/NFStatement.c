@@ -2462,60 +2462,6 @@ modelica_metatype omc_NFStatement_makeIf(threadData_t *threadData, modelica_meta
 }
 
 DLLDirection
-modelica_boolean omc_NFStatement_isWhen(threadData_t *threadData, modelica_metatype _stmt)
-{
-  modelica_boolean _res;
-  modelica_boolean tmp1 = 0;
-  MMC_SO();
-  _tailrecursive: OMC_LABEL_UNUSED
-  // _res has no default value.
-  { /* match expression */
-    modelica_metatype tmp4_1;
-    tmp4_1 = _stmt;
-    {
-      volatile mmc_switch_type tmp4;
-      int tmp5;
-      tmp4 = 0;
-      for (; tmp4 < 2; tmp4++) {
-        switch (MMC_SWITCH_CAST(tmp4)) {
-        case 0: {
-          if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,4,2) == 0) goto tmp3_end;
-          
-          /* Pattern matching succeeded */
-          tmp1 = 1 /* true */;
-          goto tmp3_done;
-        }
-        case 1: {
-          
-          /* Pattern matching succeeded */
-          tmp1 = 0 /* false */;
-          goto tmp3_done;
-        }
-        }
-        goto tmp3_end;
-        tmp3_end: ;
-      }
-      goto goto_2;
-      goto_2:;
-      MMC_THROW_INTERNAL();
-      goto tmp3_done;
-      tmp3_done:;
-    }
-  }
-  _res = tmp1;
-  _return: OMC_LABEL_UNUSED
-  return _res;
-}
-modelica_metatype boxptr_NFStatement_isWhen(threadData_t *threadData, modelica_metatype _stmt)
-{
-  modelica_boolean _res;
-  modelica_metatype out_res;
-  _res = omc_NFStatement_isWhen(threadData, _stmt);
-  out_res = mmc_mk_icon(_res);
-  return out_res;
-}
-
-DLLDirection
 modelica_boolean omc_NFStatement_isAssignment(threadData_t *threadData, modelica_metatype _stmt)
 {
   modelica_boolean _res;
@@ -2990,28 +2936,43 @@ modelica_boolean omc_NFStatement_isDiscrete(threadData_t *threadData, modelica_m
           tmp1 = omc_NFType_isDiscrete(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_stmt), 3))));
           goto tmp3_done;
         }
+        case 5: {
+          
+          /* Pattern matching succeeded */
+          tmp1 = omc_List_any(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_stmt), 4))), boxvar_NFStatement_isDiscrete);
+          goto tmp3_done;
+        }
+        case 6: {
+          modelica_metatype tmpMeta5;
+          modelica_metatype tmpMeta6;
+          
+          /* Pattern matching succeeded */
+          {
+            modelica_metatype _branch;
+            for (tmpMeta5 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_stmt), 2))); !listEmpty(tmpMeta5); tmpMeta5=MMC_CDR(tmpMeta5))
+            {
+              _branch = MMC_CAR(tmpMeta5);
+              _b = omc_List_any(threadData, omc_Util_tuple22(threadData, _branch), boxvar_NFStatement_isDiscrete);
+
+              if(_b)
+              {
+                break;
+              }
+            }
+          }
+          tmp1 = _b;
+          goto tmp3_done;
+        }
         case 7: {
           
           /* Pattern matching succeeded */
           tmp1 = 1 /* true */;
           goto tmp3_done;
         }
-        case 8: {
+        case 12: {
           
           /* Pattern matching succeeded */
-          tmp1 = 1 /* true */;
-          goto tmp3_done;
-        }
-        case 9: {
-          
-          /* Pattern matching succeeded */
-          tmp1 = 1 /* true */;
-          goto tmp3_done;
-        }
-        case 10: {
-          
-          /* Pattern matching succeeded */
-          tmp1 = 1 /* true */;
+          tmp1 = omc_List_any(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_stmt), 3))), boxvar_NFStatement_isDiscrete);
           goto tmp3_done;
         }
         default:

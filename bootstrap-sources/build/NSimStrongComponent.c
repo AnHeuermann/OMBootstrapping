@@ -135,12 +135,12 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT49,8,3) {&NFBackendExtension_Backen
 #define _OMC_LIT49 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT49)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT50,11,3) {&NFVariable_VARIABLE__desc,_OMC_LIT38,_OMC_LIT39,_OMC_LIT40,MMC_IMMEDIATE(MMC_TAGFIXNUM(1)),_OMC_LIT42,MMC_REFSTRUCTLIT(mmc_nil),MMC_REFSTRUCTLIT(mmc_nil),_OMC_LIT43,_OMC_LIT45,_OMC_LIT49}};
 #define _OMC_LIT50 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT50)
-#define _OMC_LIT51_data "/home/adrpo33/OpenModelica/OMCompiler/Compiler/NSimCode/NSimStrongComponent.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT51,78,_OMC_LIT51_data);
+#define _OMC_LIT51_data "/OpenModelica/OMCompiler/Compiler/NSimCode/NSimStrongComponent.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT51,65,_OMC_LIT51_data);
 #define _OMC_LIT51 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT51)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT52_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT52_6,1.76286855e9);
 #define _OMC_LIT52_6 MMC_REFREALLIT(_OMC_LIT_STRUCT52_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT52,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT51,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(709)),MMC_IMMEDIATE(MMC_TAGFIXNUM(13)),MMC_IMMEDIATE(MMC_TAGFIXNUM(709)),MMC_IMMEDIATE(MMC_TAGFIXNUM(125)),_OMC_LIT52_6}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT52,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT51,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(710)),MMC_IMMEDIATE(MMC_TAGFIXNUM(13)),MMC_IMMEDIATE(MMC_TAGFIXNUM(710)),MMC_IMMEDIATE(MMC_TAGFIXNUM(125)),_OMC_LIT52_6}};
 #define _OMC_LIT52 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT52)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT53,1,4) {&DAE_ComponentPrefix_NOCOMPPRE__desc,}};
 #define _OMC_LIT53 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT53)
@@ -155,9 +155,9 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT56,77,_OMC_LIT56_data);
 #define _OMC_LIT57_data "NSimStrongComponent.Block.fromPartition failed for\n"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT57,51,_OMC_LIT57_data);
 #define _OMC_LIT57 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT57)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT58_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT58_6,1.76286855e9);
 #define _OMC_LIT58_6 MMC_REFREALLIT(_OMC_LIT_STRUCT58_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT58,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT51,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(565)),MMC_IMMEDIATE(MMC_TAGFIXNUM(13)),MMC_IMMEDIATE(MMC_TAGFIXNUM(567)),MMC_IMMEDIATE(MMC_TAGFIXNUM(13)),_OMC_LIT58_6}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT58,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT51,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(566)),MMC_IMMEDIATE(MMC_TAGFIXNUM(13)),MMC_IMMEDIATE(MMC_TAGFIXNUM(568)),MMC_IMMEDIATE(MMC_TAGFIXNUM(13)),_OMC_LIT58_6}};
 #define _OMC_LIT58 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT58)
 #define _OMC_LIT59_data "NSimStrongComponent.Block.createNoReturnBlocks failed for\n"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT59,58,_OMC_LIT59_data);
@@ -168,9 +168,9 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT61,3,3) {&NBBackendUtil_Rational_RA
 #define _OMC_LIT61 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT61)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT62,4,4) {&NBPartitioning_BClock_SUB__CLOCK__desc,_OMC_LIT60,_OMC_LIT61,MMC_REFSTRUCTLIT(mmc_none)}};
 #define _OMC_LIT62 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT62)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT63_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT63_6,1.76286855e9);
 #define _OMC_LIT63_6 MMC_REFREALLIT(_OMC_LIT_STRUCT63_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT63,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT51,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(539)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(539)),MMC_IMMEDIATE(MMC_TAGFIXNUM(128)),_OMC_LIT63_6}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT63,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT51,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(540)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(540)),MMC_IMMEDIATE(MMC_TAGFIXNUM(128)),_OMC_LIT63_6}};
 #define _OMC_LIT63 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT63)
 #define _OMC_LIT64_data "NSimStrongComponent.Block.getIndex failed for\n"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT64,46,_OMC_LIT64_data);
@@ -431,10 +431,10 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_NSimStrongComponent_Block_getGen
       for (; tmp4 < 2; tmp4++) {
         switch (MMC_SWITCH_CAST(tmp4)) {
         case 0: {
-          if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,4,2) == 0) goto tmp3_end;
+          if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,4,3) == 0) goto tmp3_end;
           
           /* Pattern matching succeeded */
-          tmpMeta1 = omc_NBEquation_Equation_getEqnName(threadData, omc_NBSlice_getT(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_comp), 3)))));
+          tmpMeta1 = omc_NBEquation_Equation_getEqnName(threadData, omc_NBSlice_getT(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_comp), 4)))));
           goto tmp3_done;
         }
         case 1: {
@@ -2522,10 +2522,10 @@ modelica_metatype omc_NSimStrongComponent_Block_fromStrongComponent(threadData_t
           modelica_metatype tmpMeta13;
           modelica_metatype tmpMeta14;
           modelica_metatype tmpMeta15;
-          if (mmc__uniontype__metarecord__typedef__equal(tmp8_1,4,2) == 0) goto tmp7_end;
+          if (mmc__uniontype__metarecord__typedef__equal(tmp8_1,4,3) == 0) goto tmp7_end;
           
           /* Pattern matching succeeded */
-          _eqn_ptr = omc_NBSlice_getT(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_comp), 3))));
+          _eqn_ptr = omc_NBSlice_getT(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_comp), 4))));
 
           _eqn = omc_Pointer_access(threadData, _eqn_ptr);
 
@@ -2534,7 +2534,7 @@ modelica_metatype omc_NSimStrongComponent_Block_fromStrongComponent(threadData_t
 
           _generic_call_index = mmc_unbox_integer(omc_UnorderedMap_tryAdd(threadData, _ident, mmc_mk_integer(omc_UnorderedMap_size(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCodeIndices), 26))))), (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCodeIndices), 26)))));
 
-          tmpMeta14 = mmc_mk_box6(10, &NSimStrongComponent_Block_GENERIC__ASSIGN__desc, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCodeIndices), 18))), mmc_mk_integer(_generic_call_index), (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_comp), 3)))), 3))), omc_NBEquation_Equation_getSource(threadData, _eqn), omc_NBEquation_Equation_getAttributes(threadData, _eqn));
+          tmpMeta14 = mmc_mk_box6(10, &NSimStrongComponent_Block_GENERIC__ASSIGN__desc, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCodeIndices), 18))), mmc_mk_integer(_generic_call_index), (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_comp), 4)))), 3))), omc_NBEquation_Equation_getSource(threadData, _eqn), omc_NBEquation_Equation_getAttributes(threadData, _eqn));
           _tmp = tmpMeta14;
 
           omc_UnorderedMap_add(threadData, omc_NBEquation_Equation_getEqnName(threadData, _eqn_ptr), _tmp, _equation_map);
@@ -2708,7 +2708,7 @@ modelica_metatype omc_NSimStrongComponent_Block_fromStrongComponent(threadData_t
           /* Pattern matching succeeded */
           _aliasOf = mmc_unbox_integer(omc_UnorderedMap_getOrDefault(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_comp), 2))), (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCodeIndices), 25))), mmc_mk_integer(((modelica_integer) -1))));
 
-          tmpMeta45 = mmc_mk_box5(12, &NSimStrongComponent_Block_ALIAS__desc, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCodeIndices), 18))), (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_comp), 2))), mmc_mk_integer(_aliasOf), mmc_mk_boolean(omc_NBStrongComponent_isDiscrete(threadData, _comp)));
+          tmpMeta45 = mmc_mk_box5(12, &NSimStrongComponent_Block_ALIAS__desc, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCodeIndices), 18))), (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_comp), 2))), mmc_mk_integer(_aliasOf), mmc_mk_boolean((omc_NBStrongComponent_isDiscrete(threadData, _comp) && (!omc_NBStrongComponent_isAlgebraicLoop(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_comp), 3))))))));
           _tmp = tmpMeta45;
 
           tmpMeta46 = MMC_TAGPTR(mmc_alloc_words(27));
@@ -3080,12 +3080,12 @@ modelica_metatype omc_NSimStrongComponent_Block_createClockedBlocks(threadData_t
   return _baseParts;
 }
 
-static modelica_metatype closure1_NSimVar_SimVar_traverseCreate(threadData_t *thData, modelica_metatype closure, modelica_metatype $in_var)
+static modelica_metatype closure1_NSimVar_SimVar_createFromResidualComponent(threadData_t *thData, modelica_metatype closure, modelica_metatype $in_comp)
 {
   modelica_metatype acc = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(closure),1));
   modelica_metatype indices_ptr = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(closure),2));
   modelica_metatype varType = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(closure),3));
-  return boxptr_NSimVar_SimVar_traverseCreate(thData, $in_var, acc, indices_ptr, varType);
+  return boxptr_NSimVar_SimVar_createFromResidualComponent(thData, $in_comp, acc, indices_ptr, varType);
 }
 DLLDirection
 modelica_metatype omc_NSimStrongComponent_Block_createDAEModeBlocks(threadData_t *threadData, modelica_metatype _partitions, modelica_metatype __omcQ_24in_5FsimCodeIndices, modelica_metatype _simcode_map, modelica_metatype _equation_map, modelica_metatype *out_vars, modelica_metatype *out_simCodeIndices)
@@ -3122,7 +3122,7 @@ modelica_metatype omc_NSimStrongComponent_Block_createDAEModeBlocks(threadData_t
       _indices_ptr = omc_Pointer_create(threadData, _simCodeIndices);
 
       tmpMeta5 = mmc_mk_box3(0, _vars_ptr, _indices_ptr, mmc_mk_integer(4));
-      omc_NBVariable_VariablePointers_map(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_partition), 4))), (modelica_fnptr) mmc_mk_box2(0,closure1_NSimVar_SimVar_traverseCreate,tmpMeta5));
+      omc_NBPartition_Partition_mapStrongComponents(threadData, _partition, (modelica_fnptr) mmc_mk_box2(0,closure1_NSimVar_SimVar_createFromResidualComponent,tmpMeta5));
 
       _tmp = omc_NSimStrongComponent_Block_fromPartition(threadData, _partition, omc_Pointer_access(threadData, _indices_ptr), _simcode_map, _equation_map ,&_simCodeIndices);
 

@@ -518,10 +518,10 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT201,5,3) {&ErrorTypes_Message_MESSA
 #define _OMC_LIT202_data "NFBuiltinCall.makeCatExp got wrong input sizes"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT202,46,_OMC_LIT202_data);
 #define _OMC_LIT202 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT202)
-#define _OMC_LIT203_data "/home/adrpo33/OpenModelica/OMCompiler/Compiler/NFFrontEnd/NFBuiltinCall.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT203,74,_OMC_LIT203_data);
+#define _OMC_LIT203_data "/OpenModelica/OMCompiler/Compiler/NFFrontEnd/NFBuiltinCall.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT203,61,_OMC_LIT203_data);
 #define _OMC_LIT203 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT203)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT204_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT204_6,1.76286855e9);
 #define _OMC_LIT204_6 MMC_REFREALLIT(_OMC_LIT_STRUCT204_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT204,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT203,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(244)),MMC_IMMEDIATE(MMC_TAGFIXNUM(5)),MMC_IMMEDIATE(MMC_TAGFIXNUM(244)),MMC_IMMEDIATE(MMC_TAGFIXNUM(139)),_OMC_LIT204_6}};
 #define _OMC_LIT204 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT204)
@@ -579,7 +579,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT223,5,_OMC_LIT223_data);
 #define _OMC_LIT224_data "NFBuiltinCall.typeSpecial got unhandled builtin function: "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT224,58,_OMC_LIT224_data);
 #define _OMC_LIT224 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT224)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT225_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT225_6,1.76286855e9);
 #define _OMC_LIT225_6 MMC_REFREALLIT(_OMC_LIT_STRUCT225_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT225,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT203,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(170)),MMC_IMMEDIATE(MMC_TAGFIXNUM(11)),MMC_IMMEDIATE(MMC_TAGFIXNUM(170)),MMC_IMMEDIATE(MMC_TAGFIXNUM(126)),_OMC_LIT225_6}};
 #define _OMC_LIT225 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT225)
@@ -631,7 +631,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT240,10,_OMC_LIT240_data);
 #define _OMC_LIT241_data "NFBuiltinCall.needSpecialHandling got unknown call: "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT241,52,_OMC_LIT241_data);
 #define _OMC_LIT241 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT241)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT242_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT242_6,1.76286855e9);
 #define _OMC_LIT242_6 MMC_REFREALLIT(_OMC_LIT_STRUCT242_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT242,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT203,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(95)),MMC_IMMEDIATE(MMC_TAGFIXNUM(11)),MMC_IMMEDIATE(MMC_TAGFIXNUM(96)),MMC_IMMEDIATE(MMC_TAGFIXNUM(47)),_OMC_LIT242_6}};
 #define _OMC_LIT242 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT242)
@@ -2849,7 +2849,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_NFBuiltinCall_typeUniqueRootIndi
     if(!(listLength(omc_NFType_arrayDims(threadData, _ty1)) == listLength(omc_NFType_arrayDims(threadData, _ty2))))
     {
       {
-        FILE_INFO info = {"/home/adrpo33/OpenModelica/OMCompiler/Compiler/NFFrontEnd/NFBuiltinCall.mo",1747,5,1747,134,0};
+        FILE_INFO info = {"/OpenModelica/OMCompiler/Compiler/NFFrontEnd/NFBuiltinCall.mo",1747,5,1747,134,0};
         omc_assert(threadData, info, MMC_STRINGDATA(_OMC_LIT80));
       }
     }
@@ -6400,7 +6400,7 @@ modelica_metatype omc_NFBuiltinCall_makeCatExp(threadData_t *threadData, modelic
     modelica_metatype _d_loopVar = 0;
     modelica_metatype _d;
     _d_loopVar = _dimsLst;
-    __omcQ_24tmpVar9 = ((modelica_integer) -4611686018427387903); /* defaultValue */
+    __omcQ_24tmpVar9 = ((modelica_integer) -1073741823); /* defaultValue */
     while(1) {
       tmp11 = 1;
       if (!listEmpty(_d_loopVar)) {
@@ -6428,7 +6428,7 @@ modelica_metatype omc_NFBuiltinCall_makeCatExp(threadData_t *threadData, modelic
     modelica_metatype _d_loopVar = 0;
     modelica_metatype _d;
     _d_loopVar = _dimsLst;
-    __omcQ_24tmpVar11 = ((modelica_integer) 4611686018427387903); /* defaultValue */
+    __omcQ_24tmpVar11 = ((modelica_integer) 1073741823); /* defaultValue */
     while(1) {
       tmp13 = 1;
       if (!listEmpty(_d_loopVar)) {

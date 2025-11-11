@@ -6,10 +6,10 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT0,6,_OMC_LIT0_data);
 #define _OMC_LIT1_data "pre"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT1,3,_OMC_LIT1_data);
 #define _OMC_LIT1 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT1)
-#define _OMC_LIT2_data "/home/adrpo33/OpenModelica/OMCompiler/Compiler/NBackEnd/Modules/2_Pre/NBEvents.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT2,81,_OMC_LIT2_data);
+#define _OMC_LIT2_data "/OpenModelica/OMCompiler/Compiler/NBackEnd/Modules/2_Pre/NBEvents.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT2,68,_OMC_LIT2_data);
 #define _OMC_LIT2 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT2)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT3_6,1.758714003e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT3_6,1.76286855e9);
 #define _OMC_LIT3_6 MMC_REFREALLIT(_OMC_LIT_STRUCT3_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT3,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT2,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1131)),MMC_IMMEDIATE(MMC_TAGFIXNUM(12)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1131)),MMC_IMMEDIATE(MMC_TAGFIXNUM(30)),_OMC_LIT3_6}};
 #define _OMC_LIT3 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT3)
@@ -52,7 +52,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT17,4,_OMC_LIT17_data);
 #define _OMC_LIT18_data ") "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT18,2,_OMC_LIT18_data);
 #define _OMC_LIT18 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT18)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT19_6,1.758714003e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT19_6,1.76286855e9);
 #define _OMC_LIT19_6 MMC_REFREALLIT(_OMC_LIT_STRUCT19_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT19,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT2,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(727)),MMC_IMMEDIATE(MMC_TAGFIXNUM(7)),MMC_IMMEDIATE(MMC_TAGFIXNUM(727)),MMC_IMMEDIATE(MMC_TAGFIXNUM(169)),_OMC_LIT19_6}};
 #define _OMC_LIT19 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT19)
@@ -2033,10 +2033,10 @@ static modelica_metatype closure8_NBEvents_collectEventsTraverse(threadData_t *t
   modelica_metatype funcTree = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(closure),4));
   modelica_metatype createEqn = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(closure),5));
   return boxptr_NBEvents_collectEventsTraverse(thData, $in_exp, bucket_ptr, iter, eqn, funcTree, createEqn);
-}static modelica_metatype closure7_NFExpression_mapReverse(threadData_t *thData, modelica_metatype closure, modelica_metatype $in_exp)
+}static modelica_metatype closure7_NFExpression_fakeMap(threadData_t *thData, modelica_metatype closure, modelica_metatype exp)
 {
   modelica_fnptr func = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(closure),1));
-  return boxptr_NFExpression_mapReverse(thData, $in_exp, func);
+  return boxptr_NFExpression_fakeMap(thData, exp, func);
 }
 DLLDirection
 modelica_metatype omc_NBEvents_StateEvent_fromStatement(threadData_t *threadData, modelica_metatype __omcQ_24in_5Fstmt, modelica_metatype _bucket_ptr, modelica_metatype _eqn, modelica_metatype _variables, modelica_metatype _funcTree, modelica_metatype _frames)
@@ -2126,7 +2126,7 @@ modelica_metatype omc_NBEvents_StateEvent_fromStatement(threadData_t *threadData
           _iter = omc_NBEquation_Iterator_fromFrames(threadData, listReverse(_frames));
           tmpMeta17 = mmc_mk_box5(0, _bucket_ptr, _iter, _eqn, _funcTree, mmc_mk_boolean(0 /* false */));
           tmpMeta16 = mmc_mk_box1(0, (modelica_fnptr) mmc_mk_box2(0,closure8_NBEvents_collectEventsTraverse,tmpMeta17));
-          tmpMeta1 = omc_NFStatement_mapExp(threadData, _stmt, (modelica_fnptr) mmc_mk_box2(0,closure7_NFExpression_mapReverse,tmpMeta16));
+          tmpMeta1 = omc_NFStatement_mapExp(threadData, _stmt, (modelica_fnptr) mmc_mk_box2(0,closure7_NFExpression_fakeMap,tmpMeta16));
           goto tmp3_done;
         }
         }

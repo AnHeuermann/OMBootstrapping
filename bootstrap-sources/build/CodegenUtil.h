@@ -75,7 +75,7 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_CodegenUtil_attributeString,2,0) {(void
 #define boxvar_CodegenUtil_attributeString MMC_REFSTRUCTLIT(boxvar_lit_CodegenUtil_attributeString)
 
 
-#define boxptr_CodegenUtil_lm__68 omc_CodegenUtil_lm__68
+#define boxptr_CodegenUtil_lm__69 omc_CodegenUtil_lm__69
 
 
 DLLDirection
@@ -108,10 +108,13 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_CodegenUtil_getVariablity,2,0) {(void*)
 
 
 DLLDirection
-modelica_metatype omc_CodegenUtil_initValXml(threadData_t *threadData, modelica_metatype _in_txt, modelica_metatype _in_a_exp);
+modelica_metatype omc_CodegenUtil_initValXml(threadData_t *threadData, modelica_metatype _in_txt, modelica_metatype _in_a_exp, modelica_string _in_a_stringQuotes);
 #define boxptr_CodegenUtil_initValXml omc_CodegenUtil_initValXml
 static const MMC_DEFSTRUCTLIT(boxvar_lit_CodegenUtil_initValXml,2,0) {(void*) boxptr_CodegenUtil_initValXml,0}};
 #define boxvar_CodegenUtil_initValXml MMC_REFSTRUCTLIT(boxvar_lit_CodegenUtil_initValXml)
+
+
+#define boxptr_CodegenUtil_lm__61 omc_CodegenUtil_lm__61
 
 
 DLLDirection

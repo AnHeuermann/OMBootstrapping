@@ -72,22 +72,22 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT24,9,_OMC_LIT24_data);
 #define _OMC_LIT25_data "NBPartition.Association.expClocked failed becase of unhandled clock: "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT25,69,_OMC_LIT25_data);
 #define _OMC_LIT25 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT25)
-#define _OMC_LIT26_data "/home/adrpo33/OpenModelica/OMCompiler/Compiler/NBackEnd/Classes/NBPartition.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT26,78,_OMC_LIT26_data);
+#define _OMC_LIT26_data "/OpenModelica/OMCompiler/Compiler/NBackEnd/Classes/NBPartition.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT26,65,_OMC_LIT26_data);
 #define _OMC_LIT26 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT26)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT27_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT27_6,1.76286855e9);
 #define _OMC_LIT27_6 MMC_REFREALLIT(_OMC_LIT_STRUCT27_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT27,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT26,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(163)),MMC_IMMEDIATE(MMC_TAGFIXNUM(15)),MMC_IMMEDIATE(MMC_TAGFIXNUM(163)),MMC_IMMEDIATE(MMC_TAGFIXNUM(120)),_OMC_LIT27_6}};
 #define _OMC_LIT27 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT27)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT28_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT28_6,1.76286855e9);
 #define _OMC_LIT28_6 MMC_REFREALLIT(_OMC_LIT_STRUCT28_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT28,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT26,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(161)),MMC_IMMEDIATE(MMC_TAGFIXNUM(15)),MMC_IMMEDIATE(MMC_TAGFIXNUM(161)),MMC_IMMEDIATE(MMC_TAGFIXNUM(121)),_OMC_LIT28_6}};
 #define _OMC_LIT28 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT28)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT29_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT29_6,1.76286855e9);
 #define _OMC_LIT29_6 MMC_REFREALLIT(_OMC_LIT_STRUCT29_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT29,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT26,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(135)),MMC_IMMEDIATE(MMC_TAGFIXNUM(11)),MMC_IMMEDIATE(MMC_TAGFIXNUM(135)),MMC_IMMEDIATE(MMC_TAGFIXNUM(80)),_OMC_LIT29_6}};
 #define _OMC_LIT29 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT29)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT30_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT30_6,1.76286855e9);
 #define _OMC_LIT30_6 MMC_REFREALLIT(_OMC_LIT_STRUCT30_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT30,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT26,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(136)),MMC_IMMEDIATE(MMC_TAGFIXNUM(11)),MMC_IMMEDIATE(MMC_TAGFIXNUM(136)),MMC_IMMEDIATE(MMC_TAGFIXNUM(117)),_OMC_LIT30_6}};
 #define _OMC_LIT30 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT30)
@@ -120,6 +120,10 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT37,7,_OMC_LIT37_data);
 #if !defined(PROTECTED_FUNCTION_STATIC)
 #define PROTECTED_FUNCTION_STATIC
 #endif
+PROTECTED_FUNCTION_STATIC modelica_boolean omc_NBPartition_Partition_categorize_isAlgebraicContinuous(threadData_t *threadData, modelica_metatype _part, modelica_boolean *out_con);
+PROTECTED_FUNCTION_STATIC modelica_metatype boxptr_NBPartition_Partition_categorize_isAlgebraicContinuous(threadData_t *threadData, modelica_metatype _part, modelica_metatype *out_con);
+static const MMC_DEFSTRUCTLIT(boxvar_lit_NBPartition_Partition_categorize_isAlgebraicContinuous,2,0) {(void*) boxptr_NBPartition_Partition_categorize_isAlgebraicContinuous,0}};
+#define boxvar_NBPartition_Partition_categorize_isAlgebraicContinuous MMC_REFSTRUCTLIT(boxvar_lit_NBPartition_Partition_categorize_isAlgebraicContinuous)
 PROTECTED_FUNCTION_STATIC modelica_metatype omc_NBPartition_Association_expClocked(threadData_t *threadData, modelica_metatype __omcQ_24in_5Fexp, modelica_metatype _info, modelica_metatype _clock_ptr);
 static const MMC_DEFSTRUCTLIT(boxvar_lit_NBPartition_Association_expClocked,2,0) {(void*) boxptr_NBPartition_Association_expClocked,0}};
 #define boxvar_NBPartition_Association_expClocked MMC_REFSTRUCTLIT(boxvar_lit_NBPartition_Association_expClocked)
@@ -795,6 +799,46 @@ modelica_metatype omc_NBPartition_Partition_getJacobian(threadData_t *threadData
   return _jac;
 }
 
+PROTECTED_FUNCTION_STATIC modelica_boolean omc_NBPartition_Partition_categorize_isAlgebraicContinuous(threadData_t *threadData, modelica_metatype _part, modelica_boolean *out_con)
+{
+  modelica_boolean _alg;
+  modelica_boolean _con;
+  modelica_metatype tmpMeta1;
+  modelica_metatype tmpMeta2;
+  MMC_SO();
+  _tailrecursive: OMC_LABEL_UNUSED
+  _alg = 1 /* true */;
+  _con = 1 /* true */;
+  {
+    modelica_metatype _var;
+    for (tmpMeta1 = omc_NBVariable_VariablePointers_toList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_part), 4)))); !listEmpty(tmpMeta1); tmpMeta1=MMC_CDR(tmpMeta1))
+    {
+      _var = MMC_CAR(tmpMeta1);
+      _alg = (_alg?(!omc_NBVariable_isStateDerivative(threadData, _var)):0 /* false */);
+
+      _con = (_con?(!omc_NBVariable_isDiscrete(threadData, _var)):0 /* false */);
+
+      if((!(_alg || _con)))
+      {
+        break;
+      }
+    }
+  }
+  _return: OMC_LABEL_UNUSED
+  if (out_con) { *out_con = _con; }
+  return _alg;
+}
+PROTECTED_FUNCTION_STATIC modelica_metatype boxptr_NBPartition_Partition_categorize_isAlgebraicContinuous(threadData_t *threadData, modelica_metatype _part, modelica_metatype *out_con)
+{
+  modelica_boolean _con;
+  modelica_boolean _alg;
+  modelica_metatype out_alg;
+  _alg = omc_NBPartition_Partition_categorize_isAlgebraicContinuous(threadData, _part, &_con);
+  out_alg = mmc_mk_icon(_alg);
+  if (out_con) { *out_con = mmc_mk_icon(_con); }
+  return out_alg;
+}
+
 DLLDirection
 void omc_NBPartition_Partition_categorize(threadData_t *threadData, modelica_metatype _partition, modelica_metatype _ode, modelica_metatype _alg, modelica_metatype _ode_evt, modelica_metatype _alg_evt, modelica_metatype _clocked)
 {
@@ -811,7 +855,7 @@ void omc_NBPartition_Partition_categorize(threadData_t *threadData, modelica_met
   // _continuous has no default value.
   // _kind has no default value.
   // _association has no default value.
-  _algebraic = omc_NBPartition_Partition_isAlgebraicContinuous(threadData, _partition ,&_continuous);
+  _algebraic = omc_NBPartition_Partition_categorize_isAlgebraicContinuous(threadData, _partition ,&_continuous);
 
   { /* match expression */
     modelica_boolean tmp4_1;modelica_boolean tmp4_2;
@@ -884,6 +928,7 @@ void omc_NBPartition_Partition_categorize(threadData_t *threadData, modelica_met
         }
         case 1: {
           modelica_metatype tmpMeta12;
+          modelica_metatype tmpMeta13;
           if (2 != tmp10_1) goto tmp9_end;
           if (mmc__uniontype__metarecord__typedef__equal(tmp10_2,0,2) == 0) goto tmp9_end;
           
@@ -894,29 +939,19 @@ void omc_NBPartition_Partition_categorize(threadData_t *threadData, modelica_met
           ((modelica_metatype*)MMC_UNTAGPTR(tmpMeta12))[2] = mmc_mk_integer((modelica_integer)_kind);
           _association = tmpMeta12;
 
+          tmpMeta13 = MMC_TAGPTR(mmc_alloc_words(10));
+          memcpy(MMC_UNTAGPTR(tmpMeta13), MMC_UNTAGPTR(_partition), 10*sizeof(modelica_metatype));
+          ((modelica_metatype*)MMC_UNTAGPTR(tmpMeta13))[3] = _association;
+          _partition = tmpMeta13;
+
           omc_DoubleEnded_push__back(threadData, _alg, _partition);
           tmpMeta7 = _association;
           goto tmp9_done;
         }
         case 2: {
-          modelica_metatype tmpMeta13;
-          if (1 != tmp10_1) goto tmp9_end;
-          if (mmc__uniontype__metarecord__typedef__equal(tmp10_2,0,2) == 0) goto tmp9_end;
-          
-          _association = tmp10_2;
-          /* Pattern matching succeeded */
-          tmpMeta13 = MMC_TAGPTR(mmc_alloc_words(4));
-          memcpy(MMC_UNTAGPTR(tmpMeta13), MMC_UNTAGPTR(_association), 4*sizeof(modelica_metatype));
-          ((modelica_metatype*)MMC_UNTAGPTR(tmpMeta13))[2] = mmc_mk_integer((modelica_integer)_kind);
-          _association = tmpMeta13;
-
-          omc_DoubleEnded_push__back(threadData, _ode, _partition);
-          tmpMeta7 = _association;
-          goto tmp9_done;
-        }
-        case 3: {
           modelica_metatype tmpMeta14;
-          if (4 != tmp10_1) goto tmp9_end;
+          modelica_metatype tmpMeta15;
+          if (1 != tmp10_1) goto tmp9_end;
           if (mmc__uniontype__metarecord__typedef__equal(tmp10_2,0,2) == 0) goto tmp9_end;
           
           _association = tmp10_2;
@@ -926,21 +961,54 @@ void omc_NBPartition_Partition_categorize(threadData_t *threadData, modelica_met
           ((modelica_metatype*)MMC_UNTAGPTR(tmpMeta14))[2] = mmc_mk_integer((modelica_integer)_kind);
           _association = tmpMeta14;
 
+          tmpMeta15 = MMC_TAGPTR(mmc_alloc_words(10));
+          memcpy(MMC_UNTAGPTR(tmpMeta15), MMC_UNTAGPTR(_partition), 10*sizeof(modelica_metatype));
+          ((modelica_metatype*)MMC_UNTAGPTR(tmpMeta15))[3] = _association;
+          _partition = tmpMeta15;
+
+          omc_DoubleEnded_push__back(threadData, _ode, _partition);
+          tmpMeta7 = _association;
+          goto tmp9_done;
+        }
+        case 3: {
+          modelica_metatype tmpMeta16;
+          modelica_metatype tmpMeta17;
+          if (4 != tmp10_1) goto tmp9_end;
+          if (mmc__uniontype__metarecord__typedef__equal(tmp10_2,0,2) == 0) goto tmp9_end;
+          
+          _association = tmp10_2;
+          /* Pattern matching succeeded */
+          tmpMeta16 = MMC_TAGPTR(mmc_alloc_words(4));
+          memcpy(MMC_UNTAGPTR(tmpMeta16), MMC_UNTAGPTR(_association), 4*sizeof(modelica_metatype));
+          ((modelica_metatype*)MMC_UNTAGPTR(tmpMeta16))[2] = mmc_mk_integer((modelica_integer)_kind);
+          _association = tmpMeta16;
+
+          tmpMeta17 = MMC_TAGPTR(mmc_alloc_words(10));
+          memcpy(MMC_UNTAGPTR(tmpMeta17), MMC_UNTAGPTR(_partition), 10*sizeof(modelica_metatype));
+          ((modelica_metatype*)MMC_UNTAGPTR(tmpMeta17))[3] = _association;
+          _partition = tmpMeta17;
+
           omc_DoubleEnded_push__back(threadData, _alg_evt, _partition);
           tmpMeta7 = _association;
           goto tmp9_done;
         }
         case 4: {
-          modelica_metatype tmpMeta15;
+          modelica_metatype tmpMeta18;
+          modelica_metatype tmpMeta19;
           if (3 != tmp10_1) goto tmp9_end;
           if (mmc__uniontype__metarecord__typedef__equal(tmp10_2,0,2) == 0) goto tmp9_end;
           
           _association = tmp10_2;
           /* Pattern matching succeeded */
-          tmpMeta15 = MMC_TAGPTR(mmc_alloc_words(4));
-          memcpy(MMC_UNTAGPTR(tmpMeta15), MMC_UNTAGPTR(_association), 4*sizeof(modelica_metatype));
-          ((modelica_metatype*)MMC_UNTAGPTR(tmpMeta15))[2] = mmc_mk_integer((modelica_integer)_kind);
-          _association = tmpMeta15;
+          tmpMeta18 = MMC_TAGPTR(mmc_alloc_words(4));
+          memcpy(MMC_UNTAGPTR(tmpMeta18), MMC_UNTAGPTR(_association), 4*sizeof(modelica_metatype));
+          ((modelica_metatype*)MMC_UNTAGPTR(tmpMeta18))[2] = mmc_mk_integer((modelica_integer)_kind);
+          _association = tmpMeta18;
+
+          tmpMeta19 = MMC_TAGPTR(mmc_alloc_words(10));
+          memcpy(MMC_UNTAGPTR(tmpMeta19), MMC_UNTAGPTR(_partition), 10*sizeof(modelica_metatype));
+          ((modelica_metatype*)MMC_UNTAGPTR(tmpMeta19))[3] = _association;
+          _partition = tmpMeta19;
 
           omc_DoubleEnded_push__back(threadData, _ode_evt, _partition);
           tmpMeta7 = _association;
@@ -966,44 +1034,64 @@ void omc_NBPartition_Partition_categorize(threadData_t *threadData, modelica_met
 }
 
 DLLDirection
-modelica_boolean omc_NBPartition_Partition_isAlgebraicContinuous(threadData_t *threadData, modelica_metatype _part, modelica_boolean *out_con)
+modelica_boolean omc_NBPartition_Partition_isODEorDAE(threadData_t *threadData, modelica_metatype _part)
 {
-  modelica_boolean _alg;
-  modelica_boolean _con;
-  modelica_metatype tmpMeta1;
-  modelica_metatype tmpMeta2;
+  modelica_boolean _b;
+  modelica_boolean tmp1 = 0;
   MMC_SO();
   _tailrecursive: OMC_LABEL_UNUSED
-  _alg = 1 /* true */;
-  _con = 1 /* true */;
-  {
-    modelica_metatype _var;
-    for (tmpMeta1 = omc_NBVariable_VariablePointers_toList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_part), 4)))); !listEmpty(tmpMeta1); tmpMeta1=MMC_CDR(tmpMeta1))
+  // _b has no default value.
+  { /* match expression */
+    modelica_metatype tmp4_1;
+    tmp4_1 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_part), 3)));
     {
-      _var = MMC_CAR(tmpMeta1);
-      _alg = (_alg?(!omc_NBVariable_isStateDerivative(threadData, _var)):0 /* false */);
-
-      _con = (_con?(!omc_NBVariable_isDiscrete(threadData, _var)):0 /* false */);
-
-      if((!(_alg || _con)))
-      {
-        break;
+      modelica_integer _kind;
+      volatile mmc_switch_type tmp4;
+      int tmp5;
+      // _kind has no default value.
+      tmp4 = 0;
+      for (; tmp4 < 2; tmp4++) {
+        switch (MMC_SWITCH_CAST(tmp4)) {
+        case 0: {
+          modelica_metatype tmpMeta6;
+          modelica_integer tmp7;
+          if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,0,2) == 0) goto tmp3_end;
+          tmpMeta6 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 2));
+          tmp7 = mmc_unbox_integer(tmpMeta6);
+          
+          _kind = tmp7  /* pattern as ty=enumeration(ODE, ALG, ODE_EVT, ALG_EVT, INI, DAE, JAC, CLK) */;
+          /* Pattern matching succeeded */
+          tmp1 = ((((modelica_integer)_kind == 1) || ((modelica_integer)_kind == 3)) || ((modelica_integer)_kind == 6));
+          goto tmp3_done;
+        }
+        case 1: {
+          
+          /* Pattern matching succeeded */
+          tmp1 = 0 /* false */;
+          goto tmp3_done;
+        }
+        }
+        goto tmp3_end;
+        tmp3_end: ;
       }
+      goto goto_2;
+      goto_2:;
+      MMC_THROW_INTERNAL();
+      goto tmp3_done;
+      tmp3_done:;
     }
   }
+  _b = tmp1;
   _return: OMC_LABEL_UNUSED
-  if (out_con) { *out_con = _con; }
-  return _alg;
+  return _b;
 }
-modelica_metatype boxptr_NBPartition_Partition_isAlgebraicContinuous(threadData_t *threadData, modelica_metatype _part, modelica_metatype *out_con)
+modelica_metatype boxptr_NBPartition_Partition_isODEorDAE(threadData_t *threadData, modelica_metatype _part)
 {
-  modelica_boolean _con;
-  modelica_boolean _alg;
-  modelica_metatype out_alg;
-  _alg = omc_NBPartition_Partition_isAlgebraicContinuous(threadData, _part, &_con);
-  out_alg = mmc_mk_icon(_alg);
-  if (out_con) { *out_con = mmc_mk_icon(_con); }
-  return out_alg;
+  modelica_boolean _b;
+  modelica_metatype out_b;
+  _b = omc_NBPartition_Partition_isODEorDAE(threadData, _part);
+  out_b = mmc_mk_icon(_b);
+  return out_b;
 }
 
 DLLDirection

@@ -10,10 +10,10 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT2,42,_OMC_LIT2_data);
 #define _OMC_LIT3_data "\n"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT3,1,_OMC_LIT3_data);
 #define _OMC_LIT3 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT3)
-#define _OMC_LIT4_data "/home/adrpo33/OpenModelica/OMCompiler/Compiler/NFFrontEnd/NFType.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT4,67,_OMC_LIT4_data);
+#define _OMC_LIT4_data "/OpenModelica/OMCompiler/Compiler/NFFrontEnd/NFType.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT4,54,_OMC_LIT4_data);
 #define _OMC_LIT4 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT4)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT5_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT5_6,1.76286855e9);
 #define _OMC_LIT5_6 MMC_REFREALLIT(_OMC_LIT_STRUCT5_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT5,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT4,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1202)),MMC_IMMEDIATE(MMC_TAGFIXNUM(13)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1203)),MMC_IMMEDIATE(MMC_TAGFIXNUM(80)),_OMC_LIT5_6}};
 #define _OMC_LIT5 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT5)
@@ -36,7 +36,7 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT13,2,19) {&DAE_Type_T__ANYTYPE__des
 #define _OMC_LIT14_data "NFType.toDAE got unknown type: "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT14,31,_OMC_LIT14_data);
 #define _OMC_LIT14 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT14)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT15_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT15_6,1.76286855e9);
 #define _OMC_LIT15_6 MMC_REFREALLIT(_OMC_LIT_STRUCT15_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT15,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT4,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1146)),MMC_IMMEDIATE(MMC_TAGFIXNUM(11)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1146)),MMC_IMMEDIATE(MMC_TAGFIXNUM(106)),_OMC_LIT15_6}};
 #define _OMC_LIT15 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT15)
@@ -79,7 +79,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT27,7,_OMC_LIT27_data);
 #define _OMC_LIT28_data "NFType.dimensionsToFlatString got unknown or not array type: "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT28,61,_OMC_LIT28_data);
 #define _OMC_LIT28 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT28)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT29_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT29_6,1.76286855e9);
 #define _OMC_LIT29_6 MMC_REFREALLIT(_OMC_LIT_STRUCT29_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT29,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT4,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1042)),MMC_IMMEDIATE(MMC_TAGFIXNUM(11)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1042)),MMC_IMMEDIATE(MMC_TAGFIXNUM(119)),_OMC_LIT29_6}};
 #define _OMC_LIT29 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT29)
@@ -131,7 +131,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT44,1,_OMC_LIT44_data);
 #define _OMC_LIT45_data "NFType.toFlatString got unknown type: "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT45,38,_OMC_LIT45_data);
 #define _OMC_LIT45 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT45)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT46_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT46_6,1.76286855e9);
 #define _OMC_LIT46_6 MMC_REFREALLIT(_OMC_LIT_STRUCT46_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT46,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT4,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1027)),MMC_IMMEDIATE(MMC_TAGFIXNUM(11)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1027)),MMC_IMMEDIATE(MMC_TAGFIXNUM(106)),_OMC_LIT46_6}};
 #define _OMC_LIT46 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT46)
@@ -144,7 +144,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT48,2,_OMC_LIT48_data);
 #define _OMC_LIT49_data "NFType.toString got unknown type: "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT49,34,_OMC_LIT49_data);
 #define _OMC_LIT49 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT49)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT50_6,1.758197185e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT50_6,1.76286855e9);
 #define _OMC_LIT50_6 MMC_REFREALLIT(_OMC_LIT_STRUCT50_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT50,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT4,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(993)),MMC_IMMEDIATE(MMC_TAGFIXNUM(11)),MMC_IMMEDIATE(MMC_TAGFIXNUM(993)),MMC_IMMEDIATE(MMC_TAGFIXNUM(106)),_OMC_LIT50_6}};
 #define _OMC_LIT50 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT50)
@@ -315,60 +315,54 @@ modelica_integer omc_NFType_sizeOf(threadData_t *threadData, modelica_metatype _
           goto tmp3_done;
         }
         case 7: {
-          modelica_metatype tmpMeta6;
+          modelica_integer tmp6;
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,8,2) == 0) goto tmp3_end;
           
           /* Pattern matching succeeded */
           {
-            modelica_metatype __omcQ_24tmpVar1;
-            modelica_metatype* tmp7;
-            modelica_metatype tmpMeta8;
-            modelica_metatype __omcQ_24tmpVar0;
-            modelica_integer tmp9;
+            modelica_integer __omcQ_24tmpVar1;
+            modelica_integer __omcQ_24tmpVar0;
+            modelica_integer tmp7;
             modelica_metatype _t_loopVar = 0;
             modelica_metatype _t;
             _t_loopVar = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_ty), 2)));
-            tmpMeta8 = MMC_REFSTRUCTLIT(mmc_nil);
-            __omcQ_24tmpVar1 = tmpMeta8; /* defaultValue */
-            tmp7 = &__omcQ_24tmpVar1;
+            __omcQ_24tmpVar1 = ((modelica_integer) 0); /* defaultValue */
             while(1) {
-              tmp9 = 1;
+              tmp7 = 1;
               if (!listEmpty(_t_loopVar)) {
                 _t = MMC_CAR(_t_loopVar);
                 _t_loopVar = MMC_CDR(_t_loopVar);
-                tmp9--;
+                tmp7--;
               }
-              if (tmp9 == 0) {
-                __omcQ_24tmpVar0 = mmc_mk_integer(omc_NFType_sizeOf(threadData, _t, 0 /* false */));
-                *tmp7 = mmc_mk_cons(__omcQ_24tmpVar0,0);
-                tmp7 = &MMC_CDR(*tmp7);
-              } else if (tmp9 == 1) {
+              if (tmp7 == 0) {
+                __omcQ_24tmpVar0 = omc_NFType_sizeOf(threadData, _t, 0 /* false */);
+                __omcQ_24tmpVar1 = __omcQ_24tmpVar1 + __omcQ_24tmpVar0;
+              } else if (tmp7 == 1) {
                 break;
               } else {
                 goto goto_2;
               }
             }
-            *tmp7 = mmc_mk_nil();
-            tmpMeta6 = __omcQ_24tmpVar1;
+            tmp6 = __omcQ_24tmpVar1;
           }
-          tmp1 = mmc_unbox_integer(omc_List_fold(threadData, tmpMeta6, boxvar_intAdd, mmc_mk_integer(((modelica_integer) 0))));
+          tmp1 = tmp6;
           goto tmp3_done;
         }
         case 8: {
-          modelica_metatype tmpMeta10;
+          modelica_metatype tmpMeta8;
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,11,2) == 0) goto tmp3_end;
-          tmpMeta10 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 3));
-          if (mmc__uniontype__metarecord__typedef__equal(tmpMeta10,5,2) == 0) goto tmp3_end;
+          tmpMeta8 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 3));
+          if (mmc__uniontype__metarecord__typedef__equal(tmpMeta8,5,2) == 0) goto tmp3_end;
           
           /* Pattern matching succeeded */
           tmp1 = ((modelica_integer) 1);
           goto tmp3_done;
         }
         case 9: {
-          modelica_metatype tmpMeta11;
+          modelica_metatype tmpMeta9;
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,11,2) == 0) goto tmp3_end;
-          tmpMeta11 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 3));
-          if (mmc__uniontype__metarecord__typedef__equal(tmpMeta11,4,3) == 0) goto tmp3_end;
+          tmpMeta9 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 3));
+          if (mmc__uniontype__metarecord__typedef__equal(tmpMeta9,4,3) == 0) goto tmp3_end;
           
           /* Pattern matching succeeded */
           tmp1 = mmc_unbox_integer(omc_NFClassTree_ClassTree_foldComponents(threadData, omc_NFClass_classTree(threadData, omc_NFInstNode_InstNode_getClass(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_ty), 2))))), boxvar_NFType_sizeOf_fold__comp__size, mmc_mk_integer(((modelica_integer) 0))));
