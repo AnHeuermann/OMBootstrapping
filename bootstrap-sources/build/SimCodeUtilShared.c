@@ -44,10 +44,10 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT17,2,0) {MMC_REFSTRUCTLIT(mmc_none)
 #define _OMC_LIT18_data "Creation of Modelica functions failed."
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT18,38,_OMC_LIT18_data);
 #define _OMC_LIT18 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT18)
-#define _OMC_LIT19_data "/home/andreas/workdir/OM/OpenModelica/OMCompiler/Compiler/SimCode/SimCodeUtilShared.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT19,86,_OMC_LIT19_data);
+#define _OMC_LIT19_data "SimCodeUtilShared.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT19,20,_OMC_LIT19_data);
 #define _OMC_LIT19 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT19)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT20_6,1.784195231e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT20_6,0.0);
 #define _OMC_LIT20_6 MMC_REFREALLIT(_OMC_LIT_STRUCT20_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT20,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT19,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(106)),MMC_IMMEDIATE(MMC_TAGFIXNUM(5)),MMC_IMMEDIATE(MMC_TAGFIXNUM(106)),MMC_IMMEDIATE(MMC_TAGFIXNUM(83)),_OMC_LIT20_6}};
 #define _OMC_LIT20 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT20)
@@ -242,7 +242,7 @@ modelica_integer omc_SimCodeUtilShared_getScalarElementIndex(threadData_t *threa
 
       _idx = omc_DAEUtil_getSubscriptIndex(threadData, listGet(_arraySubscripts, _i));
 
-      _arrayIndex = _arrayIndex + (((modelica_integer) -1) + _idx) * (_fac);
+      _arrayIndex = _arrayIndex + ((((modelica_integer) -1) + _idx) * (_fac));
 
       _fac = (_fac) * (mmc_unbox_integer(listGet(_arrayDimensions, _i)));
     }
@@ -603,17 +603,17 @@ modelica_metatype omc_SimCodeUtilShared_addVarToArrayIndexMapping(threadData_t *
           if(omc_SimCodeUtilShared_isArrayVar(threadData, _iVar))
           {
             {
-              modelica_metatype __omcQ_24tmpVar1;
+              modelica_metatype __omcQ_24tmpVar3;
               modelica_metatype* tmp10;
               modelica_metatype tmpMeta11;
-              modelica_metatype __omcQ_24tmpVar0;
+              modelica_metatype __omcQ_24tmpVar2;
               modelica_integer tmp12;
               modelica_metatype _e_loopVar = 0;
               modelica_metatype _e;
               _e_loopVar = omc_List_lastN(threadData, _numArrayElement, listLength(_numArrayElement));
               tmpMeta11 = MMC_REFSTRUCTLIT(mmc_nil);
-              __omcQ_24tmpVar1 = tmpMeta11; /* defaultValue */
-              tmp10 = &__omcQ_24tmpVar1;
+              __omcQ_24tmpVar3 = tmpMeta11; /* defaultValue */
+              tmp10 = &__omcQ_24tmpVar3;
               while(1) {
                 tmp12 = 1;
                 if (!listEmpty(_e_loopVar)) {
@@ -622,8 +622,8 @@ modelica_metatype omc_SimCodeUtilShared_addVarToArrayIndexMapping(threadData_t *
                   tmp12--;
                 }
                 if (tmp12 == 0) {
-                  __omcQ_24tmpVar0 = mmc_mk_integer(stringInt(_e));
-                  *tmp10 = mmc_mk_cons(__omcQ_24tmpVar0,0);
+                  __omcQ_24tmpVar2 = mmc_mk_integer(stringInt(_e));
+                  *tmp10 = mmc_mk_cons(__omcQ_24tmpVar2,0);
                   tmp10 = &MMC_CDR(*tmp10);
                 } else if (tmp12 == 1) {
                   break;
@@ -632,7 +632,7 @@ modelica_metatype omc_SimCodeUtilShared_addVarToArrayIndexMapping(threadData_t *
                 }
               }
               *tmp10 = mmc_mk_nil();
-              tmpMeta9 = __omcQ_24tmpVar1;
+              tmpMeta9 = __omcQ_24tmpVar3;
             }
             _arrayDimensions = tmpMeta9;
 
@@ -666,17 +666,17 @@ modelica_metatype omc_SimCodeUtilShared_addVarToArrayIndexMapping(threadData_t *
               else
               {
                 {
-                  modelica_metatype __omcQ_24tmpVar3;
+                  modelica_metatype __omcQ_24tmpVar5;
                   modelica_metatype* tmp21;
                   modelica_metatype tmpMeta22;
-                  modelica_metatype __omcQ_24tmpVar2;
+                  modelica_metatype __omcQ_24tmpVar4;
                   modelica_integer tmp23;
                   modelica_metatype _e_loopVar = 0;
                   modelica_metatype _e;
                   _e_loopVar = omc_List_lastN(threadData, _numArrayElement, listLength(_arraySubscripts));
                   tmpMeta22 = MMC_REFSTRUCTLIT(mmc_nil);
-                  __omcQ_24tmpVar3 = tmpMeta22; /* defaultValue */
-                  tmp21 = &__omcQ_24tmpVar3;
+                  __omcQ_24tmpVar5 = tmpMeta22; /* defaultValue */
+                  tmp21 = &__omcQ_24tmpVar5;
                   while(1) {
                     tmp23 = 1;
                     if (!listEmpty(_e_loopVar)) {
@@ -685,8 +685,8 @@ modelica_metatype omc_SimCodeUtilShared_addVarToArrayIndexMapping(threadData_t *
                       tmp23--;
                     }
                     if (tmp23 == 0) {
-                      __omcQ_24tmpVar2 = mmc_mk_integer(stringInt(_e));
-                      *tmp21 = mmc_mk_cons(__omcQ_24tmpVar2,0);
+                      __omcQ_24tmpVar4 = mmc_mk_integer(stringInt(_e));
+                      *tmp21 = mmc_mk_cons(__omcQ_24tmpVar4,0);
                       tmp21 = &MMC_CDR(*tmp21);
                     } else if (tmp23 == 1) {
                       break;
@@ -695,7 +695,7 @@ modelica_metatype omc_SimCodeUtilShared_addVarToArrayIndexMapping(threadData_t *
                     }
                   }
                   *tmp21 = mmc_mk_nil();
-                  tmpMeta20 = __omcQ_24tmpVar3;
+                  tmpMeta20 = __omcQ_24tmpVar5;
                 }
                 _arrayDimensions = tmpMeta20;
 

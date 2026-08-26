@@ -3,8 +3,8 @@
 #define _OMC_LIT0_data "../"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT0,3,_OMC_LIT0_data);
 #define _OMC_LIT0 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT0)
-#define _OMC_LIT1_data "^(.*/Compiler/)?(.*/testsuite/)?(.*/.openmodelica/libraries/)?(.*/lib/omlibrary/)?(.*/build/(install_cmake/)?)?(.*)$"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT1,116,_OMC_LIT1_data);
+#define _OMC_LIT1_data "^(.*/Compiler/)?(.*/testsuite/)?(.*/.openmodelica/libraries/)?(.*/lib/omlibrary/)?(.*/build(_cmake)?/(install_cmake/)?)?(.*)$"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT1,125,_OMC_LIT1_data);
 #define _OMC_LIT1 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT1)
 #define _OMC_LIT2_data "^(.*)(/[_[:alnum:]]*\\.mos?_temp[0-9]*)(.*)$"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT2,43,_OMC_LIT2_data);
@@ -142,7 +142,7 @@ PROTECTED_FUNCTION_STATIC modelica_string omc_Testsuite_friendly2(threadData_t *
           /* Pattern matching succeeded */
           _newName = _name;
 
-          _i = omc_System_regex(threadData, _newName, _OMC_LIT1, ((modelica_integer) 8), 1 /* true */, 0 /* false */ ,&_strs);
+          _i = omc_System_regex(threadData, _newName, _OMC_LIT1, ((modelica_integer) 9), 1 /* true */, 0 /* false */ ,&_strs);
 
           _friendly = listGet(_strs, _i);
 

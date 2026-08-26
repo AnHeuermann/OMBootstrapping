@@ -34,6 +34,16 @@ extern struct record_description Tpl_Text_MEM__TEXT__desc;
 
 
 DLLDirection
+modelica_metatype omc_CodegenFMUCommon_fmuSimulationFlagsFile(threadData_t *threadData, modelica_metatype _in_txt, modelica_metatype _in_a_fmiSimulationFlags);
+#define boxptr_CodegenFMUCommon_fmuSimulationFlagsFile omc_CodegenFMUCommon_fmuSimulationFlagsFile
+static const MMC_DEFSTRUCTLIT(boxvar_lit_CodegenFMUCommon_fmuSimulationFlagsFile,2,0) {(void*) boxptr_CodegenFMUCommon_fmuSimulationFlagsFile,0}};
+#define boxvar_CodegenFMUCommon_fmuSimulationFlagsFile MMC_REFSTRUCTLIT(boxvar_lit_CodegenFMUCommon_fmuSimulationFlagsFile)
+
+
+#define boxptr_CodegenFMUCommon_lm__195 omc_CodegenFMUCommon_lm__195
+
+
+DLLDirection
 modelica_metatype omc_CodegenFMUCommon_DefaultExperimentAttribute(threadData_t *threadData, modelica_metatype _in_txt, modelica_metatype _in_a_simulationSettings, modelica_string _in_a_FMUVersion);
 #define boxptr_CodegenFMUCommon_DefaultExperimentAttribute omc_CodegenFMUCommon_DefaultExperimentAttribute
 static const MMC_DEFSTRUCTLIT(boxvar_lit_CodegenFMUCommon_DefaultExperimentAttribute,2,0) {(void*) boxptr_CodegenFMUCommon_DefaultExperimentAttribute,0}};

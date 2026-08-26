@@ -114,7 +114,7 @@ PROTECTED_FUNCTION_STATIC void omc_UnorderedSet_addKey(threadData_t *threadData,
   tmpMeta1 = mmc_mk_cons(_key, arrayGet(_buckets, ((modelica_integer) 1) + _h));
   arrayUpdate(_buckets, ((modelica_integer) 1) + _h, tmpMeta1);
 
-  omc_Mutable_update(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_set), 3))), mmc_mk_integer(((modelica_integer) 1) + mmc_unbox_integer(omc_Mutable_access(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_set), 3)))))));
+  omc_Mutable_update(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_set), 3))), mmc_mk_integer(((modelica_integer) 1) + (mmc_unbox_integer(omc_Mutable_access(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_set), 3))))))));
   _return: OMC_LABEL_UNUSED
   #if defined(OMC_MINIMAL_RUNTIME) || defined(OMC_FMI_RUNTIME)
   omc_util_restore_pool_state(omc_pool_state);
@@ -764,10 +764,10 @@ modelica_string omc_UnorderedSet_toString(threadData_t *threadData, modelica_met
   _tailrecursive: OMC_LABEL_UNUSED
   // _str has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar1;
+    modelica_metatype __omcQ_24tmpVar3;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
-    modelica_string __omcQ_24tmpVar0;
+    modelica_string __omcQ_24tmpVar2;
     modelica_integer tmp4;
     modelica_metatype _k_loopVar = 0;
     modelica_integer tmp5;
@@ -775,8 +775,8 @@ modelica_string omc_UnorderedSet_toString(threadData_t *threadData, modelica_met
     _k_loopVar = omc_UnorderedSet_toArray(threadData, _set);
     tmp5 = 1;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar1 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar1;
+    __omcQ_24tmpVar3 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar3;
     while(1) {
       tmp4 = 1;
       if (tmp5 <= arrayLength(_k_loopVar)) {
@@ -784,8 +784,8 @@ modelica_string omc_UnorderedSet_toString(threadData_t *threadData, modelica_met
         tmp4--;
       }
       if (tmp4 == 0) {
-        __omcQ_24tmpVar0 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_stringFn), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_stringFn), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_stringFn), 2))), _k) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_stringFn), 1)))) (threadData, _k);
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar0,0);
+        __omcQ_24tmpVar2 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_stringFn), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_stringFn), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_stringFn), 2))), _k) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_stringFn), 1)))) (threadData, _k);
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar2,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp4 == 1) {
         break;
@@ -794,7 +794,7 @@ modelica_string omc_UnorderedSet_toString(threadData_t *threadData, modelica_met
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar1;
+    tmpMeta1 = __omcQ_24tmpVar3;
   }
   _str = stringDelimitList(tmpMeta1, _delimiter);
   _return: OMC_LABEL_UNUSED
@@ -1571,7 +1571,7 @@ modelica_boolean omc_UnorderedSet_remove(threadData_t *threadData, modelica_meta
   {
     arrayUpdateNoBoundsChecking(_buckets, ((modelica_integer) 1) + _hash, _bucket);
 
-    omc_Mutable_update(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_set), 3))), mmc_mk_integer(((modelica_integer) -1) + mmc_unbox_integer(omc_Mutable_access(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_set), 3)))))));
+    omc_Mutable_update(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_set), 3))), mmc_mk_integer(((modelica_integer) -1) + (mmc_unbox_integer(omc_Mutable_access(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_set), 3))))))));
   }
   _return: OMC_LABEL_UNUSED
   #if defined(OMC_MINIMAL_RUNTIME) || defined(OMC_FMI_RUNTIME)

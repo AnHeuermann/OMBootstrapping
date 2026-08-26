@@ -4214,7 +4214,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_UnitAbsynBuilder_createTypeParam
 
   _outStore = omc_UnitAbsynBuilder_createTypeParameterLocations2(threadData, _store, omc_HashTable_emptyHashTable(threadData), ((modelica_integer) 1), ((modelica_integer) 1) + _storeSz ,NULL ,&_nextElement);
 
-  _outStore = omc_UnitAbsynBuilder_addUnspecifiedStores(threadData, ((modelica_integer) -1) + _nextElement - _storeSz, _outStore);
+  _outStore = omc_UnitAbsynBuilder_addUnspecifiedStores(threadData, ((modelica_integer) -1) + (_nextElement - _storeSz), _outStore);
   _return: OMC_LABEL_UNUSED
   return _outStore;
 }

@@ -186,10 +186,10 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT63,34,_OMC_LIT63_data);
 #define _OMC_LIT64_data "\n"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT64,1,_OMC_LIT64_data);
 #define _OMC_LIT64 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT64)
-#define _OMC_LIT65_data "//OpenModelica/OMCompiler/Compiler/BackEnd/VisualXML.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT65,78,_OMC_LIT65_data);
+#define _OMC_LIT65_data "VisualXML.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT65,12,_OMC_LIT65_data);
 #define _OMC_LIT65 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT65)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT66_6,1.784885415e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT66_6,0.0);
 #define _OMC_LIT66_6 MMC_REFREALLIT(_OMC_LIT_STRUCT66_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT66,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT65,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(478)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(479)),MMC_IMMEDIATE(MMC_TAGFIXNUM(47)),_OMC_LIT66_6}};
 #define _OMC_LIT66 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT66)
@@ -210,7 +210,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT71,123,_OMC_LIT71_data);
 #define _OMC_LIT72_data "VisualXMl.getConstCrefBinding failed for "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT72,41,_OMC_LIT72_data);
 #define _OMC_LIT72 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT72)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT73_6,1.784885415e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT73_6,0.0);
 #define _OMC_LIT73_6 MMC_REFREALLIT(_OMC_LIT_STRUCT73_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT73,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT65,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(312)),MMC_IMMEDIATE(MMC_TAGFIXNUM(5)),MMC_IMMEDIATE(MMC_TAGFIXNUM(312)),MMC_IMMEDIATE(MMC_TAGFIXNUM(122)),_OMC_LIT73_6}};
 #define _OMC_LIT73 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT73)
@@ -371,7 +371,7 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_VisualXML_isVisualizerName(thread
           goto tmp3_done;
         }
         case 3: {
-
+          
           /* Pattern matching succeeded */
           tmp1 = 0 /* false */;
           goto tmp3_done;
@@ -414,8 +414,8 @@ PROTECTED_FUNCTION_STATIC modelica_string omc_VisualXML_hasVisPath(threadData_t 
   _tailrecursive: OMC_LABEL_UNUSED
   // _visPath has no default value.
   // _numOut has no default value.
-
-
+  
+  
   { /* match expression */
     modelica_metatype tmp4_1;
     tmp4_1 = _pathsIn;
@@ -652,7 +652,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_isVisualizationVarFold
           goto tmp3_done;
         }
         case 1: {
-
+          
           /* Pattern matching succeeded */
           tmpMeta1 = _tplIn;
           goto tmp3_done;
@@ -708,7 +708,7 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_VisualXML_isVisualizationVar(thre
         case 0: {
           modelica_metatype tmpMeta6;
           tmpMeta6 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 10));
-
+          
           _source = tmpMeta6;
           /* Pattern matching succeeded */
           _paths = omc_ElementSource_getElementSourceTypes(threadData, _source);
@@ -718,7 +718,7 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_VisualXML_isVisualizationVar(thre
           goto tmp3_done;
         }
         case 1: {
-
+          
           /* Pattern matching succeeded */
           tmp1 = 0 /* false */;
           goto tmp3_done;
@@ -840,7 +840,7 @@ PROTECTED_FUNCTION_STATIC modelica_string omc_VisualXML_printVisualization(threa
           tmpMeta14 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 11));
           tmpMeta15 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 12));
           tmpMeta16 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 13));
-
+          
           _ident = tmpMeta6;
           _shapeType = tmpMeta7;
           _T = tmpMeta8;
@@ -858,10 +858,10 @@ PROTECTED_FUNCTION_STATIC modelica_string omc_VisualXML_printVisualization(threa
           tmpMeta19 = stringAppend(tmpMeta18,omc_ExpressionBasics_printExpStr(threadData, _shapeType));
           tmpMeta20 = stringAppend(tmpMeta19,_OMC_LIT13);
           {
-            modelica_metatype __omcQ_24tmpVar1;
+            modelica_metatype __omcQ_24tmpVar3;
             modelica_metatype* tmp22;
             modelica_metatype tmpMeta23;
-            modelica_string __omcQ_24tmpVar0;
+            modelica_string __omcQ_24tmpVar2;
             modelica_integer tmp24;
             modelica_metatype _e_loopVar = 0;
             modelica_integer tmp25;
@@ -869,8 +869,8 @@ PROTECTED_FUNCTION_STATIC modelica_string omc_VisualXML_printVisualization(threa
             _e_loopVar = _r;
             tmp25 = 1;
             tmpMeta23 = MMC_REFSTRUCTLIT(mmc_nil);
-            __omcQ_24tmpVar1 = tmpMeta23; /* defaultValue */
-            tmp22 = &__omcQ_24tmpVar1;
+            __omcQ_24tmpVar3 = tmpMeta23; /* defaultValue */
+            tmp22 = &__omcQ_24tmpVar3;
             while(1) {
               tmp24 = 1;
               if (tmp25 <= arrayLength(_e_loopVar)) {
@@ -878,8 +878,8 @@ PROTECTED_FUNCTION_STATIC modelica_string omc_VisualXML_printVisualization(threa
                 tmp24--;
               }
               if (tmp24 == 0) {
-                __omcQ_24tmpVar0 = omc_ExpressionDump_dumpExpStr(threadData, _e, ((modelica_integer) 0));
-                *tmp22 = mmc_mk_cons(__omcQ_24tmpVar0,0);
+                __omcQ_24tmpVar2 = omc_ExpressionDump_dumpExpStr(threadData, _e, ((modelica_integer) 0));
+                *tmp22 = mmc_mk_cons(__omcQ_24tmpVar2,0);
                 tmp22 = &MMC_CDR(*tmp22);
               } else if (tmp24 == 1) {
                 break;
@@ -888,7 +888,7 @@ PROTECTED_FUNCTION_STATIC modelica_string omc_VisualXML_printVisualization(threa
               }
             }
             *tmp22 = mmc_mk_nil();
-            tmpMeta21 = __omcQ_24tmpVar1;
+            tmpMeta21 = __omcQ_24tmpVar3;
           }
           tmpMeta26 = stringAppend(tmpMeta20,stringDelimitList(tmpMeta21, _OMC_LIT14));
           tmpMeta27 = stringAppend(tmpMeta26,_OMC_LIT15);
@@ -917,7 +917,7 @@ PROTECTED_FUNCTION_STATIC modelica_string omc_VisualXML_printVisualization(threa
           goto tmp3_done;
         }
         case 1: {
-
+          
           /* Pattern matching succeeded */
           tmp1 = _OMC_LIT26;
           goto tmp3_done;
@@ -1101,7 +1101,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillSurfaceObject(thre
           if (mmc__uniontype__metarecord__typedef__equal(tmp3_1,1,3) == 0) goto tmp2_end;
           tmpMeta26 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp3_1), 2));
           if (2 != MMC_STRLEN(tmpMeta26) || strcmp(MMC_STRINGDATA(_OMC_LIT30), MMC_STRINGDATA(tmpMeta26)) != 0) goto tmp2_end;
-
+          
           tmp3 += 6; /* Pattern matching succeeded; we may skip some cases if we fail */
           tmpMeta27 = MMC_TAGPTR(mmc_alloc_words(12));
           memcpy(MMC_UNTAGPTR(tmpMeta27), MMC_UNTAGPTR(_vis), 12*sizeof(modelica_metatype));
@@ -1116,7 +1116,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillSurfaceObject(thre
           if (mmc__uniontype__metarecord__typedef__equal(tmp3_1,1,3) == 0) goto tmp2_end;
           tmpMeta28 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp3_1), 2));
           if (2 != MMC_STRLEN(tmpMeta28) || strcmp(MMC_STRINGDATA(_OMC_LIT31), MMC_STRINGDATA(tmpMeta28)) != 0) goto tmp2_end;
-
+          
           tmp3 += 5; /* Pattern matching succeeded; we may skip some cases if we fail */
           tmpMeta29 = MMC_TAGPTR(mmc_alloc_words(12));
           memcpy(MMC_UNTAGPTR(tmpMeta29), MMC_UNTAGPTR(_vis), 12*sizeof(modelica_metatype));
@@ -1131,7 +1131,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillSurfaceObject(thre
           if (mmc__uniontype__metarecord__typedef__equal(tmp3_1,1,3) == 0) goto tmp2_end;
           tmpMeta30 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp3_1), 2));
           if (9 != MMC_STRLEN(tmpMeta30) || strcmp(MMC_STRINGDATA(_OMC_LIT32), MMC_STRINGDATA(tmpMeta30)) != 0) goto tmp2_end;
-
+          
           tmp3 += 4; /* Pattern matching succeeded; we may skip some cases if we fail */
           tmpMeta31 = MMC_TAGPTR(mmc_alloc_words(12));
           memcpy(MMC_UNTAGPTR(tmpMeta31), MMC_UNTAGPTR(_vis), 12*sizeof(modelica_metatype));
@@ -1146,7 +1146,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillSurfaceObject(thre
           if (mmc__uniontype__metarecord__typedef__equal(tmp3_1,1,3) == 0) goto tmp2_end;
           tmpMeta32 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp3_1), 2));
           if (12 != MMC_STRLEN(tmpMeta32) || strcmp(MMC_STRINGDATA(_OMC_LIT33), MMC_STRINGDATA(tmpMeta32)) != 0) goto tmp2_end;
-
+          
           tmp3 += 3; /* Pattern matching succeeded; we may skip some cases if we fail */
           tmpMeta33 = MMC_TAGPTR(mmc_alloc_words(12));
           memcpy(MMC_UNTAGPTR(tmpMeta33), MMC_UNTAGPTR(_vis), 12*sizeof(modelica_metatype));
@@ -1190,7 +1190,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillSurfaceObject(thre
           if (mmc__uniontype__metarecord__typedef__equal(tmp3_1,1,3) == 0) goto tmp2_end;
           tmpMeta41 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp3_1), 2));
           if (19 != MMC_STRLEN(tmpMeta41) || strcmp(MMC_STRINGDATA(_OMC_LIT35), MMC_STRINGDATA(tmpMeta41)) != 0) goto tmp2_end;
-
+          
           tmp3 += 1; /* Pattern matching succeeded; we may skip some cases if we fail */
           tmpMeta42 = MMC_TAGPTR(mmc_alloc_words(12));
           memcpy(MMC_UNTAGPTR(tmpMeta42), MMC_UNTAGPTR(_vis), 12*sizeof(modelica_metatype));
@@ -1205,7 +1205,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillSurfaceObject(thre
           if (mmc__uniontype__metarecord__typedef__equal(tmp3_1,1,3) == 0) goto tmp2_end;
           tmpMeta43 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp3_1), 2));
           if (12 != MMC_STRLEN(tmpMeta43) || strcmp(MMC_STRINGDATA(_OMC_LIT36), MMC_STRINGDATA(tmpMeta43)) != 0) goto tmp2_end;
-
+          
           /* Pattern matching succeeded */
           tmpMeta44 = MMC_TAGPTR(mmc_alloc_words(12));
           memcpy(MMC_UNTAGPTR(tmpMeta44), MMC_UNTAGPTR(_vis), 12*sizeof(modelica_metatype));
@@ -1214,7 +1214,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillSurfaceObject(thre
           goto tmp2_done;
         }
         case 9: {
-
+          
           /* Pattern matching succeeded */
           goto tmp2_done;
         }
@@ -1424,7 +1424,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillVectorObject(threa
           if (mmc__uniontype__metarecord__typedef__equal(tmp3_1,1,3) == 0) goto tmp2_end;
           tmpMeta40 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp3_1), 2));
           if (19 != MMC_STRLEN(tmpMeta40) || strcmp(MMC_STRINGDATA(_OMC_LIT35), MMC_STRINGDATA(tmpMeta40)) != 0) goto tmp2_end;
-
+          
           tmp3 += 3; /* Pattern matching succeeded; we may skip some cases if we fail */
           tmpMeta41 = MMC_TAGPTR(mmc_alloc_words(11));
           memcpy(MMC_UNTAGPTR(tmpMeta41), MMC_UNTAGPTR(_vis), 11*sizeof(modelica_metatype));
@@ -1439,7 +1439,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillVectorObject(threa
           if (mmc__uniontype__metarecord__typedef__equal(tmp3_1,1,3) == 0) goto tmp2_end;
           tmpMeta42 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp3_1), 2));
           if (8 != MMC_STRLEN(tmpMeta42) || strcmp(MMC_STRINGDATA(_OMC_LIT39), MMC_STRINGDATA(tmpMeta42)) != 0) goto tmp2_end;
-
+          
           tmp3 += 2; /* Pattern matching succeeded; we may skip some cases if we fail */
           tmpMeta43 = MMC_TAGPTR(mmc_alloc_words(11));
           memcpy(MMC_UNTAGPTR(tmpMeta43), MMC_UNTAGPTR(_vis), 11*sizeof(modelica_metatype));
@@ -1454,7 +1454,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillVectorObject(threa
           if (mmc__uniontype__metarecord__typedef__equal(tmp3_1,1,3) == 0) goto tmp2_end;
           tmpMeta44 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp3_1), 2));
           if (12 != MMC_STRLEN(tmpMeta44) || strcmp(MMC_STRINGDATA(_OMC_LIT40), MMC_STRINGDATA(tmpMeta44)) != 0) goto tmp2_end;
-
+          
           tmp3 += 1; /* Pattern matching succeeded; we may skip some cases if we fail */
           tmpMeta45 = MMC_TAGPTR(mmc_alloc_words(11));
           memcpy(MMC_UNTAGPTR(tmpMeta45), MMC_UNTAGPTR(_vis), 11*sizeof(modelica_metatype));
@@ -1469,7 +1469,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillVectorObject(threa
           if (mmc__uniontype__metarecord__typedef__equal(tmp3_1,1,3) == 0) goto tmp2_end;
           tmpMeta46 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp3_1), 2));
           if (14 != MMC_STRLEN(tmpMeta46) || strcmp(MMC_STRINGDATA(_OMC_LIT41), MMC_STRINGDATA(tmpMeta46)) != 0) goto tmp2_end;
-
+          
           /* Pattern matching succeeded */
           tmpMeta47 = MMC_TAGPTR(mmc_alloc_words(11));
           memcpy(MMC_UNTAGPTR(tmpMeta47), MMC_UNTAGPTR(_vis), 11*sizeof(modelica_metatype));
@@ -1478,7 +1478,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillVectorObject(threa
           goto tmp2_done;
         }
         case 8: {
-
+          
           /* Pattern matching succeeded */
           goto tmp2_done;
         }
@@ -1552,7 +1552,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillShapeObject(thread
           if (mmc__uniontype__metarecord__typedef__equal(tmp3_1,1,3) == 0) goto tmp2_end;
           tmpMeta5 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp3_1), 2));
           if (9 != MMC_STRLEN(tmpMeta5) || strcmp(MMC_STRINGDATA(_OMC_LIT42), MMC_STRINGDATA(tmpMeta5)) != 0) goto tmp2_end;
-
+          
           tmp3 += 11; /* Pattern matching succeeded; we may skip some cases if we fail */
           /* Pattern-matching assignment */
           tmpMeta6 = _var;
@@ -1744,7 +1744,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillShapeObject(thread
           if (mmc__uniontype__metarecord__typedef__equal(tmp3_1,1,3) == 0) goto tmp2_end;
           tmpMeta51 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp3_1), 2));
           if (6 != MMC_STRLEN(tmpMeta51) || strcmp(MMC_STRINGDATA(_OMC_LIT46), MMC_STRINGDATA(tmpMeta51)) != 0) goto tmp2_end;
-
+          
           tmp3 += 5; /* Pattern matching succeeded; we may skip some cases if we fail */
           tmpMeta52 = MMC_TAGPTR(mmc_alloc_words(15));
           memcpy(MMC_UNTAGPTR(tmpMeta52), MMC_UNTAGPTR(_vis), 15*sizeof(modelica_metatype));
@@ -1759,7 +1759,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillShapeObject(thread
           if (mmc__uniontype__metarecord__typedef__equal(tmp3_1,1,3) == 0) goto tmp2_end;
           tmpMeta53 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp3_1), 2));
           if (5 != MMC_STRLEN(tmpMeta53) || strcmp(MMC_STRINGDATA(_OMC_LIT47), MMC_STRINGDATA(tmpMeta53)) != 0) goto tmp2_end;
-
+          
           tmp3 += 4; /* Pattern matching succeeded; we may skip some cases if we fail */
           tmpMeta54 = MMC_TAGPTR(mmc_alloc_words(15));
           memcpy(MMC_UNTAGPTR(tmpMeta54), MMC_UNTAGPTR(_vis), 15*sizeof(modelica_metatype));
@@ -1774,7 +1774,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillShapeObject(thread
           if (mmc__uniontype__metarecord__typedef__equal(tmp3_1,1,3) == 0) goto tmp2_end;
           tmpMeta55 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp3_1), 2));
           if (6 != MMC_STRLEN(tmpMeta55) || strcmp(MMC_STRINGDATA(_OMC_LIT48), MMC_STRINGDATA(tmpMeta55)) != 0) goto tmp2_end;
-
+          
           tmp3 += 3; /* Pattern matching succeeded; we may skip some cases if we fail */
           tmpMeta56 = MMC_TAGPTR(mmc_alloc_words(15));
           memcpy(MMC_UNTAGPTR(tmpMeta56), MMC_UNTAGPTR(_vis), 15*sizeof(modelica_metatype));
@@ -1789,7 +1789,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillShapeObject(thread
           if (mmc__uniontype__metarecord__typedef__equal(tmp3_1,1,3) == 0) goto tmp2_end;
           tmpMeta57 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp3_1), 2));
           if (5 != MMC_STRLEN(tmpMeta57) || strcmp(MMC_STRINGDATA(_OMC_LIT49), MMC_STRINGDATA(tmpMeta57)) != 0) goto tmp2_end;
-
+          
           tmp3 += 2; /* Pattern matching succeeded; we may skip some cases if we fail */
           tmpMeta58 = MMC_TAGPTR(mmc_alloc_words(15));
           memcpy(MMC_UNTAGPTR(tmpMeta58), MMC_UNTAGPTR(_vis), 15*sizeof(modelica_metatype));
@@ -1833,7 +1833,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillShapeObject(thread
           if (mmc__uniontype__metarecord__typedef__equal(tmp3_1,1,3) == 0) goto tmp2_end;
           tmpMeta66 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp3_1), 2));
           if (19 != MMC_STRLEN(tmpMeta66) || strcmp(MMC_STRINGDATA(_OMC_LIT35), MMC_STRINGDATA(tmpMeta66)) != 0) goto tmp2_end;
-
+          
           /* Pattern matching succeeded */
           tmpMeta67 = MMC_TAGPTR(mmc_alloc_words(15));
           memcpy(MMC_UNTAGPTR(tmpMeta67), MMC_UNTAGPTR(_vis), 15*sizeof(modelica_metatype));
@@ -1842,7 +1842,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillShapeObject(thread
           goto tmp2_done;
         }
         case 12: {
-
+          
           /* Pattern matching succeeded */
           goto tmp2_done;
         }
@@ -1943,7 +1943,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillVisualizationObjec
           if (mmc__uniontype__metarecord__typedef__equal(tmpMeta7,0,13) == 0) goto tmp3_end;
           tmpMeta8 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta7), 2));
           tmpMeta9 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 2));
-
+          
           _vars = tmpMeta6;
           _vis = tmpMeta7;
           _ident = tmpMeta8;
@@ -1972,7 +1972,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillVisualizationObjec
           if (mmc__uniontype__metarecord__typedef__equal(tmpMeta14,1,9) == 0) goto tmp3_end;
           tmpMeta15 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta14), 2));
           tmpMeta16 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 2));
-
+          
           _vars = tmpMeta13;
           _vis = tmpMeta14;
           _ident = tmpMeta15;
@@ -2001,7 +2001,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillVisualizationObjec
           if (mmc__uniontype__metarecord__typedef__equal(tmpMeta21,2,10) == 0) goto tmp3_end;
           tmpMeta22 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta21), 2));
           tmpMeta23 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 2));
-
+          
           _vars = tmpMeta20;
           _vis = tmpMeta21;
           _ident = tmpMeta22;
@@ -2023,7 +2023,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_fillVisualizationObjec
           modelica_metatype tmpMeta29;
           modelica_metatype tmpMeta30;
           modelica_metatype tmpMeta31;
-
+          
           /* Pattern matching succeeded */
           /* Pattern-matching assignment */
           tmpMeta27 = _tplIn;
@@ -2078,8 +2078,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_splitCrefAfter(threadD
   _tailrecursive: OMC_LABEL_UNUSED
   // _crefOut has no default value.
   // _wasCut has no default value.
-
-
+  
+  
   { /* matchcontinue expression */
     volatile modelica_metatype tmp4_1;volatile modelica_metatype tmp4_2;
     tmp4_1 = _crefIn;
@@ -2120,7 +2120,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_splitCrefAfter(threadD
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,0,4) == 0) goto tmp3_end;
           tmpMeta9 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 5));
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_2,1,3) == 0) goto tmp3_end;
-
+          
           _crefIn1 = tmpMeta9;
           /* Pattern matching succeeded */
           /* Pattern-matching assignment */
@@ -2136,7 +2136,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_splitCrefAfter(threadD
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,0,4) == 0) goto tmp3_end;
           tmpMeta11 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 5));
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_2,1,3) == 0) goto tmp3_end;
-
+          
           _crefIn1 = tmpMeta11;
           /* Pattern matching succeeded */
           /* Pattern-matching assignment */
@@ -2147,7 +2147,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_splitCrefAfter(threadD
           goto tmp3_done;
         }
         case 3: {
-
+          
           /* Pattern matching succeeded */
           tmpMeta[0+0] = _crefCut;
           tmp1_c1 = 0 /* false */;
@@ -2264,7 +2264,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_newVisualizer(threadDa
         case 3: {
           modelica_metatype tmpMeta9;
           modelica_metatype tmpMeta10;
-
+          
           /* Pattern matching succeeded */
           tmpMeta9 = stringAppend(_OMC_LIT63,_visualizerName);
           tmpMeta10 = stringAppend(tmpMeta9,_OMC_LIT64);
@@ -2381,8 +2381,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_setBindingForProtected
   _tailrecursive: OMC_LABEL_UNUSED
   // _varOut has no default value.
   // _tplOut has no default value.
-
-
+  
+  
   { /* matchcontinue expression */
     volatile modelica_metatype tmp4_1;volatile modelica_metatype tmp4_2;
     tmp4_1 = _varIn;
@@ -2668,7 +2668,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_getConstCrefBinding(th
               for (; tmp11 < 3; tmp11++) {
                 switch (MMC_SWITCH_CAST(tmp11)) {
                 case 0: {
-
+                  
                   /* Pattern matching succeeded */
                   /* Check guard condition after assignments */
                   if (!omc_Expression_isConst(threadData, _e)) goto tmp10_end;
@@ -2677,7 +2677,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_getConstCrefBinding(th
                 }
                 case 1: {
                   if (mmc__uniontype__metarecord__typedef__equal(tmp11_1,6,2) == 0) goto tmp10_end;
-
+                  
                   /* Pattern matching succeeded */
                   tmpMeta8 = omc_VisualXML_getConstCrefBinding(threadData, omc_Expression_expCref(threadData, _e), _vars);
                   goto tmp10_done;
@@ -2687,7 +2687,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_getConstCrefBinding(th
                   modelica_metatype tmpMeta14;
                   modelica_metatype tmpMeta15;
                   modelica_metatype tmpMeta16;
-
+                  
                   /* Pattern matching succeeded */
                   tmpMeta13 = stringAppend(_OMC_LIT69,omc_ExpressionBasics_printExpStr(threadData, _e));
                   tmpMeta14 = stringAppend(tmpMeta13,_OMC_LIT70);
@@ -2791,7 +2791,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_tryConstCrefValue(thre
       for (; tmp8 < 2; tmp8++) {
         switch (MMC_SWITCH_CAST(tmp8)) {
         case 0: {
-
+          
           /* Pattern matching succeeded */
           /* Check guard condition after assignments */
           if (!omc_Expression_isConst(threadData, _bind)) goto tmp7_end;
@@ -2800,7 +2800,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_tryConstCrefValue(thre
         }
         case 1: {
           if (mmc__uniontype__metarecord__typedef__equal(tmp8_1,6,2) == 0) goto tmp7_end;
-
+          
           /* Pattern matching succeeded */
           /* Tail recursive call */
           _cr = omc_Expression_expCref(threadData, _bind);
@@ -2849,14 +2849,14 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_inlineConstExp(threadD
           modelica_metatype tmpMeta6;
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,6,2) == 0) goto tmp3_end;
           tmpMeta6 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 2));
-
+          
           _cr = tmpMeta6;
           /* Pattern matching succeeded */
           tmpMeta1 = omc_VisualXML_tryConstCrefValue(threadData, _cr, _vars);
           goto tmp3_done;
         }
         case 1: {
-
+          
           /* Pattern matching succeeded */
           tmpMeta1 = _exp;
           goto tmp3_done;
@@ -2920,7 +2920,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_inlineConstVisAttribut
           modelica_metatype tmpMeta12;
           modelica_metatype tmpMeta13;
           modelica_metatype tmpMeta14;
-
+          
           /* Pattern matching succeeded */
           tmpMeta4 = MMC_TAGPTR(mmc_alloc_words(15));
           memcpy(MMC_UNTAGPTR(tmpMeta4), MMC_UNTAGPTR(_vis), 15*sizeof(modelica_metatype));
@@ -2983,7 +2983,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_inlineConstVisAttribut
           modelica_metatype tmpMeta16;
           modelica_metatype tmpMeta17;
           modelica_metatype tmpMeta18;
-
+          
           /* Pattern matching succeeded */
           tmpMeta15 = MMC_TAGPTR(mmc_alloc_words(11));
           memcpy(MMC_UNTAGPTR(tmpMeta15), MMC_UNTAGPTR(_vis), 11*sizeof(modelica_metatype));
@@ -3010,7 +3010,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_inlineConstVisAttribut
           modelica_metatype tmpMeta19;
           modelica_metatype tmpMeta20;
           modelica_metatype tmpMeta21;
-
+          
           /* Pattern matching succeeded */
           tmpMeta19 = MMC_TAGPTR(mmc_alloc_words(12));
           memcpy(MMC_UNTAGPTR(tmpMeta19), MMC_UNTAGPTR(_vis), 12*sizeof(modelica_metatype));
@@ -3030,7 +3030,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_inlineConstVisAttribut
         }
         default:
         tmp2_default: OMC_LABEL_UNUSED; {
-
+          
           /* Pattern matching succeeded */
           goto tmp2_done;
         }
@@ -3080,7 +3080,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_replaceVisualBinding(t
           tmpMeta5 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp3_1), 3));
           if (mmc__uniontype__metarecord__typedef__equal(tmpMeta5,6,2) == 0) goto tmp2_end;
           tmpMeta6 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta5), 2));
-
+          
           _cr = tmpMeta6;
           tmp3 += 1; /* Pattern matching succeeded; we may skip some cases if we fail */
           tmpMeta7 = MMC_TAGPTR(mmc_alloc_words(15));
@@ -3098,7 +3098,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_replaceVisualBinding(t
           tmpMeta8 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp3_1), 3));
           if (mmc__uniontype__metarecord__typedef__equal(tmpMeta8,2,1) == 0) goto tmp2_end;
           tmpMeta9 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta8), 2));
-
+          
           _s = tmpMeta9;
           /* Pattern matching succeeded */
           tmpMeta11 = mmc_mk_box2(5, &DAE_Exp_SCONST__desc, omc_VisualXML_getFullCADFilePath(threadData, _s, _program));
@@ -3109,7 +3109,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_VisualXML_replaceVisualBinding(t
           goto tmp2_done;
         }
         case 2: {
-
+          
           /* Pattern matching succeeded */
           goto tmp2_done;
         }
@@ -3257,3 +3257,4 @@ modelica_metatype omc_VisualXML_visualizationInfoXML(threadData_t *threadData, m
   _return: OMC_LABEL_UNUSED
   return _daeOut;
 }
+

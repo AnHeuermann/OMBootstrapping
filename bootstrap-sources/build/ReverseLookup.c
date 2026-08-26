@@ -328,15 +328,15 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ReverseLookup_groupMatches(threa
   _outMatches = omc_UnorderedMap_valueList(threadData, _grouped_matches);
 
   {
-    modelica_metatype __omcQ_24tmpVar1;
+    modelica_metatype __omcQ_24tmpVar3;
     modelica_metatype tmpMeta5;
-    modelica_metatype __omcQ_24tmpVar0;
+    modelica_metatype __omcQ_24tmpVar2;
     modelica_integer tmp6;
     modelica_metatype _l_loopVar = 0;
     modelica_metatype _l;
     _l_loopVar = _outMatches;
     tmpMeta5 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar1 = tmpMeta5; /* defaultValue */
+    __omcQ_24tmpVar3 = tmpMeta5; /* defaultValue */
     while(1) {
       tmp6 = 1;
       if (!listEmpty(_l_loopVar)) {
@@ -345,15 +345,15 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ReverseLookup_groupMatches(threa
         tmp6--;
       }
       if (tmp6 == 0) {
-        __omcQ_24tmpVar0 = listReverseInPlace(_l);
-        __omcQ_24tmpVar1 = mmc_mk_cons(__omcQ_24tmpVar0,__omcQ_24tmpVar1);
+        __omcQ_24tmpVar2 = listReverseInPlace(_l);
+        __omcQ_24tmpVar3 = mmc_mk_cons(__omcQ_24tmpVar2,__omcQ_24tmpVar3);
       } else if (tmp6 == 1) {
         break;
       } else {
         MMC_THROW_INTERNAL();
       }
     }
-    tmpMeta4 = __omcQ_24tmpVar1;
+    tmpMeta4 = __omcQ_24tmpVar3;
   }
   _outMatches = tmpMeta4;
   _return: OMC_LABEL_UNUSED

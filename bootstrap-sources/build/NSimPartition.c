@@ -117,17 +117,17 @@ modelica_metatype omc_NSimPartition_convertSub(threadData_t *threadData, modelic
           
           /* Pattern matching succeeded */
           {
-            modelica_metatype __omcQ_24tmpVar1;
+            modelica_metatype __omcQ_24tmpVar3;
             modelica_metatype* tmp7;
             modelica_metatype tmpMeta8;
-            modelica_metatype __omcQ_24tmpVar0;
+            modelica_metatype __omcQ_24tmpVar2;
             modelica_integer tmp9;
             modelica_metatype _tpl_loopVar = 0;
             modelica_metatype _tpl;
             _tpl_loopVar = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_part), 2)));
             tmpMeta8 = MMC_REFSTRUCTLIT(mmc_nil);
-            __omcQ_24tmpVar1 = tmpMeta8; /* defaultValue */
-            tmp7 = &__omcQ_24tmpVar1;
+            __omcQ_24tmpVar3 = tmpMeta8; /* defaultValue */
+            tmp7 = &__omcQ_24tmpVar3;
             while(1) {
               tmp9 = 1;
               if (!listEmpty(_tpl_loopVar)) {
@@ -136,8 +136,8 @@ modelica_metatype omc_NSimPartition_convertSub(threadData_t *threadData, modelic
                 tmp9--;
               }
               if (tmp9 == 0) {
-                __omcQ_24tmpVar0 = omc_NSimVar_SimVar_convertTpl(threadData, _tpl);
-                *tmp7 = mmc_mk_cons(__omcQ_24tmpVar0,0);
+                __omcQ_24tmpVar2 = omc_NSimVar_SimVar_convertTpl(threadData, _tpl);
+                *tmp7 = mmc_mk_cons(__omcQ_24tmpVar2,0);
                 tmp7 = &MMC_CDR(*tmp7);
               } else if (tmp9 == 1) {
                 break;
@@ -146,20 +146,20 @@ modelica_metatype omc_NSimPartition_convertSub(threadData_t *threadData, modelic
               }
             }
             *tmp7 = mmc_mk_nil();
-            tmpMeta6 = __omcQ_24tmpVar1;
+            tmpMeta6 = __omcQ_24tmpVar3;
           }
           {
-            modelica_metatype __omcQ_24tmpVar3;
+            modelica_metatype __omcQ_24tmpVar5;
             modelica_metatype* tmp11;
             modelica_metatype tmpMeta12;
-            modelica_metatype __omcQ_24tmpVar2;
+            modelica_metatype __omcQ_24tmpVar4;
             modelica_integer tmp13;
             modelica_metatype _blck_loopVar = 0;
             modelica_metatype _blck;
             _blck_loopVar = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_part), 3)));
             tmpMeta12 = MMC_REFSTRUCTLIT(mmc_nil);
-            __omcQ_24tmpVar3 = tmpMeta12; /* defaultValue */
-            tmp11 = &__omcQ_24tmpVar3;
+            __omcQ_24tmpVar5 = tmpMeta12; /* defaultValue */
+            tmp11 = &__omcQ_24tmpVar5;
             while(1) {
               tmp13 = 1;
               if (!listEmpty(_blck_loopVar)) {
@@ -168,8 +168,8 @@ modelica_metatype omc_NSimPartition_convertSub(threadData_t *threadData, modelic
                 tmp13--;
               }
               if (tmp13 == 0) {
-                __omcQ_24tmpVar2 = omc_NSimStrongComponent_Block_convert(threadData, _blck);
-                *tmp11 = mmc_mk_cons(__omcQ_24tmpVar2,0);
+                __omcQ_24tmpVar4 = omc_NSimStrongComponent_Block_convert(threadData, _blck);
+                *tmp11 = mmc_mk_cons(__omcQ_24tmpVar4,0);
                 tmp11 = &MMC_CDR(*tmp11);
               } else if (tmp13 == 1) {
                 break;
@@ -178,20 +178,20 @@ modelica_metatype omc_NSimPartition_convertSub(threadData_t *threadData, modelic
               }
             }
             *tmp11 = mmc_mk_nil();
-            tmpMeta10 = __omcQ_24tmpVar3;
+            tmpMeta10 = __omcQ_24tmpVar5;
           }
           {
-            modelica_metatype __omcQ_24tmpVar5;
+            modelica_metatype __omcQ_24tmpVar7;
             modelica_metatype* tmp15;
             modelica_metatype tmpMeta16;
-            modelica_metatype __omcQ_24tmpVar4;
+            modelica_metatype __omcQ_24tmpVar6;
             modelica_integer tmp17;
             modelica_metatype _blck_loopVar = 0;
             modelica_metatype _blck;
             _blck_loopVar = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_part), 4)));
             tmpMeta16 = MMC_REFSTRUCTLIT(mmc_nil);
-            __omcQ_24tmpVar5 = tmpMeta16; /* defaultValue */
-            tmp15 = &__omcQ_24tmpVar5;
+            __omcQ_24tmpVar7 = tmpMeta16; /* defaultValue */
+            tmp15 = &__omcQ_24tmpVar7;
             while(1) {
               tmp17 = 1;
               if (!listEmpty(_blck_loopVar)) {
@@ -200,8 +200,8 @@ modelica_metatype omc_NSimPartition_convertSub(threadData_t *threadData, modelic
                 tmp17--;
               }
               if (tmp17 == 0) {
-                __omcQ_24tmpVar4 = omc_NSimStrongComponent_Block_convert(threadData, _blck);
-                *tmp15 = mmc_mk_cons(__omcQ_24tmpVar4,0);
+                __omcQ_24tmpVar6 = omc_NSimStrongComponent_Block_convert(threadData, _blck);
+                *tmp15 = mmc_mk_cons(__omcQ_24tmpVar6,0);
                 tmp15 = &MMC_CDR(*tmp15);
               } else if (tmp17 == 1) {
                 break;
@@ -210,7 +210,7 @@ modelica_metatype omc_NSimPartition_convertSub(threadData_t *threadData, modelic
               }
             }
             *tmp15 = mmc_mk_nil();
-            tmpMeta14 = __omcQ_24tmpVar5;
+            tmpMeta14 = __omcQ_24tmpVar7;
           }
           tmpMeta18 = mmc_mk_box6(3, &SimCode_SubPartition_SUBPARTITION__desc, tmpMeta6, tmpMeta10, tmpMeta14, omc_NBPartitioning_BClock_convertSub(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_part), 5)))), (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_part), 6))));
           tmpMeta1 = tmpMeta18;
@@ -267,17 +267,17 @@ modelica_metatype omc_NSimPartition_convertBase(threadData_t *threadData, modeli
           
           /* Pattern matching succeeded */
           {
-            modelica_metatype __omcQ_24tmpVar7;
+            modelica_metatype __omcQ_24tmpVar9;
             modelica_metatype* tmp7;
             modelica_metatype tmpMeta8;
-            modelica_metatype __omcQ_24tmpVar6;
+            modelica_metatype __omcQ_24tmpVar8;
             modelica_integer tmp9;
             modelica_metatype _sub_loopVar = 0;
             modelica_metatype _sub;
             _sub_loopVar = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_part), 3)));
             tmpMeta8 = MMC_REFSTRUCTLIT(mmc_nil);
-            __omcQ_24tmpVar7 = tmpMeta8; /* defaultValue */
-            tmp7 = &__omcQ_24tmpVar7;
+            __omcQ_24tmpVar9 = tmpMeta8; /* defaultValue */
+            tmp7 = &__omcQ_24tmpVar9;
             while(1) {
               tmp9 = 1;
               if (!listEmpty(_sub_loopVar)) {
@@ -286,8 +286,8 @@ modelica_metatype omc_NSimPartition_convertBase(threadData_t *threadData, modeli
                 tmp9--;
               }
               if (tmp9 == 0) {
-                __omcQ_24tmpVar6 = omc_NSimPartition_convertSub(threadData, _sub);
-                *tmp7 = mmc_mk_cons(__omcQ_24tmpVar6,0);
+                __omcQ_24tmpVar8 = omc_NSimPartition_convertSub(threadData, _sub);
+                *tmp7 = mmc_mk_cons(__omcQ_24tmpVar8,0);
                 tmp7 = &MMC_CDR(*tmp7);
               } else if (tmp9 == 1) {
                 break;
@@ -296,7 +296,7 @@ modelica_metatype omc_NSimPartition_convertBase(threadData_t *threadData, modeli
               }
             }
             *tmp7 = mmc_mk_nil();
-            tmpMeta6 = __omcQ_24tmpVar7;
+            tmpMeta6 = __omcQ_24tmpVar9;
           }
           tmpMeta10 = mmc_mk_box3(3, &SimCode_ClockedPartition_CLOCKED__PARTITION__desc, omc_NBPartitioning_BClock_convertBase(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_part), 2)))), tmpMeta6);
           tmpMeta1 = tmpMeta10;
@@ -692,7 +692,7 @@ modelica_metatype omc_NSimPartition_createBasePartitions(threadData_t *threadDat
 
               tmpMeta41 = MMC_TAGPTR(mmc_alloc_words(27));
               memcpy(MMC_UNTAGPTR(tmpMeta41), MMC_UNTAGPTR(_simCodeIndices), 27*sizeof(modelica_metatype));
-              ((modelica_metatype*)MMC_UNTAGPTR(tmpMeta41))[18] = mmc_mk_integer(((modelica_integer) 1) + mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCodeIndices), 18)))));
+              ((modelica_metatype*)MMC_UNTAGPTR(tmpMeta41))[18] = mmc_mk_integer(((modelica_integer) 1) + (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_simCodeIndices), 18))))));
               _simCodeIndices = tmpMeta41;
               goto tmp12_done;
             }
@@ -734,18 +734,18 @@ modelica_metatype omc_NSimPartition_createSubPartition(threadData_t *threadData,
   _tailrecursive: OMC_LABEL_UNUSED
   // _part has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar9;
+    modelica_metatype __omcQ_24tmpVar11;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
     modelica_metatype tmpMeta4;
-    modelica_metatype __omcQ_24tmpVar8;
+    modelica_metatype __omcQ_24tmpVar10;
     modelica_integer tmp5;
     modelica_metatype _v_loopVar = 0;
     modelica_metatype _v;
     _v_loopVar = _variables;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar9 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar9;
+    __omcQ_24tmpVar11 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar11;
     while(1) {
       tmp5 = 1;
       if (!listEmpty(_v_loopVar)) {
@@ -755,8 +755,8 @@ modelica_metatype omc_NSimPartition_createSubPartition(threadData_t *threadData,
       }
       if (tmp5 == 0) {
         tmpMeta4 = mmc_mk_box2(0, _v, mmc_mk_boolean(1 /* true */));
-        __omcQ_24tmpVar8 = tmpMeta4;
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar8,0);
+        __omcQ_24tmpVar10 = tmpMeta4;
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar10,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp5 == 1) {
         break;
@@ -765,7 +765,7 @@ modelica_metatype omc_NSimPartition_createSubPartition(threadData_t *threadData,
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar9;
+    tmpMeta1 = __omcQ_24tmpVar11;
   }
   tmpMeta6 = MMC_REFSTRUCTLIT(mmc_nil);
   tmpMeta7 = mmc_mk_box6(4, &NSimPartition_SUB__PARTITION__desc, tmpMeta1, _equations, tmpMeta6, _subClock, mmc_mk_boolean(_holdEvents));

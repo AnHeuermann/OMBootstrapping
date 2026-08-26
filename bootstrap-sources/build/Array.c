@@ -48,15 +48,15 @@ modelica_metatype omc_Array_filter(threadData_t *threadData, modelica_metatype _
   _dummy = _dummy;
   _index = ((modelica_integer) 1);
   {
-    modelica_integer __omcQ_24tmpVar1;
-    modelica_integer __omcQ_24tmpVar0;
+    modelica_integer __omcQ_24tmpVar3;
+    modelica_integer __omcQ_24tmpVar2;
     modelica_integer tmp2;
     modelica_metatype _e_loopVar = 0;
     modelica_integer tmp3;
     modelica_metatype _e;
     _e_loopVar = _arr;
     tmp3 = 1;
-    __omcQ_24tmpVar1 = ((modelica_integer) 0); /* defaultValue */
+    __omcQ_24tmpVar3 = ((modelica_integer) 0); /* defaultValue */
     while(1) {
       tmp2 = 1;
       while (tmp3 <= arrayLength(_e_loopVar)) {
@@ -67,15 +67,15 @@ modelica_metatype omc_Array_filter(threadData_t *threadData, modelica_metatype _
         }
       }
       if (tmp2 == 0) {
-        __omcQ_24tmpVar0 = ((modelica_integer) 1);
-        __omcQ_24tmpVar1 = __omcQ_24tmpVar1 + __omcQ_24tmpVar0;
+        __omcQ_24tmpVar2 = ((modelica_integer) 1);
+        __omcQ_24tmpVar3 = __omcQ_24tmpVar3 + __omcQ_24tmpVar2;
       } else if (tmp2 == 1) {
         break;
       } else {
         MMC_THROW_INTERNAL();
       }
     }
-    tmp1 = __omcQ_24tmpVar1;
+    tmp1 = __omcQ_24tmpVar3;
   }
   _new_size = arrayLength(_arr) - (tmp1);
 
@@ -885,7 +885,7 @@ modelica_integer omc_Array_hashIntArray(threadData_t *threadData, modelica_metat
     for(_i = ((modelica_integer) 1); in_range_integer(_i, tmp1, tmp3); _i += tmp2)
     {
 
-      _hash = modelica_integer_mod((((modelica_integer) 31)) * (_hash) + mmc_unbox_integer(arrayGetNoBoundsChecking(_arr, _i)), ((modelica_integer) 536870911));
+      _hash = modelica_integer_mod((((modelica_integer) 31)) * (_hash) + (mmc_unbox_integer(arrayGetNoBoundsChecking(_arr, _i))), ((modelica_integer) 536870911));
     }
   }
   _return: OMC_LABEL_UNUSED
@@ -1023,11 +1023,11 @@ modelica_metatype omc_Array_reverse(threadData_t *threadData, modelica_metatype 
 
       _elem1 = arrayGet(_inArray, _i);
 
-      _elem2 = arrayGet(_inArray, ((modelica_integer) 1) + _size - _i);
+      _elem2 = arrayGet(_inArray, ((modelica_integer) 1) + (_size - _i));
 
       _outArray = arrayUpdate(_outArray, _i, _elem2);
 
-      _outArray = arrayUpdate(_outArray, ((modelica_integer) 1) + _size - _i, _elem1);
+      _outArray = arrayUpdate(_outArray, ((modelica_integer) 1) + (_size - _i), _elem1);
     }
   }
   _return: OMC_LABEL_UNUSED
@@ -2098,7 +2098,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Array_downheap(threadData_t *thr
   _tailrecursive: OMC_LABEL_UNUSED
   _inArray = __omcQ_24in_5FinArray;
   _v = _vIn;
-  _w = ((modelica_integer) 1) + (((modelica_integer) 2)) * (_v);
+  _w = ((modelica_integer) 1) + ((((modelica_integer) 2)) * (_v));
   // _tmp has no default value.
   while(1)
   {
@@ -2124,7 +2124,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Array_downheap(threadData_t *thr
 
     _v = _w;
 
-    _w = ((modelica_integer) 1) + (((modelica_integer) 2)) * (_v);
+    _w = ((modelica_integer) 1) + ((((modelica_integer) 2)) * (_v));
   }
   _return: OMC_LABEL_UNUSED
   return _inArray;

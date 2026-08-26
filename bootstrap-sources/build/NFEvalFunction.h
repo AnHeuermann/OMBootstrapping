@@ -70,6 +70,9 @@ extern struct record_description SourceInfo_SOURCEINFO__desc;
 #define boxptr_NFEvalFunction_parseExternalAnnotation omc_NFEvalFunction_parseExternalAnnotation
 
 
+#define boxptr_NFEvalFunction_describeLibraryFailure omc_NFEvalFunction_describeLibraryFailure
+
+
 DLLDirection
 void omc_NFEvalFunction_clearLibraryCache(threadData_t *threadData);
 #define boxptr_NFEvalFunction_clearLibraryCache omc_NFEvalFunction_clearLibraryCache

@@ -1638,10 +1638,10 @@ PROTECTED_FUNCTION_STATIC void omc_HpcOmEqSystems_dumpEqSys(threadData_t *thread
   fputs(MMC_STRINGDATA(tmpMeta8),stdout);
 
   {
-    modelica_metatype __omcQ_24tmpVar1;
+    modelica_metatype __omcQ_24tmpVar3;
     modelica_metatype* tmp10;
     modelica_metatype tmpMeta11;
-    modelica_string __omcQ_24tmpVar0;
+    modelica_string __omcQ_24tmpVar2;
     modelica_integer tmp12;
     modelica_metatype _Arow_loopVar = 0;
     modelica_integer tmp13;
@@ -1659,8 +1659,8 @@ PROTECTED_FUNCTION_STATIC void omc_HpcOmEqSystems_dumpEqSys(threadData_t *thread
     _b_loopVar = _vectorB;
     tmp15 = 1;
     tmpMeta11 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar1 = tmpMeta11; /* defaultValue */
-    tmp10 = &__omcQ_24tmpVar1;
+    __omcQ_24tmpVar3 = tmpMeta11; /* defaultValue */
+    tmp10 = &__omcQ_24tmpVar3;
     while(1) {
       tmp12 = 3;
       if (tmp13 <= arrayLength(_Arow_loopVar)) {
@@ -1674,8 +1674,8 @@ PROTECTED_FUNCTION_STATIC void omc_HpcOmEqSystems_dumpEqSys(threadData_t *thread
         tmp12--;
       }
       if (tmp12 == 0) {
-        __omcQ_24tmpVar0 = omc_HpcOmEqSystems_EqSysRowString(threadData, _Arow, _x, _b);
-        *tmp10 = mmc_mk_cons(__omcQ_24tmpVar0,0);
+        __omcQ_24tmpVar2 = omc_HpcOmEqSystems_EqSysRowString(threadData, _Arow, _x, _b);
+        *tmp10 = mmc_mk_cons(__omcQ_24tmpVar2,0);
         tmp10 = &MMC_CDR(*tmp10);
       } else if (tmp12 == 3) {
         break;
@@ -1684,7 +1684,7 @@ PROTECTED_FUNCTION_STATIC void omc_HpcOmEqSystems_dumpEqSys(threadData_t *thread
       }
     }
     *tmp10 = mmc_mk_nil();
-    tmpMeta9 = __omcQ_24tmpVar1;
+    tmpMeta9 = __omcQ_24tmpVar3;
   }
   _sLst = tmpMeta9;
 
@@ -2800,7 +2800,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmEqSystems_generateCramerEqs
 
           if((_varIdx != _dim))
           {
-            _rangeAi = omc_List_intRange2(threadData, ((modelica_integer) 2), ((modelica_integer) 1) + _dim - _varIdx);
+            _rangeAi = omc_List_intRange2(threadData, ((modelica_integer) 2), ((modelica_integer) 1) + (_dim - _varIdx));
 
             _rangeX = omc_List_intRange2(threadData, ((modelica_integer) 1) + _varIdx, _dim);
           }
@@ -2813,7 +2813,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmEqSystems_generateCramerEqs
             _rangeX = tmpMeta11;
           }
 
-          _detAiexp = omc_HpcOmEqSystems_makeDetExp(threadData, ((modelica_integer) -1) + _varIdx, _OMC_LIT59, ((modelica_integer) 1), ((modelica_integer) 1) + _dim - _varIdx, _ty);
+          _detAiexp = omc_HpcOmEqSystems_makeDetExp(threadData, ((modelica_integer) -1) + _varIdx, _OMC_LIT59, ((modelica_integer) 1), ((modelica_integer) 1) + (_dim - _varIdx), _ty);
 
           tmpMeta12 = mmc_mk_box4(0, mmc_mk_integer(((modelica_integer) -1) + _varIdx), _OMC_LIT58, mmc_mk_integer(((modelica_integer) 1)), _ty);
           _detAiExpLst = omc_List_map(threadData, _rangeAi, (modelica_fnptr) mmc_mk_box2(0,closure3_HpcOmEqSystems_makeDetExp,tmpMeta12));
@@ -3036,10 +3036,10 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmEqSystems_ChiosCondensation
           fputs(MMC_STRINGDATA(_OMC_LIT63),stdout);
 
           {
-            modelica_metatype __omcQ_24tmpVar3;
+            modelica_metatype __omcQ_24tmpVar5;
             modelica_metatype* tmp21;
             modelica_metatype tmpMeta22;
-            modelica_string __omcQ_24tmpVar2;
+            modelica_string __omcQ_24tmpVar4;
             modelica_integer tmp23;
             modelica_metatype _e_loopVar = 0;
             modelica_integer tmp24;
@@ -3047,8 +3047,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmEqSystems_ChiosCondensation
             _e_loopVar = _vecAi;
             tmp24 = 1;
             tmpMeta22 = MMC_REFSTRUCTLIT(mmc_nil);
-            __omcQ_24tmpVar3 = tmpMeta22; /* defaultValue */
-            tmp21 = &__omcQ_24tmpVar3;
+            __omcQ_24tmpVar5 = tmpMeta22; /* defaultValue */
+            tmp21 = &__omcQ_24tmpVar5;
             while(1) {
               tmp23 = 1;
               if (tmp24 <= arrayLength(_e_loopVar)) {
@@ -3056,8 +3056,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmEqSystems_ChiosCondensation
                 tmp23--;
               }
               if (tmp23 == 0) {
-                __omcQ_24tmpVar2 = omc_ExpressionDump_dumpExpStr(threadData, _e, ((modelica_integer) 0));
-                *tmp21 = mmc_mk_cons(__omcQ_24tmpVar2,0);
+                __omcQ_24tmpVar4 = omc_ExpressionDump_dumpExpStr(threadData, _e, ((modelica_integer) 0));
+                *tmp21 = mmc_mk_cons(__omcQ_24tmpVar4,0);
                 tmp21 = &MMC_CDR(*tmp21);
               } else if (tmp23 == 1) {
                 break;
@@ -3066,7 +3066,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmEqSystems_ChiosCondensation
               }
             }
             *tmp21 = mmc_mk_nil();
-            tmpMeta20 = __omcQ_24tmpVar3;
+            tmpMeta20 = __omcQ_24tmpVar5;
           }
           tmpMeta25 = stringAppend(stringDelimitList(tmpMeta20, _OMC_LIT35),_OMC_LIT35);
           fputs(MMC_STRINGDATA(tmpMeta25),stdout);
@@ -3105,10 +3105,10 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmEqSystems_ChiosCondensation
           fputs(MMC_STRINGDATA(_OMC_LIT66),stdout);
 
           {
-            modelica_metatype __omcQ_24tmpVar5;
+            modelica_metatype __omcQ_24tmpVar7;
             modelica_metatype* tmp34;
             modelica_metatype tmpMeta35;
-            modelica_string __omcQ_24tmpVar4;
+            modelica_string __omcQ_24tmpVar6;
             modelica_integer tmp36;
             modelica_metatype _e_loopVar = 0;
             modelica_integer tmp37;
@@ -3116,8 +3116,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmEqSystems_ChiosCondensation
             _e_loopVar = _vecAi;
             tmp37 = 1;
             tmpMeta35 = MMC_REFSTRUCTLIT(mmc_nil);
-            __omcQ_24tmpVar5 = tmpMeta35; /* defaultValue */
-            tmp34 = &__omcQ_24tmpVar5;
+            __omcQ_24tmpVar7 = tmpMeta35; /* defaultValue */
+            tmp34 = &__omcQ_24tmpVar7;
             while(1) {
               tmp36 = 1;
               if (tmp37 <= arrayLength(_e_loopVar)) {
@@ -3125,8 +3125,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmEqSystems_ChiosCondensation
                 tmp36--;
               }
               if (tmp36 == 0) {
-                __omcQ_24tmpVar4 = omc_ExpressionDump_dumpExpStr(threadData, _e, ((modelica_integer) 0));
-                *tmp34 = mmc_mk_cons(__omcQ_24tmpVar4,0);
+                __omcQ_24tmpVar6 = omc_ExpressionDump_dumpExpStr(threadData, _e, ((modelica_integer) 0));
+                *tmp34 = mmc_mk_cons(__omcQ_24tmpVar6,0);
                 tmp34 = &MMC_CDR(*tmp34);
               } else if (tmp36 == 1) {
                 break;
@@ -3135,7 +3135,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmEqSystems_ChiosCondensation
               }
             }
             *tmp34 = mmc_mk_nil();
-            tmpMeta33 = __omcQ_24tmpVar5;
+            tmpMeta33 = __omcQ_24tmpVar7;
           }
           tmpMeta38 = stringAppend(stringDelimitList(tmpMeta33, _OMC_LIT35),_OMC_LIT35);
           fputs(MMC_STRINGDATA(tmpMeta38),stdout);
@@ -6201,15 +6201,15 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmEqSystems_reduceLinearTornS
   _resEqsOut = _hs;
 
   {
-    modelica_integer __omcQ_24tmpVar7;
-    modelica_integer __omcQ_24tmpVar6;
+    modelica_integer __omcQ_24tmpVar9;
+    modelica_integer __omcQ_24tmpVar8;
     modelica_integer tmp16;
     modelica_metatype _l_loopVar = 0;
     modelica_integer tmp17;
     modelica_metatype _l;
     _l_loopVar = _xa_iArr;
     tmp17 = 1;
-    __omcQ_24tmpVar7 = ((modelica_integer) 0); /* defaultValue */
+    __omcQ_24tmpVar9 = ((modelica_integer) 0); /* defaultValue */
     while(1) {
       tmp16 = 1;
       if (tmp17 <= arrayLength(_l_loopVar)) {
@@ -6217,15 +6217,15 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmEqSystems_reduceLinearTornS
         tmp16--;
       }
       if (tmp16 == 0) {
-        __omcQ_24tmpVar6 = listLength(_l);
-        __omcQ_24tmpVar7 = __omcQ_24tmpVar7 + __omcQ_24tmpVar6;
+        __omcQ_24tmpVar8 = listLength(_l);
+        __omcQ_24tmpVar9 = __omcQ_24tmpVar9 + __omcQ_24tmpVar8;
       } else if (tmp16 == 1) {
         break;
       } else {
         MMC_THROW_INTERNAL();
       }
     }
-    tmp15 = __omcQ_24tmpVar7;
+    tmp15 = __omcQ_24tmpVar9;
   }
   _eqsNewOut = omc_HpcOmEqSystems_simplifyNewEquations(threadData, _eqsNewOut, _varsNewOut, _resEqsOut, tmp15, ((modelica_integer) 2), _ishared ,&_varsNewOut ,&_resEqsOut);
 
@@ -6732,7 +6732,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmEqSystems_reduceLinearTornS
           _syst = omc_BackendDAEUtil_setEqSystMatrices(threadData, _syst, mmc_mk_none(), mmc_mk_none(), mmc_mk_none());
 
           _syst = omc_BackendDAEUtil_getAdjacencyMatrix(threadData, _syst, _OMC_LIT85, mmc_mk_none(), omc_BackendDAEUtil_isInitializationDAE(threadData, _sharedIn), NULL, NULL);
-          tmpMeta[0+0] = omc_HpcOmEqSystems_reduceLinearTornSystem1(threadData, ((modelica_integer) 1) + _compIdx + _numNewSingleEqs, _compsTmp, _ass1All, _ass2All, _syst, _sharedIn, ((modelica_integer) 1) + _tornSysIdxIn, &tmp1_c1);
+          tmpMeta[0+0] = omc_HpcOmEqSystems_reduceLinearTornSystem1(threadData, ((modelica_integer) 1) + (_compIdx + _numNewSingleEqs), _compsTmp, _ass1All, _ass2All, _syst, _sharedIn, ((modelica_integer) 1) + _tornSysIdxIn, &tmp1_c1);
           goto tmp3_done;
         }
         case 2: {
@@ -6796,7 +6796,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmEqSystems_reduceLinearTornS
 
           _compsNew = omc_HpcOmEqSystems_matchComponent(threadData, _eqsNew, _varLstRepl, _eqIdcs, _varIdcs, _sharedIn);
 
-          _otherComps = omc_HpcOmEqSystems_matchComponent(threadData, _addEqs, _addVars, omc_List_intRange2(threadData, ((modelica_integer) 1) + listLength(_eqsOld), ((modelica_integer) 1) + listLength(_eqsOld) + listLength(_addEqs)), omc_List_intRange2(threadData, ((modelica_integer) 1) + listLength(_varsOld), ((modelica_integer) 1) + listLength(_varsOld) + listLength(_addVars)), _sharedIn);
+          _otherComps = omc_HpcOmEqSystems_matchComponent(threadData, _addEqs, _addVars, omc_List_intRange2(threadData, ((modelica_integer) 1) + listLength(_eqsOld), ((modelica_integer) 1) + (listLength(_eqsOld) + listLength(_addEqs))), omc_List_intRange2(threadData, ((modelica_integer) 1) + listLength(_varsOld), ((modelica_integer) 1) + (listLength(_varsOld) + listLength(_addVars))), _sharedIn);
 
           _compsNew = listAppend(_otherComps, _compsNew);
 

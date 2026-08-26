@@ -685,7 +685,7 @@ modelica_metatype omc_GraphML_addGraphAttributeValue(threadData_t *threadData, m
   _graphNodeKey = tmpMeta12;
   _graphEdgeKey = tmpMeta13;
 
-  _iGraph = listGet(_graphs, ((modelica_integer) 1) + _graphCount - _iGraphIdx);
+  _iGraph = listGet(_graphs, ((modelica_integer) 1) + (_graphCount - _iGraphIdx));
 
   /* Pattern-matching assignment */
   tmpMeta14 = _iGraph;
@@ -705,7 +705,7 @@ modelica_metatype omc_GraphML_addGraphAttributeValue(threadData_t *threadData, m
   tmpMeta21 = mmc_mk_box5(3, &GraphML_Graph_GRAPH__desc, _gid, mmc_mk_boolean(_directed), _nodeIdc, _attValues);
   _iGraph = tmpMeta21;
 
-  _graphs = omc_List_set(threadData, _graphs, ((modelica_integer) 1) + _graphCount - _iGraphIdx, _iGraph);
+  _graphs = omc_List_set(threadData, _graphs, ((modelica_integer) 1) + (_graphCount - _iGraphIdx), _iGraph);
 
   tmpMeta22 = mmc_mk_box10(3, &GraphML_GraphInfo_GRAPHINFO__desc, _graphs, mmc_mk_integer(_graphCount), _nodes, mmc_mk_integer(_nodeCount), _edges, mmc_mk_integer(_edgeCount), _attributes, _graphNodeKey, _graphEdgeKey);
   _oGraphInfo = tmpMeta22;
@@ -1031,7 +1031,7 @@ modelica_metatype omc_GraphML_addGroupNode(threadData_t *threadData, modelica_st
   _graphNodeKey = tmpMeta12;
   _graphEdgeKey = tmpMeta13;
 
-  _iGraph = listGet(_graphs, ((modelica_integer) 1) + _graphCount - _iGraphIdx);
+  _iGraph = listGet(_graphs, ((modelica_integer) 1) + (_graphCount - _iGraphIdx));
 
   /* Pattern-matching assignment */
   tmpMeta14 = _iGraph;
@@ -1094,7 +1094,7 @@ modelica_metatype omc_GraphML_addGroupNode(threadData_t *threadData, modelica_st
   tmpMeta42 = mmc_mk_box5(3, &GraphML_Graph_GRAPH__desc, _gid, mmc_mk_boolean(_directed), _nodeIdc, _attValues);
   _iGraph = tmpMeta42;
 
-  _graphs = omc_List_set(threadData, _graphs, ((modelica_integer) 1) + _graphCount - _iGraphIdx, _iGraph);
+  _graphs = omc_List_set(threadData, _graphs, ((modelica_integer) 1) + (_graphCount - _iGraphIdx), _iGraph);
 
   tmpMeta43 = mmc_mk_box10(3, &GraphML_GraphInfo_GRAPHINFO__desc, _graphs, mmc_mk_integer(_graphCount), _nodes, mmc_mk_integer(_nodeCount), _edges, mmc_mk_integer(_edgeCount), _attributes, _graphNodeKey, _graphEdgeKey);
   _oGraphInfo = tmpMeta43;
@@ -1212,7 +1212,7 @@ modelica_metatype omc_GraphML_addNode(threadData_t *threadData, modelica_string 
   _graphNodeKey = tmpMeta12;
   _graphEdgeKey = tmpMeta13;
 
-  _iGraph = listGet(_graphs, ((modelica_integer) 1) + _graphCount - _iGraphIdx);
+  _iGraph = listGet(_graphs, ((modelica_integer) 1) + (_graphCount - _iGraphIdx));
 
   /* Pattern-matching assignment */
   tmpMeta14 = _iGraph;
@@ -1240,7 +1240,7 @@ modelica_metatype omc_GraphML_addNode(threadData_t *threadData, modelica_string 
   tmpMeta23 = mmc_mk_box5(3, &GraphML_Graph_GRAPH__desc, _gid, mmc_mk_boolean(_directed), _nodeIdc, _gAttValues);
   _iGraph = tmpMeta23;
 
-  _graphs = omc_List_set(threadData, _graphs, ((modelica_integer) 1) + _graphCount - _iGraphIdx, _iGraph);
+  _graphs = omc_List_set(threadData, _graphs, ((modelica_integer) 1) + (_graphCount - _iGraphIdx), _iGraph);
 
   tmpMeta24 = mmc_mk_box10(3, &GraphML_GraphInfo_GRAPHINFO__desc, _graphs, mmc_mk_integer(_graphCount), _nodes, mmc_mk_integer(_nodeCount), _edges, mmc_mk_integer(_edgeCount), _attributes, _graphNodeKey, _graphEdgeKey);
   _oGraphInfo = tmpMeta24;

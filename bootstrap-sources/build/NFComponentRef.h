@@ -706,6 +706,14 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_NFComponentRef_setSubscripts,2,0) {(voi
 
 
 DLLDirection
+modelica_integer omc_NFComponentRef_outermostIntegerSubscript(threadData_t *threadData, modelica_metatype _cref);
+DLLDirection
+modelica_metatype boxptr_NFComponentRef_outermostIntegerSubscript(threadData_t *threadData, modelica_metatype _cref);
+static const MMC_DEFSTRUCTLIT(boxvar_lit_NFComponentRef_outermostIntegerSubscript,2,0) {(void*) boxptr_NFComponentRef_outermostIntegerSubscript,0}};
+#define boxvar_NFComponentRef_outermostIntegerSubscript MMC_REFSTRUCTLIT(boxvar_lit_NFComponentRef_outermostIntegerSubscript)
+
+
+DLLDirection
 modelica_metatype omc_NFComponentRef_getSubscripts(threadData_t *threadData, modelica_metatype _cref);
 #define boxptr_NFComponentRef_getSubscripts omc_NFComponentRef_getSubscripts
 static const MMC_DEFSTRUCTLIT(boxvar_lit_NFComponentRef_getSubscripts,2,0) {(void*) boxptr_NFComponentRef_getSubscripts,0}};

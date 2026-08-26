@@ -146,7 +146,7 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_NFApi_updateMovedCommentOpt,2,0) {(void
 
 
 DLLDirection
-modelica_metatype omc_NFApi_updateMovedPath(threadData_t *threadData, modelica_metatype __omcQ_24in_5Fpath, modelica_metatype _env);
+modelica_metatype omc_NFApi_updateMovedPath(threadData_t *threadData, modelica_metatype _path, modelica_metatype _env);
 #define boxptr_NFApi_updateMovedPath omc_NFApi_updateMovedPath
 static const MMC_DEFSTRUCTLIT(boxvar_lit_NFApi_updateMovedPath,2,0) {(void*) boxptr_NFApi_updateMovedPath,0}};
 #define boxvar_NFApi_updateMovedPath MMC_REFSTRUCTLIT(boxvar_lit_NFApi_updateMovedPath)

@@ -184,6 +184,14 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_System_getMemorySize,2,0) {(void*) boxp
 extern double System_getMemorySize();
 
 DLLDirection
+void omc_System_reportProgressMessage(threadData_t *threadData, modelica_string _message);
+#define boxptr_System_reportProgressMessage omc_System_reportProgressMessage
+static const MMC_DEFSTRUCTLIT(boxvar_lit_System_reportProgressMessage,2,0) {(void*) boxptr_System_reportProgressMessage,0}};
+#define boxvar_System_reportProgressMessage MMC_REFSTRUCTLIT(boxvar_lit_System_reportProgressMessage)
+
+extern void System_reportProgressMessage(const char* /*_message*/);
+
+DLLDirection
 void omc_System_reportProgress(threadData_t *threadData, modelica_integer _permille, modelica_integer _phase);
 DLLDirection
 void boxptr_System_reportProgress(threadData_t *threadData, modelica_metatype _permille, modelica_metatype _phase);
@@ -1198,6 +1206,23 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_System_lookupFunction,2,0) {(void*) box
 #define boxvar_System_lookupFunction MMC_REFSTRUCTLIT(boxvar_lit_System_lookupFunction)
 
 extern int System_lookupFunction(int /*_inLibHandle*/, const char* /*_inFunc*/);
+
+DLLDirection
+modelica_string omc_System_getLoadLibraryError(threadData_t *threadData);
+#define boxptr_System_getLoadLibraryError omc_System_getLoadLibraryError
+static const MMC_DEFSTRUCTLIT(boxvar_lit_System_getLoadLibraryError,2,0) {(void*) boxptr_System_getLoadLibraryError,0}};
+#define boxvar_System_getLoadLibraryError MMC_REFSTRUCTLIT(boxvar_lit_System_getLoadLibraryError)
+
+extern const char* System_getLoadLibraryError();
+
+DLLDirection
+modelica_integer omc_System_loadLibraryLazy(threadData_t *threadData, modelica_string _inLib, modelica_boolean _relativePath, modelica_boolean _printDebug);
+DLLDirection
+modelica_metatype boxptr_System_loadLibraryLazy(threadData_t *threadData, modelica_metatype _inLib, modelica_metatype _relativePath, modelica_metatype _printDebug);
+static const MMC_DEFSTRUCTLIT(boxvar_lit_System_loadLibraryLazy,2,0) {(void*) boxptr_System_loadLibraryLazy,0}};
+#define boxvar_System_loadLibraryLazy MMC_REFSTRUCTLIT(boxvar_lit_System_loadLibraryLazy)
+
+extern int System_loadLibraryLazy(const char* /*_inLib*/, int /*_relativePath*/, int /*_printDebug*/);
 
 DLLDirection
 modelica_integer omc_System_loadLibrary(threadData_t *threadData, modelica_string _inLib, modelica_boolean _relativePath, modelica_boolean _printDebug);

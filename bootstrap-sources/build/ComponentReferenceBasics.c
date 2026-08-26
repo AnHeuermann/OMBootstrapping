@@ -355,7 +355,7 @@ modelica_integer omc_ComponentReferenceBasics_hashComponentRef(threadData_t *thr
           _subs = tmpMeta10;
           _cr1 = tmpMeta11;
           /* Pattern matching succeeded */
-          tmp1 = stringHashDjb2(_id) + omc_ComponentReferenceBasics_hashSubscripts(threadData, _tp, _subs) + omc_ComponentReferenceBasics_hashComponentRef(threadData, _cr1);
+          tmp1 = stringHashDjb2(_id) + (omc_ComponentReferenceBasics_hashSubscripts(threadData, _tp, _subs) + omc_ComponentReferenceBasics_hashComponentRef(threadData, _cr1));
           goto tmp3_done;
         }
         default:

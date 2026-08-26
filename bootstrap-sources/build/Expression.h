@@ -1616,6 +1616,14 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_Expression_isImpure,2,0) {(void*) boxpt
 
 
 DLLDirection
+modelica_boolean omc_Expression_isDeeperThan(threadData_t *threadData, modelica_metatype _inExp, modelica_integer _inDepth);
+DLLDirection
+modelica_metatype boxptr_Expression_isDeeperThan(threadData_t *threadData, modelica_metatype _inExp, modelica_metatype _inDepth);
+static const MMC_DEFSTRUCTLIT(boxvar_lit_Expression_isDeeperThan,2,0) {(void*) boxptr_Expression_isDeeperThan,0}};
+#define boxvar_Expression_isDeeperThan MMC_REFSTRUCTLIT(boxvar_lit_Expression_isDeeperThan)
+
+
+DLLDirection
 modelica_boolean omc_Expression_isAtomic(threadData_t *threadData, modelica_metatype _inExp);
 DLLDirection
 modelica_metatype boxptr_Expression_isAtomic(threadData_t *threadData, modelica_metatype _inExp);

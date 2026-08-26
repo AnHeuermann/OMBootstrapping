@@ -41,6 +41,12 @@ void omc_Global_initialize(threadData_t *threadData)
 
   tmpMeta4 = MMC_REFSTRUCTLIT(mmc_nil);
   setGlobalRoot(((modelica_integer) 30), tmpMeta4);
+
+  setGlobalRoot(((modelica_integer) 33), mmc_mk_none());
+
+  setGlobalRoot(((modelica_integer) 34), mmc_mk_none());
+
+  setGlobalRoot(((modelica_integer) 35), mmc_mk_none());
   _return: OMC_LABEL_UNUSED
   #if defined(OMC_MINIMAL_RUNTIME) || defined(OMC_FMI_RUNTIME)
   omc_util_restore_pool_state(omc_pool_state);

@@ -772,7 +772,7 @@ modelica_metatype omc_MMath_addRational(threadData_t *threadData, modelica_metat
           _i3 = tmp11  /* pattern as ty=Integer */;
           _i4 = tmp13  /* pattern as ty=Integer */;
           /* Pattern matching succeeded */
-          _ri1 = (_i1) * (_i4) + (_i3) * (_i2);
+          _ri1 = (_i1) * (_i4) + ((_i3) * (_i2));
 
           _ri2 = (_i2) * (_i4);
 

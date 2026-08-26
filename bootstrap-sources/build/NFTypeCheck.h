@@ -122,9 +122,9 @@ extern struct record_description SourceInfo_SOURCEINFO__desc;
 
 
 DLLDirection
-modelica_metatype omc_NFTypeCheck_matchIfBranches(threadData_t *threadData, modelica_metatype __omcQ_24in_5FtrueBranch, modelica_metatype _trueType, modelica_metatype __omcQ_24in_5FfalseBranch, modelica_metatype _falseType, modelica_integer _options, modelica_metatype *out_falseBranch, modelica_metatype *out_compatibleType, modelica_integer *out_matchKind);
+modelica_metatype omc_NFTypeCheck_matchIfBranches(threadData_t *threadData, modelica_metatype __omcQ_24in_5FtrueBranch, modelica_metatype _trueType, modelica_metatype __omcQ_24in_5FfalseBranch, modelica_metatype _falseType, modelica_integer _context, modelica_integer _options, modelica_metatype *out_falseBranch, modelica_metatype *out_compatibleType, modelica_integer *out_matchKind);
 DLLDirection
-modelica_metatype boxptr_NFTypeCheck_matchIfBranches(threadData_t *threadData, modelica_metatype __omcQ_24in_5FtrueBranch, modelica_metatype _trueType, modelica_metatype __omcQ_24in_5FfalseBranch, modelica_metatype _falseType, modelica_metatype _options, modelica_metatype *out_falseBranch, modelica_metatype *out_compatibleType, modelica_metatype *out_matchKind);
+modelica_metatype boxptr_NFTypeCheck_matchIfBranches(threadData_t *threadData, modelica_metatype __omcQ_24in_5FtrueBranch, modelica_metatype _trueType, modelica_metatype __omcQ_24in_5FfalseBranch, modelica_metatype _falseType, modelica_metatype _context, modelica_metatype _options, modelica_metatype *out_falseBranch, modelica_metatype *out_compatibleType, modelica_metatype *out_matchKind);
 static const MMC_DEFSTRUCTLIT(boxvar_lit_NFTypeCheck_matchIfBranches,2,0) {(void*) boxptr_NFTypeCheck_matchIfBranches,0}};
 #define boxvar_NFTypeCheck_matchIfBranches MMC_REFSTRUCTLIT(boxvar_lit_NFTypeCheck_matchIfBranches)
 

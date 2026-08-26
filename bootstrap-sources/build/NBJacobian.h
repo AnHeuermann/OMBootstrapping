@@ -112,6 +112,9 @@ extern struct record_description SourceInfo_SOURCEINFO__desc;
 #define boxptr_NBJacobian_buildAdjointRhs omc_NBJacobian_buildAdjointRhs
 
 
+#define boxptr_NBJacobian_partialSliceSeedCandidates omc_NBJacobian_partialSliceSeedCandidates
+
+
 #define boxptr_NBJacobian_partJacobian omc_NBJacobian_partJacobian
 
 

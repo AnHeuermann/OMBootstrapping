@@ -611,12 +611,12 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT213,70,_OMC_LIT213_data);
 #define _OMC_LIT214_data "Unknown tearing heuristic: "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT214,27,_OMC_LIT214_data);
 #define _OMC_LIT214 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT214)
-#define _OMC_LIT215_data "//OpenModelica/OMCompiler/Compiler/BackEnd/Tearing.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT215,76,_OMC_LIT215_data);
+#define _OMC_LIT215_data "Tearing.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT215,10,_OMC_LIT215_data);
 #define _OMC_LIT215 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT215)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT216_6,1.786954567e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT216_6,0.0);
 #define _OMC_LIT216_6 MMC_REFREALLIT(_OMC_LIT_STRUCT216_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT216,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT215,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2984)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2984)),MMC_IMMEDIATE(MMC_TAGFIXNUM(88)),_OMC_LIT216_6}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT216,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT215,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2987)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2987)),MMC_IMMEDIATE(MMC_TAGFIXNUM(88)),_OMC_LIT216_6}};
 #define _OMC_LIT216 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT216)
 #define _OMC_LIT217_data "MC1"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT217,3,_OMC_LIT217_data);
@@ -782,478 +782,478 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT272,7,_OMC_LIT272_data);
 #define _OMC_LIT273_data "Never: "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT273,7,_OMC_LIT273_data);
 #define _OMC_LIT273 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT273)
-#define _OMC_LIT274_data "dynamicTearingForInitialization"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT274,31,_OMC_LIT274_data);
+#define _OMC_LIT274_data "C"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT274,1,_OMC_LIT274_data);
 #define _OMC_LIT274 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT274)
-#define _OMC_LIT275_data "Enable Dynamic Tearing also for the initialization system."
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT275,58,_OMC_LIT275_data);
+#define _OMC_LIT275_data "wasm-jit"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT275,8,_OMC_LIT275_data);
 #define _OMC_LIT275 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT275)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT276,8,3) {&Flags_ConfigFlag_CONFIG__FLAG__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(96)),_OMC_LIT274,MMC_REFSTRUCTLIT(mmc_none),_OMC_LIT84,_OMC_LIT265,MMC_REFSTRUCTLIT(mmc_none),_OMC_LIT275}};
-#define _OMC_LIT276 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT276)
-#define _OMC_LIT277_data "C"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT277,1,_OMC_LIT277_data);
-#define _OMC_LIT277 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT277)
-#define _OMC_LIT278_data "linear"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT278,6,_OMC_LIT278_data);
-#define _OMC_LIT278 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT278)
-#define _OMC_LIT279_data "nonlinear"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT279,9,_OMC_LIT279_data);
-#define _OMC_LIT279 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT279)
-#define _OMC_LIT280_data "\n****************************************\nBEGINNING of CellierTearing\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT280,71,_OMC_LIT280_data);
+#define _OMC_LIT276_data "wasm"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT276,4,_OMC_LIT276_data);
+#define _OMC_LIT276 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT276)
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT277,2,1) {_OMC_LIT276,MMC_REFSTRUCTLIT(mmc_nil)}};
+#define _OMC_LIT277 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT277)
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT278,2,1) {_OMC_LIT275,_OMC_LIT277}};
+#define _OMC_LIT278 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT278)
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT279,2,1) {_OMC_LIT274,_OMC_LIT278}};
+#define _OMC_LIT279 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT279)
+#define _OMC_LIT280_data "dynamicTearingForInitialization"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT280,31,_OMC_LIT280_data);
 #define _OMC_LIT280 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT280)
-#define _OMC_LIT281_data "\n\n###BEGIN print Strong Component#####################\n(Function:CellierTearing)\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT281,81,_OMC_LIT281_data);
+#define _OMC_LIT281_data "Enable Dynamic Tearing also for the initialization system."
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT281,58,_OMC_LIT281_data);
 #define _OMC_LIT281 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT281)
-#define _OMC_LIT282_data "\n###END print Strong Component#######################\n(Function:CellierTearing)\n\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT282,82,_OMC_LIT282_data);
-#define _OMC_LIT282 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT282)
-#define _OMC_LIT283_data "\n\nDetermine STRICT TEARING SET\n********************************************************************************\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT283,113,_OMC_LIT283_data);
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT282,8,3) {&Flags_ConfigFlag_CONFIG__FLAG__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(96)),_OMC_LIT280,MMC_REFSTRUCTLIT(mmc_none),_OMC_LIT84,_OMC_LIT265,MMC_REFSTRUCTLIT(mmc_none),_OMC_LIT281}};
+#define _OMC_LIT282 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT282)
+#define _OMC_LIT283_data "linear"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT283,6,_OMC_LIT283_data);
 #define _OMC_LIT283 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT283)
-#define _OMC_LIT284_data "Initialization start-value cycle: the start attribute of '"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT284,58,_OMC_LIT284_data);
+#define _OMC_LIT284_data "nonlinear"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT284,9,_OMC_LIT284_data);
 #define _OMC_LIT284 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT284)
-#define _OMC_LIT285_data "' depends, directly or transitively, on the variable itself. The start attribute defines the "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT285,93,_OMC_LIT285_data);
+#define _OMC_LIT285_data "\n****************************************\nBEGINNING of CellierTearing\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT285,71,_OMC_LIT285_data);
 #define _OMC_LIT285 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT285)
-#define _OMC_LIT286_data "initial value of '"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT286,18,_OMC_LIT286_data);
+#define _OMC_LIT286_data "\n\n###BEGIN print Strong Component#####################\n(Function:CellierTearing)\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT286,81,_OMC_LIT286_data);
 #define _OMC_LIT286 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT286)
-#define _OMC_LIT287_data "' and therefore "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT287,16,_OMC_LIT287_data);
+#define _OMC_LIT287_data "\n###END print Strong Component#######################\n(Function:CellierTearing)\n\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT287,82,_OMC_LIT287_data);
 #define _OMC_LIT287 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT287)
-#define _OMC_LIT288_data "cannot be computed from it, so this start value cannot be used to initialize the variable (see "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT288,95,_OMC_LIT288_data);
+#define _OMC_LIT288_data "\n\nDetermine STRICT TEARING SET\n********************************************************************************\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT288,113,_OMC_LIT288_data);
 #define _OMC_LIT288 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT288)
-#define _OMC_LIT289_data "Modelica Specification section 4.9.6). This is possibly a modeling error; if unintended, give '"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT289,95,_OMC_LIT289_data);
+#define _OMC_LIT289_data "Initialization start-value cycle: the start attribute of '"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT289,58,_OMC_LIT289_data);
 #define _OMC_LIT289 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT289)
-#define _OMC_LIT290_data "' a start value that does not depend on "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT290,40,_OMC_LIT290_data);
+#define _OMC_LIT290_data "' depends, directly or transitively, on the variable itself. The start attribute defines the "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT290,93,_OMC_LIT290_data);
 #define _OMC_LIT290 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT290)
-#define _OMC_LIT291_data "itself. Use the transformational debugger to inspect the dependency chain."
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT291,74,_OMC_LIT291_data);
+#define _OMC_LIT291_data "initial value of '"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT291,18,_OMC_LIT291_data);
 #define _OMC_LIT291 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT291)
-#define _OMC_LIT292_data "\neqLinPoints:\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT292,14,_OMC_LIT292_data);
+#define _OMC_LIT292_data "' and therefore "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT292,16,_OMC_LIT292_data);
 #define _OMC_LIT292 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT292)
-#define _OMC_LIT293_data "mapEqnIncRow:"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT293,13,_OMC_LIT293_data);
+#define _OMC_LIT293_data "cannot be computed from it, so this start value cannot be used to initialize the variable (see "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT293,95,_OMC_LIT293_data);
 #define _OMC_LIT293 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT293)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT294,1,6) {&ErrorTypes_Severity_NOTIFICATION__desc,}};
-#define _OMC_LIT294 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT294)
-#define _OMC_LIT295_data "Following iteration variables are selected by the user for strong component %s (DAE kind: %s):\n%s"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT295,97,_OMC_LIT295_data);
+#define _OMC_LIT294_data "Modelica Specification section 4.9.6). This is possibly a modeling error; if unintended, give '"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT294,95,_OMC_LIT294_data);
+#define _OMC_LIT294 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT294)
+#define _OMC_LIT295_data "' a start value that does not depend on "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT295,40,_OMC_LIT295_data);
 #define _OMC_LIT295 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT295)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT296,5,3) {&ErrorTypes_Message_MESSAGE__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(578)),_OMC_LIT14,_OMC_LIT294,_OMC_LIT295}};
-#define _OMC_LIT296 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT296)
-#define _OMC_LIT297_data "\n****************************************\nBEGINNING of CellierTearing2\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT297,72,_OMC_LIT297_data);
+#define _OMC_LIT296_data "itself. Use the transformational debugger to inspect the dependency chain."
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT296,74,_OMC_LIT296_data);
+#define _OMC_LIT296 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT296)
+#define _OMC_LIT297_data "\neqLinPoints:\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT297,14,_OMC_LIT297_data);
 #define _OMC_LIT297 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT297)
-#define _OMC_LIT298_data "\nEND of CellierTearing2\n****************************************\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT298,66,_OMC_LIT298_data);
+#define _OMC_LIT298_data "mapEqnIncRow:"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT298,13,_OMC_LIT298_data);
 #define _OMC_LIT298 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT298)
-#define _OMC_LIT299_data " - STRICT SET"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT299,13,_OMC_LIT299_data);
-#define _OMC_LIT299 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT299)
-#define _OMC_LIT300_data "Note:\n=====\nNo dynamic Tearing for this strong component. Check if\n- flag 'dynamicTearing' is set proper\n- strong component does not contain statesets\n- system belongs to simulation\n- SimCode target is 'C'\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT300,207,_OMC_LIT300_data);
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT299,1,6) {&ErrorTypes_Severity_NOTIFICATION__desc,}};
+#define _OMC_LIT299 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT299)
+#define _OMC_LIT300_data "Following iteration variables are selected by the user for strong component %s (DAE kind: %s):\n%s"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT300,97,_OMC_LIT300_data);
 #define _OMC_LIT300 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT300)
-#define _OMC_LIT301_data "\nNote:\n=====\nTearing set is discarded because it is not smaller than the original set. Use +forceTearing to prevent this.\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT301,123,_OMC_LIT301_data);
-#define _OMC_LIT301 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT301)
-#define _OMC_LIT302_data "forceTearing"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT302,12,_OMC_LIT302_data);
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT301,5,3) {&ErrorTypes_Message_MESSAGE__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(578)),_OMC_LIT14,_OMC_LIT299,_OMC_LIT300}};
+#define _OMC_LIT301 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT301)
+#define _OMC_LIT302_data "\n****************************************\nBEGINNING of CellierTearing2\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT302,72,_OMC_LIT302_data);
 #define _OMC_LIT302 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT302)
-#define _OMC_LIT303_data "Use tearing set even if it is not smaller than the original component."
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT303,70,_OMC_LIT303_data);
+#define _OMC_LIT303_data "\nEND of CellierTearing2\n****************************************\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT303,66,_OMC_LIT303_data);
 #define _OMC_LIT303 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT303)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT304,8,3) {&Flags_ConfigFlag_CONFIG__FLAG__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(63)),_OMC_LIT302,MMC_REFSTRUCTLIT(mmc_none),_OMC_LIT84,_OMC_LIT265,MMC_REFSTRUCTLIT(mmc_none),_OMC_LIT303}};
-#define _OMC_LIT304 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT304)
-#define _OMC_LIT305_data "\n\nDetermine CASUAL TEARING SET\n********************************************************************************\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT305,113,_OMC_LIT305_data);
+#define _OMC_LIT304_data " - STRICT SET"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT304,13,_OMC_LIT304_data);
+#define _OMC_LIT304 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT304)
+#define _OMC_LIT305_data "Note:\n=====\nNo dynamic Tearing for this strong component. Check if\n- flag 'dynamicTearing' is set proper\n- strong component does not contain statesets\n- system belongs to simulation\n- SimCode target is 'C'\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT305,207,_OMC_LIT305_data);
 #define _OMC_LIT305 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT305)
-#define _OMC_LIT306_data "\n****************************************\n* TEARING RESULTS (CASUAL SET):\n*\n* No of equations in strong component: "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT306,115,_OMC_LIT306_data);
+#define _OMC_LIT306_data "\nNote:\n=====\nTearing set is discarded because it is not smaller than the original set. Use +forceTearing to prevent this.\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT306,123,_OMC_LIT306_data);
 #define _OMC_LIT306 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT306)
-#define _OMC_LIT307_data "*\n* The casual tearing set is not smaller\n* than the strict tearing set and there-\n* fore it is discarded.\n*****************************************\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT307,149,_OMC_LIT307_data);
+#define _OMC_LIT307_data "forceTearing"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT307,12,_OMC_LIT307_data);
 #define _OMC_LIT307 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT307)
-#define _OMC_LIT308_data " - CASUAL SET"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT308,13,_OMC_LIT308_data);
+#define _OMC_LIT308_data "Use tearing set even if it is not smaller than the original component."
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT308,70,_OMC_LIT308_data);
 #define _OMC_LIT308 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT308)
-#define _OMC_LIT309_data "Nonlinear"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT309,9,_OMC_LIT309_data);
-#define _OMC_LIT309 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT309)
-#define _OMC_LIT310_data "Linear"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT310,6,_OMC_LIT310_data);
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT309,8,3) {&Flags_ConfigFlag_CONFIG__FLAG__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(63)),_OMC_LIT307,MMC_REFSTRUCTLIT(mmc_none),_OMC_LIT84,_OMC_LIT265,MMC_REFSTRUCTLIT(mmc_none),_OMC_LIT308}};
+#define _OMC_LIT309 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT309)
+#define _OMC_LIT310_data "\n\nDetermine CASUAL TEARING SET\n********************************************************************************\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT310,113,_OMC_LIT310_data);
 #define _OMC_LIT310 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT310)
-#define _OMC_LIT311_data "\nNote:\n=====\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT311,13,_OMC_LIT311_data);
+#define _OMC_LIT311_data "\n****************************************\n* TEARING RESULTS (CASUAL SET):\n*\n* No of equations in strong component: "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT311,115,_OMC_LIT311_data);
 #define _OMC_LIT311 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT311)
-#define _OMC_LIT312_data " dynamic tearing for this strong component in model:\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT312,53,_OMC_LIT312_data);
+#define _OMC_LIT312_data "*\n* The casual tearing set is not smaller\n* than the strict tearing set and there-\n* fore it is discarded.\n*****************************************\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT312,149,_OMC_LIT312_data);
 #define _OMC_LIT312 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT312)
-#define _OMC_LIT313_data "\nEND of CellierTearing\n****************************************\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT313,65,_OMC_LIT313_data);
+#define _OMC_LIT313_data " - CASUAL SET"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT313,13,_OMC_LIT313_data);
 #define _OMC_LIT313 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT313)
-#define _OMC_LIT314_data "function getTearingSetfromAssign failed"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT314,39,_OMC_LIT314_data);
+#define _OMC_LIT314_data "Nonlinear"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT314,9,_OMC_LIT314_data);
 #define _OMC_LIT314 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT314)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT315_6,1.786954567e9);
-#define _OMC_LIT315_6 MMC_REFREALLIT(_OMC_LIT_STRUCT315_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT315,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT215,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2202)),MMC_IMMEDIATE(MMC_TAGFIXNUM(5)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2202)),MMC_IMMEDIATE(MMC_TAGFIXNUM(84)),_OMC_LIT315_6}};
-#define _OMC_LIT315 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT315)
-#define _OMC_LIT316_data "function pathFound failed"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT316,25,_OMC_LIT316_data);
+#define _OMC_LIT315_data "Linear"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT315,6,_OMC_LIT315_data);
+#define _OMC_LIT315 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT315)
+#define _OMC_LIT316_data "\nNote:\n=====\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT316,13,_OMC_LIT316_data);
 #define _OMC_LIT316 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT316)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT317_6,1.786954567e9);
-#define _OMC_LIT317_6 MMC_REFREALLIT(_OMC_LIT_STRUCT317_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT317,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT215,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2176)),MMC_IMMEDIATE(MMC_TAGFIXNUM(6)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2176)),MMC_IMMEDIATE(MMC_TAGFIXNUM(71)),_OMC_LIT317_6}};
-#define _OMC_LIT317 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT317)
-#define _OMC_LIT318_data "function matchDiscreteVars failed"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT318,33,_OMC_LIT318_data);
+#define _OMC_LIT317_data " dynamic tearing for this strong component in model:\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT317,53,_OMC_LIT317_data);
+#define _OMC_LIT317 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT317)
+#define _OMC_LIT318_data "\nEND of CellierTearing\n****************************************\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT318,65,_OMC_LIT318_data);
 #define _OMC_LIT318 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT318)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT319_6,1.786954567e9);
-#define _OMC_LIT319_6 MMC_REFREALLIT(_OMC_LIT_STRUCT319_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT319,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT215,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2122)),MMC_IMMEDIATE(MMC_TAGFIXNUM(5)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2122)),MMC_IMMEDIATE(MMC_TAGFIXNUM(78)),_OMC_LIT319_6}};
-#define _OMC_LIT319 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT319)
-#define _OMC_LIT320_data "function minimalTearing failed"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT320,30,_OMC_LIT320_data);
-#define _OMC_LIT320 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT320)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT321_6,1.786954567e9);
-#define _OMC_LIT321_6 MMC_REFREALLIT(_OMC_LIT_STRUCT321_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT321,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT215,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2099)),MMC_IMMEDIATE(MMC_TAGFIXNUM(3)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2099)),MMC_IMMEDIATE(MMC_TAGFIXNUM(73)),_OMC_LIT321_6}};
-#define _OMC_LIT321 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT321)
-#define _OMC_LIT322_data "handle torn System\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT322,19,_OMC_LIT322_data);
-#define _OMC_LIT322 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT322)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT323,5,3) {&BackendDAE_TearingSet_TEARINGSET__desc,MMC_REFSTRUCTLIT(mmc_nil),MMC_REFSTRUCTLIT(mmc_nil),MMC_REFSTRUCTLIT(mmc_nil),_OMC_LIT41}};
-#define _OMC_LIT323 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT323)
-#define _OMC_LIT324_data "Assignment: Eq "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT324,15,_OMC_LIT324_data);
-#define _OMC_LIT324 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT324)
-#define _OMC_LIT325_data "SOLVABILITY_PARAMETER is not handled yet. Requires revision."
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT325,60,_OMC_LIT325_data);
+#define _OMC_LIT319_data "function getTearingSetfromAssign failed"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT319,39,_OMC_LIT319_data);
+#define _OMC_LIT319 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT319)
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT320_6,0.0);
+#define _OMC_LIT320_6 MMC_REFREALLIT(_OMC_LIT_STRUCT320_6)
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT320,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT215,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2202)),MMC_IMMEDIATE(MMC_TAGFIXNUM(5)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2202)),MMC_IMMEDIATE(MMC_TAGFIXNUM(84)),_OMC_LIT320_6}};
+#define _OMC_LIT320 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT320)
+#define _OMC_LIT321_data "function pathFound failed"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT321,25,_OMC_LIT321_data);
+#define _OMC_LIT321 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT321)
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT322_6,0.0);
+#define _OMC_LIT322_6 MMC_REFREALLIT(_OMC_LIT_STRUCT322_6)
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT322,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT215,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2176)),MMC_IMMEDIATE(MMC_TAGFIXNUM(6)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2176)),MMC_IMMEDIATE(MMC_TAGFIXNUM(71)),_OMC_LIT322_6}};
+#define _OMC_LIT322 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT322)
+#define _OMC_LIT323_data "function matchDiscreteVars failed"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT323,33,_OMC_LIT323_data);
+#define _OMC_LIT323 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT323)
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT324_6,0.0);
+#define _OMC_LIT324_6 MMC_REFREALLIT(_OMC_LIT_STRUCT324_6)
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT324,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT215,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2122)),MMC_IMMEDIATE(MMC_TAGFIXNUM(5)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2122)),MMC_IMMEDIATE(MMC_TAGFIXNUM(78)),_OMC_LIT324_6}};
+#define _OMC_LIT324 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT324)
+#define _OMC_LIT325_data "function minimalTearing failed"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT325,30,_OMC_LIT325_data);
 #define _OMC_LIT325 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT325)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT326_6,1.786954567e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT326_6,0.0);
 #define _OMC_LIT326_6 MMC_REFREALLIT(_OMC_LIT_STRUCT326_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT326,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT215,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1736)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1736)),MMC_IMMEDIATE(MMC_TAGFIXNUM(109)),_OMC_LIT326_6}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT326,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT215,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2099)),MMC_IMMEDIATE(MMC_TAGFIXNUM(3)),MMC_IMMEDIATE(MMC_TAGFIXNUM(2099)),MMC_IMMEDIATE(MMC_TAGFIXNUM(73)),_OMC_LIT326_6}};
 #define _OMC_LIT326 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT326)
-#define _OMC_LIT327_data "tearingStrictness"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT327,17,_OMC_LIT327_data);
+#define _OMC_LIT327_data "handle torn System\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT327,19,_OMC_LIT327_data);
 #define _OMC_LIT327 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT327)
-#define _OMC_LIT328_data "strict"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT328,6,_OMC_LIT328_data);
-#define _OMC_LIT328 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT328)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT329,2,8) {&Flags_FlagData_STRING__FLAG__desc,_OMC_LIT328}};
-#define _OMC_LIT329 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT329)
-#define _OMC_LIT330_data "casual"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT330,6,_OMC_LIT330_data);
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT328,5,3) {&BackendDAE_TearingSet_TEARINGSET__desc,MMC_REFSTRUCTLIT(mmc_nil),MMC_REFSTRUCTLIT(mmc_nil),MMC_REFSTRUCTLIT(mmc_nil),_OMC_LIT41}};
+#define _OMC_LIT328 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT328)
+#define _OMC_LIT329_data "Assignment: Eq "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT329,15,_OMC_LIT329_data);
+#define _OMC_LIT329 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT329)
+#define _OMC_LIT330_data "SOLVABILITY_PARAMETER is not handled yet. Requires revision."
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT330,60,_OMC_LIT330_data);
 #define _OMC_LIT330 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT330)
-#define _OMC_LIT331_data "Loose tearing rules using ExpressionSolve to determine the solvability instead of considering the partial derivative. Allows to solve for everything that is analytically possible. This could lead to singularities during simulation."
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT331,231,_OMC_LIT331_data);
-#define _OMC_LIT331 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT331)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT332,2,0) {_OMC_LIT330,_OMC_LIT331}};
-#define _OMC_LIT332 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT332)
-#define _OMC_LIT333_data "Robust tearing rules by consideration of the partial derivative. Allows to divide by parameters that are not equal to or close to zero."
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT333,135,_OMC_LIT333_data);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT331_6,0.0);
+#define _OMC_LIT331_6 MMC_REFREALLIT(_OMC_LIT_STRUCT331_6)
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT331,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT215,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1736)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1736)),MMC_IMMEDIATE(MMC_TAGFIXNUM(109)),_OMC_LIT331_6}};
+#define _OMC_LIT331 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT331)
+#define _OMC_LIT332_data "tearingStrictness"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT332,17,_OMC_LIT332_data);
+#define _OMC_LIT332 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT332)
+#define _OMC_LIT333_data "strict"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT333,6,_OMC_LIT333_data);
 #define _OMC_LIT333 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT333)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT334,2,0) {_OMC_LIT328,_OMC_LIT333}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT334,2,8) {&Flags_FlagData_STRING__FLAG__desc,_OMC_LIT333}};
 #define _OMC_LIT334 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT334)
-#define _OMC_LIT335_data "veryStrict"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT335,10,_OMC_LIT335_data);
+#define _OMC_LIT335_data "casual"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT335,6,_OMC_LIT335_data);
 #define _OMC_LIT335 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT335)
-#define _OMC_LIT336_data "Very strict tearing rules that do not allow to divide by any parameter. Use this if you aim at overriding parameters after compilation with values equal to or close to zero."
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT336,173,_OMC_LIT336_data);
+#define _OMC_LIT336_data "Loose tearing rules using ExpressionSolve to determine the solvability instead of considering the partial derivative. Allows to solve for everything that is analytically possible. This could lead to singularities during simulation."
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT336,231,_OMC_LIT336_data);
 #define _OMC_LIT336 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT336)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT337,2,0) {_OMC_LIT335,_OMC_LIT336}};
 #define _OMC_LIT337 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT337)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT338,2,1) {_OMC_LIT337,MMC_REFSTRUCTLIT(mmc_nil)}};
-#define _OMC_LIT338 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT338)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT339,2,1) {_OMC_LIT334,_OMC_LIT338}};
+#define _OMC_LIT338_data "Robust tearing rules by consideration of the partial derivative. Allows to divide by parameters that are not equal to or close to zero."
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT338,135,_OMC_LIT338_data);
+#define _OMC_LIT338 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT338)
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT339,2,0) {_OMC_LIT333,_OMC_LIT338}};
 #define _OMC_LIT339 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT339)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT340,2,1) {_OMC_LIT332,_OMC_LIT339}};
-#define _OMC_LIT340 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT340)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT341,2,4) {&Flags_ValidOptions_STRING__DESC__OPTION__desc,_OMC_LIT340}};
-#define _OMC_LIT341 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT341)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT342,1,1) {_OMC_LIT341}};
+#define _OMC_LIT340_data "veryStrict"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT340,10,_OMC_LIT340_data);
+#define _OMC_LIT340 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT340)
+#define _OMC_LIT341_data "Very strict tearing rules that do not allow to divide by any parameter. Use this if you aim at overriding parameters after compilation with values equal to or close to zero."
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT341,173,_OMC_LIT341_data);
+#define _OMC_LIT341 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT341)
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT342,2,0) {_OMC_LIT340,_OMC_LIT341}};
 #define _OMC_LIT342 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT342)
-#define _OMC_LIT343_data "Sets the strictness of the tearing method regarding the solvability restrictions."
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT343,81,_OMC_LIT343_data);
-#define _OMC_LIT343 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT343)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT344,8,3) {&Flags_ConfigFlag_CONFIG__FLAG__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(105)),_OMC_LIT327,MMC_REFSTRUCTLIT(mmc_none),_OMC_LIT84,_OMC_LIT329,_OMC_LIT342,_OMC_LIT343}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT343,2,1) {_OMC_LIT342,MMC_REFSTRUCTLIT(mmc_nil)}};
+#define _OMC_LIT343 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT343)
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT344,2,1) {_OMC_LIT339,_OMC_LIT343}};
 #define _OMC_LIT344 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT344)
-#define _OMC_LIT345_data "Assign Eqns: "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT345,13,_OMC_LIT345_data);
-#define _OMC_LIT345 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT345)
-#define _OMC_LIT346_data "Use next Queue!\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT346,16,_OMC_LIT346_data);
-#define _OMC_LIT346 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT346)
-#define _OMC_LIT347_data "Queue:\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT347,7,_OMC_LIT347_data);
-#define _OMC_LIT347 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT347)
-#define _OMC_LIT348_data "Process Eqn: "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT348,13,_OMC_LIT348_data);
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT345,2,1) {_OMC_LIT337,_OMC_LIT344}};
+#define _OMC_LIT345 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT345)
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT346,2,4) {&Flags_ValidOptions_STRING__DESC__OPTION__desc,_OMC_LIT345}};
+#define _OMC_LIT346 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT346)
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT347,1,1) {_OMC_LIT346}};
+#define _OMC_LIT347 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT347)
+#define _OMC_LIT348_data "Sets the strictness of the tearing method regarding the solvability restrictions."
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT348,81,_OMC_LIT348_data);
 #define _OMC_LIT348 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT348)
-#define _OMC_LIT349_data "Eqn Size: "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT349,10,_OMC_LIT349_data);
-#define _OMC_LIT349 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT349)
-#define _OMC_LIT350_data "Rows (not assigned variables in eqn "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT350,36,_OMC_LIT350_data);
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT349,8,3) {&Flags_ConfigFlag_CONFIG__FLAG__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(105)),_OMC_LIT332,MMC_REFSTRUCTLIT(mmc_none),_OMC_LIT84,_OMC_LIT334,_OMC_LIT347,_OMC_LIT348}};
+#define _OMC_LIT349 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT349)
+#define _OMC_LIT350_data "Assign Eqns: "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT350,13,_OMC_LIT350_data);
 #define _OMC_LIT350 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT350)
-#define _OMC_LIT351_data "):\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT351,3,_OMC_LIT351_data);
+#define _OMC_LIT351_data "Use next Queue!\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT351,16,_OMC_LIT351_data);
 #define _OMC_LIT351 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT351)
-#define _OMC_LIT352_data "Next Queue:\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT352,12,_OMC_LIT352_data);
+#define _OMC_LIT352_data "Queue:\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT352,7,_OMC_LIT352_data);
 #define _OMC_LIT352 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT352)
-#define _OMC_LIT353_data "\nForced selection of Tearing Variable:\n========================================\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT353,80,_OMC_LIT353_data);
+#define _OMC_LIT353_data "Process Eqn: "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT353,13,_OMC_LIT353_data);
 #define _OMC_LIT353 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT353)
-#define _OMC_LIT354_data "tVar: "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT354,6,_OMC_LIT354_data);
+#define _OMC_LIT354_data "Eqn Size: "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT354,10,_OMC_LIT354_data);
 #define _OMC_LIT354 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT354)
-#define _OMC_LIT355_data " (unsolvable in omcTearingSelectTearingVar)\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT355,45,_OMC_LIT355_data);
+#define _OMC_LIT355_data "Rows (not assigned variables in eqn "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT355,36,_OMC_LIT355_data);
 #define _OMC_LIT355 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT355)
-#define _OMC_LIT356_data "omcTearingSelectTearingVar Candidates(unassigned vars):\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT356,56,_OMC_LIT356_data);
+#define _OMC_LIT356_data "):\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT356,3,_OMC_LIT356_data);
 #define _OMC_LIT356 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT356)
-#define _OMC_LIT357_data "Candidates without variables with annotation attribute 'never':\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT357,64,_OMC_LIT357_data);
+#define _OMC_LIT357_data "Next Queue:\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT357,12,_OMC_LIT357_data);
 #define _OMC_LIT357 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT357)
-#define _OMC_LIT358_data "\nPoints after 'calcVarWeights':\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT358,32,_OMC_LIT358_data);
+#define _OMC_LIT358_data "\nForced selection of Tearing Variable:\n========================================\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT358,80,_OMC_LIT358_data);
 #define _OMC_LIT358 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT358)
-#define _OMC_LIT359_data "Points after 'addEqnWeights':\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT359,30,_OMC_LIT359_data);
+#define _OMC_LIT359_data "tVar: "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT359,6,_OMC_LIT359_data);
 #define _OMC_LIT359 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT359)
-#define _OMC_LIT360_data "Points after 'discriminateDiscrete':\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT360,37,_OMC_LIT360_data);
+#define _OMC_LIT360_data " (unsolvable in omcTearingSelectTearingVar)\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT360,45,_OMC_LIT360_data);
 #define _OMC_LIT360 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT360)
-#define _OMC_LIT361_data "Points after preferring variables with attribute 'prefer':\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT361,59,_OMC_LIT361_data);
+#define _OMC_LIT361_data "omcTearingSelectTearingVar Candidates(unassigned vars):\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT361,56,_OMC_LIT361_data);
 #define _OMC_LIT361 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT361)
-#define _OMC_LIT362_data "Points after discrimination against variables with attribute 'avoid':\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT362,70,_OMC_LIT362_data);
+#define _OMC_LIT362_data "Candidates without variables with annotation attribute 'never':\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT362,64,_OMC_LIT362_data);
 #define _OMC_LIT362 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT362)
-#define _OMC_LIT363_data " ("
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT363,2,_OMC_LIT363_data);
+#define _OMC_LIT363_data "\nPoints after 'calcVarWeights':\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT363,32,_OMC_LIT363_data);
 #define _OMC_LIT363 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT363)
-#define _OMC_LIT364_data " points)\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT364,10,_OMC_LIT364_data);
+#define _OMC_LIT364_data "Points after 'addEqnWeights':\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT364,30,_OMC_LIT364_data);
 #define _OMC_LIT364 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT364)
-#define _OMC_LIT365_data "omcTearingSelectTearingVar failed because no unmatched var!\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT365,60,_OMC_LIT365_data);
+#define _OMC_LIT365_data "Points after 'discriminateDiscrete':\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT365,37,_OMC_LIT365_data);
 #define _OMC_LIT365 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT365)
-#define _OMC_LIT366_data "\n****************************************\nBEGINNING of omcTearingSelectTearingVar\n\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT366,84,_OMC_LIT366_data);
+#define _OMC_LIT366_data "Points after preferring variables with attribute 'prefer':\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT366,59,_OMC_LIT366_data);
 #define _OMC_LIT366 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT366)
-#define _OMC_LIT367_data "\nEND of omcTearingSelectTearingVar\n****************************************\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT367,77,_OMC_LIT367_data);
+#define _OMC_LIT367_data "Points after discrimination against variables with attribute 'avoid':\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT367,70,_OMC_LIT367_data);
 #define _OMC_LIT367 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT367)
-#define _OMC_LIT368_data "Assignable equations containing new tvar:\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT368,42,_OMC_LIT368_data);
+#define _OMC_LIT368_data " ("
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT368,2,_OMC_LIT368_data);
 #define _OMC_LIT368 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT368)
-#define _OMC_LIT369_data " (unsolvable in omcTearing2)\n\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT369,31,_OMC_LIT369_data);
+#define _OMC_LIT369_data " points)\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT369,10,_OMC_LIT369_data);
 #define _OMC_LIT369 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT369)
-#define _OMC_LIT370_data "\nForced selection of Tearing Variables:\n========================================\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT370,81,_OMC_LIT370_data);
+#define _OMC_LIT370_data "omcTearingSelectTearingVar failed because no unmatched var!\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT370,60,_OMC_LIT370_data);
 #define _OMC_LIT370 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT370)
-#define _OMC_LIT371_data "Assignable equations containing new tvars:\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT371,43,_OMC_LIT371_data);
+#define _OMC_LIT371_data "\n****************************************\nBEGINNING of omcTearingSelectTearingVar\n\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT371,84,_OMC_LIT371_data);
 #define _OMC_LIT371 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT371)
-#define _OMC_LIT372_data "Tearing.omcTearing2 failed!"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT372,27,_OMC_LIT372_data);
+#define _OMC_LIT372_data "\nEND of omcTearingSelectTearingVar\n****************************************\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT372,77,_OMC_LIT372_data);
 #define _OMC_LIT372 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT372)
-#define _OMC_LIT373_data "\n****************************************\nBEGINNING of omcTearing\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT373,67,_OMC_LIT373_data);
+#define _OMC_LIT373_data "Assignable equations containing new tvar:\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT373,42,_OMC_LIT373_data);
 #define _OMC_LIT373 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT373)
-#define _OMC_LIT374_data "\n\n###BEGIN print Strong Component#####################\n(Function:omcTearing)\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT374,77,_OMC_LIT374_data);
+#define _OMC_LIT374_data " (unsolvable in omcTearing2)\n\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT374,31,_OMC_LIT374_data);
 #define _OMC_LIT374 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT374)
-#define _OMC_LIT375_data "\n###END print Strong Component#######################\n(Function:omcTearing)\n\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT375,78,_OMC_LIT375_data);
+#define _OMC_LIT375_data "\nForced selection of Tearing Variables:\n========================================\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT375,81,_OMC_LIT375_data);
 #define _OMC_LIT375 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT375)
-#define _OMC_LIT376_data "\n\nAdjacencyMatrixEnhanced:\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT376,27,_OMC_LIT376_data);
+#define _OMC_LIT376_data "Assignable equations containing new tvars:\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT376,43,_OMC_LIT376_data);
 #define _OMC_LIT376 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT376)
-#define _OMC_LIT377_data "\nmapEqnIncRow:"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT377,14,_OMC_LIT377_data);
+#define _OMC_LIT377_data "Tearing.omcTearing2 failed!"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT377,27,_OMC_LIT377_data);
 #define _OMC_LIT377 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT377)
-#define _OMC_LIT378_data "\n\nUnsolvable Vars:\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT378,19,_OMC_LIT378_data);
+#define _OMC_LIT378_data "\n****************************************\nBEGINNING of omcTearing\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT378,67,_OMC_LIT378_data);
 #define _OMC_LIT378 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT378)
-#define _OMC_LIT379_data "\n****************************************\nBEGINNING of omcTearing2\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT379,68,_OMC_LIT379_data);
+#define _OMC_LIT379_data "\n\n###BEGIN print Strong Component#####################\n(Function:omcTearing)\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT379,77,_OMC_LIT379_data);
 #define _OMC_LIT379 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT379)
-#define _OMC_LIT380_data "\nEND of omcTearing2\n****************************************\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT380,62,_OMC_LIT380_data);
+#define _OMC_LIT380_data "\n###END print Strong Component#######################\n(Function:omcTearing)\n\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT380,78,_OMC_LIT380_data);
 #define _OMC_LIT380 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT380)
-#define _OMC_LIT381_data "\n****************************************\n* BFS RESULTS:\n* ass1: "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT381,65,_OMC_LIT381_data);
+#define _OMC_LIT381_data "\n\nAdjacencyMatrixEnhanced:\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT381,27,_OMC_LIT381_data);
 #define _OMC_LIT381 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT381)
-#define _OMC_LIT382_data "\nOtherEquationsOrder:\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT382,22,_OMC_LIT382_data);
+#define _OMC_LIT382_data "\nmapEqnIncRow:"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT382,14,_OMC_LIT382_data);
 #define _OMC_LIT382 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT382)
-#define _OMC_LIT383_data "\nStatus:\nOk system torn\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT383,25,_OMC_LIT383_data);
+#define _OMC_LIT383_data "\n\nUnsolvable Vars:\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT383,19,_OMC_LIT383_data);
 #define _OMC_LIT383 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT383)
-#define _OMC_LIT384_data "\nStatus:\nSystem not torn\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT384,26,_OMC_LIT384_data);
+#define _OMC_LIT384_data "\n****************************************\nBEGINNING of omcTearing2\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT384,68,_OMC_LIT384_data);
 #define _OMC_LIT384 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT384)
-#define _OMC_LIT385_data "\n****************************************\n* TEARING RESULTS:\n*\n* No of equations in strong component: "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT385,102,_OMC_LIT385_data);
+#define _OMC_LIT385_data "\nEND of omcTearing2\n****************************************\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT385,62,_OMC_LIT385_data);
 #define _OMC_LIT385 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT385)
-#define _OMC_LIT386_data "\n* Related to entire Equationsystem:\n* =====\n* tVars: "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT386,54,_OMC_LIT386_data);
+#define _OMC_LIT386_data "\n****************************************\n* BFS RESULTS:\n* ass1: "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT386,65,_OMC_LIT386_data);
 #define _OMC_LIT386 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT386)
-#define _OMC_LIT387_data "\n* =====\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT387,9,_OMC_LIT387_data);
+#define _OMC_LIT387_data "\nOtherEquationsOrder:\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT387,22,_OMC_LIT387_data);
 #define _OMC_LIT387 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT387)
-#define _OMC_LIT388_data "*\n* =====\n* resEq: "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT388,19,_OMC_LIT388_data);
+#define _OMC_LIT388_data "\nStatus:\nOk system torn\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT388,25,_OMC_LIT388_data);
 #define _OMC_LIT388 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT388)
-#define _OMC_LIT389_data "\n\nStrongComponents:\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT389,20,_OMC_LIT389_data);
+#define _OMC_LIT389_data "\nStatus:\nSystem not torn\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT389,26,_OMC_LIT389_data);
 #define _OMC_LIT389 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT389)
-#define _OMC_LIT390_data "\n\nEND of omcTearing\n****************************************\n\n"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT390,62,_OMC_LIT390_data);
+#define _OMC_LIT390_data "\n****************************************\n* TEARING RESULTS:\n*\n* No of equations in strong component: "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT390,102,_OMC_LIT390_data);
 #define _OMC_LIT390 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT390)
-#define _OMC_LIT391_data "The selected tearing variables must have unique indexes."
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT391,56,_OMC_LIT391_data);
+#define _OMC_LIT391_data "\n* Related to entire Equationsystem:\n* =====\n* tVars: "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT391,54,_OMC_LIT391_data);
 #define _OMC_LIT391 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT391)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT392,2,1) {_OMC_LIT391,MMC_REFSTRUCTLIT(mmc_nil)}};
-#define _OMC_LIT392 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT392)
-#define _OMC_LIT393_data "The selected residual equations must have unique indexes."
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT393,57,_OMC_LIT393_data);
+#define _OMC_LIT392_data "\n* =====\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT392,9,_OMC_LIT392_data);
+#define _OMC_LIT392 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT392)
+#define _OMC_LIT393_data "*\n* =====\n* resEq: "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT393,19,_OMC_LIT393_data);
 #define _OMC_LIT393 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT393)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT394,2,1) {_OMC_LIT393,MMC_REFSTRUCTLIT(mmc_nil)}};
-#define _OMC_LIT394 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT394)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT395,1.0);
-#define _OMC_LIT395 MMC_REFREALLIT(_OMC_LIT_STRUCT395)
-#define _OMC_LIT396_data "[tearingCost] component "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT396,24,_OMC_LIT396_data);
+#define _OMC_LIT394_data "\n\nStrongComponents:\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT394,20,_OMC_LIT394_data);
+#define _OMC_LIT394 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT394)
+#define _OMC_LIT395_data "\n\nEND of omcTearing\n****************************************\n\n"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT395,62,_OMC_LIT395_data);
+#define _OMC_LIT395 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT395)
+#define _OMC_LIT396_data "The selected tearing variables must have unique indexes."
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT396,56,_OMC_LIT396_data);
 #define _OMC_LIT396 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT396)
-#define _OMC_LIT397_data " "
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT397,1,_OMC_LIT397_data);
-#define _OMC_LIT397 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT397)
-#define _OMC_LIT398_data "LS"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT398,2,_OMC_LIT398_data);
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT397,2,1) {_OMC_LIT396,MMC_REFSTRUCTLIT(mmc_nil)}};
+#define _OMC_LIT397 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT397)
+#define _OMC_LIT398_data "The selected residual equations must have unique indexes."
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT398,57,_OMC_LIT398_data);
 #define _OMC_LIT398 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT398)
-#define _OMC_LIT399_data "NLS"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT399,3,_OMC_LIT399_data);
-#define _OMC_LIT399 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT399)
-#define _OMC_LIT400_data " ["
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT400,2,_OMC_LIT400_data);
-#define _OMC_LIT400 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT400)
-#define _OMC_LIT401_data "]"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT401,1,_OMC_LIT401_data);
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT399,2,1) {_OMC_LIT398,MMC_REFSTRUCTLIT(mmc_nil)}};
+#define _OMC_LIT399 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT399)
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT400,1.0);
+#define _OMC_LIT400 MMC_REFREALLIT(_OMC_LIT_STRUCT400)
+#define _OMC_LIT401_data "[tearingCost] component "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT401,24,_OMC_LIT401_data);
 #define _OMC_LIT401 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT401)
-#define _OMC_LIT402_data " n="
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT402,3,_OMC_LIT402_data);
+#define _OMC_LIT402_data " "
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT402,1,_OMC_LIT402_data);
 #define _OMC_LIT402 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT402)
-#define _OMC_LIT403_data " nnz="
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT403,5,_OMC_LIT403_data);
+#define _OMC_LIT403_data "LS"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT403,2,_OMC_LIT403_data);
 #define _OMC_LIT403 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT403)
-#define _OMC_LIT404_data " density="
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT404,9,_OMC_LIT404_data);
+#define _OMC_LIT404_data "NLS"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT404,3,_OMC_LIT404_data);
 #define _OMC_LIT404 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT404)
-#define _OMC_LIT405_data " t="
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT405,3,_OMC_LIT405_data);
+#define _OMC_LIT405_data " ["
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT405,2,_OMC_LIT405_data);
 #define _OMC_LIT405 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT405)
-#define _OMC_LIT406_data " inner="
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT406,7,_OMC_LIT406_data);
+#define _OMC_LIT406_data "]"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT406,1,_OMC_LIT406_data);
 #define _OMC_LIT406 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT406)
-#define _OMC_LIT407_data " nnzA="
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT407,6,_OMC_LIT407_data);
+#define _OMC_LIT407_data " n="
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT407,3,_OMC_LIT407_data);
 #define _OMC_LIT407 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT407)
-#define _OMC_LIT408_data " densityA="
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT408,10,_OMC_LIT408_data);
+#define _OMC_LIT408_data " nnz="
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT408,5,_OMC_LIT408_data);
 #define _OMC_LIT408 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT408)
-#define _OMC_LIT409_data " colors="
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT409,8,_OMC_LIT409_data);
+#define _OMC_LIT409_data " density="
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT409,9,_OMC_LIT409_data);
 #define _OMC_LIT409 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT409)
-#define _OMC_LIT410_data " chain="
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT410,7,_OMC_LIT410_data);
+#define _OMC_LIT410_data " t="
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT410,3,_OMC_LIT410_data);
 #define _OMC_LIT410 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT410)
-#define _OMC_LIT411_data " digitsLost="
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT411,12,_OMC_LIT411_data);
+#define _OMC_LIT411_data " inner="
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT411,7,_OMC_LIT411_data);
 #define _OMC_LIT411 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT411)
-#define _OMC_LIT412_data " valuedCoeffs="
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT412,14,_OMC_LIT412_data);
+#define _OMC_LIT412_data " nnzA="
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT412,6,_OMC_LIT412_data);
 #define _OMC_LIT412 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT412)
-#define _OMC_LIT413_data "/"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT413,1,_OMC_LIT413_data);
+#define _OMC_LIT413_data " densityA="
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT413,10,_OMC_LIT413_data);
 #define _OMC_LIT413 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT413)
-#define _OMC_LIT414_data " cost dense="
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT414,12,_OMC_LIT414_data);
+#define _OMC_LIT414_data " colors="
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT414,8,_OMC_LIT414_data);
 #define _OMC_LIT414 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT414)
-#define _OMC_LIT415_data " sparse="
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT415,8,_OMC_LIT415_data);
+#define _OMC_LIT415_data " chain="
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT415,7,_OMC_LIT415_data);
 #define _OMC_LIT415 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT415)
-#define _OMC_LIT416_data " tornDense="
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT416,11,_OMC_LIT416_data);
+#define _OMC_LIT416_data " digitsLost="
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT416,12,_OMC_LIT416_data);
 #define _OMC_LIT416 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT416)
-#define _OMC_LIT417_data " tornSparse="
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT417,12,_OMC_LIT417_data);
+#define _OMC_LIT417_data " valuedCoeffs="
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT417,14,_OMC_LIT417_data);
 #define _OMC_LIT417 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT417)
-#define _OMC_LIT418_data " format="
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT418,8,_OMC_LIT418_data);
+#define _OMC_LIT418_data "/"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT418,1,_OMC_LIT418_data);
 #define _OMC_LIT418 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT418)
-#define _OMC_LIT419_data "sparse"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT419,6,_OMC_LIT419_data);
+#define _OMC_LIT419_data " cost dense="
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT419,12,_OMC_LIT419_data);
 #define _OMC_LIT419 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT419)
-#define _OMC_LIT420_data "dense"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT420,5,_OMC_LIT420_data);
+#define _OMC_LIT420_data " sparse="
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT420,8,_OMC_LIT420_data);
 #define _OMC_LIT420 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT420)
-#define _OMC_LIT421_data " tornFormat="
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT421,12,_OMC_LIT421_data);
+#define _OMC_LIT421_data " tornDense="
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT421,11,_OMC_LIT421_data);
 #define _OMC_LIT421 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT421)
-#define _OMC_LIT422_data "tearingCost"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT422,11,_OMC_LIT422_data);
+#define _OMC_LIT422_data " tornSparse="
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT422,12,_OMC_LIT422_data);
 #define _OMC_LIT422 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT422)
-#define _OMC_LIT423_data "Dumps the estimated cost of every torn system against solving it untorn."
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT423,72,_OMC_LIT423_data);
+#define _OMC_LIT423_data " format="
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT423,8,_OMC_LIT423_data);
 #define _OMC_LIT423 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT423)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT424,5,3) {&Flags_DebugFlag_DEBUG__FLAG__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(201)),_OMC_LIT422,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),_OMC_LIT423}};
-#define _OMC_LIT424 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT424)
-#define _OMC_LIT425_data "Tearing is skipped for linear strong component %s: solving it torn to %s iteration variables is estimated at %s flops against %s for the untorn system of size %s."
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT425,162,_OMC_LIT425_data);
+#define _OMC_LIT424_data "sparse"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT424,6,_OMC_LIT424_data);
+#define _OMC_LIT424 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT424)
+#define _OMC_LIT425_data "dense"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT425,5,_OMC_LIT425_data);
 #define _OMC_LIT425 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT425)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT426,5,3) {&ErrorTypes_Message_MESSAGE__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(626)),_OMC_LIT14,_OMC_LIT294,_OMC_LIT425}};
-#define _OMC_LIT426 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT426)
-#define _OMC_LIT427_data "tearingCostMargin"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT427,17,_OMC_LIT427_data);
+#define _OMC_LIT426_data " tornFormat="
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT426,12,_OMC_LIT426_data);
+#define _OMC_LIT426 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT426)
+#define _OMC_LIT427_data "tearingCost"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT427,11,_OMC_LIT427_data);
 #define _OMC_LIT427 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT427)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT428,2.0);
-#define _OMC_LIT428 MMC_REFREALLIT(_OMC_LIT_STRUCT428)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT429,2,7) {&Flags_FlagData_REAL__FLAG__desc,_OMC_LIT428}};
+#define _OMC_LIT428_data "Dumps the estimated cost of every torn system against solving it untorn."
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT428,72,_OMC_LIT428_data);
+#define _OMC_LIT428 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT428)
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT429,5,3) {&Flags_DebugFlag_DEBUG__FLAG__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(201)),_OMC_LIT427,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),_OMC_LIT428}};
 #define _OMC_LIT429 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT429)
-#define _OMC_LIT430_data "How much cheaper solving a linear system untorn has to be estimated before its\ntearing set is dropped. Raise it to keep tearing systems the estimate would give\nup on, lower it towards 0 to tear less (default 2)."
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT430,211,_OMC_LIT430_data);
+#define _OMC_LIT430_data "Tearing is skipped for linear strong component %s: solving it torn to %s iteration variables is estimated at %s flops against %s for the untorn system of size %s."
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT430,162,_OMC_LIT430_data);
 #define _OMC_LIT430 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT430)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT431,8,3) {&Flags_ConfigFlag_CONFIG__FLAG__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(170)),_OMC_LIT427,MMC_REFSTRUCTLIT(mmc_none),_OMC_LIT84,_OMC_LIT429,MMC_REFSTRUCTLIT(mmc_none),_OMC_LIT430}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT431,5,3) {&ErrorTypes_Message_MESSAGE__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(626)),_OMC_LIT14,_OMC_LIT299,_OMC_LIT430}};
 #define _OMC_LIT431 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT431)
-#define _OMC_LIT432_data "Tearing is skipped for linear strong component %s: substituting through its %s inner equations amplifies an error by 1e%s, which double precision cannot carry."
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT432,159,_OMC_LIT432_data);
+#define _OMC_LIT432_data "tearingCostMargin"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT432,17,_OMC_LIT432_data);
 #define _OMC_LIT432 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT432)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT433,5,3) {&ErrorTypes_Message_MESSAGE__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(627)),_OMC_LIT14,_OMC_LIT294,_OMC_LIT432}};
-#define _OMC_LIT433 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT433)
-#define _OMC_LIT434_data "wasm-jit"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT434,8,_OMC_LIT434_data);
-#define _OMC_LIT434 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT434)
-#define _OMC_LIT435_data "wasm"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT435,4,_OMC_LIT435_data);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT433,2.0);
+#define _OMC_LIT433 MMC_REFREALLIT(_OMC_LIT_STRUCT433)
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT434,2,7) {&Flags_FlagData_REAL__FLAG__desc,_OMC_LIT433}};
+#define _OMC_LIT434 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT434)
+#define _OMC_LIT435_data "How much cheaper solving a linear system untorn has to be estimated before its\ntearing set is dropped. Raise it to keep tearing systems the estimate would give\nup on, lower it towards 0 to tear less (default 2)."
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT435,211,_OMC_LIT435_data);
 #define _OMC_LIT435 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT435)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT436,2,1) {_OMC_LIT435,MMC_REFSTRUCTLIT(mmc_nil)}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT436,8,3) {&Flags_ConfigFlag_CONFIG__FLAG__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(170)),_OMC_LIT432,MMC_REFSTRUCTLIT(mmc_none),_OMC_LIT84,_OMC_LIT434,MMC_REFSTRUCTLIT(mmc_none),_OMC_LIT435}};
 #define _OMC_LIT436 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT436)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT437,2,1) {_OMC_LIT434,_OMC_LIT436}};
-#define _OMC_LIT437 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT437)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT438,2,1) {_OMC_LIT277,_OMC_LIT437}};
+#define _OMC_LIT437_data "Tearing is skipped for linear strong component %s: substituting through its %s inner equations amplifies an error by 1e%s, which double precision cannot carry."
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT437,159,_OMC_LIT437_data);
+#define _OMC_LIT437 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT437)
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT438,5,3) {&ErrorTypes_Message_MESSAGE__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(627)),_OMC_LIT14,_OMC_LIT299,_OMC_LIT437}};
 #define _OMC_LIT438 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT438)
 #define _OMC_LIT439_data "maxSizeLinearTearing"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT439,20,_OMC_LIT439_data);
@@ -1278,7 +1278,7 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT446,8,3) {&Flags_ConfigFlag_CONFIG_
 #define _OMC_LIT447_data "matrixFormat"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT447,12,_OMC_LIT447_data);
 #define _OMC_LIT447 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT447)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT448,2,8) {&Flags_FlagData_STRING__FLAG__desc,_OMC_LIT420}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT448,2,8) {&Flags_FlagData_STRING__FLAG__desc,_OMC_LIT425}};
 #define _OMC_LIT448 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT448)
 #define _OMC_LIT449_data "Sets the matrix format type in cpp runtime which should be used (dense | sparse ). Default: dense."
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT449,98,_OMC_LIT449_data);
@@ -1288,7 +1288,7 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT450,8,3) {&Flags_ConfigFlag_CONFIG_
 #define _OMC_LIT451_data "Tearing is skipped for strong component %s because system size of %s exceeds maximum system size for tearing of %s systems (%s).\nTo adjust the maximum system size for tearing use --%s=<size>.\n"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT451,192,_OMC_LIT451_data);
 #define _OMC_LIT451 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT451)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT452,5,3) {&ErrorTypes_Message_MESSAGE__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(574)),_OMC_LIT14,_OMC_LIT294,_OMC_LIT451}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT452,5,3) {&ErrorTypes_Message_MESSAGE__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(574)),_OMC_LIT14,_OMC_LIT299,_OMC_LIT451}};
 #define _OMC_LIT452 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT452)
 #define _OMC_LIT453_data "\nTearing deactivated by user.\n"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT453,30,_OMC_LIT453_data);
@@ -1296,7 +1296,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT453,30,_OMC_LIT453_data);
 #define _OMC_LIT454_data "Tearing is skipped for strong component %s because of activated compiler flag 'noTearingForComponent=%1'.\n"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT454,106,_OMC_LIT454_data);
 #define _OMC_LIT454 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT454)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT455,5,3) {&ErrorTypes_Message_MESSAGE__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(575)),_OMC_LIT14,_OMC_LIT294,_OMC_LIT454}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT455,5,3) {&ErrorTypes_Message_MESSAGE__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(575)),_OMC_LIT14,_OMC_LIT299,_OMC_LIT454}};
 #define _OMC_LIT455 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT455)
 #define _OMC_LIT456_data "noTearingForComponent"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT456,21,_OMC_LIT456_data);
@@ -1402,7 +1402,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT492,43,_OMC_LIT492_data);
 #define _OMC_LIT493_data "\"."
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT493,2,_OMC_LIT493_data);
 #define _OMC_LIT493 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT493)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT494_6,1.786954567e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT494_6,0.0);
 #define _OMC_LIT494_6 MMC_REFREALLIT(_OMC_LIT_STRUCT494_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT494,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT215,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(158)),MMC_IMMEDIATE(MMC_TAGFIXNUM(7)),MMC_IMMEDIATE(MMC_TAGFIXNUM(158)),MMC_IMMEDIATE(MMC_TAGFIXNUM(113)),_OMC_LIT494_6}};
 #define _OMC_LIT494 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT494)
@@ -1434,7 +1434,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT503,2,_OMC_LIT503_data);
 #define _OMC_LIT504_data "Tearing.tearingSystem failed"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT504,28,_OMC_LIT504_data);
 #define _OMC_LIT504 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT504)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT505_6,1.786954567e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT505_6,0.0);
 #define _OMC_LIT505_6 MMC_REFREALLIT(_OMC_LIT_STRUCT505_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT505,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT215,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(137)),MMC_IMMEDIATE(MMC_TAGFIXNUM(5)),MMC_IMMEDIATE(MMC_TAGFIXNUM(137)),MMC_IMMEDIATE(MMC_TAGFIXNUM(72)),_OMC_LIT505_6}};
 #define _OMC_LIT505 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT505)
@@ -2194,17 +2194,17 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_userDefinedTearing(threa
           modelica_metatype tmpMeta10;
           /* Pattern matching succeeded */
           {
-            modelica_metatype __omcQ_24tmpVar3;
+            modelica_metatype __omcQ_24tmpVar5;
             modelica_metatype* tmp11;
             modelica_metatype tmpMeta12;
-            modelica_metatype __omcQ_24tmpVar2;
+            modelica_metatype __omcQ_24tmpVar4;
             modelica_integer tmp13;
             modelica_metatype _i_loopVar = 0;
             modelica_metatype _i;
             _i_loopVar = _userResiduals;
             tmpMeta12 = MMC_REFSTRUCTLIT(mmc_nil);
-            __omcQ_24tmpVar3 = tmpMeta12; /* defaultValue */
-            tmp11 = &__omcQ_24tmpVar3;
+            __omcQ_24tmpVar5 = tmpMeta12; /* defaultValue */
+            tmp11 = &__omcQ_24tmpVar5;
             while(1) {
               tmp13 = 1;
               if (!listEmpty(_i_loopVar)) {
@@ -2213,8 +2213,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_userDefinedTearing(threa
                 tmp13--;
               }
               if (tmp13 == 0) {
-                __omcQ_24tmpVar2 = arrayGet(_mapEqnIncRow, mmc_unbox_integer(_i));
-                *tmp11 = mmc_mk_cons(__omcQ_24tmpVar2,0);
+                __omcQ_24tmpVar4 = arrayGet(_mapEqnIncRow, mmc_unbox_integer(_i));
+                *tmp11 = mmc_mk_cons(__omcQ_24tmpVar4,0);
                 tmp11 = &MMC_CDR(*tmp11);
               } else if (tmp13 == 1) {
                 break;
@@ -2223,7 +2223,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_userDefinedTearing(threa
               }
             }
             *tmp11 = mmc_mk_nil();
-            tmpMeta10 = __omcQ_24tmpVar3;
+            tmpMeta10 = __omcQ_24tmpVar5;
           }
           _userResiduals_exp = omc_List_flatten(threadData, tmpMeta10);
           goto tmp7_done;
@@ -3140,20 +3140,20 @@ PROTECTED_FUNCTION_STATIC void omc_Tearing_dumpTearingSetLocalIndexes(threadData
   if(omc_Flags_isSet(threadData, _OMC_LIT78))
   {
     {
-      modelica_metatype __omcQ_24tmpVar5;
+      modelica_metatype __omcQ_24tmpVar7;
       modelica_metatype* tmp10;
       modelica_metatype tmpMeta11;
       modelica_metatype tmpMeta12;
       modelica_metatype tmpMeta13;
       modelica_metatype tmpMeta14;
-      modelica_string __omcQ_24tmpVar4;
+      modelica_string __omcQ_24tmpVar6;
       modelica_integer tmp15;
       modelica_metatype _tVar_loopVar = 0;
       modelica_metatype _tVar;
       _tVar_loopVar = _tVars;
       tmpMeta11 = MMC_REFSTRUCTLIT(mmc_nil);
-      __omcQ_24tmpVar5 = tmpMeta11; /* defaultValue */
-      tmp10 = &__omcQ_24tmpVar5;
+      __omcQ_24tmpVar7 = tmpMeta11; /* defaultValue */
+      tmp10 = &__omcQ_24tmpVar7;
       while(1) {
         tmp15 = 1;
         if (!listEmpty(_tVar_loopVar)) {
@@ -3165,8 +3165,8 @@ PROTECTED_FUNCTION_STATIC void omc_Tearing_dumpTearingSetLocalIndexes(threadData
           tmpMeta12 = stringAppend(_OMC_LIT74,intString(mmc_unbox_integer(_tVar)));
           tmpMeta13 = stringAppend(tmpMeta12,_OMC_LIT75);
           tmpMeta14 = stringAppend(tmpMeta13,omc_BackendDump_varString(threadData, omc_BackendVariable_getVarAt(threadData, _vars, mmc_unbox_integer(_tVar))));
-          __omcQ_24tmpVar4 = tmpMeta14;
-          *tmp10 = mmc_mk_cons(__omcQ_24tmpVar4,0);
+          __omcQ_24tmpVar6 = tmpMeta14;
+          *tmp10 = mmc_mk_cons(__omcQ_24tmpVar6,0);
           tmp10 = &MMC_CDR(*tmp10);
         } else if (tmp15 == 1) {
           break;
@@ -3175,7 +3175,7 @@ PROTECTED_FUNCTION_STATIC void omc_Tearing_dumpTearingSetLocalIndexes(threadData
         }
       }
       *tmp10 = mmc_mk_nil();
-      tmpMeta9 = __omcQ_24tmpVar5;
+      tmpMeta9 = __omcQ_24tmpVar7;
     }
     _s = tmpMeta9;
 
@@ -3190,20 +3190,20 @@ PROTECTED_FUNCTION_STATIC void omc_Tearing_dumpTearingSetLocalIndexes(threadData
   if((omc_Flags_isSet(threadData, _OMC_LIT78) && omc_Flags_isSet(threadData, _OMC_LIT3)))
   {
     {
-      modelica_metatype __omcQ_24tmpVar7;
+      modelica_metatype __omcQ_24tmpVar9;
       modelica_metatype* tmp20;
       modelica_metatype tmpMeta21;
       modelica_metatype tmpMeta22;
       modelica_metatype tmpMeta23;
       modelica_metatype tmpMeta24;
-      modelica_string __omcQ_24tmpVar6;
+      modelica_string __omcQ_24tmpVar8;
       modelica_integer tmp25;
       modelica_metatype _eqn_loopVar = 0;
       modelica_metatype _eqn;
       _eqn_loopVar = _residuals;
       tmpMeta21 = MMC_REFSTRUCTLIT(mmc_nil);
-      __omcQ_24tmpVar7 = tmpMeta21; /* defaultValue */
-      tmp20 = &__omcQ_24tmpVar7;
+      __omcQ_24tmpVar9 = tmpMeta21; /* defaultValue */
+      tmp20 = &__omcQ_24tmpVar9;
       while(1) {
         tmp25 = 1;
         if (!listEmpty(_eqn_loopVar)) {
@@ -3215,8 +3215,8 @@ PROTECTED_FUNCTION_STATIC void omc_Tearing_dumpTearingSetLocalIndexes(threadData
           tmpMeta22 = stringAppend(_OMC_LIT74,intString(mmc_unbox_integer(_eqn)));
           tmpMeta23 = stringAppend(tmpMeta22,_OMC_LIT75);
           tmpMeta24 = stringAppend(tmpMeta23,omc_BackendDump_equationString(threadData, omc_BackendEquation_get(threadData, _eqns, mmc_unbox_integer(_eqn))));
-          __omcQ_24tmpVar6 = tmpMeta24;
-          *tmp20 = mmc_mk_cons(__omcQ_24tmpVar6,0);
+          __omcQ_24tmpVar8 = tmpMeta24;
+          *tmp20 = mmc_mk_cons(__omcQ_24tmpVar8,0);
           tmp20 = &MMC_CDR(*tmp20);
         } else if (tmp25 == 1) {
           break;
@@ -3225,7 +3225,7 @@ PROTECTED_FUNCTION_STATIC void omc_Tearing_dumpTearingSetLocalIndexes(threadData
         }
       }
       *tmp20 = mmc_mk_nil();
-      tmpMeta19 = __omcQ_24tmpVar7;
+      tmpMeta19 = __omcQ_24tmpVar9;
     }
     _s = tmpMeta19;
 
@@ -3234,21 +3234,21 @@ PROTECTED_FUNCTION_STATIC void omc_Tearing_dumpTearingSetLocalIndexes(threadData
   }
 
   {
-    modelica_metatype __omcQ_24tmpVar9;
+    modelica_metatype __omcQ_24tmpVar11;
     modelica_metatype* tmp28;
     modelica_metatype tmpMeta29;
     modelica_metatype tmpMeta30;
     modelica_metatype tmpMeta31;
     modelica_metatype tmpMeta32;
     modelica_metatype tmpMeta33;
-    modelica_string __omcQ_24tmpVar8;
+    modelica_string __omcQ_24tmpVar10;
     modelica_integer tmp34;
     modelica_metatype _e_loopVar = 0;
     modelica_metatype _e;
     _e_loopVar = _order;
     tmpMeta29 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar9 = tmpMeta29; /* defaultValue */
-    tmp28 = &__omcQ_24tmpVar9;
+    __omcQ_24tmpVar11 = tmpMeta29; /* defaultValue */
+    tmp28 = &__omcQ_24tmpVar11;
     while(1) {
       tmp34 = 1;
       if (!listEmpty(_e_loopVar)) {
@@ -3261,8 +3261,8 @@ PROTECTED_FUNCTION_STATIC void omc_Tearing_dumpTearingSetLocalIndexes(threadData
         tmpMeta31 = stringAppend(tmpMeta30,_OMC_LIT80);
         tmpMeta32 = stringAppend(tmpMeta31,stringDelimitList(omc_List_map(threadData, omc_List_map1r(threadData, arrayGet(_mapEqnIncRow,mmc_unbox_integer(_e)) /* DAE.ASUB */, boxvar_arrayGet, _ass2), boxvar_intString), _OMC_LIT7));
         tmpMeta33 = stringAppend(tmpMeta32,_OMC_LIT81);
-        __omcQ_24tmpVar8 = tmpMeta33;
-        *tmp28 = mmc_mk_cons(__omcQ_24tmpVar8,0);
+        __omcQ_24tmpVar10 = tmpMeta33;
+        *tmp28 = mmc_mk_cons(__omcQ_24tmpVar10,0);
         tmp28 = &MMC_CDR(*tmp28);
       } else if (tmp34 == 1) {
         break;
@@ -3271,7 +3271,7 @@ PROTECTED_FUNCTION_STATIC void omc_Tearing_dumpTearingSetLocalIndexes(threadData
       }
     }
     *tmp28 = mmc_mk_nil();
-    tmpMeta27 = __omcQ_24tmpVar9;
+    tmpMeta27 = __omcQ_24tmpVar11;
   }
   _s = tmpMeta27;
 
@@ -3426,7 +3426,7 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_isTornsystem(threadData_t
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,7,4) == 0) goto tmp3_end;
           tmpMeta6 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 4));
           tmp7 = mmc_unbox_integer(tmpMeta6);
-
+          
           _linear = tmp7  /* pattern as ty=Boolean */;
           /* Pattern matching succeeded */
           /* Check guard condition after assignments */
@@ -3435,7 +3435,7 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_isTornsystem(threadData_t
           goto tmp3_done;
         }
         case 1: {
-
+          
           /* Pattern matching succeeded */
           tmp1 = 0 /* false */;
           goto tmp3_done;
@@ -3847,17 +3847,17 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_recursiveTearingMain(thr
             }
 
             {
-              modelica_metatype __omcQ_24tmpVar11;
+              modelica_metatype __omcQ_24tmpVar13;
               modelica_metatype* tmp35;
               modelica_metatype tmpMeta36;
-              modelica_metatype __omcQ_24tmpVar10;
+              modelica_metatype __omcQ_24tmpVar12;
               modelica_integer tmp37;
               modelica_metatype _i_loopVar = 0;
               modelica_metatype _i;
               _i_loopVar = _tearingvars;
               tmpMeta36 = MMC_REFSTRUCTLIT(mmc_nil);
-              __omcQ_24tmpVar11 = tmpMeta36; /* defaultValue */
-              tmp35 = &__omcQ_24tmpVar11;
+              __omcQ_24tmpVar13 = tmpMeta36; /* defaultValue */
+              tmp35 = &__omcQ_24tmpVar13;
               while(1) {
                 tmp37 = 1;
                 if (!listEmpty(_i_loopVar)) {
@@ -3866,8 +3866,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_recursiveTearingMain(thr
                   tmp37--;
                 }
                 if (tmp37 == 0) {
-                  __omcQ_24tmpVar10 = omc_BackendVariable_getVarAt(threadData, _vars, mmc_unbox_integer(_i));
-                  *tmp35 = mmc_mk_cons(__omcQ_24tmpVar10,0);
+                  __omcQ_24tmpVar12 = omc_BackendVariable_getVarAt(threadData, _vars, mmc_unbox_integer(_i));
+                  *tmp35 = mmc_mk_cons(__omcQ_24tmpVar12,0);
                   tmp35 = &MMC_CDR(*tmp35);
                 } else if (tmp37 == 1) {
                   break;
@@ -3876,22 +3876,22 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_recursiveTearingMain(thr
                 }
               }
               *tmp35 = mmc_mk_nil();
-              tmpMeta34 = __omcQ_24tmpVar11;
+              tmpMeta34 = __omcQ_24tmpVar13;
             }
             _var_lst = tmpMeta34;
 
             {
-              modelica_metatype __omcQ_24tmpVar13;
+              modelica_metatype __omcQ_24tmpVar15;
               modelica_metatype* tmp39;
               modelica_metatype tmpMeta40;
-              modelica_metatype __omcQ_24tmpVar12;
+              modelica_metatype __omcQ_24tmpVar14;
               modelica_integer tmp41;
               modelica_metatype _vv_loopVar = 0;
               modelica_metatype _vv;
               _vv_loopVar = _var_lst;
               tmpMeta40 = MMC_REFSTRUCTLIT(mmc_nil);
-              __omcQ_24tmpVar13 = tmpMeta40; /* defaultValue */
-              tmp39 = &__omcQ_24tmpVar13;
+              __omcQ_24tmpVar15 = tmpMeta40; /* defaultValue */
+              tmp39 = &__omcQ_24tmpVar15;
               while(1) {
                 tmp41 = 1;
                 if (!listEmpty(_vv_loopVar)) {
@@ -3900,8 +3900,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_recursiveTearingMain(thr
                   tmp41--;
                 }
                 if (tmp41 == 0) {
-                  __omcQ_24tmpVar12 = omc_BackendVariable_varCref(threadData, _vv);
-                  *tmp39 = mmc_mk_cons(__omcQ_24tmpVar12,0);
+                  __omcQ_24tmpVar14 = omc_BackendVariable_varCref(threadData, _vv);
+                  *tmp39 = mmc_mk_cons(__omcQ_24tmpVar14,0);
                   tmp39 = &MMC_CDR(*tmp39);
                 } else if (tmp41 == 1) {
                   break;
@@ -3910,7 +3910,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_recursiveTearingMain(thr
                 }
               }
               *tmp39 = mmc_mk_nil();
-              tmpMeta38 = __omcQ_24tmpVar13;
+              tmpMeta38 = __omcQ_24tmpVar15;
             }
             _tear_cr_lst = tmpMeta38;
 
@@ -4611,17 +4611,17 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_selectFromList__rev(thre
   _len = listLength(_inList);
 
   {
-    modelica_metatype __omcQ_24tmpVar15;
+    modelica_metatype __omcQ_24tmpVar17;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
-    modelica_metatype __omcQ_24tmpVar14;
+    modelica_metatype __omcQ_24tmpVar16;
     modelica_integer tmp4;
     modelica_metatype _num_loopVar = 0;
     modelica_metatype _num;
     _num_loopVar = _selList;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar15 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar15;
+    __omcQ_24tmpVar17 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar17;
     while(1) {
       tmp4 = 1;
       while (!listEmpty(_num_loopVar)) {
@@ -4633,8 +4633,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_selectFromList__rev(thre
         }
       }
       if (tmp4 == 0) {
-        __omcQ_24tmpVar14 = listGet(_inList, mmc_unbox_integer(_num));
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar14,0);
+        __omcQ_24tmpVar16 = listGet(_inList, mmc_unbox_integer(_num));
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar16,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp4 == 1) {
         break;
@@ -4643,7 +4643,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_selectFromList__rev(thre
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar15;
+    tmpMeta1 = __omcQ_24tmpVar17;
   }
   _outList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -4665,13 +4665,13 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_getMostNonlinearEquation(
   _index = ((modelica_integer) 1);
   // _maxi has no default value.
   {
-    modelica_integer __omcQ_24tmpVar17;
-    modelica_integer __omcQ_24tmpVar16;
+    modelica_integer __omcQ_24tmpVar19;
+    modelica_integer __omcQ_24tmpVar18;
     modelica_integer tmp2;
     modelica_metatype _i_loopVar = 0;
     modelica_metatype _i;
     _i_loopVar = _inList;
-    __omcQ_24tmpVar17 = ((modelica_integer) -4611686018427387903); /* defaultValue */
+    __omcQ_24tmpVar19 = ((modelica_integer) -4611686018427387903); /* defaultValue */
     while(1) {
       tmp2 = 1;
       if (!listEmpty(_i_loopVar)) {
@@ -4680,15 +4680,15 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_getMostNonlinearEquation(
         tmp2--;
       }
       if (tmp2 == 0) {
-        __omcQ_24tmpVar16 = mmc_unbox_integer(arrayGet(_inArray,mmc_unbox_integer(listHead(arrayGet(_mapEqnIncRow,mmc_unbox_integer(_i)) /* DAE.ASUB */))) /* DAE.ASUB */);
-        __omcQ_24tmpVar17 = modelica_integer_max((modelica_integer)(__omcQ_24tmpVar16),(modelica_integer)(__omcQ_24tmpVar17));
+        __omcQ_24tmpVar18 = mmc_unbox_integer(arrayGet(_inArray,mmc_unbox_integer(listHead(arrayGet(_mapEqnIncRow,mmc_unbox_integer(_i)) /* DAE.ASUB */))) /* DAE.ASUB */);
+        __omcQ_24tmpVar19 = modelica_integer_max((modelica_integer)(__omcQ_24tmpVar18),(modelica_integer)(__omcQ_24tmpVar19));
       } else if (tmp2 == 1) {
         break;
       } else {
         MMC_THROW_INTERNAL();
       }
     }
-    tmp1 = __omcQ_24tmpVar17;
+    tmp1 = __omcQ_24tmpVar19;
   }
   _maxi = tmp1;
 
@@ -4739,13 +4739,13 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_maxListInt(threadData_t 
   // _maxi has no default value.
   _index = ((modelica_integer) 1);
   {
-    modelica_integer __omcQ_24tmpVar19;
-    modelica_integer __omcQ_24tmpVar18;
+    modelica_integer __omcQ_24tmpVar21;
+    modelica_integer __omcQ_24tmpVar20;
     modelica_integer tmp3;
     modelica_metatype _i_loopVar = 0;
     modelica_metatype _i;
     _i_loopVar = _inList;
-    __omcQ_24tmpVar19 = ((modelica_integer) -4611686018427387903); /* defaultValue */
+    __omcQ_24tmpVar21 = ((modelica_integer) -4611686018427387903); /* defaultValue */
     while(1) {
       tmp3 = 1;
       if (!listEmpty(_i_loopVar)) {
@@ -4754,15 +4754,15 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_maxListInt(threadData_t 
         tmp3--;
       }
       if (tmp3 == 0) {
-        __omcQ_24tmpVar18 = mmc_unbox_integer(_i);
-        __omcQ_24tmpVar19 = modelica_integer_max((modelica_integer)(__omcQ_24tmpVar18),(modelica_integer)(__omcQ_24tmpVar19));
+        __omcQ_24tmpVar20 = mmc_unbox_integer(_i);
+        __omcQ_24tmpVar21 = modelica_integer_max((modelica_integer)(__omcQ_24tmpVar20),(modelica_integer)(__omcQ_24tmpVar21));
       } else if (tmp3 == 1) {
         break;
       } else {
         MMC_THROW_INTERNAL();
       }
     }
-    tmp2 = __omcQ_24tmpVar19;
+    tmp2 = __omcQ_24tmpVar21;
   }
   _maxi = tmp2;
 
@@ -4793,8 +4793,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_countMultiples3(threadDa
   _tailrecursive: OMC_LABEL_UNUSED
   // _valOut has no default value.
   // _numOut has no default value.
-
-
+  
+  
   { /* match expression */
     modelica_metatype tmp4_1;
     tmp4_1 = _set;
@@ -4835,7 +4835,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_countMultiples3(threadDa
           goto tmp3_done;
         }
         case 1: {
-
+          
           /* Pattern matching succeeded */
           tmpMeta[0+0] = _valIn;
           tmpMeta[0+1] = _numIn;
@@ -5059,18 +5059,18 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_assignInnerEquations(thr
   _tailrecursive: OMC_LABEL_UNUSED
   // _outInnerEquations has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar21;
+    modelica_metatype __omcQ_24tmpVar23;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
     modelica_metatype tmpMeta4;
-    modelica_metatype __omcQ_24tmpVar20;
+    modelica_metatype __omcQ_24tmpVar22;
     modelica_integer tmp15;
     modelica_metatype _eqn_loopVar = 0;
     modelica_metatype _eqn;
     _eqn_loopVar = _inEqns;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar21 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar21;
+    __omcQ_24tmpVar23 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar23;
     while(1) {
       tmp15 = 1;
       if (!listEmpty(_eqn_loopVar)) {
@@ -5165,8 +5165,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_assignInnerEquations(thr
             goto tmp6_done;
             tmp6_done:;
           }
-        }__omcQ_24tmpVar20 = tmpMeta4;
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar20,0);
+        }__omcQ_24tmpVar22 = tmpMeta4;
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar22,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp15 == 1) {
         break;
@@ -5175,7 +5175,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_assignInnerEquations(thr
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar21;
+    tmpMeta1 = __omcQ_24tmpVar23;
   }
   _outInnerEquations = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -6255,7 +6255,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_getAllVarsWithMostPoints
           goto tmp2_done;
         }
         case 2: {
-
+          
           /* Pattern matching succeeded */
           omc_Error_addCompilerError(threadData, _OMC_LIT136);
 
@@ -6307,13 +6307,13 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_getOneVarWithMostPoints(
   // _outMax has no default value.
   _index = ((modelica_integer) 1);
   {
-    modelica_integer __omcQ_24tmpVar23;
-    modelica_integer __omcQ_24tmpVar22;
+    modelica_integer __omcQ_24tmpVar25;
+    modelica_integer __omcQ_24tmpVar24;
     modelica_integer tmp3;
     modelica_metatype _i_loopVar = 0;
     modelica_metatype _i;
     _i_loopVar = _inPointsLst;
-    __omcQ_24tmpVar23 = ((modelica_integer) -4611686018427387903); /* defaultValue */
+    __omcQ_24tmpVar25 = ((modelica_integer) -4611686018427387903); /* defaultValue */
     while(1) {
       tmp3 = 1;
       if (!listEmpty(_i_loopVar)) {
@@ -6322,15 +6322,15 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_getOneVarWithMostPoints(
         tmp3--;
       }
       if (tmp3 == 0) {
-        __omcQ_24tmpVar22 = mmc_unbox_integer(_i);
-        __omcQ_24tmpVar23 = modelica_integer_max((modelica_integer)(__omcQ_24tmpVar22),(modelica_integer)(__omcQ_24tmpVar23));
+        __omcQ_24tmpVar24 = mmc_unbox_integer(_i);
+        __omcQ_24tmpVar25 = modelica_integer_max((modelica_integer)(__omcQ_24tmpVar24),(modelica_integer)(__omcQ_24tmpVar25));
       } else if (tmp3 == 1) {
         break;
       } else {
         MMC_THROW_INTERNAL();
       }
     }
-    tmp2 = __omcQ_24tmpVar23;
+    tmp2 = __omcQ_24tmpVar25;
   }
   _outMax = tmp2;
 
@@ -8046,7 +8046,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_selectTearingVar(threadDa
         }
         case 11: {
           modelica_metatype tmpMeta6;
-
+          
           /* Pattern matching succeeded */
           tmpMeta6 = stringAppend(_OMC_LIT214,_heuristic);
           omc_Error_addInternalError(threadData, tmpMeta6, _OMC_LIT216);
@@ -8176,8 +8176,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing2(threadDa
     goto _return;
   }
 
-
-
+  
+  
   { /* match expression */
     modelica_metatype tmp4_1;modelica_metatype tmp4_2;
     tmp4_1 = _Unsolvables;
@@ -8329,7 +8329,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing2(threadDa
           modelica_metatype tmpMeta36;
           modelica_metatype tmpMeta37;
           modelica_metatype tmpMeta38;
-
+          
           /* Pattern matching succeeded */
           _tvars = omc_List_unique(threadData, listAppend(_Unsolvables, _tSel_always));
 
@@ -8480,7 +8480,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_nonlinearityWeight(thread
           modelica_metatype tmpMeta6;
           tmpMeta6 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 2));
           if (mmc__uniontype__metarecord__typedef__equal(tmpMeta6,0,0) == 0) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           tmp1 = ((modelica_integer) 0);
           goto tmp3_done;
@@ -8489,7 +8489,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_nonlinearityWeight(thread
           modelica_metatype tmpMeta7;
           tmpMeta7 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 2));
           if (mmc__uniontype__metarecord__typedef__equal(tmpMeta7,1,0) == 0) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           tmp1 = ((modelica_integer) 2);
           goto tmp3_done;
@@ -8498,7 +8498,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_nonlinearityWeight(thread
           modelica_metatype tmpMeta8;
           tmpMeta8 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 2));
           if (mmc__uniontype__metarecord__typedef__equal(tmpMeta8,2,1) == 0) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           tmp1 = ((modelica_integer) 5);
           goto tmp3_done;
@@ -8512,7 +8512,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_nonlinearityWeight(thread
           tmpMeta10 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta9), 2));
           tmp11 = mmc_unbox_integer(tmpMeta10);
           if (1 /* true */ != tmp11) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           tmp1 = ((modelica_integer) 10);
           goto tmp3_done;
@@ -8526,7 +8526,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_nonlinearityWeight(thread
           tmpMeta13 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta12), 2));
           tmp14 = mmc_unbox_integer(tmpMeta13);
           if (0 /* false */ != tmp14) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           tmp1 = ((modelica_integer) 20);
           goto tmp3_done;
@@ -8540,7 +8540,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_nonlinearityWeight(thread
           tmpMeta16 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta15), 2));
           tmp17 = mmc_unbox_integer(tmpMeta16);
           if (1 /* true */ != tmp17) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           tmp1 = ((modelica_integer) 20);
           goto tmp3_done;
@@ -8554,7 +8554,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_nonlinearityWeight(thread
           tmpMeta19 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta18), 2));
           tmp20 = mmc_unbox_integer(tmpMeta19);
           if (0 /* false */ != tmp20) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           tmp1 = ((modelica_integer) 50);
           goto tmp3_done;
@@ -8563,7 +8563,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_nonlinearityWeight(thread
           modelica_metatype tmpMeta21;
           tmpMeta21 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 2));
           if (mmc__uniontype__metarecord__typedef__equal(tmpMeta21,5,0) == 0) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           tmp1 = ((modelica_integer) 50);
           goto tmp3_done;
@@ -8572,13 +8572,13 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_nonlinearityWeight(thread
           modelica_metatype tmpMeta22;
           tmpMeta22 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 2));
           if (mmc__uniontype__metarecord__typedef__equal(tmpMeta22,6,0) == 0) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           tmp1 = ((modelica_integer) 100);
           goto tmp3_done;
         }
         case 9: {
-
+          
           /* Pattern matching succeeded */
           tmp1 = ((modelica_integer) 0);
           goto tmp3_done;
@@ -8751,7 +8751,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_findDiscreteWarnTearingS
                 goto tmp5_done;
               }
               case 2: {
-
+                
                 /* Pattern matching succeeded */
                 goto tmp5_done;
               }
@@ -8816,17 +8816,17 @@ modelica_metatype omc_Tearing_deleteNegativeEntries(threadData_t *threadData, mo
   _tailrecursive: OMC_LABEL_UNUSED
   // _rowOut has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar1;
+    modelica_metatype __omcQ_24tmpVar3;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
-    modelica_metatype __omcQ_24tmpVar0;
+    modelica_metatype __omcQ_24tmpVar2;
     modelica_integer tmp4;
     modelica_metatype _r_loopVar = 0;
     modelica_metatype _r;
     _r_loopVar = _rowIn;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar1 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar1;
+    __omcQ_24tmpVar3 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar3;
     while(1) {
       tmp4 = 1;
       while (!listEmpty(_r_loopVar)) {
@@ -8838,8 +8838,8 @@ modelica_metatype omc_Tearing_deleteNegativeEntries(threadData_t *threadData, mo
         }
       }
       if (tmp4 == 0) {
-        __omcQ_24tmpVar0 = _r;
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar0,0);
+        __omcQ_24tmpVar2 = _r;
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar2,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp4 == 1) {
         break;
@@ -8848,7 +8848,7 @@ modelica_metatype omc_Tearing_deleteNegativeEntries(threadData_t *threadData, mo
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar1;
+    tmpMeta1 = __omcQ_24tmpVar3;
   }
   _rowOut = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -9100,6 +9100,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
   modelica_boolean _b;
   modelica_boolean _noDynamicStateSelection;
   modelica_boolean _dynamicTearing;
+  modelica_boolean _dtTarget;
   modelica_boolean _forceDegree1;
   modelica_boolean _hasStartCycle;
   modelica_metatype _cref = NULL;
@@ -9220,6 +9221,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
   // _b has no default value.
   // _noDynamicStateSelection has no default value.
   // _dynamicTearing has no default value.
+  // _dtTarget has no default value.
   // _forceDegree1 has no default value.
   // _hasStartCycle has no default value.
   // _cref has no default value.
@@ -9251,14 +9253,16 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
 
   _forceDegree1 = omc_BackendDAEUtil_isInitializationDAE(threadData, _ishared);
 
+  _dtTarget = listMember(omc_Config_simCodeTarget(threadData), _OMC_LIT279);
+
   { /* match expression */
-    modelica_string tmp10_1;modelica_boolean tmp10_2;modelica_boolean tmp10_3;modelica_string tmp10_4;modelica_boolean tmp10_5;modelica_string tmp10_6;
+    modelica_string tmp10_1;modelica_boolean tmp10_2;modelica_boolean tmp10_3;modelica_string tmp10_4;modelica_boolean tmp10_5;modelica_boolean tmp10_6;
     tmp10_1 = omc_Config_dynamicTearing(threadData);
     tmp10_2 = _linear;
     tmp10_3 = _noDynamicStateSelection;
     tmp10_4 = _DAEtypeStr;
-    tmp10_5 = omc_Flags_getConfigBool(threadData, _OMC_LIT276);
-    tmp10_6 = omc_Config_simCodeTarget(threadData);
+    tmp10_5 = omc_Flags_getConfigBool(threadData, _OMC_LIT282);
+    tmp10_6 = _dtTarget;
     {
       volatile mmc_switch_type tmp10;
       int tmp11;
@@ -9267,10 +9271,10 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
         switch (MMC_SWITCH_CAST(tmp10)) {
         case 0: {
           if (1 /* true */ != tmp10_3) goto tmp9_end;
+          if (1 /* true */ != tmp10_6) goto tmp9_end;
           if (4 != MMC_STRLEN(tmp10_1) || strcmp(MMC_STRINGDATA(_OMC_LIT125), MMC_STRINGDATA(tmp10_1)) != 0) goto tmp9_end;
           if (10 != MMC_STRLEN(tmp10_4) || strcmp(MMC_STRINGDATA(_OMC_LIT258), MMC_STRINGDATA(tmp10_4)) != 0) goto tmp9_end;
-          if (1 != MMC_STRLEN(tmp10_6) || strcmp(MMC_STRINGDATA(_OMC_LIT277), MMC_STRINGDATA(tmp10_6)) != 0) goto tmp9_end;
-
+          
           /* Pattern matching succeeded */
           tmp7 = 1 /* true */;
           goto tmp9_done;
@@ -9278,10 +9282,10 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
         case 1: {
           if (1 /* true */ != tmp10_3) goto tmp9_end;
           if (1 /* true */ != tmp10_5) goto tmp9_end;
+          if (1 /* true */ != tmp10_6) goto tmp9_end;
           if (4 != MMC_STRLEN(tmp10_1) || strcmp(MMC_STRINGDATA(_OMC_LIT125), MMC_STRINGDATA(tmp10_1)) != 0) goto tmp9_end;
           if (14 != MMC_STRLEN(tmp10_4) || strcmp(MMC_STRINGDATA(_OMC_LIT263), MMC_STRINGDATA(tmp10_4)) != 0) goto tmp9_end;
-          if (1 != MMC_STRLEN(tmp10_6) || strcmp(MMC_STRINGDATA(_OMC_LIT277), MMC_STRINGDATA(tmp10_6)) != 0) goto tmp9_end;
-
+          
           /* Pattern matching succeeded */
           tmp7 = 1 /* true */;
           goto tmp9_done;
@@ -9289,10 +9293,10 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
         case 2: {
           if (1 /* true */ != tmp10_2) goto tmp9_end;
           if (1 /* true */ != tmp10_3) goto tmp9_end;
-          if (6 != MMC_STRLEN(tmp10_1) || strcmp(MMC_STRINGDATA(_OMC_LIT278), MMC_STRINGDATA(tmp10_1)) != 0) goto tmp9_end;
+          if (1 /* true */ != tmp10_6) goto tmp9_end;
+          if (6 != MMC_STRLEN(tmp10_1) || strcmp(MMC_STRINGDATA(_OMC_LIT283), MMC_STRINGDATA(tmp10_1)) != 0) goto tmp9_end;
           if (10 != MMC_STRLEN(tmp10_4) || strcmp(MMC_STRINGDATA(_OMC_LIT258), MMC_STRINGDATA(tmp10_4)) != 0) goto tmp9_end;
-          if (1 != MMC_STRLEN(tmp10_6) || strcmp(MMC_STRINGDATA(_OMC_LIT277), MMC_STRINGDATA(tmp10_6)) != 0) goto tmp9_end;
-
+          
           /* Pattern matching succeeded */
           tmp7 = 1 /* true */;
           goto tmp9_done;
@@ -9301,9 +9305,9 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
           if (1 /* true */ != tmp10_2) goto tmp9_end;
           if (1 /* true */ != tmp10_3) goto tmp9_end;
           if (1 /* true */ != tmp10_5) goto tmp9_end;
-          if (6 != MMC_STRLEN(tmp10_1) || strcmp(MMC_STRINGDATA(_OMC_LIT278), MMC_STRINGDATA(tmp10_1)) != 0) goto tmp9_end;
+          if (1 /* true */ != tmp10_6) goto tmp9_end;
+          if (6 != MMC_STRLEN(tmp10_1) || strcmp(MMC_STRINGDATA(_OMC_LIT283), MMC_STRINGDATA(tmp10_1)) != 0) goto tmp9_end;
           if (14 != MMC_STRLEN(tmp10_4) || strcmp(MMC_STRINGDATA(_OMC_LIT263), MMC_STRINGDATA(tmp10_4)) != 0) goto tmp9_end;
-          if (1 != MMC_STRLEN(tmp10_6) || strcmp(MMC_STRINGDATA(_OMC_LIT277), MMC_STRINGDATA(tmp10_6)) != 0) goto tmp9_end;
           /* Pattern matching succeeded */
           tmp7 = 1 /* true */;
           goto tmp9_done;
@@ -9311,10 +9315,10 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
         case 4: {
           if (0 /* false */ != tmp10_2) goto tmp9_end;
           if (1 /* true */ != tmp10_3) goto tmp9_end;
-          if (9 != MMC_STRLEN(tmp10_1) || strcmp(MMC_STRINGDATA(_OMC_LIT279), MMC_STRINGDATA(tmp10_1)) != 0) goto tmp9_end;
+          if (1 /* true */ != tmp10_6) goto tmp9_end;
+          if (9 != MMC_STRLEN(tmp10_1) || strcmp(MMC_STRINGDATA(_OMC_LIT284), MMC_STRINGDATA(tmp10_1)) != 0) goto tmp9_end;
           if (10 != MMC_STRLEN(tmp10_4) || strcmp(MMC_STRINGDATA(_OMC_LIT258), MMC_STRINGDATA(tmp10_4)) != 0) goto tmp9_end;
-          if (1 != MMC_STRLEN(tmp10_6) || strcmp(MMC_STRINGDATA(_OMC_LIT277), MMC_STRINGDATA(tmp10_6)) != 0) goto tmp9_end;
-
+          
           /* Pattern matching succeeded */
           tmp7 = 1 /* true */;
           goto tmp9_done;
@@ -9323,15 +9327,15 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
           if (0 /* false */ != tmp10_2) goto tmp9_end;
           if (1 /* true */ != tmp10_3) goto tmp9_end;
           if (1 /* true */ != tmp10_5) goto tmp9_end;
-          if (9 != MMC_STRLEN(tmp10_1) || strcmp(MMC_STRINGDATA(_OMC_LIT279), MMC_STRINGDATA(tmp10_1)) != 0) goto tmp9_end;
+          if (1 /* true */ != tmp10_6) goto tmp9_end;
+          if (9 != MMC_STRLEN(tmp10_1) || strcmp(MMC_STRINGDATA(_OMC_LIT284), MMC_STRINGDATA(tmp10_1)) != 0) goto tmp9_end;
           if (14 != MMC_STRLEN(tmp10_4) || strcmp(MMC_STRINGDATA(_OMC_LIT263), MMC_STRINGDATA(tmp10_4)) != 0) goto tmp9_end;
-          if (1 != MMC_STRLEN(tmp10_6) || strcmp(MMC_STRINGDATA(_OMC_LIT277), MMC_STRINGDATA(tmp10_6)) != 0) goto tmp9_end;
           /* Pattern matching succeeded */
           tmp7 = 1 /* true */;
           goto tmp9_done;
         }
         case 6: {
-
+          
           /* Pattern matching succeeded */
           tmp7 = 0 /* false */;
           goto tmp9_done;
@@ -9351,7 +9355,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
 
   if(omc_Flags_isSet(threadData, _OMC_LIT3))
   {
-    fputs(MMC_STRINGDATA(_OMC_LIT280),stdout);
+    fputs(MMC_STRINGDATA(_OMC_LIT285),stdout);
   }
 
   _size = listLength(_vindx);
@@ -9375,16 +9379,16 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
 
   if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
   {
-    fputs(MMC_STRINGDATA(_OMC_LIT281),stdout);
+    fputs(MMC_STRINGDATA(_OMC_LIT286),stdout);
 
     omc_BackendDump_printEqSystem(threadData, _subsyst);
 
-    fputs(MMC_STRINGDATA(_OMC_LIT282),stdout);
+    fputs(MMC_STRINGDATA(_OMC_LIT287),stdout);
   }
 
   if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
   {
-    fputs(MMC_STRINGDATA(_OMC_LIT283),stdout);
+    fputs(MMC_STRINGDATA(_OMC_LIT288),stdout);
   }
 
   _me = omc_BackendDAEUtil_getAdjacencyMatrixEnhancedScalar(threadData, _subsyst, _ishared, 0 /* false */ ,&_meT ,&_mapEqnIncRow ,&_mapIncRowEqn);
@@ -9447,16 +9451,16 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
     for (tmpMeta24 = _cyclicBaseCrefs; !listEmpty(tmpMeta24); tmpMeta24=MMC_CDR(tmpMeta24))
     {
       _baseCref = MMC_CAR(tmpMeta24);
-      tmpMeta25 = stringAppend(_OMC_LIT284,omc_ComponentReferenceBasics_printComponentRefStr(threadData, _baseCref));
-      tmpMeta26 = stringAppend(tmpMeta25,_OMC_LIT285);
-      tmpMeta27 = stringAppend(tmpMeta26,_OMC_LIT286);
+      tmpMeta25 = stringAppend(_OMC_LIT289,omc_ComponentReferenceBasics_printComponentRefStr(threadData, _baseCref));
+      tmpMeta26 = stringAppend(tmpMeta25,_OMC_LIT290);
+      tmpMeta27 = stringAppend(tmpMeta26,_OMC_LIT291);
       tmpMeta28 = stringAppend(tmpMeta27,omc_ComponentReferenceBasics_printComponentRefStr(threadData, _baseCref));
-      tmpMeta29 = stringAppend(tmpMeta28,_OMC_LIT287);
-      tmpMeta30 = stringAppend(tmpMeta29,_OMC_LIT288);
-      tmpMeta31 = stringAppend(tmpMeta30,_OMC_LIT289);
+      tmpMeta29 = stringAppend(tmpMeta28,_OMC_LIT292);
+      tmpMeta30 = stringAppend(tmpMeta29,_OMC_LIT293);
+      tmpMeta31 = stringAppend(tmpMeta30,_OMC_LIT294);
       tmpMeta32 = stringAppend(tmpMeta31,omc_ComponentReferenceBasics_printComponentRefStr(threadData, _baseCref));
-      tmpMeta33 = stringAppend(tmpMeta32,_OMC_LIT290);
-      tmpMeta34 = stringAppend(tmpMeta33,_OMC_LIT291);
+      tmpMeta33 = stringAppend(tmpMeta32,_OMC_LIT295);
+      tmpMeta34 = stringAppend(tmpMeta33,_OMC_LIT296);
       omc_Error_addCompilerWarning(threadData, tmpMeta34);
     }
   }
@@ -9475,14 +9479,14 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
 
     omc_BackendDump_dumpAdjacencyMatrixTEnhanced(threadData, _meT);
 
-    tmpMeta36 = stringAppend(_OMC_LIT292,stringDelimitList(omc_List_mapArray(threadData, _eqnNonlinPoints, boxvar_intString), _OMC_LIT7));
+    tmpMeta36 = stringAppend(_OMC_LIT297,stringDelimitList(omc_List_mapArray(threadData, _eqnNonlinPoints, boxvar_intString), _OMC_LIT7));
     tmpMeta37 = stringAppend(tmpMeta36,_OMC_LIT35);
     fputs(MMC_STRINGDATA(tmpMeta37),stdout);
   }
 
   if(omc_Flags_isSet(threadData, _OMC_LIT3))
   {
-    fputs(MMC_STRINGDATA(_OMC_LIT293),stdout);
+    fputs(MMC_STRINGDATA(_OMC_LIT298),stdout);
 
     omc_BackendDump_dumpAdjacencyMatrix(threadData, _mapEqnIncRow);
 
@@ -9509,7 +9513,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
   if((!listEmpty(_tSel_alwaysByUser)))
   {
     tmpMeta44 = mmc_mk_cons(intString(_strongComponentIndex), mmc_mk_cons(omc_BackendDump_printBackendDAEType2String(threadData, _DAEtype), mmc_mk_cons(omc_BackendDump_dumpMarkedVarList(threadData, _var_lst, _tSel_alwaysByUser), MMC_REFSTRUCTLIT(mmc_nil))));
-    omc_Error_addMessage(threadData, _OMC_LIT296, tmpMeta44);
+    omc_Error_addMessage(threadData, _OMC_LIT301, tmpMeta44);
   }
 
   _ass1 = arrayCreate(_size, mmc_mk_integer(((modelica_integer) -1)));
@@ -9521,7 +9525,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
 
   if(omc_Flags_isSet(threadData, _OMC_LIT3))
   {
-    fputs(MMC_STRINGDATA(_OMC_LIT297),stdout);
+    fputs(MMC_STRINGDATA(_OMC_LIT302),stdout);
   }
 
   _meTFull = (_forceDegree1?arrayCopy(_meT):_meT);
@@ -9531,7 +9535,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
 
   if(omc_Flags_isSet(threadData, _OMC_LIT3))
   {
-    fputs(MMC_STRINGDATA(_OMC_LIT298),stdout);
+    fputs(MMC_STRINGDATA(_OMC_LIT303),stdout);
   }
 
   if(((_forceDegree1 && _hasStartCycle) && omc_Tearing_tornMatchingIsStructurallySingular(threadData, _ass2, _meTFull, _size, _vars)))
@@ -9576,7 +9580,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
 
   if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
   {
-    omc_Tearing_dumpTearingSetLocalIndexes(threadData, _OutTVars, _residual_coll, _order, _ass2, _size, _mapEqnIncRow, _vars, _eqns, _OMC_LIT299);
+    omc_Tearing_dumpTearingSetLocalIndexes(threadData, _OutTVars, _residual_coll, _order, _ass2, _size, _mapEqnIncRow, _vars, _eqns, _OMC_LIT304);
   }
 
   _OutTVars = omc_Tearing_selectFromList__rev(threadData, _vindx, _OutTVars);
@@ -9590,14 +9594,14 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
 
   if(omc_Flags_isSet(threadData, _OMC_LIT3))
   {
-    omc_Tearing_dumpTearingSetGlobalIndexes(threadData, _strictTearingSet, _size, _OMC_LIT299);
+    omc_Tearing_dumpTearingSetGlobalIndexes(threadData, _strictTearingSet, _size, _OMC_LIT304);
   }
 
   if(_dynamicTearing)
   {
     if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
     {
-      fputs(MMC_STRINGDATA(_OMC_LIT305),stdout);
+      fputs(MMC_STRINGDATA(_OMC_LIT310),stdout);
     }
 
     omc_BackendDAEUtil_getAdjacencyMatrixScalar(threadData, _subsyst, _OMC_LIT13, mmc_mk_none(), omc_BackendDAEUtil_isInitializationDAE(threadData, _ishared) ,&_m ,&_mt ,NULL ,NULL);
@@ -9620,14 +9624,14 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
 
       omc_BackendDump_dumpAdjacencyMatrixTEnhanced(threadData, _meT);
 
-      tmpMeta51 = stringAppend(_OMC_LIT292,stringDelimitList(omc_List_mapArray(threadData, _eqnNonlinPoints, boxvar_intString), _OMC_LIT7));
+      tmpMeta51 = stringAppend(_OMC_LIT297,stringDelimitList(omc_List_mapArray(threadData, _eqnNonlinPoints, boxvar_intString), _OMC_LIT7));
       tmpMeta52 = stringAppend(tmpMeta51,_OMC_LIT35);
       fputs(MMC_STRINGDATA(tmpMeta52),stdout);
     }
 
     if(omc_Flags_isSet(threadData, _OMC_LIT3))
     {
-      fputs(MMC_STRINGDATA(_OMC_LIT293),stdout);
+      fputs(MMC_STRINGDATA(_OMC_LIT298),stdout);
 
       omc_BackendDump_dumpAdjacencyMatrix(threadData, _mapEqnIncRow);
 
@@ -9653,7 +9657,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
 
     if(omc_Flags_isSet(threadData, _OMC_LIT3))
     {
-      fputs(MMC_STRINGDATA(_OMC_LIT297),stdout);
+      fputs(MMC_STRINGDATA(_OMC_LIT302),stdout);
     }
 
     tmpMeta60 = MMC_REFSTRUCTLIT(mmc_nil);
@@ -9661,7 +9665,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
 
     if(omc_Flags_isSet(threadData, _OMC_LIT3))
     {
-      fputs(MMC_STRINGDATA(_OMC_LIT298),stdout);
+      fputs(MMC_STRINGDATA(_OMC_LIT303),stdout);
     }
 
     if((listLength(_OutTVars) < _tornsize))
@@ -9674,7 +9678,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
 
       if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
       {
-        omc_Tearing_dumpTearingSetLocalIndexes(threadData, _OutTVars, _residual_coll, _order, _ass2, _size, _mapEqnIncRow, _vars, _eqns, _OMC_LIT308);
+        omc_Tearing_dumpTearingSetLocalIndexes(threadData, _OutTVars, _residual_coll, _order, _ass2, _size, _mapEqnIncRow, _vars, _eqns, _OMC_LIT313);
       }
 
       _OutTVars = omc_Tearing_selectFromList__rev(threadData, _vindx, _OutTVars);
@@ -9689,22 +9693,22 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
       if(omc_Flags_isSet(threadData, _OMC_LIT3))
       {
         tmpMeta62 = mmc_mk_box5(3, &BackendDAE_TearingSet_TEARINGSET__desc, _OutTVars, _residual, _innerEquations, _OMC_LIT41);
-        omc_Tearing_dumpTearingSetGlobalIndexes(threadData, tmpMeta62, _size, _OMC_LIT308);
+        omc_Tearing_dumpTearingSetGlobalIndexes(threadData, tmpMeta62, _size, _OMC_LIT313);
       }
 
       if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
       {
         if(_linear)
         {
-          _s = _OMC_LIT310;
+          _s = _OMC_LIT315;
         }
         else
         {
-          _s = _OMC_LIT309;
+          _s = _OMC_LIT314;
         }
 
-        tmpMeta63 = stringAppend(_OMC_LIT311,_s);
-        tmpMeta64 = stringAppend(tmpMeta63,_OMC_LIT312);
+        tmpMeta63 = stringAppend(_OMC_LIT316,_s);
+        tmpMeta64 = stringAppend(tmpMeta63,_OMC_LIT317);
         tmpMeta65 = stringAppend(tmpMeta64,_modelName);
         tmpMeta66 = stringAppend(tmpMeta65,_OMC_LIT35);
         fputs(MMC_STRINGDATA(tmpMeta66),stdout);
@@ -9714,7 +9718,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
     {
       if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
       {
-        tmpMeta67 = stringAppend(_OMC_LIT306,intString(_size));
+        tmpMeta67 = stringAppend(_OMC_LIT311,intString(_size));
         tmpMeta68 = stringAppend(tmpMeta67,_OMC_LIT10);
         fputs(MMC_STRINGDATA(tmpMeta68),stdout);
 
@@ -9726,14 +9730,14 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
         tmpMeta72 = stringAppend(tmpMeta71,_OMC_LIT10);
         fputs(MMC_STRINGDATA(tmpMeta72),stdout);
 
-        fputs(MMC_STRINGDATA(_OMC_LIT307),stdout);
+        fputs(MMC_STRINGDATA(_OMC_LIT312),stdout);
       }
 
-      if(((!_b) && (!omc_Flags_getConfigBool(threadData, _OMC_LIT304))))
+      if(((!_b) && (!omc_Flags_getConfigBool(threadData, _OMC_LIT309))))
       {
         if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
         {
-          fputs(MMC_STRINGDATA(_OMC_LIT301),stdout);
+          fputs(MMC_STRINGDATA(_OMC_LIT306),stdout);
         }
 
         MMC_THROW_INTERNAL();
@@ -9746,14 +9750,14 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
   {
     if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
     {
-      fputs(MMC_STRINGDATA(_OMC_LIT300),stdout);
+      fputs(MMC_STRINGDATA(_OMC_LIT305),stdout);
     }
 
-    if(((!_b) && (!omc_Flags_getConfigBool(threadData, _OMC_LIT304))))
+    if(((!_b) && (!omc_Flags_getConfigBool(threadData, _OMC_LIT309))))
     {
       if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
       {
-        fputs(MMC_STRINGDATA(_OMC_LIT301),stdout);
+        fputs(MMC_STRINGDATA(_OMC_LIT306),stdout);
       }
 
       MMC_THROW_INTERNAL();
@@ -9769,7 +9773,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_CellierTearing(threadDat
 
   if(omc_Flags_isSet(threadData, _OMC_LIT3))
   {
-    fputs(MMC_STRINGDATA(_OMC_LIT313),stdout);
+    fputs(MMC_STRINGDATA(_OMC_LIT318),stdout);
   }
   _return: OMC_LABEL_UNUSED
   if (out_outRunMatching) { *out_outRunMatching = _outRunMatching; }
@@ -9841,7 +9845,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_getTearingSetfromAssign(
         }
         case 1: {
           /* Pattern matching succeeded */
-          omc_Error_addInternalError(threadData, _OMC_LIT314, _OMC_LIT315);
+          omc_Error_addInternalError(threadData, _OMC_LIT319, _OMC_LIT320);
 
           goto goto_2;
           goto tmp3_done;
@@ -9970,7 +9974,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_pathFound(threadData_t *
         }
         case 1: {
           /* Pattern matching succeeded */
-          omc_Error_addInternalError(threadData, _OMC_LIT316, _OMC_LIT317);
+          omc_Error_addInternalError(threadData, _OMC_LIT321, _OMC_LIT322);
 
           goto goto_1;
           goto tmp2_done;
@@ -10062,7 +10066,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_matchDiscreteVars(thread
         }
         case 1: {
           /* Pattern matching succeeded */
-          omc_Error_addInternalError(threadData, _OMC_LIT318, _OMC_LIT319);
+          omc_Error_addInternalError(threadData, _OMC_LIT323, _OMC_LIT324);
 
           goto goto_1;
           goto tmp2_done;
@@ -10312,18 +10316,18 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_minimalTearing(threadDat
           }
 
           {
-            modelica_metatype __omcQ_24tmpVar25;
+            modelica_metatype __omcQ_24tmpVar27;
             modelica_metatype* tmp32;
             modelica_metatype tmpMeta33;
             modelica_metatype tmpMeta34;
-            modelica_metatype __omcQ_24tmpVar24;
+            modelica_metatype __omcQ_24tmpVar26;
             modelica_integer tmp41;
             modelica_metatype _ieqn_loopVar = 0;
             modelica_metatype _ieqn;
             _ieqn_loopVar = _innerEquationsLocalIndex;
             tmpMeta33 = MMC_REFSTRUCTLIT(mmc_nil);
-            __omcQ_24tmpVar25 = tmpMeta33; /* defaultValue */
-            tmp32 = &__omcQ_24tmpVar25;
+            __omcQ_24tmpVar27 = tmpMeta33; /* defaultValue */
+            tmp32 = &__omcQ_24tmpVar27;
             while(1) {
               tmp41 = 1;
               if (!listEmpty(_ieqn_loopVar)) {
@@ -10345,7 +10349,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_minimalTearing(threadDat
                         modelica_metatype tmpMeta39;
                         modelica_metatype tmpMeta40;
                         if (mmc__uniontype__metarecord__typedef__equal(tmp37_1,0,2) == 0) goto tmp36_end;
-
+                        
                         /* Pattern matching succeeded */
                         tmpMeta39 = MMC_TAGPTR(mmc_alloc_words(4));
                         memcpy(MMC_UNTAGPTR(tmpMeta39), MMC_UNTAGPTR(_ieqn), 4*sizeof(modelica_metatype));
@@ -10369,8 +10373,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_minimalTearing(threadDat
                     goto tmp36_done;
                     tmp36_done:;
                   }
-                }__omcQ_24tmpVar24 = tmpMeta34;
-                *tmp32 = mmc_mk_cons(__omcQ_24tmpVar24,0);
+                }__omcQ_24tmpVar26 = tmpMeta34;
+                *tmp32 = mmc_mk_cons(__omcQ_24tmpVar26,0);
                 tmp32 = &MMC_CDR(*tmp32);
               } else if (tmp41 == 1) {
                 break;
@@ -10379,7 +10383,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_minimalTearing(threadDat
               }
             }
             *tmp32 = mmc_mk_nil();
-            tmpMeta31 = __omcQ_24tmpVar25;
+            tmpMeta31 = __omcQ_24tmpVar27;
           }
           _innerEquations = tmpMeta31;
 
@@ -10394,7 +10398,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_minimalTearing(threadDat
         }
         case 1: {
           /* Pattern matching succeeded */
-          omc_Error_addInternalError(threadData, _OMC_LIT320, _OMC_LIT321);
+          omc_Error_addInternalError(threadData, _OMC_LIT325, _OMC_LIT326);
 
           goto goto_4;
           goto tmp5_done;
@@ -10439,18 +10443,18 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing4__1(threadDat
   _tailrecursive: OMC_LABEL_UNUSED
   // _outInnerEquations has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar27;
+    modelica_metatype __omcQ_24tmpVar29;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
     modelica_metatype tmpMeta4;
-    modelica_metatype __omcQ_24tmpVar26;
+    modelica_metatype __omcQ_24tmpVar28;
     modelica_integer tmp20;
     modelica_metatype _x_loopVar = 0;
     modelica_metatype _x;
     _x_loopVar = _othercomps;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar27 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar27;
+    __omcQ_24tmpVar29 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar29;
     while(1) {
       tmp20 = 1;
       if (!listEmpty(_x_loopVar)) {
@@ -10512,7 +10516,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing4__1(threadDat
                 modelica_metatype tmpMeta17;
                 modelica_integer tmp18;
                 modelica_metatype tmpMeta19;
-
+                
                 _clst = tmp7_1;
                 /* Pattern matching succeeded */
                 _elst = omc_List_map1r(threadData, _clst, boxvar_arrayGet, _mapIncRowEqn);
@@ -10548,8 +10552,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing4__1(threadDat
             goto tmp6_done;
             tmp6_done:;
           }
-        }__omcQ_24tmpVar26 = tmpMeta4;
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar26,0);
+        }__omcQ_24tmpVar28 = tmpMeta4;
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar28,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp20 == 1) {
         break;
@@ -10558,7 +10562,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing4__1(threadDat
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar27;
+    tmpMeta1 = __omcQ_24tmpVar29;
   }
   _outInnerEquations = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -10584,8 +10588,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing4(threadData_t
   _tailrecursive: OMC_LABEL_UNUSED
   // _ocomp has no default value.
   // _outRunMatching has no default value.
-
-
+  
+  
   { /* matchcontinue expression */
     {
       modelica_metatype _ores = NULL;
@@ -10617,7 +10621,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing4(threadData_t
           /* Pattern matching succeeded */
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            fputs(MMC_STRINGDATA(_OMC_LIT322),stdout);
+            fputs(MMC_STRINGDATA(_OMC_LIT327),stdout);
           }
 
           _residual1 = omc_List_map1r(threadData, _residual, boxvar_arrayGet, _mapIncRowEqn);
@@ -10645,7 +10649,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing4(threadData_t
         case 1: {
           modelica_metatype tmpMeta9;
           /* Pattern matching succeeded */
-          tmpMeta9 = mmc_mk_box5(10, &BackendDAE_StrongComponent_TORNSYSTEM__desc, _OMC_LIT323, mmc_mk_none(), mmc_mk_boolean(0 /* false */), mmc_mk_boolean(_mixedSystem));
+          tmpMeta9 = mmc_mk_box5(10, &BackendDAE_StrongComponent_TORNSYSTEM__desc, _OMC_LIT328, mmc_mk_none(), mmc_mk_boolean(0 /* false */), mmc_mk_boolean(_mixedSystem));
           tmpMeta[0+0] = tmpMeta9;
           tmp1_c1 = 0 /* false */;
           goto tmp3_done;
@@ -10698,8 +10702,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing3(threadData_t
   _tailrecursive: OMC_LABEL_UNUSED
   // _outTVars has no default value.
   // _oMark has no default value.
-
-
+  
+  
   { /* match expression */
     modelica_metatype tmp4_1;
     tmp4_1 = _unassigned;
@@ -10717,7 +10721,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing3(threadData_t
           goto tmp3_done;
         }
         case 1: {
-
+          
           /* Pattern matching succeeded */
           tmpMeta[0+0] = omc_Tearing_omcTearing2(threadData, _unsolvables, _tSel_always, _tSel_prefer, _tSel_avoid, _tSel_never, _m, _mt, _mapEqnIncRow, _mapIncRowEqn, _size, _vars, _ishared, _ass1, _ass2, _columark, _mark, _inTVars, &tmp1_c1);
           goto tmp3_done;
@@ -10784,7 +10788,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_tearingBFS2(threadData_t
         switch (MMC_SWITCH_CAST(tmp4)) {
         case 0: {
           if (!listEmpty(tmp4_1)) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           tmpMeta1 = _inNextQueue;
           goto tmp3_done;
@@ -10821,7 +10825,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_tearingBFS2(threadData_t
           /* Pattern matching succeeded */
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            tmpMeta13 = stringAppend(_OMC_LIT324,intString(_c));
+            tmpMeta13 = stringAppend(_OMC_LIT329,intString(_c));
             tmpMeta14 = stringAppend(tmpMeta13,_OMC_LIT128);
             tmpMeta15 = stringAppend(tmpMeta14,intString(_r));
             tmpMeta16 = stringAppend(tmpMeta15,_OMC_LIT10);
@@ -10918,7 +10922,7 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_isEntrySolved(threadData_
           modelica_metatype tmpMeta6;
           tmpMeta6 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 2));
           if (mmc__uniontype__metarecord__typedef__equal(tmpMeta6,0,0) == 0) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           tmp1 = 1 /* true */;
           goto tmp3_done;
@@ -10931,15 +10935,15 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_isEntrySolved(threadData_
           if (mmc__uniontype__metarecord__typedef__equal(tmpMeta7,3,1) == 0) goto tmp3_end;
           tmpMeta8 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta7), 2));
           tmp9 = mmc_unbox_integer(tmpMeta8);
-
+          
           _b = tmp9  /* pattern as ty=Boolean */;
           /* Pattern matching succeeded */
-          omc_Error_addInternalError(threadData, _OMC_LIT325, _OMC_LIT326);
-          tmp1 = (_b && (!(stringEqual(omc_Flags_getConfigString(threadData, _OMC_LIT344), _OMC_LIT335))));
+          omc_Error_addInternalError(threadData, _OMC_LIT330, _OMC_LIT331);
+          tmp1 = (_b && (!(stringEqual(omc_Flags_getConfigString(threadData, _OMC_LIT349), _OMC_LIT340))));
           goto tmp3_done;
         }
         case 2: {
-
+          
           /* Pattern matching succeeded */
           tmp1 = 0 /* false */;
           goto tmp3_done;
@@ -10989,13 +10993,13 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_solvable(threadData_t *th
       {
         switch (MMC_SWITCH_CAST(valueConstructor(tmp4_1))) {
         case 3: {
-
+          
           /* Pattern matching succeeded */
           tmp1 = 1 /* true */;
           goto tmp3_done;
         }
         case 4: {
-
+          
           /* Pattern matching succeeded */
           tmp1 = 1 /* true */;
           goto tmp3_done;
@@ -11019,36 +11023,36 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_solvable(threadData_t *th
           tmp8 = mmc_unbox_integer(tmpMeta7);
           _b = tmp8  /* pattern as ty=Boolean */;
           /* Pattern matching succeeded */
-          tmp1 = (_b && (!(stringEqual(omc_Flags_getConfigString(threadData, _OMC_LIT344), _OMC_LIT335))));
+          tmp1 = (_b && (!(stringEqual(omc_Flags_getConfigString(threadData, _OMC_LIT349), _OMC_LIT340))));
           goto tmp3_done;
         }
         case 7: {
-
+          
           /* Pattern matching succeeded */
           tmp1 = 0 /* false */;
           goto tmp3_done;
         }
         case 8: {
-
+          
           /* Pattern matching succeeded */
           tmp1 = 0 /* false */;
           goto tmp3_done;
         }
         case 9: {
-
+          
           /* Pattern matching succeeded */
           tmp1 = 0 /* false */;
           goto tmp3_done;
         }
         case 10: {
-
+          
           /* Pattern matching succeeded */
           tmp1 = 1 /* true */;
           goto tmp3_done;
         }
         default:
         tmp3_default: OMC_LABEL_UNUSED; {
-
+          
           /* Pattern matching succeeded */
           tmp1 = 0 /* false */;
           goto tmp3_done;
@@ -11150,7 +11154,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_tearingBFS1(threadData_t
           if (!((listLength(_rows) == _size) && omc_Tearing_solvableLst(threadData, _rows))) goto tmp3_end;
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            tmpMeta6 = stringAppend(_OMC_LIT345,stringDelimitList(omc_List_map(threadData, _c, boxvar_intString), _OMC_LIT70));
+            tmpMeta6 = stringAppend(_OMC_LIT350,stringDelimitList(omc_List_map(threadData, _c, boxvar_intString), _OMC_LIT70));
             tmpMeta7 = stringAppend(tmpMeta6,_OMC_LIT10);
             fputs(MMC_STRINGDATA(tmpMeta7),stdout);
           }
@@ -11223,7 +11227,7 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_hasnonlinearVars1(threadD
           tmpMeta7 = MMC_CDR(tmp4_1);
           tmpMeta8 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta6), 2));
           if (mmc__uniontype__metarecord__typedef__equal(tmpMeta8,5,0) == 0) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           tmp1 = 1 /* true */;
           goto tmp3_done;
@@ -11364,7 +11368,7 @@ PROTECTED_FUNCTION_STATIC void omc_Tearing_tearingBFS(threadData_t *threadData, 
         case 1: {
           modelica_metatype tmpMeta5;
           if (!listEmpty(tmp3_1)) goto tmp2_end;
-
+          
           /* Pattern matching succeeded */
           _newqueue = omc_List_removeOnTrue(threadData, _ass2, boxvar_Tearing_isAssignedSaveEnhanced, _nextQueue);
 
@@ -11372,7 +11376,7 @@ PROTECTED_FUNCTION_STATIC void omc_Tearing_tearingBFS(threadData_t *threadData, 
 
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            fputs(MMC_STRINGDATA(_OMC_LIT346),stdout);
+            fputs(MMC_STRINGDATA(_OMC_LIT351),stdout);
           }
 
           tmpMeta5 = MMC_REFSTRUCTLIT(mmc_nil);
@@ -11400,17 +11404,17 @@ PROTECTED_FUNCTION_STATIC void omc_Tearing_tearingBFS(threadData_t *threadData, 
           tmpMeta7 = MMC_CDR(tmp3_1);
           tmpMeta8 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta6), 1));
           tmp9 = mmc_unbox_integer(tmpMeta8);
-
+          
           _c = tmp9  /* pattern as ty=Integer */;
           _rest = tmpMeta7;
           /* Pattern matching succeeded */
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            fputs(MMC_STRINGDATA(_OMC_LIT347),stdout);
+            fputs(MMC_STRINGDATA(_OMC_LIT352),stdout);
 
             omc_BackendDump_dumpAdjacencyRowEnhanced(threadData, _queue);
 
-            tmpMeta10 = stringAppend(_OMC_LIT348,intString(_c));
+            tmpMeta10 = stringAppend(_OMC_LIT353,intString(_c));
             tmpMeta11 = stringAppend(tmpMeta10,_OMC_LIT10);
             fputs(MMC_STRINGDATA(tmpMeta11),stdout);
           }
@@ -11423,12 +11427,12 @@ PROTECTED_FUNCTION_STATIC void omc_Tearing_tearingBFS(threadData_t *threadData, 
 
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            tmpMeta12 = stringAppend(_OMC_LIT349,intString(_eqnsize));
+            tmpMeta12 = stringAppend(_OMC_LIT354,intString(_eqnsize));
             tmpMeta13 = stringAppend(tmpMeta12,_OMC_LIT10);
             fputs(MMC_STRINGDATA(tmpMeta13),stdout);
 
-            tmpMeta14 = stringAppend(_OMC_LIT350,intString(_c));
-            tmpMeta15 = stringAppend(tmpMeta14,_OMC_LIT351);
+            tmpMeta14 = stringAppend(_OMC_LIT355,intString(_c));
+            tmpMeta15 = stringAppend(tmpMeta14,_OMC_LIT356);
             fputs(MMC_STRINGDATA(tmpMeta15),stdout);
 
             omc_BackendDump_dumpAdjacencyRowEnhanced(threadData, _rows);
@@ -11440,7 +11444,7 @@ PROTECTED_FUNCTION_STATIC void omc_Tearing_tearingBFS(threadData_t *threadData, 
 
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            fputs(MMC_STRINGDATA(_OMC_LIT352),stdout);
+            fputs(MMC_STRINGDATA(_OMC_LIT357),stdout);
 
             omc_BackendDump_dumpAdjacencyRowEnhanced(threadData, _newqueue);
 
@@ -11600,7 +11604,7 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_isAssignedSaveEnhanced(th
           modelica_integer tmp7;
           tmpMeta6 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 1));
           tmp7 = mmc_unbox_integer(tmpMeta6);
-
+          
           _i = tmp7  /* pattern as ty=Integer */;
           /* Pattern matching succeeded */
           /* Check guard condition after assignments */
@@ -11609,7 +11613,7 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_isAssignedSaveEnhanced(th
           goto tmp3_done;
         }
         case 1: {
-
+          
           /* Pattern matching succeeded */
           tmp1 = 1 /* true */;
           goto tmp3_done;
@@ -11691,8 +11695,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_addEqnWeights(threadData
           _v1 = tmp10  /* pattern as ty=Integer */;
           _v2 = tmp14  /* pattern as ty=Integer */;
 
-          _points = arrayUpdate(_iPoints, _v1, mmc_mk_integer(((modelica_integer) 5) + mmc_unbox_integer(arrayGet(_iPoints,_v1) /* DAE.ASUB */)));
-          tmpMeta1 = arrayUpdate(_iPoints, _v2, mmc_mk_integer(((modelica_integer) 5) + mmc_unbox_integer(arrayGet(_points,_v2) /* DAE.ASUB */)));
+          _points = arrayUpdate(_iPoints, _v1, mmc_mk_integer(((modelica_integer) 5) + (mmc_unbox_integer(arrayGet(_iPoints,_v1) /* DAE.ASUB */))));
+          tmpMeta1 = arrayUpdate(_iPoints, _v2, mmc_mk_integer(((modelica_integer) 5) + (mmc_unbox_integer(arrayGet(_points,_v2) /* DAE.ASUB */))));
           goto tmp3_done;
         }
         case 1: {
@@ -11765,7 +11769,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_solvabilityWeights(thread
         }
         case 2: {
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,2,1) == 0) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           tmp1 = ((modelica_integer) 5);
           goto tmp3_done;
@@ -11827,7 +11831,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_solvabilityWeights(thread
           goto tmp3_done;
         }
         case 9: {
-
+          
           /* Pattern matching succeeded */
           tmp1 = ((modelica_integer) 0);
           goto tmp3_done;
@@ -11891,7 +11895,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_solvabilityWeightsnoState
           tmpMeta6 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 1));
           tmp7 = mmc_unbox_integer(tmpMeta6);
           tmpMeta8 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 2));
-
+          
           _eq = tmp7  /* pattern as ty=Integer */;
           _s = tmpMeta8;
           /* Pattern matching succeeded */
@@ -11902,7 +11906,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_solvabilityWeightsnoState
           goto tmp3_done;
         }
         case 1: {
-
+          
           /* Pattern matching succeeded */
           tmp1 = _iW;
           goto tmp3_done;
@@ -12130,13 +12134,13 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_omcTearingSelectTearingVa
 
           if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
           {
-            fputs(MMC_STRINGDATA(_OMC_LIT353),stdout);
+            fputs(MMC_STRINGDATA(_OMC_LIT358),stdout);
           }
 
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            tmpMeta7 = stringAppend(_OMC_LIT354,intString(_tvar));
-            tmpMeta8 = stringAppend(tmpMeta7,_OMC_LIT355);
+            tmpMeta7 = stringAppend(_OMC_LIT359,intString(_tvar));
+            tmpMeta8 = stringAppend(tmpMeta7,_OMC_LIT360);
             fputs(MMC_STRINGDATA(tmpMeta8),stdout);
           }
           tmp1 = _tvar;
@@ -12168,7 +12172,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_omcTearingSelectTearingVa
 
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            fputs(MMC_STRINGDATA(_OMC_LIT356),stdout);
+            fputs(MMC_STRINGDATA(_OMC_LIT361),stdout);
 
             omc_BackendDump_debuglst(threadData, _freeVars, boxvar_intString, _OMC_LIT70, _OMC_LIT10);
           }
@@ -12177,7 +12181,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_omcTearingSelectTearingVa
 
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            fputs(MMC_STRINGDATA(_OMC_LIT357),stdout);
+            fputs(MMC_STRINGDATA(_OMC_LIT362),stdout);
 
             omc_BackendDump_debuglst(threadData, _freeVars, boxvar_intString, _OMC_LIT70, _OMC_LIT10);
           }
@@ -12192,7 +12196,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_omcTearingSelectTearingVa
 
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            tmpMeta11 = stringAppend(_OMC_LIT358,stringDelimitList(omc_List_mapArray(threadData, _points, boxvar_intString), _OMC_LIT7));
+            tmpMeta11 = stringAppend(_OMC_LIT363,stringDelimitList(omc_List_mapArray(threadData, _points, boxvar_intString), _OMC_LIT7));
             tmpMeta12 = stringAppend(tmpMeta11,_OMC_LIT35);
             fputs(MMC_STRINGDATA(tmpMeta12),stdout);
           }
@@ -12204,7 +12208,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_omcTearingSelectTearingVa
 
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            tmpMeta14 = stringAppend(_OMC_LIT359,stringDelimitList(omc_List_mapArray(threadData, _points, boxvar_intString), _OMC_LIT7));
+            tmpMeta14 = stringAppend(_OMC_LIT364,stringDelimitList(omc_List_mapArray(threadData, _points, boxvar_intString), _OMC_LIT7));
             tmpMeta15 = stringAppend(tmpMeta14,_OMC_LIT35);
             fputs(MMC_STRINGDATA(tmpMeta15),stdout);
           }
@@ -12213,7 +12217,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_omcTearingSelectTearingVa
 
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            tmpMeta16 = stringAppend(_OMC_LIT360,stringDelimitList(omc_List_mapArray(threadData, _points, boxvar_intString), _OMC_LIT7));
+            tmpMeta16 = stringAppend(_OMC_LIT365,stringDelimitList(omc_List_mapArray(threadData, _points, boxvar_intString), _OMC_LIT7));
             tmpMeta17 = stringAppend(tmpMeta16,_OMC_LIT35);
             fputs(MMC_STRINGDATA(tmpMeta17),stdout);
           }
@@ -12222,7 +12226,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_omcTearingSelectTearingVa
 
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            tmpMeta18 = stringAppend(_OMC_LIT361,stringDelimitList(omc_List_map(threadData, _pointsLst, boxvar_intString), _OMC_LIT7));
+            tmpMeta18 = stringAppend(_OMC_LIT366,stringDelimitList(omc_List_map(threadData, _pointsLst, boxvar_intString), _OMC_LIT7));
             tmpMeta19 = stringAppend(tmpMeta18,_OMC_LIT35);
             fputs(MMC_STRINGDATA(tmpMeta19),stdout);
           }
@@ -12231,7 +12235,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_omcTearingSelectTearingVa
 
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            tmpMeta20 = stringAppend(_OMC_LIT362,stringDelimitList(omc_List_map(threadData, _pointsLst, boxvar_intString), _OMC_LIT7));
+            tmpMeta20 = stringAppend(_OMC_LIT367,stringDelimitList(omc_List_map(threadData, _pointsLst, boxvar_intString), _OMC_LIT7));
             tmpMeta21 = stringAppend(tmpMeta20,_OMC_LIT35);
             fputs(MMC_STRINGDATA(tmpMeta21),stdout);
           }
@@ -12240,10 +12244,10 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_omcTearingSelectTearingVa
 
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            tmpMeta22 = stringAppend(_OMC_LIT354,intString(_tvar));
-            tmpMeta23 = stringAppend(tmpMeta22,_OMC_LIT363);
+            tmpMeta22 = stringAppend(_OMC_LIT359,intString(_tvar));
+            tmpMeta23 = stringAppend(tmpMeta22,_OMC_LIT368);
             tmpMeta24 = stringAppend(tmpMeta23,intString(mmc_unbox_integer(listGet(_pointsLst, _tvar))));
-            tmpMeta25 = stringAppend(tmpMeta24,_OMC_LIT364);
+            tmpMeta25 = stringAppend(tmpMeta24,_OMC_LIT369);
             fputs(MMC_STRINGDATA(tmpMeta25),stdout);
           }
           else
@@ -12258,7 +12262,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_omcTearingSelectTearingVa
         }
         case 2: {
           /* Pattern matching succeeded */
-          fputs(MMC_STRINGDATA(_OMC_LIT365),stdout);
+          fputs(MMC_STRINGDATA(_OMC_LIT370),stdout);
           goto goto_2;
           goto tmp3_done;
         }
@@ -12330,8 +12334,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing2(threadData_t
   _tailrecursive: OMC_LABEL_UNUSED
   // _outTVars has no default value.
   // _oMark has no default value.
-
-
+  
+  
   { /* matchcontinue expression */
     volatile modelica_metatype tmp4_1;volatile modelica_metatype tmp4_2;
     tmp4_1 = _unsolvables;
@@ -12365,14 +12369,14 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing2(threadData_t
           tmp4 += 1; /* Pattern matching succeeded; we may skip some cases if we fail */
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            fputs(MMC_STRINGDATA(_OMC_LIT366),stdout);
+            fputs(MMC_STRINGDATA(_OMC_LIT371),stdout);
           }
 
           _tvar = omc_Tearing_omcTearingSelectTearingVar(threadData, _vars, _ass1, _ass2, _m, _mt, _tSel_prefer, _tSel_avoid, _tSel_never);
 
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            fputs(MMC_STRINGDATA(_OMC_LIT367),stdout);
+            fputs(MMC_STRINGDATA(_OMC_LIT372),stdout);
           }
 
           arrayUpdate(_ass1, _tvar, mmc_mk_integer((((modelica_integer) 2)) * (_size)));
@@ -12381,7 +12385,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing2(threadData_t
 
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            fputs(MMC_STRINGDATA(_OMC_LIT368),stdout);
+            fputs(MMC_STRINGDATA(_OMC_LIT373),stdout);
 
             omc_BackendDump_dumpAdjacencyRowEnhanced(threadData, _vareqns);
 
@@ -12422,10 +12426,10 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing2(threadData_t
 
           if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
           {
-            fputs(MMC_STRINGDATA(_OMC_LIT353),stdout);
+            fputs(MMC_STRINGDATA(_OMC_LIT358),stdout);
 
-            tmpMeta13 = stringAppend(_OMC_LIT354,intString(_tvar));
-            tmpMeta14 = stringAppend(tmpMeta13,_OMC_LIT369);
+            tmpMeta13 = stringAppend(_OMC_LIT359,intString(_tvar));
+            tmpMeta14 = stringAppend(tmpMeta13,_OMC_LIT374);
             fputs(MMC_STRINGDATA(tmpMeta14),stdout);
           }
 
@@ -12435,7 +12439,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing2(threadData_t
 
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            fputs(MMC_STRINGDATA(_OMC_LIT368),stdout);
+            fputs(MMC_STRINGDATA(_OMC_LIT373),stdout);
 
             omc_BackendDump_dumpAdjacencyRowEnhanced(threadData, _vareqns);
 
@@ -12457,11 +12461,11 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing2(threadData_t
           modelica_metatype tmpMeta20;
           modelica_metatype tmpMeta21;
           modelica_metatype tmpMeta22;
-
+          
           /* Pattern matching succeeded */
           if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
           {
-            fputs(MMC_STRINGDATA(_OMC_LIT370),stdout);
+            fputs(MMC_STRINGDATA(_OMC_LIT375),stdout);
 
             tmpMeta18 = stringAppend(_OMC_LIT249,stringDelimitList(omc_List_map(threadData, _tSel_always, boxvar_intString), _OMC_LIT7));
             tmpMeta19 = stringAppend(tmpMeta18,_OMC_LIT10);
@@ -12476,7 +12480,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing2(threadData_t
 
           if(omc_Flags_isSet(threadData, _OMC_LIT3))
           {
-            fputs(MMC_STRINGDATA(_OMC_LIT371),stdout);
+            fputs(MMC_STRINGDATA(_OMC_LIT376),stdout);
 
             omc_BackendDump_dumpAdjacencyRowEnhanced(threadData, _vareqns);
 
@@ -12493,9 +12497,9 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing2(threadData_t
           goto tmp3_done;
         }
         case 3: {
-
+          
           /* Pattern matching succeeded */
-          fputs(MMC_STRINGDATA(_OMC_LIT372),stdout);
+          fputs(MMC_STRINGDATA(_OMC_LIT377),stdout);
           goto goto_2;
           goto tmp3_done;
         }
@@ -12563,7 +12567,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_getTVarResiduals(threadD
         }
         case 1: {
           modelica_metatype tmpMeta6;
-
+          
           /* Pattern matching succeeded */
           _e = mmc_unbox_integer(arrayGet(_v1,_index) /* DAE.ASUB */);
 
@@ -12611,18 +12615,18 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_tVarsofResidualEqns(threa
   _oMark = _iMark;
   // _oAcc has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar29;
+    modelica_metatype __omcQ_24tmpVar31;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
     modelica_metatype tmpMeta4;
-    modelica_metatype __omcQ_24tmpVar28;
+    modelica_metatype __omcQ_24tmpVar30;
     modelica_integer tmp11;
     modelica_metatype _eq_loopVar = 0;
     modelica_metatype _eq;
     _eq_loopVar = _iEqns;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar29 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar29;
+    __omcQ_24tmpVar31 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar31;
     while(1) {
       tmp11 = 1;
       if (!listEmpty(_eq_loopVar)) {
@@ -12673,8 +12677,8 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_tVarsofResidualEqns(threa
             goto tmp6_done;
             tmp6_done:;
           }
-        }__omcQ_24tmpVar28 = tmpMeta4;
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar28,0);
+        }__omcQ_24tmpVar30 = tmpMeta4;
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar30,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp11 == 1) {
         break;
@@ -12683,7 +12687,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_Tearing_tVarsofResidualEqns(threa
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar29;
+    tmpMeta1 = __omcQ_24tmpVar31;
   }
   _oAcc = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -13244,7 +13248,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing(threadData_t 
   // _DAEtypeStr has no default value.
   if(omc_Flags_isSet(threadData, _OMC_LIT3))
   {
-    fputs(MMC_STRINGDATA(_OMC_LIT373),stdout);
+    fputs(MMC_STRINGDATA(_OMC_LIT378),stdout);
   }
 
   _DAEtypeStr = omc_BackendDump_printBackendDAEType2String(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_ishared), 15))));
@@ -13268,18 +13272,18 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing(threadData_t 
 
   if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
   {
-    fputs(MMC_STRINGDATA(_OMC_LIT374),stdout);
+    fputs(MMC_STRINGDATA(_OMC_LIT379),stdout);
 
     omc_BackendDump_printEqSystem(threadData, _subsyst);
 
-    fputs(MMC_STRINGDATA(_OMC_LIT375),stdout);
+    fputs(MMC_STRINGDATA(_OMC_LIT380),stdout);
   }
 
   _me = omc_BackendDAEUtil_getAdjacencyMatrixEnhancedScalar(threadData, _subsyst, _ishared, 0 /* false */ ,&_meT ,&_mapEqnIncRow ,&_mapIncRowEqn);
 
   if(omc_Flags_isSet(threadData, _OMC_LIT3))
   {
-    fputs(MMC_STRINGDATA(_OMC_LIT376),stdout);
+    fputs(MMC_STRINGDATA(_OMC_LIT381),stdout);
 
     omc_BackendDump_dumpAdjacencyMatrixEnhanced(threadData, _me);
 
@@ -13287,7 +13291,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing(threadData_t 
 
     omc_BackendDump_dumpAdjacencyMatrixTEnhanced(threadData, _meT);
 
-    fputs(MMC_STRINGDATA(_OMC_LIT377),stdout);
+    fputs(MMC_STRINGDATA(_OMC_LIT382),stdout);
 
     omc_BackendDump_dumpAdjacencyMatrix(threadData, _mapEqnIncRow);
 
@@ -13304,7 +13308,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing(threadData_t 
 
   if(omc_Flags_isSet(threadData, _OMC_LIT3))
   {
-    fputs(MMC_STRINGDATA(_OMC_LIT378),stdout);
+    fputs(MMC_STRINGDATA(_OMC_LIT383),stdout);
 
     omc_BackendDump_debuglst(threadData, _unsolvables, boxvar_intString, _OMC_LIT70, _OMC_LIT10);
   }
@@ -13316,7 +13320,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing(threadData_t 
 
   if(omc_Flags_isSet(threadData, _OMC_LIT3))
   {
-    fputs(MMC_STRINGDATA(_OMC_LIT379),stdout);
+    fputs(MMC_STRINGDATA(_OMC_LIT384),stdout);
   }
 
   tmpMeta5 = MMC_REFSTRUCTLIT(mmc_nil);
@@ -13324,14 +13328,14 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing(threadData_t 
 
   if(omc_Flags_isSet(threadData, _OMC_LIT3))
   {
-    fputs(MMC_STRINGDATA(_OMC_LIT380),stdout);
+    fputs(MMC_STRINGDATA(_OMC_LIT385),stdout);
   }
 
   _ass1 = omc_List_fold(threadData, _tvars, boxvar_Tearing_unassignTVars, _ass1);
 
   if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
   {
-    tmpMeta6 = stringAppend(_OMC_LIT381,stringDelimitList(omc_List_mapArray(threadData, _ass1, boxvar_intString), _OMC_LIT7));
+    tmpMeta6 = stringAppend(_OMC_LIT386,stringDelimitList(omc_List_mapArray(threadData, _ass1, boxvar_intString), _OMC_LIT7));
     tmpMeta7 = stringAppend(tmpMeta6,_OMC_LIT10);
     fputs(MMC_STRINGDATA(tmpMeta7),stdout);
 
@@ -13365,7 +13369,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing(threadData_t 
 
   if(omc_Flags_isSet(threadData, _OMC_LIT3))
   {
-    fputs(MMC_STRINGDATA(_OMC_LIT382),stdout);
+    fputs(MMC_STRINGDATA(_OMC_LIT387),stdout);
 
     omc_BackendDump_dumpComponentsOLD(threadData, _othercomps);
 
@@ -13383,9 +13387,9 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing(threadData_t 
 
   if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
   {
-    fputs(MMC_STRINGDATA((_outRunMatching?_OMC_LIT383:_OMC_LIT384)),stdout);
+    fputs(MMC_STRINGDATA((_outRunMatching?_OMC_LIT388:_OMC_LIT389)),stdout);
 
-    tmpMeta17 = stringAppend(_OMC_LIT385,intString(_size));
+    tmpMeta17 = stringAppend(_OMC_LIT390,intString(_size));
     tmpMeta18 = stringAppend(tmpMeta17,_OMC_LIT10);
     fputs(MMC_STRINGDATA(tmpMeta18),stdout);
 
@@ -13410,12 +13414,12 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing(threadData_t 
     _tvars = tmpMeta27;
     _residual = tmpMeta28;
 
-    tmpMeta29 = stringAppend(_OMC_LIT386,stringDelimitList(omc_List_map(threadData, _tvars, boxvar_intString), _OMC_LIT7));
-    tmpMeta30 = stringAppend(tmpMeta29,_OMC_LIT387);
+    tmpMeta29 = stringAppend(_OMC_LIT391,stringDelimitList(omc_List_map(threadData, _tvars, boxvar_intString), _OMC_LIT7));
+    tmpMeta30 = stringAppend(tmpMeta29,_OMC_LIT392);
     fputs(MMC_STRINGDATA(tmpMeta30),stdout);
 
-    tmpMeta31 = stringAppend(_OMC_LIT388,stringDelimitList(omc_List_map(threadData, _residual, boxvar_intString), _OMC_LIT7));
-    tmpMeta32 = stringAppend(tmpMeta31,_OMC_LIT387);
+    tmpMeta31 = stringAppend(_OMC_LIT393,stringDelimitList(omc_List_map(threadData, _residual, boxvar_intString), _OMC_LIT7));
+    tmpMeta32 = stringAppend(tmpMeta31,_OMC_LIT392);
     tmpMeta33 = stringAppend(tmpMeta32,_OMC_LIT72);
     tmpMeta34 = stringAppend(tmpMeta33,_OMC_LIT10);
     fputs(MMC_STRINGDATA(tmpMeta34),stdout);
@@ -13423,11 +13427,11 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_omcTearing(threadData_t 
 
   if(omc_Flags_isSet(threadData, _OMC_LIT3))
   {
-    fputs(MMC_STRINGDATA(_OMC_LIT389),stdout);
+    fputs(MMC_STRINGDATA(_OMC_LIT394),stdout);
 
     omc_BackendDump_dumpComponent(threadData, _ocomp, mmc_mk_none());
 
-    fputs(MMC_STRINGDATA(_OMC_LIT390),stdout);
+    fputs(MMC_STRINGDATA(_OMC_LIT395),stdout);
   }
   _return: OMC_LABEL_UNUSED
   if (out_outRunMatching) { *out_outRunMatching = _outRunMatching; }
@@ -13486,13 +13490,13 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_getUserTearingSet(thread
     {
       _start = ((modelica_integer) 2) + _i;
 
-      _end_ = ((modelica_integer) 1) + _i + mmc_unbox_integer(arrayGet(_arr_TVars,((modelica_integer) 1) + _i) /* DAE.ASUB */);
+      _end_ = ((modelica_integer) 1) + (_i + (mmc_unbox_integer(arrayGet(_arr_TVars,((modelica_integer) 1) + _i) /* DAE.ASUB */)));
 
       {
-        modelica_metatype __omcQ_24tmpVar31;
+        modelica_metatype __omcQ_24tmpVar33;
         modelica_metatype* tmp4;
         modelica_metatype tmpMeta5;
-        modelica_metatype __omcQ_24tmpVar30;
+        modelica_metatype __omcQ_24tmpVar32;
         modelica_integer tmp6;
         modelica_integer tmp7;
         modelica_integer tmp8;
@@ -13502,8 +13506,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_getUserTearingSet(thread
         _j = _start /* Range start-value */;
         _j = (_start /* Range start-value */)-tmp7;
         tmpMeta5 = MMC_REFSTRUCTLIT(mmc_nil);
-        __omcQ_24tmpVar31 = tmpMeta5; /* defaultValue */
-        tmp4 = &__omcQ_24tmpVar31;
+        __omcQ_24tmpVar33 = tmpMeta5; /* defaultValue */
+        tmp4 = &__omcQ_24tmpVar33;
         while(1) {
           tmp6 = 1;
           if (tmp7 > 0 ? _j+tmp7 <= tmp8 : _j+tmp7 >= tmp8) {
@@ -13511,8 +13515,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_getUserTearingSet(thread
             tmp6--;
           }
           if (tmp6 == 0) {
-            __omcQ_24tmpVar30 = arrayGet(_arr_TVars,_j) /* DAE.ASUB */;
-            *tmp4 = mmc_mk_cons(__omcQ_24tmpVar30,0);
+            __omcQ_24tmpVar32 = arrayGet(_arr_TVars,_j) /* DAE.ASUB */;
+            *tmp4 = mmc_mk_cons(__omcQ_24tmpVar32,0);
             tmp4 = &MMC_CDR(*tmp4);
           } else if (tmp6 == 1) {
             break;
@@ -13521,13 +13525,13 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_getUserTearingSet(thread
           }
         }
         *tmp4 = mmc_mk_nil();
-        tmpMeta3 = __omcQ_24tmpVar31;
+        tmpMeta3 = __omcQ_24tmpVar33;
       }
       _userTvarsThisComponent = omc_List_unique(threadData, tmpMeta3);
 
       if((listLength(_userTvarsThisComponent) != mmc_unbox_integer(arrayGet(_arr_TVars,((modelica_integer) 1) + _i) /* DAE.ASUB */)))
       {
-        omc_Error_addMessage(threadData, _OMC_LIT17, _OMC_LIT392);
+        omc_Error_addMessage(threadData, _OMC_LIT17, _OMC_LIT397);
 
         MMC_THROW_INTERNAL();
       }
@@ -13536,7 +13540,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_getUserTearingSet(thread
     }
     else
     {
-      _i = ((modelica_integer) 2) + _i + mmc_unbox_integer(arrayGet(_arr_TVars,((modelica_integer) 1) + _i) /* DAE.ASUB */);
+      _i = ((modelica_integer) 2) + (_i + (mmc_unbox_integer(arrayGet(_arr_TVars,((modelica_integer) 1) + _i) /* DAE.ASUB */)));
     }
   }
 
@@ -13553,13 +13557,13 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_getUserTearingSet(thread
       {
         _start = ((modelica_integer) 2) + _i;
 
-        _end_ = ((modelica_integer) 1) + _i + mmc_unbox_integer(arrayGet(_arr_residuals,((modelica_integer) 1) + _i) /* DAE.ASUB */);
+        _end_ = ((modelica_integer) 1) + (_i + (mmc_unbox_integer(arrayGet(_arr_residuals,((modelica_integer) 1) + _i) /* DAE.ASUB */)));
 
         {
-          modelica_metatype __omcQ_24tmpVar33;
+          modelica_metatype __omcQ_24tmpVar35;
           modelica_metatype* tmp10;
           modelica_metatype tmpMeta11;
-          modelica_metatype __omcQ_24tmpVar32;
+          modelica_metatype __omcQ_24tmpVar34;
           modelica_integer tmp12;
           modelica_integer tmp13;
           modelica_integer tmp14;
@@ -13569,8 +13573,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_getUserTearingSet(thread
           _j = _start /* Range start-value */;
           _j = (_start /* Range start-value */)-tmp13;
           tmpMeta11 = MMC_REFSTRUCTLIT(mmc_nil);
-          __omcQ_24tmpVar33 = tmpMeta11; /* defaultValue */
-          tmp10 = &__omcQ_24tmpVar33;
+          __omcQ_24tmpVar35 = tmpMeta11; /* defaultValue */
+          tmp10 = &__omcQ_24tmpVar35;
           while(1) {
             tmp12 = 1;
             if (tmp13 > 0 ? _j+tmp13 <= tmp14 : _j+tmp13 >= tmp14) {
@@ -13578,8 +13582,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_getUserTearingSet(thread
               tmp12--;
             }
             if (tmp12 == 0) {
-              __omcQ_24tmpVar32 = arrayGet(_arr_residuals,_j) /* DAE.ASUB */;
-              *tmp10 = mmc_mk_cons(__omcQ_24tmpVar32,0);
+              __omcQ_24tmpVar34 = arrayGet(_arr_residuals,_j) /* DAE.ASUB */;
+              *tmp10 = mmc_mk_cons(__omcQ_24tmpVar34,0);
               tmp10 = &MMC_CDR(*tmp10);
             } else if (tmp12 == 1) {
               break;
@@ -13588,13 +13592,13 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_getUserTearingSet(thread
             }
           }
           *tmp10 = mmc_mk_nil();
-          tmpMeta9 = __omcQ_24tmpVar33;
+          tmpMeta9 = __omcQ_24tmpVar35;
         }
         _userResidualsThisComponent = omc_List_unique(threadData, tmpMeta9);
 
         if((listLength(_userResidualsThisComponent) != mmc_unbox_integer(arrayGet(_arr_residuals,((modelica_integer) 1) + _i) /* DAE.ASUB */)))
         {
-          omc_Error_addMessage(threadData, _OMC_LIT17, _OMC_LIT394);
+          omc_Error_addMessage(threadData, _OMC_LIT17, _OMC_LIT399);
 
           MMC_THROW_INTERNAL();
         }
@@ -13603,7 +13607,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_getUserTearingSet(thread
       }
       else
       {
-        _i = ((modelica_integer) 2) + _i + mmc_unbox_integer(arrayGet(_arr_residuals,((modelica_integer) 1) + _i) /* DAE.ASUB */);
+        _i = ((modelica_integer) 2) + (_i + (mmc_unbox_integer(arrayGet(_arr_residuals,((modelica_integer) 1) + _i) /* DAE.ASUB */)));
       }
     }
   }
@@ -13653,13 +13657,13 @@ PROTECTED_FUNCTION_STATIC modelica_real omc_Tearing_solveCost(threadData_t *thre
       tmp1 = _nnz;
       tmp2 = _size;
       if (tmp2 == 0) {MMC_THROW_INTERNAL();}
-      tmp6 = (_fill) * (((tmp1 * tmp1)) / tmp2) + (2.0) * (_nnz);
+      tmp6 = (_fill) * (((tmp1 * tmp1)) / tmp2) + ((2.0) * (_nnz));
     }
     else
     {
       tmp3 = _size;
       tmp4 = _size;
-      tmp6 = (0.6666666666666666) * ((tmp3 * tmp3 * tmp3)) + (2.0) * ((tmp4 * tmp4));
+      tmp6 = (0.6666666666666666) * ((tmp3 * tmp3 * tmp3)) + ((2.0) * ((tmp4 * tmp4)));
     }
     tmp8 = tmp6;
   }
@@ -13712,14 +13716,14 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_substituteKnownVar(threa
         switch (MMC_SWITCH_CAST(tmp4)) {
         case 0: {
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,6,2) == 0) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           _var = omc_BackendVariable_getVarSingle(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_exp), 2))), _globalKnownVars, NULL);
           tmpMeta1 = omc_BackendVariable_varBindExp(threadData, _var);
           goto tmp3_done;
         }
         case 1: {
-
+          
           /* Pattern matching succeeded */
           tmpMeta1 = _exp;
           goto tmp3_done;
@@ -13764,8 +13768,8 @@ PROTECTED_FUNCTION_STATIC modelica_real omc_Tearing_jacEntryMagnitude(threadData
   // _magnitude has no default value.
   // _known has no default value.
   // _exp has no default value.
-
-
+  
+  
   { /* matchcontinue expression */
     volatile modelica_metatype tmp4_1;
     tmp4_1 = _dEqn;
@@ -13783,7 +13787,7 @@ PROTECTED_FUNCTION_STATIC modelica_real omc_Tearing_jacEntryMagnitude(threadData
           modelica_integer tmp7;
           modelica_integer tmp8;
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,3,3) == 0) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           _exp = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_dEqn), 2)));
 
@@ -13804,7 +13808,7 @@ PROTECTED_FUNCTION_STATIC modelica_real omc_Tearing_jacEntryMagnitude(threadData
           goto tmp3_done;
         }
         case 1: {
-
+          
           /* Pattern matching succeeded */
           tmp1_c0 = 1.0;
           tmp1_c1 = 0 /* false */;
@@ -14047,11 +14051,11 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_tearingPaysOff(threadData
   // _digitsLost has no default value.
   // _known has no default value.
   // _isValued has no default value.
-
-
-
-
-
+  
+  
+  
+  
+  
   { /* match expression */
     modelica_metatype tmp4_1;modelica_metatype tmp4_2;
     tmp4_1 = _ojac;
@@ -14075,7 +14079,7 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_tearingPaysOff(threadData
           tmpMeta8 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta7), 2));
           tmpMeta9 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta7), 3));
           tmpMeta10 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta7), 4));
-
+          
           _jac = tmpMeta6;
           _tvars = tmpMeta8;
           _residuals = tmpMeta9;
@@ -14093,7 +14097,7 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_tearingPaysOff(threadData
           modelica_metatype tmpMeta12;
           modelica_metatype tmpMeta13;
           modelica_metatype tmpMeta14;
-
+          
           /* Pattern matching succeeded */
           tmpMeta11 = MMC_REFSTRUCTLIT(mmc_nil);
           tmpMeta12 = MMC_REFSTRUCTLIT(mmc_nil);
@@ -14159,7 +14163,7 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_tearingPaysOff(threadData
 
       _coeff = omc_Tearing_jacEntryMagnitude(threadData, _dEqn, _globalKnownVars ,&_isValued);
 
-      _valued = _valued + (_isValued?((modelica_integer) 1):((modelica_integer) 0));
+      _valued = _valued + ((_isValued?((modelica_integer) 1):((modelica_integer) 0)));
 
       tmpMeta24 = mmc_mk_box2(0, mmc_mk_integer(_col), mmc_mk_real(_coeff));
       tmpMeta23 = mmc_mk_cons(tmpMeta24, arrayGet(_eqDeps,_row) /* DAE.ASUB */);
@@ -14184,7 +14188,7 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_tearingPaysOff(threadData
 
       arrayUpdate(_tvarId, _v, mmc_mk_integer(_cnt));
 
-      arrayUpdate(_growth, _v, _OMC_LIT395);
+      arrayUpdate(_growth, _v, _OMC_LIT400);
     }
   }
 
@@ -14199,8 +14203,8 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_tearingPaysOff(threadData
     for (tmpMeta28 = _innerEquations; !listEmpty(tmpMeta28); tmpMeta28=MMC_CDR(tmpMeta28))
     {
       _ie = MMC_CAR(tmpMeta28);
-
-
+      
+      
       { /* match expression */
         modelica_metatype tmp32_1;
         tmp32_1 = _ie;
@@ -14213,20 +14217,20 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_tearingPaysOff(threadData
             case 0: {
               modelica_metatype tmpMeta34;
               if (mmc__uniontype__metarecord__typedef__equal(tmp32_1,0,2) == 0) goto tmp31_end;
-
+              
               /* Pattern matching succeeded */
               {
-                modelica_metatype __omcQ_24tmpVar35;
+                modelica_metatype __omcQ_24tmpVar37;
                 modelica_metatype* tmp35;
                 modelica_metatype tmpMeta36;
-                modelica_metatype __omcQ_24tmpVar34;
+                modelica_metatype __omcQ_24tmpVar36;
                 modelica_integer tmp37;
                 modelica_metatype _gv_loopVar = 0;
                 modelica_metatype _gv;
                 _gv_loopVar = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_ie), 3)));
                 tmpMeta36 = MMC_REFSTRUCTLIT(mmc_nil);
-                __omcQ_24tmpVar35 = tmpMeta36; /* defaultValue */
-                tmp35 = &__omcQ_24tmpVar35;
+                __omcQ_24tmpVar37 = tmpMeta36; /* defaultValue */
+                tmp35 = &__omcQ_24tmpVar37;
                 while(1) {
                   tmp37 = 1;
                   if (!listEmpty(_gv_loopVar)) {
@@ -14235,8 +14239,8 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_tearingPaysOff(threadData
                     tmp37--;
                   }
                   if (tmp37 == 0) {
-                    __omcQ_24tmpVar34 = mmc_mk_integer(omc_List_position(threadData, _gv, _vindx));
-                    *tmp35 = mmc_mk_cons(__omcQ_24tmpVar34,0);
+                    __omcQ_24tmpVar36 = mmc_mk_integer(omc_List_position(threadData, _gv, _vindx));
+                    *tmp35 = mmc_mk_cons(__omcQ_24tmpVar36,0);
                     tmp35 = &MMC_CDR(*tmp35);
                   } else if (tmp37 == 1) {
                     break;
@@ -14245,7 +14249,7 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_tearingPaysOff(threadData
                   }
                 }
                 *tmp35 = mmc_mk_nil();
-                tmpMeta34 = __omcQ_24tmpVar35;
+                tmpMeta34 = __omcQ_24tmpVar37;
               }
               tmp29_c0 = omc_List_position(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_ie), 2))), _eindex);
               tmpMeta[0+1] = tmpMeta34;
@@ -14254,20 +14258,20 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_tearingPaysOff(threadData
             case 1: {
               modelica_metatype tmpMeta38;
               if (mmc__uniontype__metarecord__typedef__equal(tmp32_1,1,3) == 0) goto tmp31_end;
-
+              
               /* Pattern matching succeeded */
               {
-                modelica_metatype __omcQ_24tmpVar37;
+                modelica_metatype __omcQ_24tmpVar39;
                 modelica_metatype* tmp39;
                 modelica_metatype tmpMeta40;
-                modelica_metatype __omcQ_24tmpVar36;
+                modelica_metatype __omcQ_24tmpVar38;
                 modelica_integer tmp41;
                 modelica_metatype _gv_loopVar = 0;
                 modelica_metatype _gv;
                 _gv_loopVar = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_ie), 3)));
                 tmpMeta40 = MMC_REFSTRUCTLIT(mmc_nil);
-                __omcQ_24tmpVar37 = tmpMeta40; /* defaultValue */
-                tmp39 = &__omcQ_24tmpVar37;
+                __omcQ_24tmpVar39 = tmpMeta40; /* defaultValue */
+                tmp39 = &__omcQ_24tmpVar39;
                 while(1) {
                   tmp41 = 1;
                   if (!listEmpty(_gv_loopVar)) {
@@ -14276,8 +14280,8 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_tearingPaysOff(threadData
                     tmp41--;
                   }
                   if (tmp41 == 0) {
-                    __omcQ_24tmpVar36 = mmc_mk_integer(omc_List_position(threadData, _gv, _vindx));
-                    *tmp39 = mmc_mk_cons(__omcQ_24tmpVar36,0);
+                    __omcQ_24tmpVar38 = mmc_mk_integer(omc_List_position(threadData, _gv, _vindx));
+                    *tmp39 = mmc_mk_cons(__omcQ_24tmpVar38,0);
                     tmp39 = &MMC_CDR(*tmp39);
                   } else if (tmp41 == 1) {
                     break;
@@ -14286,7 +14290,7 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_tearingPaysOff(threadData
                   }
                 }
                 *tmp39 = mmc_mk_nil();
-                tmpMeta38 = __omcQ_24tmpVar37;
+                tmpMeta38 = __omcQ_24tmpVar39;
               }
               tmp29_c0 = omc_List_position(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_ie), 2))), _eindex);
               tmpMeta[0+1] = tmpMeta38;
@@ -14329,7 +14333,7 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_tearingPaysOff(threadData
           {
             _d = modelica_integer_max((modelica_integer)(_d),(modelica_integer)(mmc_unbox_integer(arrayGet(_depth,_w) /* DAE.ASUB */)));
 
-            _g = _g + (_coeff) * (mmc_unbox_real(arrayGet(_growth,_w) /* DAE.ASUB */));
+            _g = _g + ((_coeff) * (mmc_unbox_real(arrayGet(_growth,_w) /* DAE.ASUB */)));
           }
         }
       }
@@ -14398,7 +14402,7 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_tearingPaysOff(threadData
 
           _coeff = mmc_unbox_real(omc_Util_tuple22(threadData, _dep));
 
-          _g = _g + (_coeff) * (mmc_unbox_real(arrayGet(_growth,_w) /* DAE.ASUB */));
+          _g = _g + ((_coeff) * (mmc_unbox_real(arrayGet(_growth,_w) /* DAE.ASUB */)));
 
           _pivot = fmax(_pivot,_coeff);
         }
@@ -14504,50 +14508,50 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_tearingPaysOff(threadData
 
   _costTorn = (omc_BackendDAEUtil_useSparseSolver(threadData, _t, _nnzA, _isLinear)?_costTornSparse:_costTornDense);
 
-  if(omc_Flags_isSet(threadData, _OMC_LIT424))
+  if(omc_Flags_isSet(threadData, _OMC_LIT429))
   {
-    tmpMeta66 = stringAppend(_OMC_LIT396,intString(_strongComponentIndex));
-    tmpMeta67 = stringAppend(tmpMeta66,_OMC_LIT397);
-    tmpMeta68 = stringAppend(tmpMeta67,(_isLinear?_OMC_LIT398:_OMC_LIT399));
-    tmpMeta69 = stringAppend(tmpMeta68,_OMC_LIT400);
+    tmpMeta66 = stringAppend(_OMC_LIT401,intString(_strongComponentIndex));
+    tmpMeta67 = stringAppend(tmpMeta66,_OMC_LIT402);
+    tmpMeta68 = stringAppend(tmpMeta67,(_isLinear?_OMC_LIT403:_OMC_LIT404));
+    tmpMeta69 = stringAppend(tmpMeta68,_OMC_LIT405);
     tmpMeta70 = stringAppend(tmpMeta69,omc_BackendDump_jacobianTypeStr(threadData, _jacType));
-    tmpMeta71 = stringAppend(tmpMeta70,_OMC_LIT401);
-    tmpMeta72 = stringAppend(tmpMeta71,_OMC_LIT402);
+    tmpMeta71 = stringAppend(tmpMeta70,_OMC_LIT406);
+    tmpMeta72 = stringAppend(tmpMeta71,_OMC_LIT407);
     tmpMeta73 = stringAppend(tmpMeta72,intString(_n));
-    tmpMeta74 = stringAppend(tmpMeta73,_OMC_LIT403);
+    tmpMeta74 = stringAppend(tmpMeta73,_OMC_LIT408);
     tmpMeta75 = stringAppend(tmpMeta74,intString(_nnz));
-    tmpMeta76 = stringAppend(tmpMeta75,_OMC_LIT404);
+    tmpMeta76 = stringAppend(tmpMeta75,_OMC_LIT409);
     tmpMeta77 = stringAppend(tmpMeta76,realString(_density));
-    tmpMeta78 = stringAppend(tmpMeta77,_OMC_LIT405);
+    tmpMeta78 = stringAppend(tmpMeta77,_OMC_LIT410);
     tmpMeta79 = stringAppend(tmpMeta78,intString(_t));
-    tmpMeta80 = stringAppend(tmpMeta79,_OMC_LIT406);
+    tmpMeta80 = stringAppend(tmpMeta79,_OMC_LIT411);
     tmpMeta81 = stringAppend(tmpMeta80,intString(_m));
-    tmpMeta82 = stringAppend(tmpMeta81,_OMC_LIT407);
+    tmpMeta82 = stringAppend(tmpMeta81,_OMC_LIT412);
     tmpMeta83 = stringAppend(tmpMeta82,intString(_nnzA));
-    tmpMeta84 = stringAppend(tmpMeta83,_OMC_LIT408);
+    tmpMeta84 = stringAppend(tmpMeta83,_OMC_LIT413);
     tmpMeta85 = stringAppend(tmpMeta84,realString(_densityA));
-    tmpMeta86 = stringAppend(tmpMeta85,_OMC_LIT409);
+    tmpMeta86 = stringAppend(tmpMeta85,_OMC_LIT414);
     tmpMeta87 = stringAppend(tmpMeta86,intString(_maxRowA));
-    tmpMeta88 = stringAppend(tmpMeta87,_OMC_LIT410);
+    tmpMeta88 = stringAppend(tmpMeta87,_OMC_LIT415);
     tmpMeta89 = stringAppend(tmpMeta88,intString(_maxDepth));
-    tmpMeta90 = stringAppend(tmpMeta89,_OMC_LIT411);
+    tmpMeta90 = stringAppend(tmpMeta89,_OMC_LIT416);
     tmpMeta91 = stringAppend(tmpMeta90,realString(_digitsLost));
-    tmpMeta92 = stringAppend(tmpMeta91,_OMC_LIT412);
+    tmpMeta92 = stringAppend(tmpMeta91,_OMC_LIT417);
     tmpMeta93 = stringAppend(tmpMeta92,intString(_valued));
-    tmpMeta94 = stringAppend(tmpMeta93,_OMC_LIT413);
+    tmpMeta94 = stringAppend(tmpMeta93,_OMC_LIT418);
     tmpMeta95 = stringAppend(tmpMeta94,intString(_nnz));
-    tmpMeta96 = stringAppend(tmpMeta95,_OMC_LIT414);
+    tmpMeta96 = stringAppend(tmpMeta95,_OMC_LIT419);
     tmpMeta97 = stringAppend(tmpMeta96,realString(_costDense));
-    tmpMeta98 = stringAppend(tmpMeta97,_OMC_LIT415);
+    tmpMeta98 = stringAppend(tmpMeta97,_OMC_LIT420);
     tmpMeta99 = stringAppend(tmpMeta98,realString(_costSparse));
-    tmpMeta100 = stringAppend(tmpMeta99,_OMC_LIT416);
+    tmpMeta100 = stringAppend(tmpMeta99,_OMC_LIT421);
     tmpMeta101 = stringAppend(tmpMeta100,realString(_costTornDense));
-    tmpMeta102 = stringAppend(tmpMeta101,_OMC_LIT417);
+    tmpMeta102 = stringAppend(tmpMeta101,_OMC_LIT422);
     tmpMeta103 = stringAppend(tmpMeta102,realString(_costTornSparse));
-    tmpMeta104 = stringAppend(tmpMeta103,_OMC_LIT418);
-    tmpMeta105 = stringAppend(tmpMeta104,(omc_BackendDAEUtil_useSparseSolver(threadData, _n, _nnz, _isLinear)?_OMC_LIT419:_OMC_LIT420));
-    tmpMeta106 = stringAppend(tmpMeta105,_OMC_LIT421);
-    tmpMeta107 = stringAppend(tmpMeta106,(omc_BackendDAEUtil_useSparseSolver(threadData, _t, _nnzA, _isLinear)?_OMC_LIT419:_OMC_LIT420));
+    tmpMeta104 = stringAppend(tmpMeta103,_OMC_LIT423);
+    tmpMeta105 = stringAppend(tmpMeta104,(omc_BackendDAEUtil_useSparseSolver(threadData, _n, _nnz, _isLinear)?_OMC_LIT424:_OMC_LIT425));
+    tmpMeta106 = stringAppend(tmpMeta105,_OMC_LIT426);
+    tmpMeta107 = stringAppend(tmpMeta106,(omc_BackendDAEUtil_useSparseSolver(threadData, _t, _nnzA, _isLinear)?_OMC_LIT424:_OMC_LIT425));
     tmpMeta108 = stringAppend(tmpMeta107,_OMC_LIT10);
     fputs(MMC_STRINGDATA(tmpMeta108),stdout);
   }
@@ -14560,16 +14564,16 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_tearingPaysOff(threadData
   if(((_digitsLost >= 16.0) && (((modelica_real)_valued) >= (0.9) * (((modelica_real)_nnz)))))
   {
     tmpMeta109 = mmc_mk_cons(intString(_strongComponentIndex), mmc_mk_cons(intString(_m), mmc_mk_cons(intString(((modelica_integer)floor(_digitsLost))), MMC_REFSTRUCTLIT(mmc_nil))));
-    omc_Error_addMessage(threadData, _OMC_LIT433, tmpMeta109);
+    omc_Error_addMessage(threadData, _OMC_LIT438, tmpMeta109);
 
     _keep = 0 /* false */;
   }
   else
   {
-    if(((_costUntorn) * (omc_Flags_getConfigReal(threadData, _OMC_LIT431)) < _costTorn))
+    if(((_costUntorn) * (omc_Flags_getConfigReal(threadData, _OMC_LIT436)) < _costTorn))
     {
       tmpMeta110 = mmc_mk_cons(intString(_strongComponentIndex), mmc_mk_cons(intString(_t), mmc_mk_cons(intString(((modelica_integer)floor(_costTorn))), mmc_mk_cons(intString(((modelica_integer)floor(_costUntorn))), mmc_mk_cons(intString(_n), MMC_REFSTRUCTLIT(mmc_nil))))));
-      omc_Error_addMessage(threadData, _OMC_LIT426, tmpMeta110);
+      omc_Error_addMessage(threadData, _OMC_LIT431, tmpMeta110);
 
       _keep = 0 /* false */;
     }
@@ -14601,7 +14605,7 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_targetHasSparseSolver(thr
   #endif
   MMC_SO();
   _tailrecursive: OMC_LABEL_UNUSED
-  _hasSparseSolver = listMember(omc_Config_simCodeTarget(threadData), _OMC_LIT438);
+  _hasSparseSolver = listMember(omc_Config_simCodeTarget(threadData), _OMC_LIT279);
   _return: OMC_LABEL_UNUSED
   #if defined(OMC_MINIMAL_RUNTIME) || defined(OMC_FMI_RUNTIME)
   omc_util_restore_pool_state(omc_pool_state);
@@ -14647,7 +14651,7 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_checkTearingSettings(thre
     goto _return;
   }
 
-  _isDense = (stringEqual(omc_Flags_getConfigString(threadData, _OMC_LIT450), _OMC_LIT420));
+  _isDense = (stringEqual(omc_Flags_getConfigString(threadData, _OMC_LIT450), _OMC_LIT425));
 
   _hasSparseSolver = omc_Tearing_targetHasSparseSolver(threadData, _isLinear);
 
@@ -14655,7 +14659,7 @@ PROTECTED_FUNCTION_STATIC modelica_boolean omc_Tearing_checkTearingSettings(thre
 
   if(((_numVars > _maxSize) && (!_forcedTearing)))
   {
-    tmpMeta1 = mmc_mk_cons(intString(_strongComponentIndex), mmc_mk_cons(intString(_numVars), mmc_mk_cons((_isLinear?_OMC_LIT278:_OMC_LIT279), mmc_mk_cons(intString(_maxSize), mmc_mk_cons((_isLinear?_OMC_LIT439:_OMC_LIT443), MMC_REFSTRUCTLIT(mmc_nil))))));
+    tmpMeta1 = mmc_mk_cons(intString(_strongComponentIndex), mmc_mk_cons(intString(_numVars), mmc_mk_cons((_isLinear?_OMC_LIT283:_OMC_LIT284), mmc_mk_cons(intString(_maxSize), mmc_mk_cons((_isLinear?_OMC_LIT439:_OMC_LIT443), MMC_REFSTRUCTLIT(mmc_nil))))));
     omc_Error_addMessage(threadData, _OMC_LIT452, tmpMeta1);
 
     goto _return;
@@ -14731,7 +14735,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_traverseComponent(thread
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,1,5) == 0) goto tmp3_end;
           tmpMeta6 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 4));
           if (mmc__uniontype__metarecord__typedef__equal(tmpMeta6,0,1) == 0) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           if(_debugFlag)
           {
@@ -14750,7 +14754,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_traverseComponent(thread
           goto tmp3_done;
         }
         case 1: {
-
+          
           /* Pattern matching succeeded */
           tmp1 = _strongComponentIndexOut;
           goto tmp3_done;
@@ -14768,8 +14772,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_traverseComponent(thread
   }
   _strongComponentIndexOut = tmp1;
 
-
-
+  
+  
   { /* match expression */
     modelica_metatype tmp14_1;
     tmp14_1 = _inComp;
@@ -14953,7 +14957,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_traverseComponent(thread
           goto tmp13_done;
         }
         case 1: {
-
+          
           /* Pattern matching succeeded */
           tmpMeta[0+0] = _inComp;
           tmp11_c1 = 0 /* false */;
@@ -15003,18 +15007,18 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_traverseComponents(threa
   _outRunMatching = 0 /* false */;
   _strongComponentIndexOut = _strongComponentIndexIn;
   {
-    modelica_metatype __omcQ_24tmpVar39;
+    modelica_metatype __omcQ_24tmpVar41;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
     modelica_metatype tmpMeta4;
-    modelica_metatype __omcQ_24tmpVar38;
+    modelica_metatype __omcQ_24tmpVar40;
     modelica_integer tmp9;
     modelica_metatype _co_loopVar = 0;
     modelica_metatype _co;
     _co_loopVar = _inComps;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar39 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar39;
+    __omcQ_24tmpVar41 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar41;
     while(1) {
       tmp9 = 1;
       if (!listEmpty(_co_loopVar)) {
@@ -15037,7 +15041,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_traverseComponents(threa
             for (; tmp7 < 1; tmp7++) {
               switch (MMC_SWITCH_CAST(tmp7)) {
               case 0: {
-
+                
                 _comp = tmp7_1;
                 /* Pattern matching succeeded */
                 _comp = omc_Tearing_traverseComponent(threadData, _comp, _isyst, _ishared, _inMethod, _strongComponentIndexOut ,&_b ,&_strongComponentIndexOut);
@@ -15056,8 +15060,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_traverseComponents(threa
             goto tmp6_done;
             tmp6_done:;
           }
-        }__omcQ_24tmpVar38 = tmpMeta4;
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar38,0);
+        }__omcQ_24tmpVar40 = tmpMeta4;
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar40,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp9 == 1) {
         break;
@@ -15066,7 +15070,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_traverseComponents(threa
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar39;
+    tmpMeta1 = __omcQ_24tmpVar41;
   }
   _oComps = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -15206,8 +15210,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_callTearingMethod(thread
     }
   }
 
-
-
+  
+  
   { /* match expression */
     modelica_metatype tmp6_1;
     tmp6_1 = _tearingMethod;
@@ -15218,13 +15222,13 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_callTearingMethod(thread
         case 4: {
           modelica_metatype tmpMeta7;
           modelica_metatype tmpMeta8;
-
+          
           /* Pattern matching succeeded */
           if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
           {
             fputs(MMC_STRINGDATA(_OMC_LIT484),stdout);
 
-            tmpMeta7 = stringAppend(_OMC_LIT485,omc_Flags_getConfigString(threadData, _OMC_LIT344));
+            tmpMeta7 = stringAppend(_OMC_LIT485,omc_Flags_getConfigString(threadData, _OMC_LIT349));
             tmpMeta8 = stringAppend(tmpMeta7,_OMC_LIT10);
             fputs(MMC_STRINGDATA(tmpMeta8),stdout);
           }
@@ -15234,13 +15238,13 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_callTearingMethod(thread
         case 5: {
           modelica_metatype tmpMeta9;
           modelica_metatype tmpMeta10;
-
+          
           /* Pattern matching succeeded */
           if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
           {
             fputs(MMC_STRINGDATA(_OMC_LIT484),stdout);
 
-            tmpMeta9 = stringAppend(_OMC_LIT485,omc_Flags_getConfigString(threadData, _OMC_LIT344));
+            tmpMeta9 = stringAppend(_OMC_LIT485,omc_Flags_getConfigString(threadData, _OMC_LIT349));
             tmpMeta10 = stringAppend(tmpMeta9,_OMC_LIT10);
             fputs(MMC_STRINGDATA(tmpMeta10),stdout);
           }
@@ -15250,13 +15254,13 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_callTearingMethod(thread
         case 6: {
           modelica_metatype tmpMeta11;
           modelica_metatype tmpMeta12;
-
+          
           /* Pattern matching succeeded */
           if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
           {
             fputs(MMC_STRINGDATA(_OMC_LIT486),stdout);
 
-            tmpMeta11 = stringAppend(_OMC_LIT485,omc_Flags_getConfigString(threadData, _OMC_LIT344));
+            tmpMeta11 = stringAppend(_OMC_LIT485,omc_Flags_getConfigString(threadData, _OMC_LIT349));
             tmpMeta12 = stringAppend(tmpMeta11,_OMC_LIT10);
             fputs(MMC_STRINGDATA(tmpMeta12),stdout);
           }
@@ -15264,7 +15268,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_callTearingMethod(thread
           goto tmp5_done;
         }
         case 3: {
-
+          
           /* Pattern matching succeeded */
           if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
           {
@@ -15279,13 +15283,13 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_callTearingMethod(thread
         case 7: {
           modelica_metatype tmpMeta13;
           modelica_metatype tmpMeta14;
-
+          
           /* Pattern matching succeeded */
           if((omc_Flags_isSet(threadData, _OMC_LIT28) || omc_Flags_isSet(threadData, _OMC_LIT3)))
           {
             fputs(MMC_STRINGDATA(_OMC_LIT488),stdout);
 
-            tmpMeta13 = stringAppend(_OMC_LIT485,omc_Flags_getConfigString(threadData, _OMC_LIT344));
+            tmpMeta13 = stringAppend(_OMC_LIT485,omc_Flags_getConfigString(threadData, _OMC_LIT349));
             tmpMeta14 = stringAppend(tmpMeta13,_OMC_LIT10);
             fputs(MMC_STRINGDATA(tmpMeta14),stdout);
           }
@@ -15360,7 +15364,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Tearing_getTearingMethod(threadD
         case 3: {
           modelica_metatype tmpMeta6;
           modelica_metatype tmpMeta7;
-
+          
           /* Pattern matching succeeded */
           tmpMeta6 = stringAppend(_OMC_LIT492,_inTearingMethod);
           tmpMeta7 = stringAppend(tmpMeta6,_OMC_LIT493);
@@ -15503,3 +15507,4 @@ modelica_metatype omc_Tearing_tearingSystem(threadData_t *threadData, modelica_m
   _return: OMC_LABEL_UNUSED
   return _outDAE;
 }
+

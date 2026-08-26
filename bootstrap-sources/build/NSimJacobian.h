@@ -44,6 +44,14 @@ extern struct record_description SimCode_Sparsity_SPARSITY__desc;
 
 extern struct record_description SimCode_SparsityRow_SPARSITY__ROW__desc;
 
+extern struct record_description SourceInfo_SOURCEINFO__desc;
+
+
+#define boxptr_NSimJacobian_crefSubDimPairsLeafToRoot omc_NSimJacobian_crefSubDimPairsLeafToRoot
+
+
+#define boxptr_NSimJacobian_collectNodeSubDimPairsOuterFirst omc_NSimJacobian_collectNodeSubDimPairsOuterFirst
+
 
 DLLDirection
 modelica_metatype omc_NSimJacobian_SimJacobian_convert(threadData_t *threadData, modelica_metatype _simJac);
@@ -131,10 +139,27 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_NSimJacobian_Sparsity_convert,2,0) {(vo
 
 
 DLLDirection
-modelica_metatype omc_NSimJacobian_Sparsity_create(threadData_t *threadData, modelica_metatype _mat);
-#define boxptr_NSimJacobian_Sparsity_create omc_NSimJacobian_Sparsity_create
+modelica_metatype omc_NSimJacobian_Sparsity_create(threadData_t *threadData, modelica_metatype _mat, modelica_integer _numberOfResultVars);
+DLLDirection
+modelica_metatype boxptr_NSimJacobian_Sparsity_create(threadData_t *threadData, modelica_metatype _mat, modelica_metatype _numberOfResultVars);
 static const MMC_DEFSTRUCTLIT(boxvar_lit_NSimJacobian_Sparsity_create,2,0) {(void*) boxptr_NSimJacobian_Sparsity_create,0}};
 #define boxvar_NSimJacobian_Sparsity_create MMC_REFSTRUCTLIT(boxvar_lit_NSimJacobian_Sparsity_create)
+
+
+DLLDirection
+modelica_boolean omc_NSimJacobian_SparsityRow_dependencyCrefEqual(threadData_t *threadData, modelica_metatype _dep1, modelica_metatype _dep2);
+DLLDirection
+modelica_metatype boxptr_NSimJacobian_SparsityRow_dependencyCrefEqual(threadData_t *threadData, modelica_metatype _dep1, modelica_metatype _dep2);
+static const MMC_DEFSTRUCTLIT(boxvar_lit_NSimJacobian_SparsityRow_dependencyCrefEqual,2,0) {(void*) boxptr_NSimJacobian_SparsityRow_dependencyCrefEqual,0}};
+#define boxvar_NSimJacobian_SparsityRow_dependencyCrefEqual MMC_REFSTRUCTLIT(boxvar_lit_NSimJacobian_SparsityRow_dependencyCrefEqual)
+
+
+DLLDirection
+modelica_metatype omc_NSimJacobian_SparsityRow_mergeDuplicateRows(threadData_t *threadData, modelica_metatype _rows_in, modelica_integer _numberOfResultVars);
+DLLDirection
+modelica_metatype boxptr_NSimJacobian_SparsityRow_mergeDuplicateRows(threadData_t *threadData, modelica_metatype _rows_in, modelica_metatype _numberOfResultVars);
+static const MMC_DEFSTRUCTLIT(boxvar_lit_NSimJacobian_SparsityRow_mergeDuplicateRows,2,0) {(void*) boxptr_NSimJacobian_SparsityRow_mergeDuplicateRows,0}};
+#define boxvar_NSimJacobian_SparsityRow_mergeDuplicateRows MMC_REFSTRUCTLIT(boxvar_lit_NSimJacobian_SparsityRow_mergeDuplicateRows)
 
 
 DLLDirection

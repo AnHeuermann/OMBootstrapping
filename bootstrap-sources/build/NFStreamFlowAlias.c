@@ -43,10 +43,10 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT15,29,_OMC_LIT15_data);
 #define _OMC_LIT16_data " has no associated variable"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT16,27,_OMC_LIT16_data);
 #define _OMC_LIT16 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT16)
-#define _OMC_LIT17_data "/home/andreas/workdir/OM/OpenModelica/OMCompiler/Compiler/NFFrontEnd/NFStreamFlowAlias.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT17,89,_OMC_LIT17_data);
+#define _OMC_LIT17_data "NFStreamFlowAlias.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT17,20,_OMC_LIT17_data);
 #define _OMC_LIT17 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT17)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT18_6,1.784885415e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT18_6,0.0);
 #define _OMC_LIT18_6 MMC_REFREALLIT(_OMC_LIT_STRUCT18_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT18,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT17,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(156)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(157)),MMC_IMMEDIATE(MMC_TAGFIXNUM(55)),_OMC_LIT18_6}};
 #define _OMC_LIT18 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT18)
@@ -2395,17 +2395,17 @@ modelica_metatype omc_NFStreamFlowAlias_setRepresentativeAttributes(threadData_t
   _var = tmpMeta3;
 
   {
-    modelica_metatype __omcQ_24tmpVar1;
+    modelica_metatype __omcQ_24tmpVar3;
     modelica_metatype* tmp5;
     modelica_metatype tmpMeta6;
-    modelica_metatype __omcQ_24tmpVar0;
+    modelica_metatype __omcQ_24tmpVar2;
     modelica_integer tmp7;
     modelica_metatype _attr_loopVar = 0;
     modelica_metatype _attr;
     _attr_loopVar = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_var), 7)));
     tmpMeta6 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar1 = tmpMeta6; /* defaultValue */
-    tmp5 = &__omcQ_24tmpVar1;
+    __omcQ_24tmpVar3 = tmpMeta6; /* defaultValue */
+    tmp5 = &__omcQ_24tmpVar3;
     while(1) {
       tmp7 = 1;
       while (!listEmpty(_attr_loopVar)) {
@@ -2417,8 +2417,8 @@ modelica_metatype omc_NFStreamFlowAlias_setRepresentativeAttributes(threadData_t
         }
       }
       if (tmp7 == 0) {
-        __omcQ_24tmpVar0 = _attr;
-        *tmp5 = mmc_mk_cons(__omcQ_24tmpVar0,0);
+        __omcQ_24tmpVar2 = _attr;
+        *tmp5 = mmc_mk_cons(__omcQ_24tmpVar2,0);
         tmp5 = &MMC_CDR(*tmp5);
       } else if (tmp7 == 1) {
         break;
@@ -2427,7 +2427,7 @@ modelica_metatype omc_NFStreamFlowAlias_setRepresentativeAttributes(threadData_t
       }
     }
     *tmp5 = mmc_mk_nil();
-    tmpMeta4 = __omcQ_24tmpVar1;
+    tmpMeta4 = __omcQ_24tmpVar3;
   }
   _attrs = tmpMeta4;
 
@@ -2547,7 +2547,7 @@ modelica_metatype omc_NFStreamFlowAlias_union(threadData_t *threadData, modelica
       }
       else
       {
-        arrayUpdate((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_sets), 2))), _set1, mmc_mk_integer(((modelica_integer) -1) + mmc_unbox_integer(arrayGet((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_sets), 2))),_set1) /* DAE.ASUB */)));
+        arrayUpdate((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_sets), 2))), _set1, mmc_mk_integer(((modelica_integer) -1) + (mmc_unbox_integer(arrayGet((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_sets), 2))),_set1) /* DAE.ASUB */))));
 
         arrayUpdate((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_sets), 2))), _set2, mmc_mk_integer(_set1));
       }

@@ -1858,8 +1858,8 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT726,1,1) {_OMC_LIT725}};
 #define _OMC_LIT726 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT726)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT727,2,5) {&Flags_FlagData_INT__FLAG__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(0))}};
 #define _OMC_LIT727 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT727)
-#define _OMC_LIT728_data "Sets the default OpenCL device to be used for parallel execution."
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT728,65,_OMC_LIT728_data);
+#define _OMC_LIT728_data "Sets the default OpenCL device to be used for parallel execution. 0 (the\n   default) picks a suitable device automatically."
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT728,123,_OMC_LIT728_data);
 #define _OMC_LIT728 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT728)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT729,8,3) {&Flags_ConfigFlag_CONFIG__FLAG__desc,MMC_IMMEDIATE(MMC_TAGFIXNUM(37)),_OMC_LIT724,_OMC_LIT726,_OMC_LIT3,_OMC_LIT727,MMC_REFSTRUCTLIT(mmc_none),_OMC_LIT728}};
 #define _OMC_LIT729 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT729)

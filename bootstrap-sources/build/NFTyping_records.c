@@ -30,6 +30,32 @@ ADD_METARECORD_DEFINITIONS struct record_description NFTyping_TypingError_OUT__O
 extern struct record_description NFTyping_TypingError_OUT__OF__BOUNDS__desc;
 #endif
 #ifdef ADD_METARECORD_DEFINITIONS
+#ifndef NFTyping_TypingError_UNKNOWN__TYPE__desc_added
+#define NFTyping_TypingError_UNKNOWN__TYPE__desc_added
+ADD_METARECORD_DEFINITIONS const char* NFTyping_TypingError_UNKNOWN__TYPE__desc__fields[1] = {"no fields"};
+ADD_METARECORD_DEFINITIONS struct record_description NFTyping_TypingError_UNKNOWN__TYPE__desc = {
+  "NFTyping_TypingError_UNKNOWN__TYPE",
+  "NFTyping.TypingError.UNKNOWN_TYPE",
+  NFTyping_TypingError_UNKNOWN__TYPE__desc__fields
+};
+#endif
+#else /* Only use the file as a header */
+extern struct record_description NFTyping_TypingError_UNKNOWN__TYPE__desc;
+#endif
+#ifdef ADD_METARECORD_DEFINITIONS
+#ifndef NFTyping_TypingError_UNKNOWN__TYPE__desc_added
+#define NFTyping_TypingError_UNKNOWN__TYPE__desc_added
+ADD_METARECORD_DEFINITIONS const char* NFTyping_TypingError_UNKNOWN__TYPE__desc__fields[1] = {"no fields"};
+ADD_METARECORD_DEFINITIONS struct record_description NFTyping_TypingError_UNKNOWN__TYPE__desc = {
+  "NFTyping_TypingError_UNKNOWN__TYPE",
+  "NFTyping.TypingError.UNKNOWN_TYPE",
+  NFTyping_TypingError_UNKNOWN__TYPE__desc__fields
+};
+#endif
+#else /* Only use the file as a header */
+extern struct record_description NFTyping_TypingError_UNKNOWN__TYPE__desc;
+#endif
+#ifdef ADD_METARECORD_DEFINITIONS
 #ifndef NFTyping_TypingError_OUT__OF__BOUNDS__desc_added
 #define NFTyping_TypingError_OUT__OF__BOUNDS__desc_added
 ADD_METARECORD_DEFINITIONS const char* NFTyping_TypingError_OUT__OF__BOUNDS__desc__fields[1] = {"upperBound"};

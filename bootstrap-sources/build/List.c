@@ -1387,13 +1387,13 @@ modelica_integer omc_List_lengthListElements(threadData_t *threadData, modelica_
   _tailrecursive: OMC_LABEL_UNUSED
   // _outLength has no default value.
   {
-    modelica_integer __omcQ_24tmpVar1;
-    modelica_integer __omcQ_24tmpVar0;
+    modelica_integer __omcQ_24tmpVar3;
+    modelica_integer __omcQ_24tmpVar2;
     modelica_integer tmp2;
     modelica_metatype _lst_loopVar = 0;
     modelica_metatype _lst;
     _lst_loopVar = _inListList;
-    __omcQ_24tmpVar1 = ((modelica_integer) 0); /* defaultValue */
+    __omcQ_24tmpVar3 = ((modelica_integer) 0); /* defaultValue */
     while(1) {
       tmp2 = 1;
       if (!listEmpty(_lst_loopVar)) {
@@ -1402,15 +1402,15 @@ modelica_integer omc_List_lengthListElements(threadData_t *threadData, modelica_
         tmp2--;
       }
       if (tmp2 == 0) {
-        __omcQ_24tmpVar0 = listLength(_lst);
-        __omcQ_24tmpVar1 = __omcQ_24tmpVar1 + __omcQ_24tmpVar0;
+        __omcQ_24tmpVar2 = listLength(_lst);
+        __omcQ_24tmpVar3 = __omcQ_24tmpVar3 + __omcQ_24tmpVar2;
       } else if (tmp2 == 1) {
         break;
       } else {
         MMC_THROW_INTERNAL();
       }
     }
-    tmp1 = __omcQ_24tmpVar1;
+    tmp1 = __omcQ_24tmpVar3;
   }
   _outLength = tmp1;
   _return: OMC_LABEL_UNUSED
@@ -2516,54 +2516,6 @@ modelica_metatype omc_List_select2(threadData_t *threadData, modelica_metatype _
   _tailrecursive: OMC_LABEL_UNUSED
   // _outList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar3;
-    modelica_metatype* tmp2;
-    modelica_metatype tmpMeta3;
-    modelica_metatype __omcQ_24tmpVar2;
-    modelica_integer tmp4;
-    modelica_metatype _e_loopVar = 0;
-    modelica_metatype _e;
-    _e_loopVar = _inList;
-    tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar3 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar3;
-    while(1) {
-      tmp4 = 1;
-      while (!listEmpty(_e_loopVar)) {
-        _e = MMC_CAR(_e_loopVar);
-        _e_loopVar = MMC_CDR(_e_loopVar);
-        if (mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))), _e, _inArg1, _inArg2) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, _e, _inArg1, _inArg2))) {
-          tmp4--;
-          break;
-        }
-      }
-      if (tmp4 == 0) {
-        __omcQ_24tmpVar2 = _e;
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar2,0);
-        tmp2 = &MMC_CDR(*tmp2);
-      } else if (tmp4 == 1) {
-        break;
-      } else {
-        MMC_THROW_INTERNAL();
-      }
-    }
-    *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar3;
-  }
-  _outList = tmpMeta1;
-  _return: OMC_LABEL_UNUSED
-  return _outList;
-}
-
-DLLDirection
-modelica_metatype omc_List_select1r(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFilterFunc, modelica_metatype _inArg1)
-{
-  modelica_metatype _outList = NULL;
-  modelica_metatype tmpMeta1;
-  MMC_SO();
-  _tailrecursive: OMC_LABEL_UNUSED
-  // _outList has no default value.
-  {
     modelica_metatype __omcQ_24tmpVar5;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
@@ -2580,7 +2532,7 @@ modelica_metatype omc_List_select1r(threadData_t *threadData, modelica_metatype 
       while (!listEmpty(_e_loopVar)) {
         _e = MMC_CAR(_e_loopVar);
         _e_loopVar = MMC_CDR(_e_loopVar);
-        if (mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))), _inArg1, _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, _inArg1, _e))) {
+        if (mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))), _e, _inArg1, _inArg2) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, _e, _inArg1, _inArg2))) {
           tmp4--;
           break;
         }
@@ -2604,7 +2556,7 @@ modelica_metatype omc_List_select1r(threadData_t *threadData, modelica_metatype 
 }
 
 DLLDirection
-modelica_metatype omc_List_select1(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFilterFunc, modelica_metatype _inArg1)
+modelica_metatype omc_List_select1r(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFilterFunc, modelica_metatype _inArg1)
 {
   modelica_metatype _outList = NULL;
   modelica_metatype tmpMeta1;
@@ -2628,7 +2580,7 @@ modelica_metatype omc_List_select1(threadData_t *threadData, modelica_metatype _
       while (!listEmpty(_e_loopVar)) {
         _e = MMC_CAR(_e_loopVar);
         _e_loopVar = MMC_CDR(_e_loopVar);
-        if (mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))), _e, _inArg1) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, _e, _inArg1))) {
+        if (mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))), _inArg1, _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, _inArg1, _e))) {
           tmp4--;
           break;
         }
@@ -2652,7 +2604,7 @@ modelica_metatype omc_List_select1(threadData_t *threadData, modelica_metatype _
 }
 
 DLLDirection
-modelica_metatype omc_List_select(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFilterFunc)
+modelica_metatype omc_List_select1(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFilterFunc, modelica_metatype _inArg1)
 {
   modelica_metatype _outList = NULL;
   modelica_metatype tmpMeta1;
@@ -2676,7 +2628,7 @@ modelica_metatype omc_List_select(threadData_t *threadData, modelica_metatype _i
       while (!listEmpty(_e_loopVar)) {
         _e = MMC_CAR(_e_loopVar);
         _e_loopVar = MMC_CDR(_e_loopVar);
-        if (mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))), _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, _e))) {
+        if (mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))), _e, _inArg1) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, _e, _inArg1))) {
           tmp4--;
           break;
         }
@@ -2693,6 +2645,54 @@ modelica_metatype omc_List_select(threadData_t *threadData, modelica_metatype _i
     }
     *tmp2 = mmc_mk_nil();
     tmpMeta1 = __omcQ_24tmpVar9;
+  }
+  _outList = tmpMeta1;
+  _return: OMC_LABEL_UNUSED
+  return _outList;
+}
+
+DLLDirection
+modelica_metatype omc_List_select(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFilterFunc)
+{
+  modelica_metatype _outList = NULL;
+  modelica_metatype tmpMeta1;
+  MMC_SO();
+  _tailrecursive: OMC_LABEL_UNUSED
+  // _outList has no default value.
+  {
+    modelica_metatype __omcQ_24tmpVar11;
+    modelica_metatype* tmp2;
+    modelica_metatype tmpMeta3;
+    modelica_metatype __omcQ_24tmpVar10;
+    modelica_integer tmp4;
+    modelica_metatype _e_loopVar = 0;
+    modelica_metatype _e;
+    _e_loopVar = _inList;
+    tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
+    __omcQ_24tmpVar11 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar11;
+    while(1) {
+      tmp4 = 1;
+      while (!listEmpty(_e_loopVar)) {
+        _e = MMC_CAR(_e_loopVar);
+        _e_loopVar = MMC_CDR(_e_loopVar);
+        if (mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))), _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, _e))) {
+          tmp4--;
+          break;
+        }
+      }
+      if (tmp4 == 0) {
+        __omcQ_24tmpVar10 = _e;
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar10,0);
+        tmp2 = &MMC_CDR(*tmp2);
+      } else if (tmp4 == 1) {
+        break;
+      } else {
+        MMC_THROW_INTERNAL();
+      }
+    }
+    *tmp2 = mmc_mk_nil();
+    tmpMeta1 = __omcQ_24tmpVar11;
   }
   _outList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -2734,54 +2734,6 @@ modelica_metatype omc_List_removeOnTrue(threadData_t *threadData, modelica_metat
   _tailrecursive: OMC_LABEL_UNUSED
   // _outList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar11;
-    modelica_metatype* tmp2;
-    modelica_metatype tmpMeta3;
-    modelica_metatype __omcQ_24tmpVar10;
-    modelica_integer tmp4;
-    modelica_metatype _e_loopVar = 0;
-    modelica_metatype _e;
-    _e_loopVar = _inList;
-    tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar11 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar11;
-    while(1) {
-      tmp4 = 1;
-      while (!listEmpty(_e_loopVar)) {
-        _e = MMC_CAR(_e_loopVar);
-        _e_loopVar = MMC_CDR(_e_loopVar);
-        if ((!mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inCompFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inCompFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inCompFunc), 2))), _inValue, _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inCompFunc), 1)))) (threadData, _inValue, _e)))) {
-          tmp4--;
-          break;
-        }
-      }
-      if (tmp4 == 0) {
-        __omcQ_24tmpVar10 = _e;
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar10,0);
-        tmp2 = &MMC_CDR(*tmp2);
-      } else if (tmp4 == 1) {
-        break;
-      } else {
-        MMC_THROW_INTERNAL();
-      }
-    }
-    *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar11;
-  }
-  _outList = tmpMeta1;
-  _return: OMC_LABEL_UNUSED
-  return _outList;
-}
-
-DLLDirection
-modelica_metatype omc_List_filter2OnTrue(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFilterFunc, modelica_metatype _inArg1, modelica_metatype _inArg2)
-{
-  modelica_metatype _outList = NULL;
-  modelica_metatype tmpMeta1;
-  MMC_SO();
-  _tailrecursive: OMC_LABEL_UNUSED
-  // _outList has no default value.
-  {
     modelica_metatype __omcQ_24tmpVar13;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
@@ -2798,7 +2750,7 @@ modelica_metatype omc_List_filter2OnTrue(threadData_t *threadData, modelica_meta
       while (!listEmpty(_e_loopVar)) {
         _e = MMC_CAR(_e_loopVar);
         _e_loopVar = MMC_CDR(_e_loopVar);
-        if (mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))), _e, _inArg1, _inArg2) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, _e, _inArg1, _inArg2))) {
+        if ((!mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inCompFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inCompFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inCompFunc), 2))), _inValue, _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inCompFunc), 1)))) (threadData, _inValue, _e)))) {
           tmp4--;
           break;
         }
@@ -2822,7 +2774,7 @@ modelica_metatype omc_List_filter2OnTrue(threadData_t *threadData, modelica_meta
 }
 
 DLLDirection
-modelica_metatype omc_List_filter1rOnTrue(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFilterFunc, modelica_metatype _inArg1)
+modelica_metatype omc_List_filter2OnTrue(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFilterFunc, modelica_metatype _inArg1, modelica_metatype _inArg2)
 {
   modelica_metatype _outList = NULL;
   modelica_metatype tmpMeta1;
@@ -2846,7 +2798,7 @@ modelica_metatype omc_List_filter1rOnTrue(threadData_t *threadData, modelica_met
       while (!listEmpty(_e_loopVar)) {
         _e = MMC_CAR(_e_loopVar);
         _e_loopVar = MMC_CDR(_e_loopVar);
-        if (mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))), _inArg1, _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, _inArg1, _e))) {
+        if (mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))), _e, _inArg1, _inArg2) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, _e, _inArg1, _inArg2))) {
           tmp4--;
           break;
         }
@@ -2870,7 +2822,7 @@ modelica_metatype omc_List_filter1rOnTrue(threadData_t *threadData, modelica_met
 }
 
 DLLDirection
-modelica_metatype omc_List_filter1OnTrueAndUpdate(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFilterFunc, modelica_fnptr _inUpdateFunc, modelica_metatype _inArg1)
+modelica_metatype omc_List_filter1rOnTrue(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFilterFunc, modelica_metatype _inArg1)
 {
   modelica_metatype _outList = NULL;
   modelica_metatype tmpMeta1;
@@ -2894,13 +2846,13 @@ modelica_metatype omc_List_filter1OnTrueAndUpdate(threadData_t *threadData, mode
       while (!listEmpty(_e_loopVar)) {
         _e = MMC_CAR(_e_loopVar);
         _e_loopVar = MMC_CDR(_e_loopVar);
-        if (mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))), _e, _inArg1) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, _e, _inArg1))) {
+        if (mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))), _inArg1, _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, _inArg1, _e))) {
           tmp4--;
           break;
         }
       }
       if (tmp4 == 0) {
-        __omcQ_24tmpVar16 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inUpdateFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inUpdateFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inUpdateFunc), 2))), _e, _inArg1) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inUpdateFunc), 1)))) (threadData, _e, _inArg1);
+        __omcQ_24tmpVar16 = _e;
         *tmp2 = mmc_mk_cons(__omcQ_24tmpVar16,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp4 == 1) {
@@ -2918,7 +2870,7 @@ modelica_metatype omc_List_filter1OnTrueAndUpdate(threadData_t *threadData, mode
 }
 
 DLLDirection
-modelica_metatype omc_List_filter1OnTrue(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFilterFunc, modelica_metatype _inArg1)
+modelica_metatype omc_List_filter1OnTrueAndUpdate(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFilterFunc, modelica_fnptr _inUpdateFunc, modelica_metatype _inArg1)
 {
   modelica_metatype _outList = NULL;
   modelica_metatype tmpMeta1;
@@ -2948,7 +2900,7 @@ modelica_metatype omc_List_filter1OnTrue(threadData_t *threadData, modelica_meta
         }
       }
       if (tmp4 == 0) {
-        __omcQ_24tmpVar18 = _e;
+        __omcQ_24tmpVar18 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inUpdateFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inUpdateFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inUpdateFunc), 2))), _e, _inArg1) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inUpdateFunc), 1)))) (threadData, _e, _inArg1);
         *tmp2 = mmc_mk_cons(__omcQ_24tmpVar18,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp4 == 1) {
@@ -2959,6 +2911,54 @@ modelica_metatype omc_List_filter1OnTrue(threadData_t *threadData, modelica_meta
     }
     *tmp2 = mmc_mk_nil();
     tmpMeta1 = __omcQ_24tmpVar19;
+  }
+  _outList = tmpMeta1;
+  _return: OMC_LABEL_UNUSED
+  return _outList;
+}
+
+DLLDirection
+modelica_metatype omc_List_filter1OnTrue(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFilterFunc, modelica_metatype _inArg1)
+{
+  modelica_metatype _outList = NULL;
+  modelica_metatype tmpMeta1;
+  MMC_SO();
+  _tailrecursive: OMC_LABEL_UNUSED
+  // _outList has no default value.
+  {
+    modelica_metatype __omcQ_24tmpVar21;
+    modelica_metatype* tmp2;
+    modelica_metatype tmpMeta3;
+    modelica_metatype __omcQ_24tmpVar20;
+    modelica_integer tmp4;
+    modelica_metatype _e_loopVar = 0;
+    modelica_metatype _e;
+    _e_loopVar = _inList;
+    tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
+    __omcQ_24tmpVar21 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar21;
+    while(1) {
+      tmp4 = 1;
+      while (!listEmpty(_e_loopVar)) {
+        _e = MMC_CAR(_e_loopVar);
+        _e_loopVar = MMC_CDR(_e_loopVar);
+        if (mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))), _e, _inArg1) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, _e, _inArg1))) {
+          tmp4--;
+          break;
+        }
+      }
+      if (tmp4 == 0) {
+        __omcQ_24tmpVar20 = _e;
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar20,0);
+        tmp2 = &MMC_CDR(*tmp2);
+      } else if (tmp4 == 1) {
+        break;
+      } else {
+        MMC_THROW_INTERNAL();
+      }
+    }
+    *tmp2 = mmc_mk_nil();
+    tmpMeta1 = __omcQ_24tmpVar21;
   }
   _outList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -3157,54 +3157,6 @@ modelica_metatype omc_List_filterOnFalse(threadData_t *threadData, modelica_meta
   _tailrecursive: OMC_LABEL_UNUSED
   // _outList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar21;
-    modelica_metatype* tmp2;
-    modelica_metatype tmpMeta3;
-    modelica_metatype __omcQ_24tmpVar20;
-    modelica_integer tmp4;
-    modelica_metatype _e_loopVar = 0;
-    modelica_metatype _e;
-    _e_loopVar = _inList;
-    tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar21 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar21;
-    while(1) {
-      tmp4 = 1;
-      while (!listEmpty(_e_loopVar)) {
-        _e = MMC_CAR(_e_loopVar);
-        _e_loopVar = MMC_CDR(_e_loopVar);
-        if ((!mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))), _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, _e)))) {
-          tmp4--;
-          break;
-        }
-      }
-      if (tmp4 == 0) {
-        __omcQ_24tmpVar20 = _e;
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar20,0);
-        tmp2 = &MMC_CDR(*tmp2);
-      } else if (tmp4 == 1) {
-        break;
-      } else {
-        MMC_THROW_INTERNAL();
-      }
-    }
-    *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar21;
-  }
-  _outList = tmpMeta1;
-  _return: OMC_LABEL_UNUSED
-  return _outList;
-}
-
-DLLDirection
-modelica_metatype omc_List_filterOnTrue(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFilterFunc)
-{
-  modelica_metatype _outList = NULL;
-  modelica_metatype tmpMeta1;
-  MMC_SO();
-  _tailrecursive: OMC_LABEL_UNUSED
-  // _outList has no default value.
-  {
     modelica_metatype __omcQ_24tmpVar23;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
@@ -3221,7 +3173,7 @@ modelica_metatype omc_List_filterOnTrue(threadData_t *threadData, modelica_metat
       while (!listEmpty(_e_loopVar)) {
         _e = MMC_CAR(_e_loopVar);
         _e_loopVar = MMC_CDR(_e_loopVar);
-        if (mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))), _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, _e))) {
+        if ((!mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))), _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, _e)))) {
           tmp4--;
           break;
         }
@@ -3238,6 +3190,54 @@ modelica_metatype omc_List_filterOnTrue(threadData_t *threadData, modelica_metat
     }
     *tmp2 = mmc_mk_nil();
     tmpMeta1 = __omcQ_24tmpVar23;
+  }
+  _outList = tmpMeta1;
+  _return: OMC_LABEL_UNUSED
+  return _outList;
+}
+
+DLLDirection
+modelica_metatype omc_List_filterOnTrue(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFilterFunc)
+{
+  modelica_metatype _outList = NULL;
+  modelica_metatype tmpMeta1;
+  MMC_SO();
+  _tailrecursive: OMC_LABEL_UNUSED
+  // _outList has no default value.
+  {
+    modelica_metatype __omcQ_24tmpVar25;
+    modelica_metatype* tmp2;
+    modelica_metatype tmpMeta3;
+    modelica_metatype __omcQ_24tmpVar24;
+    modelica_integer tmp4;
+    modelica_metatype _e_loopVar = 0;
+    modelica_metatype _e;
+    _e_loopVar = _inList;
+    tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
+    __omcQ_24tmpVar25 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar25;
+    while(1) {
+      tmp4 = 1;
+      while (!listEmpty(_e_loopVar)) {
+        _e = MMC_CAR(_e_loopVar);
+        _e_loopVar = MMC_CDR(_e_loopVar);
+        if (mmc_unbox_boolean((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 2))), _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFilterFunc), 1)))) (threadData, _e))) {
+          tmp4--;
+          break;
+        }
+      }
+      if (tmp4 == 0) {
+        __omcQ_24tmpVar24 = _e;
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar24,0);
+        tmp2 = &MMC_CDR(*tmp2);
+      } else if (tmp4 == 1) {
+        break;
+      } else {
+        MMC_THROW_INTERNAL();
+      }
+    }
+    *tmp2 = mmc_mk_nil();
+    tmpMeta1 = __omcQ_24tmpVar25;
   }
   _outList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -4267,10 +4267,10 @@ modelica_metatype omc_List_thread3Map(threadData_t *threadData, modelica_metatyp
   _tailrecursive: OMC_LABEL_UNUSED
   // _outList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar25;
+    modelica_metatype __omcQ_24tmpVar27;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
-    modelica_metatype __omcQ_24tmpVar24;
+    modelica_metatype __omcQ_24tmpVar26;
     modelica_integer tmp4;
     modelica_metatype _e1_loopVar = 0;
     modelica_metatype _e1;
@@ -4282,8 +4282,8 @@ modelica_metatype omc_List_thread3Map(threadData_t *threadData, modelica_metatyp
     _e2_loopVar = _inList2;
     _e3_loopVar = _inList3;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar25 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar25;
+    __omcQ_24tmpVar27 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar27;
     while(1) {
       tmp4 = 3;
       if (!listEmpty(_e1_loopVar)) {
@@ -4300,8 +4300,8 @@ modelica_metatype omc_List_thread3Map(threadData_t *threadData, modelica_metatyp
         tmp4--;
       }
       if (tmp4 == 0) {
-        __omcQ_24tmpVar24 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e1, _e2, _e3) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e1, _e2, _e3);
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar24,0);
+        __omcQ_24tmpVar26 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e1, _e2, _e3) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e1, _e2, _e3);
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar26,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp4 == 3) {
         break;
@@ -4310,7 +4310,7 @@ modelica_metatype omc_List_thread3Map(threadData_t *threadData, modelica_metatyp
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar25;
+    tmpMeta1 = __omcQ_24tmpVar27;
   }
   _outList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -4326,10 +4326,10 @@ modelica_metatype omc_List_threadMap2(threadData_t *threadData, modelica_metatyp
   _tailrecursive: OMC_LABEL_UNUSED
   // _outList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar27;
+    modelica_metatype __omcQ_24tmpVar29;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
-    modelica_metatype __omcQ_24tmpVar26;
+    modelica_metatype __omcQ_24tmpVar28;
     modelica_integer tmp4;
     modelica_metatype _e1_loopVar = 0;
     modelica_metatype _e1;
@@ -4338,8 +4338,8 @@ modelica_metatype omc_List_threadMap2(threadData_t *threadData, modelica_metatyp
     _e1_loopVar = _inList1;
     _e2_loopVar = _inList2;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar27 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar27;
+    __omcQ_24tmpVar29 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar29;
     while(1) {
       tmp4 = 2;
       if (!listEmpty(_e1_loopVar)) {
@@ -4352,8 +4352,8 @@ modelica_metatype omc_List_threadMap2(threadData_t *threadData, modelica_metatyp
         tmp4--;
       }
       if (tmp4 == 0) {
-        __omcQ_24tmpVar26 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 2))), _e1, _e2, _inArg1, _inArg2) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 1)))) (threadData, _e1, _e2, _inArg1, _inArg2);
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar26,0);
+        __omcQ_24tmpVar28 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 2))), _e1, _e2, _inArg1, _inArg2) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 1)))) (threadData, _e1, _e2, _inArg1, _inArg2);
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar28,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp4 == 2) {
         break;
@@ -4362,7 +4362,7 @@ modelica_metatype omc_List_threadMap2(threadData_t *threadData, modelica_metatyp
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar27;
+    tmpMeta1 = __omcQ_24tmpVar29;
   }
   _outList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -4455,10 +4455,10 @@ modelica_metatype omc_List_threadMap1(threadData_t *threadData, modelica_metatyp
   _tailrecursive: OMC_LABEL_UNUSED
   // _outList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar29;
+    modelica_metatype __omcQ_24tmpVar31;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
-    modelica_metatype __omcQ_24tmpVar28;
+    modelica_metatype __omcQ_24tmpVar30;
     modelica_integer tmp4;
     modelica_metatype _e1_loopVar = 0;
     modelica_metatype _e1;
@@ -4467,8 +4467,8 @@ modelica_metatype omc_List_threadMap1(threadData_t *threadData, modelica_metatyp
     _e1_loopVar = _inList1;
     _e2_loopVar = _inList2;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar29 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar29;
+    __omcQ_24tmpVar31 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar31;
     while(1) {
       tmp4 = 2;
       if (!listEmpty(_e1_loopVar)) {
@@ -4481,8 +4481,8 @@ modelica_metatype omc_List_threadMap1(threadData_t *threadData, modelica_metatyp
         tmp4--;
       }
       if (tmp4 == 0) {
-        __omcQ_24tmpVar28 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 2))), _e1, _e2, _inArg1) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 1)))) (threadData, _e1, _e2, _inArg1);
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar28,0);
+        __omcQ_24tmpVar30 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 2))), _e1, _e2, _inArg1) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 1)))) (threadData, _e1, _e2, _inArg1);
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar30,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp4 == 2) {
         break;
@@ -4491,7 +4491,7 @@ modelica_metatype omc_List_threadMap1(threadData_t *threadData, modelica_metatyp
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar29;
+    tmpMeta1 = __omcQ_24tmpVar31;
   }
   _outList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -4566,10 +4566,10 @@ modelica_metatype omc_List_threadMapList(threadData_t *threadData, modelica_meta
   _tailrecursive: OMC_LABEL_UNUSED
   // _outList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar31;
+    modelica_metatype __omcQ_24tmpVar33;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
-    modelica_metatype __omcQ_24tmpVar30;
+    modelica_metatype __omcQ_24tmpVar32;
     modelica_integer tmp4;
     modelica_metatype _lst1_loopVar = 0;
     modelica_metatype _lst1;
@@ -4578,8 +4578,8 @@ modelica_metatype omc_List_threadMapList(threadData_t *threadData, modelica_meta
     _lst1_loopVar = _inList1;
     _lst2_loopVar = _inList2;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar31 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar31;
+    __omcQ_24tmpVar33 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar33;
     while(1) {
       tmp4 = 2;
       if (!listEmpty(_lst1_loopVar)) {
@@ -4592,8 +4592,8 @@ modelica_metatype omc_List_threadMapList(threadData_t *threadData, modelica_meta
         tmp4--;
       }
       if (tmp4 == 0) {
-        __omcQ_24tmpVar30 = omc_List_threadMap(threadData, _lst1, _lst2, ((modelica_fnptr) _inMapFunc));
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar30,0);
+        __omcQ_24tmpVar32 = omc_List_threadMap(threadData, _lst1, _lst2, ((modelica_fnptr) _inMapFunc));
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar32,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp4 == 2) {
         break;
@@ -4602,7 +4602,7 @@ modelica_metatype omc_List_threadMapList(threadData_t *threadData, modelica_meta
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar31;
+    tmpMeta1 = __omcQ_24tmpVar33;
   }
   _outList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -4677,10 +4677,10 @@ modelica_metatype omc_List_threadMap(threadData_t *threadData, modelica_metatype
   _tailrecursive: OMC_LABEL_UNUSED
   // _outList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar33;
+    modelica_metatype __omcQ_24tmpVar35;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
-    modelica_metatype __omcQ_24tmpVar32;
+    modelica_metatype __omcQ_24tmpVar34;
     modelica_integer tmp4;
     modelica_metatype _e1_loopVar = 0;
     modelica_metatype _e1;
@@ -4689,8 +4689,8 @@ modelica_metatype omc_List_threadMap(threadData_t *threadData, modelica_metatype
     _e1_loopVar = _inList1;
     _e2_loopVar = _inList2;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar33 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar33;
+    __omcQ_24tmpVar35 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar35;
     while(1) {
       tmp4 = 2;
       if (!listEmpty(_e1_loopVar)) {
@@ -4703,8 +4703,8 @@ modelica_metatype omc_List_threadMap(threadData_t *threadData, modelica_metatype
         tmp4--;
       }
       if (tmp4 == 0) {
-        __omcQ_24tmpVar32 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 2))), _e1, _e2) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 1)))) (threadData, _e1, _e2);
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar32,0);
+        __omcQ_24tmpVar34 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 2))), _e1, _e2) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 1)))) (threadData, _e1, _e2);
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar34,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp4 == 2) {
         break;
@@ -4713,7 +4713,7 @@ modelica_metatype omc_List_threadMap(threadData_t *threadData, modelica_metatype
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar33;
+    tmpMeta1 = __omcQ_24tmpVar35;
   }
   _outList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -4882,11 +4882,11 @@ modelica_metatype omc_List_zip3(threadData_t *threadData, modelica_metatype _l1,
   _tailrecursive: OMC_LABEL_UNUSED
   // _res has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar35;
+    modelica_metatype __omcQ_24tmpVar37;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
     modelica_metatype tmpMeta4;
-    modelica_metatype __omcQ_24tmpVar34;
+    modelica_metatype __omcQ_24tmpVar36;
     modelica_integer tmp5;
     modelica_metatype _e1_loopVar = 0;
     modelica_metatype _e1;
@@ -4898,8 +4898,8 @@ modelica_metatype omc_List_zip3(threadData_t *threadData, modelica_metatype _l1,
     _e2_loopVar = _l2;
     _e3_loopVar = _l3;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar35 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar35;
+    __omcQ_24tmpVar37 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar37;
     while(1) {
       tmp5 = 3;
       if (!listEmpty(_e1_loopVar)) {
@@ -4917,8 +4917,8 @@ modelica_metatype omc_List_zip3(threadData_t *threadData, modelica_metatype _l1,
       }
       if (tmp5 == 0) {
         tmpMeta4 = mmc_mk_box3(0, _e1, _e2, _e3);
-        __omcQ_24tmpVar34 = tmpMeta4;
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar34,0);
+        __omcQ_24tmpVar36 = tmpMeta4;
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar36,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp5 == 3) {
         break;
@@ -4927,7 +4927,7 @@ modelica_metatype omc_List_zip3(threadData_t *threadData, modelica_metatype _l1,
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar35;
+    tmpMeta1 = __omcQ_24tmpVar37;
   }
   _res = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -4943,11 +4943,11 @@ modelica_metatype omc_List_zip(threadData_t *threadData, modelica_metatype _inLi
   _tailrecursive: OMC_LABEL_UNUSED
   // _outTuples has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar37;
+    modelica_metatype __omcQ_24tmpVar39;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
     modelica_metatype tmpMeta4;
-    modelica_metatype __omcQ_24tmpVar36;
+    modelica_metatype __omcQ_24tmpVar38;
     modelica_integer tmp5;
     modelica_metatype _e1_loopVar = 0;
     modelica_metatype _e1;
@@ -4956,8 +4956,8 @@ modelica_metatype omc_List_zip(threadData_t *threadData, modelica_metatype _inLi
     _e1_loopVar = _inList1;
     _e2_loopVar = _inList2;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar37 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar37;
+    __omcQ_24tmpVar39 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar39;
     while(1) {
       tmp5 = 2;
       if (!listEmpty(_e1_loopVar)) {
@@ -4971,8 +4971,8 @@ modelica_metatype omc_List_zip(threadData_t *threadData, modelica_metatype _inLi
       }
       if (tmp5 == 0) {
         tmpMeta4 = mmc_mk_box2(0, _e1, _e2);
-        __omcQ_24tmpVar36 = tmpMeta4;
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar36,0);
+        __omcQ_24tmpVar38 = tmpMeta4;
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar38,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp5 == 2) {
         break;
@@ -4981,7 +4981,7 @@ modelica_metatype omc_List_zip(threadData_t *threadData, modelica_metatype _inLi
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar37;
+    tmpMeta1 = __omcQ_24tmpVar39;
   }
   _outTuples = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -5065,15 +5065,15 @@ modelica_metatype omc_List_flattenReverse(threadData_t *threadData, modelica_met
     else
     {
       {
-        modelica_metatype __omcQ_24tmpVar39;
+        modelica_metatype __omcQ_24tmpVar41;
         modelica_metatype tmpMeta3;
-        modelica_metatype __omcQ_24tmpVar38;
+        modelica_metatype __omcQ_24tmpVar40;
         modelica_integer tmp4;
         modelica_metatype _lst_loopVar = 0;
         modelica_metatype _lst;
         _lst_loopVar = _inList;
         tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-        __omcQ_24tmpVar39 = tmpMeta3; /* defaultValue */
+        __omcQ_24tmpVar41 = tmpMeta3; /* defaultValue */
         while(1) {
           tmp4 = 1;
           if (!listEmpty(_lst_loopVar)) {
@@ -5082,15 +5082,15 @@ modelica_metatype omc_List_flattenReverse(threadData_t *threadData, modelica_met
             tmp4--;
           }
           if (tmp4 == 0) {
-            __omcQ_24tmpVar38 = _lst;
-            __omcQ_24tmpVar39 = listAppend(__omcQ_24tmpVar38, __omcQ_24tmpVar39);
+            __omcQ_24tmpVar40 = _lst;
+            __omcQ_24tmpVar41 = listAppend(__omcQ_24tmpVar40, __omcQ_24tmpVar41);
           } else if (tmp4 == 1) {
             break;
           } else {
             MMC_THROW_INTERNAL();
           }
         }
-        tmpMeta2 = __omcQ_24tmpVar39;
+        tmpMeta2 = __omcQ_24tmpVar41;
       }
       tmpMeta6 = tmpMeta2;
     }
@@ -5129,15 +5129,15 @@ modelica_metatype omc_List_flatten(threadData_t *threadData, modelica_metatype _
     else
     {
       {
-        modelica_metatype __omcQ_24tmpVar41;
+        modelica_metatype __omcQ_24tmpVar43;
         modelica_metatype tmpMeta3;
-        modelica_metatype __omcQ_24tmpVar40;
+        modelica_metatype __omcQ_24tmpVar42;
         modelica_integer tmp4;
         modelica_metatype _lst_loopVar = 0;
         modelica_metatype _lst;
         _lst_loopVar = listReverse(_inList);
         tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-        __omcQ_24tmpVar41 = tmpMeta3; /* defaultValue */
+        __omcQ_24tmpVar43 = tmpMeta3; /* defaultValue */
         while(1) {
           tmp4 = 1;
           if (!listEmpty(_lst_loopVar)) {
@@ -5146,15 +5146,15 @@ modelica_metatype omc_List_flatten(threadData_t *threadData, modelica_metatype _
             tmp4--;
           }
           if (tmp4 == 0) {
-            __omcQ_24tmpVar40 = _lst;
-            __omcQ_24tmpVar41 = listAppend(__omcQ_24tmpVar40, __omcQ_24tmpVar41);
+            __omcQ_24tmpVar42 = _lst;
+            __omcQ_24tmpVar43 = listAppend(__omcQ_24tmpVar42, __omcQ_24tmpVar43);
           } else if (tmp4 == 1) {
             break;
           } else {
             MMC_THROW_INTERNAL();
           }
         }
-        tmpMeta2 = __omcQ_24tmpVar41;
+        tmpMeta2 = __omcQ_24tmpVar43;
       }
       tmpMeta6 = tmpMeta2;
     }
@@ -5867,18 +5867,18 @@ modelica_metatype omc_List_map2List(threadData_t *threadData, modelica_metatype 
   _tailrecursive: OMC_LABEL_UNUSED
   // _outListList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar45;
+    modelica_metatype __omcQ_24tmpVar47;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
     modelica_metatype tmpMeta4;
-    modelica_metatype __omcQ_24tmpVar44;
+    modelica_metatype __omcQ_24tmpVar46;
     modelica_integer tmp8;
     modelica_metatype _lst_loopVar = 0;
     modelica_metatype _lst;
     _lst_loopVar = _inListList;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar45 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar45;
+    __omcQ_24tmpVar47 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar47;
     while(1) {
       tmp8 = 1;
       if (!listEmpty(_lst_loopVar)) {
@@ -5888,17 +5888,17 @@ modelica_metatype omc_List_map2List(threadData_t *threadData, modelica_metatype 
       }
       if (tmp8 == 0) {
         {
-          modelica_metatype __omcQ_24tmpVar43;
+          modelica_metatype __omcQ_24tmpVar45;
           modelica_metatype* tmp5;
           modelica_metatype tmpMeta6;
-          modelica_metatype __omcQ_24tmpVar42;
+          modelica_metatype __omcQ_24tmpVar44;
           modelica_integer tmp7;
           modelica_metatype _e_loopVar = 0;
           modelica_metatype _e;
           _e_loopVar = _lst;
           tmpMeta6 = MMC_REFSTRUCTLIT(mmc_nil);
-          __omcQ_24tmpVar43 = tmpMeta6; /* defaultValue */
-          tmp5 = &__omcQ_24tmpVar43;
+          __omcQ_24tmpVar45 = tmpMeta6; /* defaultValue */
+          tmp5 = &__omcQ_24tmpVar45;
           while(1) {
             tmp7 = 1;
             if (!listEmpty(_e_loopVar)) {
@@ -5907,8 +5907,8 @@ modelica_metatype omc_List_map2List(threadData_t *threadData, modelica_metatype 
               tmp7--;
             }
             if (tmp7 == 0) {
-              __omcQ_24tmpVar42 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e, _inArg1, _inArg2) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e, _inArg1, _inArg2);
-              *tmp5 = mmc_mk_cons(__omcQ_24tmpVar42,0);
+              __omcQ_24tmpVar44 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e, _inArg1, _inArg2) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e, _inArg1, _inArg2);
+              *tmp5 = mmc_mk_cons(__omcQ_24tmpVar44,0);
               tmp5 = &MMC_CDR(*tmp5);
             } else if (tmp7 == 1) {
               break;
@@ -5917,10 +5917,10 @@ modelica_metatype omc_List_map2List(threadData_t *threadData, modelica_metatype 
             }
           }
           *tmp5 = mmc_mk_nil();
-          tmpMeta4 = __omcQ_24tmpVar43;
+          tmpMeta4 = __omcQ_24tmpVar45;
         }
-        __omcQ_24tmpVar44 = tmpMeta4;
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar44,0);
+        __omcQ_24tmpVar46 = tmpMeta4;
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar46,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp8 == 1) {
         break;
@@ -5929,7 +5929,7 @@ modelica_metatype omc_List_map2List(threadData_t *threadData, modelica_metatype 
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar45;
+    tmpMeta1 = __omcQ_24tmpVar47;
   }
   _outListList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -5945,18 +5945,18 @@ modelica_metatype omc_List_map1List(threadData_t *threadData, modelica_metatype 
   _tailrecursive: OMC_LABEL_UNUSED
   // _outListList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar49;
+    modelica_metatype __omcQ_24tmpVar51;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
     modelica_metatype tmpMeta4;
-    modelica_metatype __omcQ_24tmpVar48;
+    modelica_metatype __omcQ_24tmpVar50;
     modelica_integer tmp8;
     modelica_metatype _lst_loopVar = 0;
     modelica_metatype _lst;
     _lst_loopVar = _inListList;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar49 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar49;
+    __omcQ_24tmpVar51 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar51;
     while(1) {
       tmp8 = 1;
       if (!listEmpty(_lst_loopVar)) {
@@ -5966,17 +5966,17 @@ modelica_metatype omc_List_map1List(threadData_t *threadData, modelica_metatype 
       }
       if (tmp8 == 0) {
         {
-          modelica_metatype __omcQ_24tmpVar47;
+          modelica_metatype __omcQ_24tmpVar49;
           modelica_metatype* tmp5;
           modelica_metatype tmpMeta6;
-          modelica_metatype __omcQ_24tmpVar46;
+          modelica_metatype __omcQ_24tmpVar48;
           modelica_integer tmp7;
           modelica_metatype _e_loopVar = 0;
           modelica_metatype _e;
           _e_loopVar = _lst;
           tmpMeta6 = MMC_REFSTRUCTLIT(mmc_nil);
-          __omcQ_24tmpVar47 = tmpMeta6; /* defaultValue */
-          tmp5 = &__omcQ_24tmpVar47;
+          __omcQ_24tmpVar49 = tmpMeta6; /* defaultValue */
+          tmp5 = &__omcQ_24tmpVar49;
           while(1) {
             tmp7 = 1;
             if (!listEmpty(_e_loopVar)) {
@@ -5985,8 +5985,8 @@ modelica_metatype omc_List_map1List(threadData_t *threadData, modelica_metatype 
               tmp7--;
             }
             if (tmp7 == 0) {
-              __omcQ_24tmpVar46 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e, _inArg1) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e, _inArg1);
-              *tmp5 = mmc_mk_cons(__omcQ_24tmpVar46,0);
+              __omcQ_24tmpVar48 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e, _inArg1) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e, _inArg1);
+              *tmp5 = mmc_mk_cons(__omcQ_24tmpVar48,0);
               tmp5 = &MMC_CDR(*tmp5);
             } else if (tmp7 == 1) {
               break;
@@ -5995,10 +5995,10 @@ modelica_metatype omc_List_map1List(threadData_t *threadData, modelica_metatype 
             }
           }
           *tmp5 = mmc_mk_nil();
-          tmpMeta4 = __omcQ_24tmpVar47;
+          tmpMeta4 = __omcQ_24tmpVar49;
         }
-        __omcQ_24tmpVar48 = tmpMeta4;
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar48,0);
+        __omcQ_24tmpVar50 = tmpMeta4;
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar50,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp8 == 1) {
         break;
@@ -6007,7 +6007,7 @@ modelica_metatype omc_List_map1List(threadData_t *threadData, modelica_metatype 
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar49;
+    tmpMeta1 = __omcQ_24tmpVar51;
   }
   _outListList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -6023,18 +6023,18 @@ modelica_metatype omc_List_mapListReverse(threadData_t *threadData, modelica_met
   _tailrecursive: OMC_LABEL_UNUSED
   // _outListList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar53;
+    modelica_metatype __omcQ_24tmpVar55;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
     modelica_metatype tmpMeta4;
-    modelica_metatype __omcQ_24tmpVar52;
+    modelica_metatype __omcQ_24tmpVar54;
     modelica_integer tmp7;
     modelica_metatype _lst_loopVar = 0;
     modelica_metatype _lst;
     _lst_loopVar = _inListList;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar53 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar53;
+    __omcQ_24tmpVar55 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar55;
     while(1) {
       tmp7 = 1;
       if (!listEmpty(_lst_loopVar)) {
@@ -6044,15 +6044,15 @@ modelica_metatype omc_List_mapListReverse(threadData_t *threadData, modelica_met
       }
       if (tmp7 == 0) {
         {
-          modelica_metatype __omcQ_24tmpVar51;
+          modelica_metatype __omcQ_24tmpVar53;
           modelica_metatype tmpMeta5;
-          modelica_metatype __omcQ_24tmpVar50;
+          modelica_metatype __omcQ_24tmpVar52;
           modelica_integer tmp6;
           modelica_metatype _e_loopVar = 0;
           modelica_metatype _e;
           _e_loopVar = _lst;
           tmpMeta5 = MMC_REFSTRUCTLIT(mmc_nil);
-          __omcQ_24tmpVar51 = tmpMeta5; /* defaultValue */
+          __omcQ_24tmpVar53 = tmpMeta5; /* defaultValue */
           while(1) {
             tmp6 = 1;
             if (!listEmpty(_e_loopVar)) {
@@ -6061,18 +6061,18 @@ modelica_metatype omc_List_mapListReverse(threadData_t *threadData, modelica_met
               tmp6--;
             }
             if (tmp6 == 0) {
-              __omcQ_24tmpVar50 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e);
-              __omcQ_24tmpVar51 = mmc_mk_cons(__omcQ_24tmpVar50,__omcQ_24tmpVar51);
+              __omcQ_24tmpVar52 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e);
+              __omcQ_24tmpVar53 = mmc_mk_cons(__omcQ_24tmpVar52,__omcQ_24tmpVar53);
             } else if (tmp6 == 1) {
               break;
             } else {
               MMC_THROW_INTERNAL();
             }
           }
-          tmpMeta4 = __omcQ_24tmpVar51;
+          tmpMeta4 = __omcQ_24tmpVar53;
         }
-        __omcQ_24tmpVar52 = tmpMeta4;
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar52,0);
+        __omcQ_24tmpVar54 = tmpMeta4;
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar54,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp7 == 1) {
         break;
@@ -6081,7 +6081,7 @@ modelica_metatype omc_List_mapListReverse(threadData_t *threadData, modelica_met
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar53;
+    tmpMeta1 = __omcQ_24tmpVar55;
   }
   _outListList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -6097,18 +6097,18 @@ modelica_metatype omc_List_mapList(threadData_t *threadData, modelica_metatype _
   _tailrecursive: OMC_LABEL_UNUSED
   // _outListList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar57;
+    modelica_metatype __omcQ_24tmpVar59;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
     modelica_metatype tmpMeta4;
-    modelica_metatype __omcQ_24tmpVar56;
+    modelica_metatype __omcQ_24tmpVar58;
     modelica_integer tmp8;
     modelica_metatype _lst_loopVar = 0;
     modelica_metatype _lst;
     _lst_loopVar = _inListList;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar57 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar57;
+    __omcQ_24tmpVar59 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar59;
     while(1) {
       tmp8 = 1;
       if (!listEmpty(_lst_loopVar)) {
@@ -6118,17 +6118,17 @@ modelica_metatype omc_List_mapList(threadData_t *threadData, modelica_metatype _
       }
       if (tmp8 == 0) {
         {
-          modelica_metatype __omcQ_24tmpVar55;
+          modelica_metatype __omcQ_24tmpVar57;
           modelica_metatype* tmp5;
           modelica_metatype tmpMeta6;
-          modelica_metatype __omcQ_24tmpVar54;
+          modelica_metatype __omcQ_24tmpVar56;
           modelica_integer tmp7;
           modelica_metatype _e_loopVar = 0;
           modelica_metatype _e;
           _e_loopVar = _lst;
           tmpMeta6 = MMC_REFSTRUCTLIT(mmc_nil);
-          __omcQ_24tmpVar55 = tmpMeta6; /* defaultValue */
-          tmp5 = &__omcQ_24tmpVar55;
+          __omcQ_24tmpVar57 = tmpMeta6; /* defaultValue */
+          tmp5 = &__omcQ_24tmpVar57;
           while(1) {
             tmp7 = 1;
             if (!listEmpty(_e_loopVar)) {
@@ -6137,8 +6137,8 @@ modelica_metatype omc_List_mapList(threadData_t *threadData, modelica_metatype _
               tmp7--;
             }
             if (tmp7 == 0) {
-              __omcQ_24tmpVar54 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e);
-              *tmp5 = mmc_mk_cons(__omcQ_24tmpVar54,0);
+              __omcQ_24tmpVar56 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e);
+              *tmp5 = mmc_mk_cons(__omcQ_24tmpVar56,0);
               tmp5 = &MMC_CDR(*tmp5);
             } else if (tmp7 == 1) {
               break;
@@ -6147,10 +6147,10 @@ modelica_metatype omc_List_mapList(threadData_t *threadData, modelica_metatype _
             }
           }
           *tmp5 = mmc_mk_nil();
-          tmpMeta4 = __omcQ_24tmpVar55;
+          tmpMeta4 = __omcQ_24tmpVar57;
         }
-        __omcQ_24tmpVar56 = tmpMeta4;
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar56,0);
+        __omcQ_24tmpVar58 = tmpMeta4;
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar58,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp8 == 1) {
         break;
@@ -6159,7 +6159,7 @@ modelica_metatype omc_List_mapList(threadData_t *threadData, modelica_metatype _
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar57;
+    tmpMeta1 = __omcQ_24tmpVar59;
   }
   _outListList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -6291,17 +6291,17 @@ modelica_metatype omc_List_mapMap(threadData_t *threadData, modelica_metatype _i
   _tailrecursive: OMC_LABEL_UNUSED
   // _outList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar59;
+    modelica_metatype __omcQ_24tmpVar61;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
-    modelica_metatype __omcQ_24tmpVar58;
+    modelica_metatype __omcQ_24tmpVar60;
     modelica_integer tmp4;
     modelica_metatype _e_loopVar = 0;
     modelica_metatype _e;
     _e_loopVar = _inList;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar59 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar59;
+    __omcQ_24tmpVar61 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar61;
     while(1) {
       tmp4 = 1;
       if (!listEmpty(_e_loopVar)) {
@@ -6310,8 +6310,8 @@ modelica_metatype omc_List_mapMap(threadData_t *threadData, modelica_metatype _i
         tmp4--;
       }
       if (tmp4 == 0) {
-        __omcQ_24tmpVar58 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc2), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc2), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc2), 2))), (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc1), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc1), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc1), 2))), _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc1), 1)))) (threadData, _e)) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc2), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc1), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc1), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc1), 2))), _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc1), 1)))) (threadData, _e));
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar58,0);
+        __omcQ_24tmpVar60 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc2), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc2), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc2), 2))), (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc1), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc1), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc1), 2))), _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc1), 1)))) (threadData, _e)) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc2), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc1), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc1), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc1), 2))), _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc1), 1)))) (threadData, _e));
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar60,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp4 == 1) {
         break;
@@ -6320,7 +6320,7 @@ modelica_metatype omc_List_mapMap(threadData_t *threadData, modelica_metatype _i
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar59;
+    tmpMeta1 = __omcQ_24tmpVar61;
   }
   _outList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -6371,51 +6371,6 @@ modelica_metatype omc_List_map6(threadData_t *threadData, modelica_metatype _inL
   _tailrecursive: OMC_LABEL_UNUSED
   // _outList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar61;
-    modelica_metatype* tmp2;
-    modelica_metatype tmpMeta3;
-    modelica_metatype __omcQ_24tmpVar60;
-    modelica_integer tmp4;
-    modelica_metatype _e_loopVar = 0;
-    modelica_metatype _e;
-    _e_loopVar = _inList;
-    tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar61 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar61;
-    while(1) {
-      tmp4 = 1;
-      if (!listEmpty(_e_loopVar)) {
-        _e = MMC_CAR(_e_loopVar);
-        _e_loopVar = MMC_CDR(_e_loopVar);
-        tmp4--;
-      }
-      if (tmp4 == 0) {
-        __omcQ_24tmpVar60 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e, _inArg1, _inArg2, _inArg3, _inArg4, _inArg5, _inArg6) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e, _inArg1, _inArg2, _inArg3, _inArg4, _inArg5, _inArg6);
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar60,0);
-        tmp2 = &MMC_CDR(*tmp2);
-      } else if (tmp4 == 1) {
-        break;
-      } else {
-        MMC_THROW_INTERNAL();
-      }
-    }
-    *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar61;
-  }
-  _outList = tmpMeta1;
-  _return: OMC_LABEL_UNUSED
-  return _outList;
-}
-
-DLLDirection
-modelica_metatype omc_List_map5(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFunc, modelica_metatype _inArg1, modelica_metatype _inArg2, modelica_metatype _inArg3, modelica_metatype _inArg4, modelica_metatype _inArg5)
-{
-  modelica_metatype _outList = NULL;
-  modelica_metatype tmpMeta1;
-  MMC_SO();
-  _tailrecursive: OMC_LABEL_UNUSED
-  // _outList has no default value.
-  {
     modelica_metatype __omcQ_24tmpVar63;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
@@ -6435,7 +6390,7 @@ modelica_metatype omc_List_map5(threadData_t *threadData, modelica_metatype _inL
         tmp4--;
       }
       if (tmp4 == 0) {
-        __omcQ_24tmpVar62 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e, _inArg1, _inArg2, _inArg3, _inArg4, _inArg5) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e, _inArg1, _inArg2, _inArg3, _inArg4, _inArg5);
+        __omcQ_24tmpVar62 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e, _inArg1, _inArg2, _inArg3, _inArg4, _inArg5, _inArg6) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e, _inArg1, _inArg2, _inArg3, _inArg4, _inArg5, _inArg6);
         *tmp2 = mmc_mk_cons(__omcQ_24tmpVar62,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp4 == 1) {
@@ -6446,6 +6401,51 @@ modelica_metatype omc_List_map5(threadData_t *threadData, modelica_metatype _inL
     }
     *tmp2 = mmc_mk_nil();
     tmpMeta1 = __omcQ_24tmpVar63;
+  }
+  _outList = tmpMeta1;
+  _return: OMC_LABEL_UNUSED
+  return _outList;
+}
+
+DLLDirection
+modelica_metatype omc_List_map5(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFunc, modelica_metatype _inArg1, modelica_metatype _inArg2, modelica_metatype _inArg3, modelica_metatype _inArg4, modelica_metatype _inArg5)
+{
+  modelica_metatype _outList = NULL;
+  modelica_metatype tmpMeta1;
+  MMC_SO();
+  _tailrecursive: OMC_LABEL_UNUSED
+  // _outList has no default value.
+  {
+    modelica_metatype __omcQ_24tmpVar65;
+    modelica_metatype* tmp2;
+    modelica_metatype tmpMeta3;
+    modelica_metatype __omcQ_24tmpVar64;
+    modelica_integer tmp4;
+    modelica_metatype _e_loopVar = 0;
+    modelica_metatype _e;
+    _e_loopVar = _inList;
+    tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
+    __omcQ_24tmpVar65 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar65;
+    while(1) {
+      tmp4 = 1;
+      if (!listEmpty(_e_loopVar)) {
+        _e = MMC_CAR(_e_loopVar);
+        _e_loopVar = MMC_CDR(_e_loopVar);
+        tmp4--;
+      }
+      if (tmp4 == 0) {
+        __omcQ_24tmpVar64 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e, _inArg1, _inArg2, _inArg3, _inArg4, _inArg5) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e, _inArg1, _inArg2, _inArg3, _inArg4, _inArg5);
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar64,0);
+        tmp2 = &MMC_CDR(*tmp2);
+      } else if (tmp4 == 1) {
+        break;
+      } else {
+        MMC_THROW_INTERNAL();
+      }
+    }
+    *tmp2 = mmc_mk_nil();
+    tmpMeta1 = __omcQ_24tmpVar65;
   }
   _outList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -6486,51 +6486,6 @@ modelica_metatype omc_List_map4(threadData_t *threadData, modelica_metatype _inL
   _tailrecursive: OMC_LABEL_UNUSED
   // _outList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar65;
-    modelica_metatype* tmp2;
-    modelica_metatype tmpMeta3;
-    modelica_metatype __omcQ_24tmpVar64;
-    modelica_integer tmp4;
-    modelica_metatype _e_loopVar = 0;
-    modelica_metatype _e;
-    _e_loopVar = _inList;
-    tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar65 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar65;
-    while(1) {
-      tmp4 = 1;
-      if (!listEmpty(_e_loopVar)) {
-        _e = MMC_CAR(_e_loopVar);
-        _e_loopVar = MMC_CDR(_e_loopVar);
-        tmp4--;
-      }
-      if (tmp4 == 0) {
-        __omcQ_24tmpVar64 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e, _inArg1, _inArg2, _inArg3, _inArg4) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e, _inArg1, _inArg2, _inArg3, _inArg4);
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar64,0);
-        tmp2 = &MMC_CDR(*tmp2);
-      } else if (tmp4 == 1) {
-        break;
-      } else {
-        MMC_THROW_INTERNAL();
-      }
-    }
-    *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar65;
-  }
-  _outList = tmpMeta1;
-  _return: OMC_LABEL_UNUSED
-  return _outList;
-}
-
-DLLDirection
-modelica_metatype omc_List_map3(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFunc, modelica_metatype _inArg1, modelica_metatype _inArg2, modelica_metatype _inArg3)
-{
-  modelica_metatype _outList = NULL;
-  modelica_metatype tmpMeta1;
-  MMC_SO();
-  _tailrecursive: OMC_LABEL_UNUSED
-  // _outList has no default value.
-  {
     modelica_metatype __omcQ_24tmpVar67;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
@@ -6550,7 +6505,7 @@ modelica_metatype omc_List_map3(threadData_t *threadData, modelica_metatype _inL
         tmp4--;
       }
       if (tmp4 == 0) {
-        __omcQ_24tmpVar66 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e, _inArg1, _inArg2, _inArg3) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e, _inArg1, _inArg2, _inArg3);
+        __omcQ_24tmpVar66 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e, _inArg1, _inArg2, _inArg3, _inArg4) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e, _inArg1, _inArg2, _inArg3, _inArg4);
         *tmp2 = mmc_mk_cons(__omcQ_24tmpVar66,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp4 == 1) {
@@ -6561,6 +6516,51 @@ modelica_metatype omc_List_map3(threadData_t *threadData, modelica_metatype _inL
     }
     *tmp2 = mmc_mk_nil();
     tmpMeta1 = __omcQ_24tmpVar67;
+  }
+  _outList = tmpMeta1;
+  _return: OMC_LABEL_UNUSED
+  return _outList;
+}
+
+DLLDirection
+modelica_metatype omc_List_map3(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inFunc, modelica_metatype _inArg1, modelica_metatype _inArg2, modelica_metatype _inArg3)
+{
+  modelica_metatype _outList = NULL;
+  modelica_metatype tmpMeta1;
+  MMC_SO();
+  _tailrecursive: OMC_LABEL_UNUSED
+  // _outList has no default value.
+  {
+    modelica_metatype __omcQ_24tmpVar69;
+    modelica_metatype* tmp2;
+    modelica_metatype tmpMeta3;
+    modelica_metatype __omcQ_24tmpVar68;
+    modelica_integer tmp4;
+    modelica_metatype _e_loopVar = 0;
+    modelica_metatype _e;
+    _e_loopVar = _inList;
+    tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
+    __omcQ_24tmpVar69 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar69;
+    while(1) {
+      tmp4 = 1;
+      if (!listEmpty(_e_loopVar)) {
+        _e = MMC_CAR(_e_loopVar);
+        _e_loopVar = MMC_CDR(_e_loopVar);
+        tmp4--;
+      }
+      if (tmp4 == 0) {
+        __omcQ_24tmpVar68 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e, _inArg1, _inArg2, _inArg3) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e, _inArg1, _inArg2, _inArg3);
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar68,0);
+        tmp2 = &MMC_CDR(*tmp2);
+      } else if (tmp4 == 1) {
+        break;
+      } else {
+        MMC_THROW_INTERNAL();
+      }
+    }
+    *tmp2 = mmc_mk_nil();
+    tmpMeta1 = __omcQ_24tmpVar69;
   }
   _outList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -6645,15 +6645,15 @@ modelica_metatype omc_List_map2Reverse(threadData_t *threadData, modelica_metaty
   _tailrecursive: OMC_LABEL_UNUSED
   // _outList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar69;
+    modelica_metatype __omcQ_24tmpVar71;
     modelica_metatype tmpMeta2;
-    modelica_metatype __omcQ_24tmpVar68;
+    modelica_metatype __omcQ_24tmpVar70;
     modelica_integer tmp3;
     modelica_metatype _e_loopVar = 0;
     modelica_metatype _e;
     _e_loopVar = _inList;
     tmpMeta2 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar69 = tmpMeta2; /* defaultValue */
+    __omcQ_24tmpVar71 = tmpMeta2; /* defaultValue */
     while(1) {
       tmp3 = 1;
       if (!listEmpty(_e_loopVar)) {
@@ -6662,15 +6662,15 @@ modelica_metatype omc_List_map2Reverse(threadData_t *threadData, modelica_metaty
         tmp3--;
       }
       if (tmp3 == 0) {
-        __omcQ_24tmpVar68 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e, _inArg1, _inArg2) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e, _inArg1, _inArg2);
-        __omcQ_24tmpVar69 = mmc_mk_cons(__omcQ_24tmpVar68,__omcQ_24tmpVar69);
+        __omcQ_24tmpVar70 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e, _inArg1, _inArg2) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e, _inArg1, _inArg2);
+        __omcQ_24tmpVar71 = mmc_mk_cons(__omcQ_24tmpVar70,__omcQ_24tmpVar71);
       } else if (tmp3 == 1) {
         break;
       } else {
         MMC_THROW_INTERNAL();
       }
     }
-    tmpMeta1 = __omcQ_24tmpVar69;
+    tmpMeta1 = __omcQ_24tmpVar71;
   }
   _outList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -6686,17 +6686,17 @@ modelica_metatype omc_List_map2(threadData_t *threadData, modelica_metatype _inL
   _tailrecursive: OMC_LABEL_UNUSED
   // _outList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar71;
+    modelica_metatype __omcQ_24tmpVar73;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
-    modelica_metatype __omcQ_24tmpVar70;
+    modelica_metatype __omcQ_24tmpVar72;
     modelica_integer tmp4;
     modelica_metatype _e_loopVar = 0;
     modelica_metatype _e;
     _e_loopVar = _inList;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar71 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar71;
+    __omcQ_24tmpVar73 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar73;
     while(1) {
       tmp4 = 1;
       if (!listEmpty(_e_loopVar)) {
@@ -6705,8 +6705,8 @@ modelica_metatype omc_List_map2(threadData_t *threadData, modelica_metatype _inL
         tmp4--;
       }
       if (tmp4 == 0) {
-        __omcQ_24tmpVar70 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e, _inArg1, _inArg2) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e, _inArg1, _inArg2);
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar70,0);
+        __omcQ_24tmpVar72 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e, _inArg1, _inArg2) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e, _inArg1, _inArg2);
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar72,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp4 == 1) {
         break;
@@ -6715,7 +6715,7 @@ modelica_metatype omc_List_map2(threadData_t *threadData, modelica_metatype _inL
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar71;
+    tmpMeta1 = __omcQ_24tmpVar73;
   }
   _outList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -6800,51 +6800,6 @@ modelica_metatype omc_List_map1r(threadData_t *threadData, modelica_metatype _in
   _tailrecursive: OMC_LABEL_UNUSED
   // _outList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar73;
-    modelica_metatype* tmp2;
-    modelica_metatype tmpMeta3;
-    modelica_metatype __omcQ_24tmpVar72;
-    modelica_integer tmp4;
-    modelica_metatype _e_loopVar = 0;
-    modelica_metatype _e;
-    _e_loopVar = _inList;
-    tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar73 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar73;
-    while(1) {
-      tmp4 = 1;
-      if (!listEmpty(_e_loopVar)) {
-        _e = MMC_CAR(_e_loopVar);
-        _e_loopVar = MMC_CDR(_e_loopVar);
-        tmp4--;
-      }
-      if (tmp4 == 0) {
-        __omcQ_24tmpVar72 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _inArg1, _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _inArg1, _e);
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar72,0);
-        tmp2 = &MMC_CDR(*tmp2);
-      } else if (tmp4 == 1) {
-        break;
-      } else {
-        MMC_THROW_INTERNAL();
-      }
-    }
-    *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar73;
-  }
-  _outList = tmpMeta1;
-  _return: OMC_LABEL_UNUSED
-  return _outList;
-}
-
-DLLDirection
-modelica_metatype omc_List_map1(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inMapFunc, modelica_metatype _inArg1)
-{
-  modelica_metatype _outList = NULL;
-  modelica_metatype tmpMeta1;
-  MMC_SO();
-  _tailrecursive: OMC_LABEL_UNUSED
-  // _outList has no default value.
-  {
     modelica_metatype __omcQ_24tmpVar75;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
@@ -6864,7 +6819,7 @@ modelica_metatype omc_List_map1(threadData_t *threadData, modelica_metatype _inL
         tmp4--;
       }
       if (tmp4 == 0) {
-        __omcQ_24tmpVar74 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 2))), _e, _inArg1) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 1)))) (threadData, _e, _inArg1);
+        __omcQ_24tmpVar74 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _inArg1, _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _inArg1, _e);
         *tmp2 = mmc_mk_cons(__omcQ_24tmpVar74,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp4 == 1) {
@@ -6875,6 +6830,51 @@ modelica_metatype omc_List_map1(threadData_t *threadData, modelica_metatype _inL
     }
     *tmp2 = mmc_mk_nil();
     tmpMeta1 = __omcQ_24tmpVar75;
+  }
+  _outList = tmpMeta1;
+  _return: OMC_LABEL_UNUSED
+  return _outList;
+}
+
+DLLDirection
+modelica_metatype omc_List_map1(threadData_t *threadData, modelica_metatype _inList, modelica_fnptr _inMapFunc, modelica_metatype _inArg1)
+{
+  modelica_metatype _outList = NULL;
+  modelica_metatype tmpMeta1;
+  MMC_SO();
+  _tailrecursive: OMC_LABEL_UNUSED
+  // _outList has no default value.
+  {
+    modelica_metatype __omcQ_24tmpVar77;
+    modelica_metatype* tmp2;
+    modelica_metatype tmpMeta3;
+    modelica_metatype __omcQ_24tmpVar76;
+    modelica_integer tmp4;
+    modelica_metatype _e_loopVar = 0;
+    modelica_metatype _e;
+    _e_loopVar = _inList;
+    tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
+    __omcQ_24tmpVar77 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar77;
+    while(1) {
+      tmp4 = 1;
+      if (!listEmpty(_e_loopVar)) {
+        _e = MMC_CAR(_e_loopVar);
+        _e_loopVar = MMC_CDR(_e_loopVar);
+        tmp4--;
+      }
+      if (tmp4 == 0) {
+        __omcQ_24tmpVar76 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 2))), _e, _inArg1) : ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inMapFunc), 1)))) (threadData, _e, _inArg1);
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar76,0);
+        tmp2 = &MMC_CDR(*tmp2);
+      } else if (tmp4 == 1) {
+        break;
+      } else {
+        MMC_THROW_INTERNAL();
+      }
+    }
+    *tmp2 = mmc_mk_nil();
+    tmpMeta1 = __omcQ_24tmpVar77;
   }
   _outList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -7166,15 +7166,15 @@ modelica_metatype omc_List_mapReverse(threadData_t *threadData, modelica_metatyp
   _tailrecursive: OMC_LABEL_UNUSED
   // _outList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar77;
+    modelica_metatype __omcQ_24tmpVar79;
     modelica_metatype tmpMeta2;
-    modelica_metatype __omcQ_24tmpVar76;
+    modelica_metatype __omcQ_24tmpVar78;
     modelica_integer tmp3;
     modelica_metatype _e_loopVar = 0;
     modelica_metatype _e;
     _e_loopVar = _inList;
     tmpMeta2 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar77 = tmpMeta2; /* defaultValue */
+    __omcQ_24tmpVar79 = tmpMeta2; /* defaultValue */
     while(1) {
       tmp3 = 1;
       if (!listEmpty(_e_loopVar)) {
@@ -7183,15 +7183,15 @@ modelica_metatype omc_List_mapReverse(threadData_t *threadData, modelica_metatyp
         tmp3--;
       }
       if (tmp3 == 0) {
-        __omcQ_24tmpVar76 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e);
-        __omcQ_24tmpVar77 = mmc_mk_cons(__omcQ_24tmpVar76,__omcQ_24tmpVar77);
+        __omcQ_24tmpVar78 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e);
+        __omcQ_24tmpVar79 = mmc_mk_cons(__omcQ_24tmpVar78,__omcQ_24tmpVar79);
       } else if (tmp3 == 1) {
         break;
       } else {
         MMC_THROW_INTERNAL();
       }
     }
-    tmpMeta1 = __omcQ_24tmpVar77;
+    tmpMeta1 = __omcQ_24tmpVar79;
   }
   _outList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -7275,10 +7275,10 @@ modelica_metatype omc_List_mapArray(threadData_t *threadData, modelica_metatype 
   _tailrecursive: OMC_LABEL_UNUSED
   // _outList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar79;
+    modelica_metatype __omcQ_24tmpVar81;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
-    modelica_metatype __omcQ_24tmpVar78;
+    modelica_metatype __omcQ_24tmpVar80;
     modelica_integer tmp4;
     modelica_metatype _e_loopVar = 0;
     modelica_integer tmp5;
@@ -7286,8 +7286,8 @@ modelica_metatype omc_List_mapArray(threadData_t *threadData, modelica_metatype 
     _e_loopVar = _inArray;
     tmp5 = 1;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar79 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar79;
+    __omcQ_24tmpVar81 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar81;
     while(1) {
       tmp4 = 1;
       if (tmp5 <= arrayLength(_e_loopVar)) {
@@ -7295,8 +7295,8 @@ modelica_metatype omc_List_mapArray(threadData_t *threadData, modelica_metatype 
         tmp4--;
       }
       if (tmp4 == 0) {
-        __omcQ_24tmpVar78 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e);
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar78,0);
+        __omcQ_24tmpVar80 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e);
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar80,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp4 == 1) {
         break;
@@ -7305,7 +7305,7 @@ modelica_metatype omc_List_mapArray(threadData_t *threadData, modelica_metatype 
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar79;
+    tmpMeta1 = __omcQ_24tmpVar81;
   }
   _outList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -7321,17 +7321,17 @@ modelica_metatype omc_List_map(threadData_t *threadData, modelica_metatype _inLi
   _tailrecursive: OMC_LABEL_UNUSED
   // _outList has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar81;
+    modelica_metatype __omcQ_24tmpVar83;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
-    modelica_metatype __omcQ_24tmpVar80;
+    modelica_metatype __omcQ_24tmpVar82;
     modelica_integer tmp4;
     modelica_metatype _e_loopVar = 0;
     modelica_metatype _e;
     _e_loopVar = _inList;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar81 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar81;
+    __omcQ_24tmpVar83 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar83;
     while(1) {
       tmp4 = 1;
       if (!listEmpty(_e_loopVar)) {
@@ -7340,8 +7340,8 @@ modelica_metatype omc_List_map(threadData_t *threadData, modelica_metatype _inLi
         tmp4--;
       }
       if (tmp4 == 0) {
-        __omcQ_24tmpVar80 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e);
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar80,0);
+        __omcQ_24tmpVar82 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))) ? ((modelica_metatype(*)(threadData_t*, modelica_metatype, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 2))), _e) : ((modelica_metatype(*)(threadData_t*, modelica_metatype)) (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inFunc), 1)))) (threadData, _e);
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar82,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp4 == 1) {
         break;
@@ -7350,7 +7350,7 @@ modelica_metatype omc_List_map(threadData_t *threadData, modelica_metatype _inLi
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar81;
+    tmpMeta1 = __omcQ_24tmpVar83;
   }
   _outList = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -7975,17 +7975,17 @@ modelica_metatype omc_List_transposeList(threadData_t *threadData, modelica_meta
   }
 
   {
-    modelica_metatype __omcQ_24tmpVar83;
+    modelica_metatype __omcQ_24tmpVar85;
     modelica_metatype* tmp3;
     modelica_metatype tmpMeta4;
-    modelica_metatype __omcQ_24tmpVar82;
+    modelica_metatype __omcQ_24tmpVar84;
     modelica_integer tmp5;
     modelica_metatype _lst_loopVar = 0;
     modelica_metatype _lst;
     _lst_loopVar = _inList;
     tmpMeta4 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar83 = tmpMeta4; /* defaultValue */
-    tmp3 = &__omcQ_24tmpVar83;
+    __omcQ_24tmpVar85 = tmpMeta4; /* defaultValue */
+    tmp3 = &__omcQ_24tmpVar85;
     while(1) {
       tmp5 = 1;
       if (!listEmpty(_lst_loopVar)) {
@@ -7994,8 +7994,8 @@ modelica_metatype omc_List_transposeList(threadData_t *threadData, modelica_meta
         tmp5--;
       }
       if (tmp5 == 0) {
-        __omcQ_24tmpVar82 = listArray(_lst);
-        *tmp3 = mmc_mk_cons(__omcQ_24tmpVar82,0);
+        __omcQ_24tmpVar84 = listArray(_lst);
+        *tmp3 = mmc_mk_cons(__omcQ_24tmpVar84,0);
         tmp3 = &MMC_CDR(*tmp3);
       } else if (tmp5 == 1) {
         break;
@@ -8004,7 +8004,7 @@ modelica_metatype omc_List_transposeList(threadData_t *threadData, modelica_meta
       }
     }
     *tmp3 = mmc_mk_nil();
-    tmpMeta2 = __omcQ_24tmpVar83;
+    tmpMeta2 = __omcQ_24tmpVar85;
   }
   _arr = listArray(tmpMeta2);
 
@@ -8858,7 +8858,7 @@ modelica_metatype omc_List_countingSort(threadData_t *threadData, modelica_metat
     for (tmpMeta2 = _inList; !listEmpty(tmpMeta2); tmpMeta2=MMC_CDR(tmpMeta2))
     {
       _v = MMC_CAR(tmpMeta2);
-      arrayUpdate(_a1,mmc_unbox_integer(_v),mmc_mk_integer(((modelica_integer) 1) + mmc_unbox_integer(arrayGet(_a1,mmc_unbox_integer(_v)) /* DAE.ASUB */)));
+      arrayUpdate(_a1,mmc_unbox_integer(_v),mmc_mk_integer(((modelica_integer) 1) + (mmc_unbox_integer(arrayGet(_a1,mmc_unbox_integer(_v)) /* DAE.ASUB */))));
     }
   }
 
@@ -9672,17 +9672,17 @@ modelica_metatype omc_List_getAtIndexLst(threadData_t *threadData, modelica_meta
   _arr = listArray(_lst);
   _shift = (_zeroBased?((modelica_integer) 1):((modelica_integer) 0));
   {
-    modelica_metatype __omcQ_24tmpVar85;
+    modelica_metatype __omcQ_24tmpVar87;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
-    modelica_metatype __omcQ_24tmpVar84;
+    modelica_metatype __omcQ_24tmpVar86;
     modelica_integer tmp4;
     modelica_metatype _pos_loopVar = 0;
     modelica_metatype _pos;
     _pos_loopVar = _positions;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar85 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar85;
+    __omcQ_24tmpVar87 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar87;
     while(1) {
       tmp4 = 1;
       if (!listEmpty(_pos_loopVar)) {
@@ -9691,8 +9691,8 @@ modelica_metatype omc_List_getAtIndexLst(threadData_t *threadData, modelica_meta
         tmp4--;
       }
       if (tmp4 == 0) {
-        __omcQ_24tmpVar84 = arrayGet(_arr,mmc_unbox_integer(_pos) + _shift) /* DAE.ASUB */;
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar84,0);
+        __omcQ_24tmpVar86 = arrayGet(_arr,mmc_unbox_integer(_pos) + _shift) /* DAE.ASUB */;
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar86,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp4 == 1) {
         break;
@@ -9701,7 +9701,7 @@ modelica_metatype omc_List_getAtIndexLst(threadData_t *threadData, modelica_meta
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar85;
+    tmpMeta1 = __omcQ_24tmpVar87;
   }
   _olst = tmpMeta1;
   _return: OMC_LABEL_UNUSED
@@ -10979,10 +10979,10 @@ modelica_metatype omc_List_intRange3(threadData_t *threadData, modelica_integer 
   }
 
   {
-    modelica_metatype __omcQ_24tmpVar87;
+    modelica_metatype __omcQ_24tmpVar89;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
-    modelica_metatype __omcQ_24tmpVar86;
+    modelica_metatype __omcQ_24tmpVar88;
     modelica_integer tmp4;
     modelica_integer tmp5;
     modelica_integer tmp6;
@@ -10995,8 +10995,8 @@ modelica_metatype omc_List_intRange3(threadData_t *threadData, modelica_integer 
     }
     _i = (_inStart /* Range start-value */)-tmp5;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar87 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar87;
+    __omcQ_24tmpVar89 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar89;
     while(1) {
       tmp4 = 1;
       if (tmp5 > 0 ? _i+tmp5 <= tmp6 : _i+tmp5 >= tmp6) {
@@ -11004,8 +11004,8 @@ modelica_metatype omc_List_intRange3(threadData_t *threadData, modelica_integer 
         tmp4--;
       }
       if (tmp4 == 0) {
-        __omcQ_24tmpVar86 = mmc_mk_integer(_i);
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar86,0);
+        __omcQ_24tmpVar88 = mmc_mk_integer(_i);
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar88,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp4 == 1) {
         break;
@@ -11014,7 +11014,7 @@ modelica_metatype omc_List_intRange3(threadData_t *threadData, modelica_integer 
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar87;
+    tmpMeta1 = __omcQ_24tmpVar89;
   }
   _outRange = tmpMeta1;
   _return: OMC_LABEL_UNUSED

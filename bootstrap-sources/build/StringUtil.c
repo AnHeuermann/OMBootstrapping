@@ -261,7 +261,7 @@ modelica_boolean omc_StringUtil_endsWith(threadData_t *threadData, modelica_stri
   _suf_len = stringLength(_suffix);
   if((_str_len >= _suf_len))
   {
-    _endsWith = (((modelica_integer) 0) == omc_System_strcmp__offset(threadData, _str, ((modelica_integer) 1) + _str_len - _suf_len, _str_len, _suffix, ((modelica_integer) 1), _suf_len));
+    _endsWith = (((modelica_integer) 0) == omc_System_strcmp__offset(threadData, _str, ((modelica_integer) 1) + (_str_len - _suf_len), _str_len, _suffix, ((modelica_integer) 1), _suf_len));
   }
   _return: OMC_LABEL_UNUSED
   #if defined(OMC_MINIMAL_RUNTIME) || defined(OMC_FMI_RUNTIME)
@@ -577,7 +577,7 @@ modelica_metatype omc_StringUtil_wordWrap(threadData_t *threadData, modelica_str
 
   _lines = omc_System_strtok(threadData, _inString, _OMC_LIT40);
 
-  _line_len = ((modelica_integer) -1) + _inWrapLength - stringLength(_inDelimiter);
+  _line_len = ((modelica_integer) -1) + (_inWrapLength - stringLength(_inDelimiter));
 
   _gap_size = modelica_integer_max((modelica_integer)(((modelica_integer)floor((((modelica_real)_line_len)) * (_inRaggedness)))),(modelica_integer)(((modelica_integer) 0)));
 
@@ -631,7 +631,7 @@ modelica_metatype omc_StringUtil_wordWrap(threadData_t *threadData, modelica_str
         {
           _str = substring(_line, _start_pos, _end_pos);
 
-          _start_pos = _end_pos + ((_next_char == ((modelica_integer) 32))?((modelica_integer) 2):((modelica_integer) 1));
+          _start_pos = _end_pos + (((_next_char == ((modelica_integer) 32))?((modelica_integer) 2):((modelica_integer) 1)));
         }
 
         tmpMeta6 = stringAppend(_delim,_str);

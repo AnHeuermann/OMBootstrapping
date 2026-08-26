@@ -6591,17 +6591,17 @@ PROTECTED_FUNCTION_STATIC void omc_XMLDump_dumpExp2(threadData_t *threadData, mo
           _subs = tmpMeta85;
           tmp3 += 6; /* Pattern matching succeeded; we may skip some cases if we fail */
           {
-            modelica_metatype __omcQ_24tmpVar1;
+            modelica_metatype __omcQ_24tmpVar3;
             modelica_metatype* tmp87;
             modelica_metatype tmpMeta88;
-            modelica_metatype __omcQ_24tmpVar0;
+            modelica_metatype __omcQ_24tmpVar2;
             modelica_integer tmp89;
             modelica_metatype _sub_loopVar = 0;
             modelica_metatype _sub;
             _sub_loopVar = _subs;
             tmpMeta88 = MMC_REFSTRUCTLIT(mmc_nil);
-            __omcQ_24tmpVar1 = tmpMeta88; /* defaultValue */
-            tmp87 = &__omcQ_24tmpVar1;
+            __omcQ_24tmpVar3 = tmpMeta88; /* defaultValue */
+            tmp87 = &__omcQ_24tmpVar3;
             while(1) {
               tmp89 = 1;
               if (!listEmpty(_sub_loopVar)) {
@@ -6610,8 +6610,8 @@ PROTECTED_FUNCTION_STATIC void omc_XMLDump_dumpExp2(threadData_t *threadData, mo
                 tmp89--;
               }
               if (tmp89 == 0) {
-                __omcQ_24tmpVar0 = omc_Expression_getSubscriptExp(threadData, _sub);
-                *tmp87 = mmc_mk_cons(__omcQ_24tmpVar0,0);
+                __omcQ_24tmpVar2 = omc_Expression_getSubscriptExp(threadData, _sub);
+                *tmp87 = mmc_mk_cons(__omcQ_24tmpVar2,0);
                 tmp87 = &MMC_CDR(*tmp87);
               } else if (tmp89 == 1) {
                 break;
@@ -6620,7 +6620,7 @@ PROTECTED_FUNCTION_STATIC void omc_XMLDump_dumpExp2(threadData_t *threadData, mo
               }
             }
             *tmp87 = mmc_mk_nil();
-            tmpMeta86 = __omcQ_24tmpVar1;
+            tmpMeta86 = __omcQ_24tmpVar3;
           }
           _args = tmpMeta86;
 
@@ -8761,7 +8761,7 @@ void omc_XMLDump_dumpBackendDAE(threadData_t *threadData, modelica_metatype _inB
 
           omc_XMLDump_dumpStrOpenTag(threadData, _OMC_LIT201);
 
-          omc_XMLDump_dumpStrOpenTagAttr(threadData, _OMC_LIT202, _OMC_LIT50, intString(mmc_unbox_integer(omc_List_fold(threadData, omc_List_map(threadData, _systs, boxvar_BackendDAEUtil_systemSize), boxvar_intAdd, mmc_mk_integer(((modelica_integer) 0)))) + listLength(_knvars) + listLength(_extvars) + listLength(_aliasvars)));
+          omc_XMLDump_dumpStrOpenTagAttr(threadData, _OMC_LIT202, _OMC_LIT50, intString(mmc_unbox_integer(omc_List_fold(threadData, omc_List_map(threadData, _systs, boxvar_BackendDAEUtil_systemSize), boxvar_intAdd, mmc_mk_integer(((modelica_integer) 0)))) + (listLength(_knvars) + (listLength(_extvars) + listLength(_aliasvars)))));
 
           tmpMeta18 = MMC_REFSTRUCTLIT(mmc_nil);
           _vars = omc_List_fold(threadData, _systs, boxvar_XMLDump_getOrderedVars, tmpMeta18);
@@ -8866,7 +8866,7 @@ void omc_XMLDump_dumpBackendDAE(threadData_t *threadData, modelica_metatype _inB
 
           omc_XMLDump_dumpStrOpenTag(threadData, _OMC_LIT201);
 
-          omc_XMLDump_dumpStrOpenTagAttr(threadData, _OMC_LIT202, _OMC_LIT50, intString(mmc_unbox_integer(omc_List_fold(threadData, omc_List_map(threadData, _systs, boxvar_BackendDAEUtil_systemSize), boxvar_intAdd, mmc_mk_integer(((modelica_integer) 0)))) + listLength(_knvars) + listLength(_extvars) + listLength(_aliasvars)));
+          omc_XMLDump_dumpStrOpenTagAttr(threadData, _OMC_LIT202, _OMC_LIT50, intString(mmc_unbox_integer(omc_List_fold(threadData, omc_List_map(threadData, _systs, boxvar_BackendDAEUtil_systemSize), boxvar_intAdd, mmc_mk_integer(((modelica_integer) 0)))) + (listLength(_knvars) + (listLength(_extvars) + listLength(_aliasvars)))));
 
           tmpMeta34 = MMC_REFSTRUCTLIT(mmc_nil);
           _vars = omc_List_fold(threadData, _systs, boxvar_XMLDump_getOrderedVars, tmpMeta34);

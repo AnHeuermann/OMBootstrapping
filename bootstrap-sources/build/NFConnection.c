@@ -21,10 +21,10 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT5,1,_OMC_LIT5_data);
 #define _OMC_LIT6_data "\n  rhs: "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT6,8,_OMC_LIT6_data);
 #define _OMC_LIT6 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT6)
-#define _OMC_LIT7_data "//OpenModelica/OMCompiler/Compiler/NFFrontEnd/NFConnection.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT7,84,_OMC_LIT7_data);
+#define _OMC_LIT7_data "NFConnection.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT7,15,_OMC_LIT7_data);
 #define _OMC_LIT7 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT7)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT8_6,1.784622031e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT8_6,0.0);
 #define _OMC_LIT8_6 MMC_REFREALLIT(_OMC_LIT_STRUCT8_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT8,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT7,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(138)),MMC_IMMEDIATE(MMC_TAGFIXNUM(7)),MMC_IMMEDIATE(MMC_TAGFIXNUM(140)),MMC_IMMEDIATE(MMC_TAGFIXNUM(115)),_OMC_LIT8_6}};
 #define _OMC_LIT8 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT8)
@@ -271,3 +271,4 @@ modelica_metatype omc_NFConnection_split(threadData_t *threadData, modelica_meta
   _return: OMC_LABEL_UNUSED
   return _conns;
 }
+
