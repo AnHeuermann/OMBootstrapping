@@ -172,7 +172,7 @@ modelica_metatype omc_Rational_add(threadData_t *threadData, modelica_metatype _
   if (tmp2 == 0) {MMC_THROW_INTERNAL();}
   tmp3 = _g;
   if (tmp3 == 0) {MMC_THROW_INTERNAL();}
-  _r = omc_Rational_reduce(threadData, (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_r1), 2))))) * (modelica_div_integer(mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_r2), 3)))),tmp1).quot) + (modelica_div_integer(mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_r1), 3)))),tmp2).quot) * (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_r2), 2))))), (modelica_div_integer(mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_r1), 3)))),tmp3).quot) * (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_r2), 3))))));
+  _r = omc_Rational_reduce(threadData, (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_r1), 2))))) * (modelica_div_integer(mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_r2), 3)))),tmp1).quot) + ((modelica_div_integer(mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_r1), 3)))),tmp2).quot) * (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_r2), 2)))))), (modelica_div_integer(mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_r1), 3)))),tmp3).quot) * (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_r2), 3))))));
   _return: OMC_LABEL_UNUSED
   return _r;
 }

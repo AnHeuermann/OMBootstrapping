@@ -261,9 +261,9 @@ modelica_metatype omc_SBInterval_affine(threadData_t *threadData, modelica_metat
 
   if((_gain > 0.0))
   {
-    _lo = (_lo) * (_gain) + ((modelica_real)_offset);
+    _lo = (_lo) * (_gain) + (((modelica_real)_offset));
 
-    _hi = (_hi) * (_gain) + ((modelica_real)_offset);
+    _hi = (_hi) * (_gain) + (((modelica_real)_offset));
 
     _step = (_step) * (_gain);
 
@@ -280,7 +280,7 @@ modelica_metatype omc_SBInterval_affine(threadData_t *threadData, modelica_metat
     {
       tmp8 = _step;
       if (tmp8 == 0) {MMC_THROW_INTERNAL();}
-      _lo = _lo + (_step) * (1.0 + floor((fabs(_lo)) / tmp8));
+      _lo = _lo + ((_step) * (1.0 + floor((fabs(_lo)) / tmp8)));
     }
 
     if((_hi < _lo))
@@ -364,7 +364,7 @@ modelica_metatype omc_SBInterval_complement(threadData_t *threadData, modelica_m
     {
       if((mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 4)))) < mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 4))))))
       {
-        omc_UnorderedSet_add(threadData, omc_SBInterval_new(threadData, mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 4)))) + mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 3)))), mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 3)))), mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 4))))), _ints);
+        omc_UnorderedSet_add(threadData, omc_SBInterval_new(threadData, mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 4)))) + (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 3))))), mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 3)))), mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 4))))), _ints);
       }
 
       tmp1 = mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 3))));
@@ -395,7 +395,7 @@ modelica_metatype omc_SBInterval_complement(threadData_t *threadData, modelica_m
             for(_i = _count_r; in_range_integer(_i, tmp5, tmp7); _i += tmp6)
             {
 
-              omc_UnorderedSet_add(threadData, omc_SBInterval_new(threadData, mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 2)))) + (_i) * (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 3))))), mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 3)))), mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 4)))) + (_i) * (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 3))))) - (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 3)))))), _ints);
+              omc_UnorderedSet_add(threadData, omc_SBInterval_new(threadData, mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 2)))) + ((_i) * (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 3)))))), mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 3)))), mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 4)))) + ((_i) * (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 3))))) - (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 3))))))), _ints);
             }
           }
         }
@@ -408,7 +408,7 @@ modelica_metatype omc_SBInterval_complement(threadData_t *threadData, modelica_m
             for(_i = _count_r; in_range_integer(_i, tmp8, tmp10); _i += tmp9)
             {
 
-              omc_UnorderedSet_add(threadData, omc_SBInterval_new(threadData, mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 2)))) + (_i) * (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 3))))), mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 3)))), intMaxLit()), _ints);
+              omc_UnorderedSet_add(threadData, omc_SBInterval_new(threadData, mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 2)))) + ((_i) * (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 3)))))), mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 3)))), intMaxLit()), _ints);
             }
           }
         }
@@ -422,7 +422,7 @@ modelica_metatype omc_SBInterval_complement(threadData_t *threadData, modelica_m
           for(_i = _count_s; in_range_integer(_i, tmp11, tmp13); _i += tmp12)
           {
 
-            omc_UnorderedSet_add(threadData, omc_SBInterval_new(threadData, mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 2)))) + mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 3)))) + (((modelica_integer) -1) + _i) * (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 3))))), mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 3)))), mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 2)))) + (_i) * (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 3))))) - (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 3)))))), _ints);
+            omc_UnorderedSet_add(threadData, omc_SBInterval_new(threadData, mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 2)))) + (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 3)))) + ((((modelica_integer) -1) + _i) * (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 3))))))), mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 3)))), mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 2)))) + ((_i) * (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_i2), 3))))) - (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 3))))))), _ints);
           }
         }
       }
@@ -478,7 +478,7 @@ modelica_metatype omc_SBInterval_intersection(threadData_t *threadData, modelica
       if (tmp1 == 0) {MMC_THROW_INTERNAL();}
       tmp2 = _gcd_;
       if (tmp2 == 0) {MMC_THROW_INTERNAL();}
-      _x = (modelica_div_integer(mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 2)))),tmp1).quot) * (_vb) + (modelica_div_integer(mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int2), 2)))),tmp2).quot) * (_ua) + modelica_integer_mod(mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 2)))), _gcd_);
+      _x = (modelica_div_integer(mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 2)))),tmp1).quot) * (_vb) + ((modelica_div_integer(mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int2), 2)))),tmp2).quot) * (_ua) + modelica_integer_mod(mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 2)))), _gcd_));
 
       _new_lo = modelica_integer_max((modelica_integer)(mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int1), 2))))),(modelica_integer)(mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_int2), 2))))));
 

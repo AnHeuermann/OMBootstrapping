@@ -3,10 +3,10 @@
 #define _OMC_LIT0_data "NFRecord.collectRecordParams got non-instantiated function"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT0,58,_OMC_LIT0_data);
 #define _OMC_LIT0 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT0)
-#define _OMC_LIT1_data "//OpenModelica/OMCompiler/Compiler/NFFrontEnd/NFRecord.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT1,80,_OMC_LIT1_data);
+#define _OMC_LIT1_data "NFRecord.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT1,11,_OMC_LIT1_data);
 #define _OMC_LIT1 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT1)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT2_6,1.784622031e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT2_6,0.0);
 #define _OMC_LIT2_6 MMC_REFREALLIT(_OMC_LIT_STRUCT2_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT2,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT1,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(255)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(255)),MMC_IMMEDIATE(MMC_TAGFIXNUM(92)),_OMC_LIT2_6}};
 #define _OMC_LIT2 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT2)
@@ -198,14 +198,14 @@ modelica_metatype omc_NFRecord_fieldsToDAE(threadData_t *threadData, modelica_me
             case 0: {
               modelica_metatype tmpMeta7;
               if (mmc__uniontype__metarecord__typedef__equal(tmp5_1,0,1) == 0) goto tmp4_end;
-
+              
               /* Pattern matching succeeded */
               tmpMeta7 = mmc_mk_cons((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_field), 2))), _fieldNames);
               _fieldNames = tmpMeta7;
               goto tmp4_done;
             }
             case 1: {
-
+              
               /* Pattern matching succeeded */
               goto tmp4_done;
             }
@@ -415,7 +415,7 @@ modelica_metatype omc_NFRecord_collectRecordParams(threadData_t *threadData, mod
           modelica_integer tmp11;
           if (mmc__uniontype__metarecord__typedef__equal(tmp6_1,3,5) == 0) goto tmp5_end;
           tmpMeta7 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp6_1), 4));
-
+          
           _comps = tmpMeta7;
           /* Pattern matching succeeded */
           tmp9 = arrayLength(_comps); tmp10 = ((modelica_integer) -1); tmp11 = ((modelica_integer) 1);
@@ -443,7 +443,7 @@ modelica_metatype omc_NFRecord_collectRecordParams(threadData_t *threadData, mod
           modelica_integer tmp16;
           if (mmc__uniontype__metarecord__typedef__equal(tmp6_1,2,7) == 0) goto tmp5_end;
           tmpMeta12 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp6_1), 4));
-
+          
           _pcomps = tmpMeta12;
           /* Pattern matching succeeded */
           tmp14 = arrayLength(_pcomps); tmp15 = ((modelica_integer) -1); tmp16 = ((modelica_integer) 1);
@@ -465,7 +465,7 @@ modelica_metatype omc_NFRecord_collectRecordParams(threadData_t *threadData, mod
         }
         default:
         tmp5_default: OMC_LABEL_UNUSED; {
-
+          
           /* Pattern matching succeeded */
           omc_Error_terminate(threadData, _OMC_LIT0, _OMC_LIT2);
           goto goto_4;
@@ -727,14 +727,14 @@ modelica_string omc_NFRecord_Field_name(threadData_t *threadData, modelica_metat
         switch (MMC_SWITCH_CAST(tmp4)) {
         case 0: {
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,0,1) == 0) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           tmp1 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_field), 2)));
           goto tmp3_done;
         }
         case 1: {
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,1,1) == 0) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           tmp1 = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_field), 2)));
           goto tmp3_done;
@@ -777,13 +777,13 @@ modelica_boolean omc_NFRecord_Field_isInput(threadData_t *threadData, modelica_m
         switch (MMC_SWITCH_CAST(tmp4)) {
         case 0: {
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,0,1) == 0) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           tmp1 = 1 /* true */;
           goto tmp3_done;
         }
         case 1: {
-
+          
           /* Pattern matching succeeded */
           tmp1 = 0 /* false */;
           goto tmp3_done;
@@ -814,3 +814,4 @@ modelica_metatype boxptr_NFRecord_Field_isInput(threadData_t *threadData, modeli
   out_isInput = mmc_mk_icon(_isInput);
   return out_isInput;
 }
+

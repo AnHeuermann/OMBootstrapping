@@ -5,6 +5,7 @@ extern "C" {
 #include "ModelicaUtilities.h"  // Make Modelica C util functions available for external includes.
 
 #include "AbsynUtil.h"
+#include "Array.h"
 #include "AvlSetString.h"
 #include "BackendDAECreate.h"
 #include "BackendDAEUtil.h"
@@ -20,6 +21,7 @@ extern "C" {
 #include "CodegenFMU.h"
 #include "CodegenFMU2.h"
 #include "CodegenFMU3.h"
+#include "CodegenFMUCommon.h"
 #include "CodegenFMUCpp.h"
 #include "CodegenFMUCppHpcom.h"
 #include "CodegenJS.h"

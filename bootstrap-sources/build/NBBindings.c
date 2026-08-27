@@ -210,17 +210,17 @@ modelica_metatype omc_NBBindings_main(threadData_t *threadData, modelica_metatyp
           _eqData = tmpMeta11;
           /* Pattern matching succeeded */
           {
-            modelica_metatype __omcQ_24tmpVar7;
+            modelica_metatype __omcQ_24tmpVar9;
             modelica_metatype* tmp13;
             modelica_metatype tmpMeta14;
-            modelica_metatype __omcQ_24tmpVar6;
+            modelica_metatype __omcQ_24tmpVar8;
             modelica_integer tmp15;
             modelica_metatype _var_loopVar = 0;
             modelica_metatype _var;
             _var_loopVar = omc_NBVariable_VariablePointers_toList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_varData), 4))));
             tmpMeta14 = MMC_REFSTRUCTLIT(mmc_nil);
-            __omcQ_24tmpVar7 = tmpMeta14; /* defaultValue */
-            tmp13 = &__omcQ_24tmpVar7;
+            __omcQ_24tmpVar9 = tmpMeta14; /* defaultValue */
+            tmp13 = &__omcQ_24tmpVar9;
             while(1) {
               tmp15 = 1;
               while (!listEmpty(_var_loopVar)) {
@@ -232,8 +232,8 @@ modelica_metatype omc_NBBindings_main(threadData_t *threadData, modelica_metatyp
                 }
               }
               if (tmp15 == 0) {
-                __omcQ_24tmpVar6 = _var;
-                *tmp13 = mmc_mk_cons(__omcQ_24tmpVar6,0);
+                __omcQ_24tmpVar8 = _var;
+                *tmp13 = mmc_mk_cons(__omcQ_24tmpVar8,0);
                 tmp13 = &MMC_CDR(*tmp13);
               } else if (tmp15 == 1) {
                 break;
@@ -242,7 +242,7 @@ modelica_metatype omc_NBBindings_main(threadData_t *threadData, modelica_metatyp
               }
             }
             *tmp13 = mmc_mk_nil();
-            tmpMeta12 = __omcQ_24tmpVar7;
+            tmpMeta12 = __omcQ_24tmpVar9;
           }
           _bound_vars = tmpMeta12;
 
@@ -307,17 +307,17 @@ modelica_metatype omc_NBBindings_main(threadData_t *threadData, modelica_metatyp
           }
 
           {
-            modelica_metatype __omcQ_24tmpVar9;
+            modelica_metatype __omcQ_24tmpVar11;
             modelica_metatype* tmp27;
             modelica_metatype tmpMeta28;
-            modelica_metatype __omcQ_24tmpVar8;
+            modelica_metatype __omcQ_24tmpVar10;
             modelica_integer tmp29;
             modelica_metatype _var_loopVar = 0;
             modelica_metatype _var;
             _var_loopVar = omc_NBVariable_VariablePointers_toList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_varData), 22))));
             tmpMeta28 = MMC_REFSTRUCTLIT(mmc_nil);
-            __omcQ_24tmpVar9 = tmpMeta28; /* defaultValue */
-            tmp27 = &__omcQ_24tmpVar9;
+            __omcQ_24tmpVar11 = tmpMeta28; /* defaultValue */
+            tmp27 = &__omcQ_24tmpVar11;
             while(1) {
               tmp29 = 1;
               while (!listEmpty(_var_loopVar)) {
@@ -329,8 +329,8 @@ modelica_metatype omc_NBBindings_main(threadData_t *threadData, modelica_metatyp
                 }
               }
               if (tmp29 == 0) {
-                __omcQ_24tmpVar8 = _var;
-                *tmp27 = mmc_mk_cons(__omcQ_24tmpVar8,0);
+                __omcQ_24tmpVar10 = _var;
+                *tmp27 = mmc_mk_cons(__omcQ_24tmpVar10,0);
                 tmp27 = &MMC_CDR(*tmp27);
               } else if (tmp29 == 1) {
                 break;
@@ -339,7 +339,7 @@ modelica_metatype omc_NBBindings_main(threadData_t *threadData, modelica_metatyp
               }
             }
             *tmp27 = mmc_mk_nil();
-            tmpMeta26 = __omcQ_24tmpVar9;
+            tmpMeta26 = __omcQ_24tmpVar11;
           }
           _bound_vars = tmpMeta26;
 
@@ -354,17 +354,17 @@ modelica_metatype omc_NBBindings_main(threadData_t *threadData, modelica_metatyp
           }
 
           {
-            modelica_metatype __omcQ_24tmpVar11;
+            modelica_metatype __omcQ_24tmpVar13;
             modelica_metatype* tmp34;
             modelica_metatype tmpMeta35;
-            modelica_metatype __omcQ_24tmpVar10;
+            modelica_metatype __omcQ_24tmpVar12;
             modelica_integer tmp36;
             modelica_metatype _var_loopVar = 0;
             modelica_metatype _var;
             _var_loopVar = omc_NBVariable_VariablePointers_toList(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_varData), 16))));
             tmpMeta35 = MMC_REFSTRUCTLIT(mmc_nil);
-            __omcQ_24tmpVar11 = tmpMeta35; /* defaultValue */
-            tmp34 = &__omcQ_24tmpVar11;
+            __omcQ_24tmpVar13 = tmpMeta35; /* defaultValue */
+            tmp34 = &__omcQ_24tmpVar13;
             while(1) {
               tmp36 = 1;
               while (!listEmpty(_var_loopVar)) {
@@ -376,8 +376,8 @@ modelica_metatype omc_NBBindings_main(threadData_t *threadData, modelica_metatyp
                 }
               }
               if (tmp36 == 0) {
-                __omcQ_24tmpVar10 = _var;
-                *tmp34 = mmc_mk_cons(__omcQ_24tmpVar10,0);
+                __omcQ_24tmpVar12 = _var;
+                *tmp34 = mmc_mk_cons(__omcQ_24tmpVar12,0);
                 tmp34 = &MMC_CDR(*tmp34);
               } else if (tmp36 == 1) {
                 break;
@@ -386,7 +386,7 @@ modelica_metatype omc_NBBindings_main(threadData_t *threadData, modelica_metatyp
               }
             }
             *tmp34 = mmc_mk_nil();
-            tmpMeta33 = __omcQ_24tmpVar11;
+            tmpMeta33 = __omcQ_24tmpVar13;
           }
           _bound_clocks = tmpMeta33;
 

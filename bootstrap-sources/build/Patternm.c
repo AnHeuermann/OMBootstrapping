@@ -2020,7 +2020,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Patternm_constantComplexity(thre
           _i = tmp4_2;
           /* Pattern matching succeeded */
           tmpMeta[0+0] = _e;
-          tmp1_c1 = ((modelica_integer) 5) + _i + stringLength(_str);
+          tmp1_c1 = ((modelica_integer) 5) + (_i + stringLength(_str));
           goto tmp3_done;
         }
         case 1: {
@@ -8818,18 +8818,18 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Patternm_optimizeSwitchedMatchCa
           
           /* Pattern matching succeeded */
           {
-            modelica_metatype __omcQ_24tmpVar1;
+            modelica_metatype __omcQ_24tmpVar3;
             modelica_metatype* tmp10;
             modelica_metatype tmpMeta11;
             modelica_metatype tmpMeta12;
-            modelica_metatype __omcQ_24tmpVar0;
+            modelica_metatype __omcQ_24tmpVar2;
             modelica_integer tmp24;
             modelica_metatype _c_loopVar = 0;
             modelica_metatype _c;
             _c_loopVar = _inCases;
             tmpMeta11 = MMC_REFSTRUCTLIT(mmc_nil);
-            __omcQ_24tmpVar1 = tmpMeta11; /* defaultValue */
-            tmp10 = &__omcQ_24tmpVar1;
+            __omcQ_24tmpVar3 = tmpMeta11; /* defaultValue */
+            tmp10 = &__omcQ_24tmpVar3;
             while(1) {
               tmp24 = 1;
               if (!listEmpty(_c_loopVar)) {
@@ -8898,8 +8898,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Patternm_optimizeSwitchedMatchCa
                     goto tmp14_done;
                     tmp14_done:;
                   }
-                }__omcQ_24tmpVar0 = tmpMeta12;
-                *tmp10 = mmc_mk_cons(__omcQ_24tmpVar0,0);
+                }__omcQ_24tmpVar2 = tmpMeta12;
+                *tmp10 = mmc_mk_cons(__omcQ_24tmpVar2,0);
                 tmp10 = &MMC_CDR(*tmp10);
               } else if (tmp24 == 1) {
                 break;
@@ -8908,7 +8908,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_Patternm_optimizeSwitchedMatchCa
               }
             }
             *tmp10 = mmc_mk_nil();
-            tmpMeta9 = __omcQ_24tmpVar1;
+            tmpMeta9 = __omcQ_24tmpVar3;
           }
           tmpMeta1 = tmpMeta9;
           goto tmp3_done;

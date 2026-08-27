@@ -70,6 +70,8 @@ extern struct record_description SimCode_SimCode_SIMCODE__desc;
 
 extern struct record_description SimCode_SimulationSettings_SIMULATION__SETTINGS__desc;
 
+extern struct record_description SimCodeMain_FmuTranslation_FMU__TRANSLATION__desc;
+
 extern struct record_description SimCodeMain_TranslateModelKind_NORMAL__desc;
 
 extern struct record_description SourceInfo_SOURCEINFO__desc;
@@ -126,7 +128,38 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_SimCodeMain_translateModel,2,0) {(void*
 #define boxptr_SimCodeMain_htmlDocumentation omc_SimCodeMain_htmlDocumentation
 
 
-#define boxptr_SimCodeMain_callTargetTemplatesFMU omc_SimCodeMain_callTargetTemplatesFMU
+DLLDirection
+void omc_SimCodeMain_emitWasmFMU(threadData_t *threadData, modelica_metatype _simCode, modelica_string _FMUVersion, modelica_string _FMUType, modelica_metatype _program);
+#define boxptr_SimCodeMain_emitWasmFMU omc_SimCodeMain_emitWasmFMU
+static const MMC_DEFSTRUCTLIT(boxvar_lit_SimCodeMain_emitWasmFMU,2,0) {(void*) boxptr_SimCodeMain_emitWasmFMU,0}};
+#define boxvar_SimCodeMain_emitWasmFMU MMC_REFSTRUCTLIT(boxvar_lit_SimCodeMain_emitWasmFMU)
+
+
+DLLDirection
+modelica_string omc_SimCodeMain_wasmFMUSimulationFlagsJson(threadData_t *threadData, modelica_metatype _simCode);
+#define boxptr_SimCodeMain_wasmFMUSimulationFlagsJson omc_SimCodeMain_wasmFMUSimulationFlagsJson
+static const MMC_DEFSTRUCTLIT(boxvar_lit_SimCodeMain_wasmFMUSimulationFlagsJson,2,0) {(void*) boxptr_SimCodeMain_wasmFMUSimulationFlagsJson,0}};
+#define boxvar_SimCodeMain_wasmFMUSimulationFlagsJson MMC_REFSTRUCTLIT(boxvar_lit_SimCodeMain_wasmFMUSimulationFlagsJson)
+
+
+DLLDirection
+modelica_metatype omc_SimCodeMain_fmuTranslationFor(threadData_t *threadData, modelica_string _FMUVersion, modelica_string _FMUType, modelica_metatype _className, modelica_metatype _settings);
+#define boxptr_SimCodeMain_fmuTranslationFor omc_SimCodeMain_fmuTranslationFor
+static const MMC_DEFSTRUCTLIT(boxvar_lit_SimCodeMain_fmuTranslationFor,2,0) {(void*) boxptr_SimCodeMain_fmuTranslationFor,0}};
+#define boxvar_SimCodeMain_fmuTranslationFor MMC_REFSTRUCTLIT(boxvar_lit_SimCodeMain_fmuTranslationFor)
+
+
+DLLDirection
+void omc_SimCodeMain_keepFmuTranslation(threadData_t *threadData, modelica_metatype _simCode, modelica_string _FMUVersion, modelica_string _FMUType, modelica_metatype _className);
+#define boxptr_SimCodeMain_keepFmuTranslation omc_SimCodeMain_keepFmuTranslation
+static const MMC_DEFSTRUCTLIT(boxvar_lit_SimCodeMain_keepFmuTranslation,2,0) {(void*) boxptr_SimCodeMain_keepFmuTranslation,0}};
+#define boxvar_SimCodeMain_keepFmuTranslation MMC_REFSTRUCTLIT(boxvar_lit_SimCodeMain_keepFmuTranslation)
+
+
+#define boxptr_SimCodeMain_fmuTranslationFlags omc_SimCodeMain_fmuTranslationFlags
+
+
+#define boxptr_SimCodeMain_fmuTranslationKind omc_SimCodeMain_fmuTranslationKind
 
 
 #define boxptr_SimCodeMain_visualizationCadFiles omc_SimCodeMain_visualizationCadFiles

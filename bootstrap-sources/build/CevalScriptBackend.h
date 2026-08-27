@@ -136,6 +136,8 @@ extern struct record_description Flags_FlagData_INT__FLAG__desc;
 
 extern struct record_description Flags_FlagData_STRING__FLAG__desc;
 
+extern struct record_description Flags_FlagData_STRING__LIST__FLAG__desc;
+
 extern struct record_description Flags_FlagVisibility_EXTERNAL__desc;
 
 extern struct record_description Flags_FlagVisibility_INTERNAL__desc;
@@ -540,26 +542,8 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_CevalScriptBackend_callBuildModelFMU,2,
 #define boxptr_CevalScriptBackend_fmuSimulationSettings omc_CevalScriptBackend_fmuSimulationSettings
 
 
+#define boxptr_CevalScriptBackend_reportFMUPlatformsBuilt omc_CevalScriptBackend_reportFMUPlatformsBuilt
 
-extern int OMGraphics_writePlacedConnectorIconPNG(int /*_handle*/, int /*_index*/, const char* /*_path*/);
-
-
-extern int OMGraphics_writeIconPNGFromHandle(int /*_handle*/, const char* /*_modelName*/, const char* /*_path*/);
-
-
-extern const char* OMGraphics_placedConnectorIconSVG(int /*_handle*/, int /*_index*/);
-
-
-extern const char* OMGraphics_placedConnectorInfo(int /*_handle*/, int /*_index*/);
-
-
-extern int OMGraphics_placedConnectorCount(int /*_handle*/);
-
-
-extern const char* OMGraphics_graphicalRepresentationXMLFromHandle(int /*_handle*/, double /*_scaleToMm*/);
-
-
-extern const char* OMGraphics_iconSVGFromHandle(int /*_handle*/, const char* /*_modelName*/);
 
 #define boxptr_CevalScriptBackend_insertBeforeTerminalClose omc_CevalScriptBackend_insertBeforeTerminalClose
 

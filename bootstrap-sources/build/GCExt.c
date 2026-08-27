@@ -221,7 +221,7 @@ modelica_string omc_GCExt_profStatsStr(threadData_t *threadData, modelica_metaty
           tmpMeta20 = stringAppend(tmpMeta19,intString(mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_stats), 6))))));
           tmpMeta21 = stringAppend(tmpMeta20,_delimiter);
           tmpMeta22 = stringAppend(tmpMeta21,_OMC_LIT7);
-          tmpMeta23 = stringAppend(tmpMeta22,intString(mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_stats), 5)))) + mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_stats), 6))))));
+          tmpMeta23 = stringAppend(tmpMeta22,intString(mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_stats), 5)))) + (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_stats), 6)))))));
           tmpMeta24 = stringAppend(tmpMeta23,_delimiter);
           tmpMeta25 = stringAppend(tmpMeta24,_OMC_LIT8);
           tmpMeta26 = stringAppend(tmpMeta25,intString(mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_stats), 7))))));

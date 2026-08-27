@@ -1769,6 +1769,21 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_AbsynUtil_setClassName,2,0) {(void*) bo
 #define boxvar_AbsynUtil_setClassName MMC_REFSTRUCTLIT(boxvar_lit_AbsynUtil_setClassName)
 
 
+#define boxptr_AbsynUtil_setElementSpecFilename omc_AbsynUtil_setElementSpecFilename
+
+
+#define boxptr_AbsynUtil_setElementFilename omc_AbsynUtil_setElementFilename
+
+
+#define boxptr_AbsynUtil_setElementItemFilename omc_AbsynUtil_setElementItemFilename
+
+
+#define boxptr_AbsynUtil_setClassPartFilename omc_AbsynUtil_setClassPartFilename
+
+
+#define boxptr_AbsynUtil_setClassDefFilename omc_AbsynUtil_setClassDefFilename
+
+
 DLLDirection
 modelica_metatype omc_AbsynUtil_setClassFilename(threadData_t *threadData, modelica_metatype _inClass, modelica_string _fileName);
 #define boxptr_AbsynUtil_setClassFilename omc_AbsynUtil_setClassFilename

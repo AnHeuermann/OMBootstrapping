@@ -497,17 +497,17 @@ modelica_string omc_NFModifier_Modifier_toString(threadData_t *threadData, model
           if((!listEmpty(_submods)))
           {
             {
-              modelica_metatype __omcQ_24tmpVar1;
+              modelica_metatype __omcQ_24tmpVar3;
               modelica_metatype* tmp7;
               modelica_metatype tmpMeta8;
-              modelica_string __omcQ_24tmpVar0;
+              modelica_string __omcQ_24tmpVar2;
               modelica_integer tmp9;
               modelica_metatype _s_loopVar = 0;
               modelica_metatype _s;
               _s_loopVar = _submods;
               tmpMeta8 = MMC_REFSTRUCTLIT(mmc_nil);
-              __omcQ_24tmpVar1 = tmpMeta8; /* defaultValue */
-              tmp7 = &__omcQ_24tmpVar1;
+              __omcQ_24tmpVar3 = tmpMeta8; /* defaultValue */
+              tmp7 = &__omcQ_24tmpVar3;
               while(1) {
                 tmp9 = 1;
                 if (!listEmpty(_s_loopVar)) {
@@ -516,8 +516,8 @@ modelica_string omc_NFModifier_Modifier_toString(threadData_t *threadData, model
                   tmp9--;
                 }
                 if (tmp9 == 0) {
-                  __omcQ_24tmpVar0 = omc_NFModifier_Modifier_toString(threadData, _s, 1 /* true */);
-                  *tmp7 = mmc_mk_cons(__omcQ_24tmpVar0,0);
+                  __omcQ_24tmpVar2 = omc_NFModifier_Modifier_toString(threadData, _s, 1 /* true */);
+                  *tmp7 = mmc_mk_cons(__omcQ_24tmpVar2,0);
                   tmp7 = &MMC_CDR(*tmp7);
                 } else if (tmp9 == 1) {
                   break;
@@ -526,7 +526,7 @@ modelica_string omc_NFModifier_Modifier_toString(threadData_t *threadData, model
                 }
               }
               *tmp7 = mmc_mk_nil();
-              tmpMeta6 = __omcQ_24tmpVar1;
+              tmpMeta6 = __omcQ_24tmpVar3;
             }
             tmpMeta10 = stringAppend(_OMC_LIT12,stringDelimitList(tmpMeta6, _OMC_LIT13));
             tmpMeta11 = stringAppend(tmpMeta10,_OMC_LIT14);
@@ -1981,18 +1981,18 @@ modelica_metatype omc_NFModifier_Modifier_create(threadData_t *threadData, model
           _binding = omc_NFBinding_fromAbsyn(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_mod), 5))), _is_each, omc_NFModifier_ModifierScope_isClass(threadData, _modScope), _scope, _confidence, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_mod), 7))));
 
           {
-            modelica_metatype __omcQ_24tmpVar3;
+            modelica_metatype __omcQ_24tmpVar5;
             modelica_metatype* tmp6;
             modelica_metatype tmpMeta7;
             modelica_metatype tmpMeta8;
-            modelica_metatype __omcQ_24tmpVar2;
+            modelica_metatype __omcQ_24tmpVar4;
             modelica_integer tmp9;
             modelica_metatype _m_loopVar = 0;
             modelica_metatype _m;
             _m_loopVar = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_mod), 4)));
             tmpMeta7 = MMC_REFSTRUCTLIT(mmc_nil);
-            __omcQ_24tmpVar3 = tmpMeta7; /* defaultValue */
-            tmp6 = &__omcQ_24tmpVar3;
+            __omcQ_24tmpVar5 = tmpMeta7; /* defaultValue */
+            tmp6 = &__omcQ_24tmpVar5;
             while(1) {
               tmp9 = 1;
               while (!listEmpty(_m_loopVar)) {
@@ -2005,8 +2005,8 @@ modelica_metatype omc_NFModifier_Modifier_create(threadData_t *threadData, model
               }
               if (tmp9 == 0) {
                 tmpMeta8 = mmc_mk_box2(0, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_m), 2))), omc_NFModifier_Modifier_createSubMod(threadData, _m, _modScope, _scope, _confidence));
-                __omcQ_24tmpVar2 = tmpMeta8;
-                *tmp6 = mmc_mk_cons(__omcQ_24tmpVar2,0);
+                __omcQ_24tmpVar4 = tmpMeta8;
+                *tmp6 = mmc_mk_cons(__omcQ_24tmpVar4,0);
                 tmp6 = &MMC_CDR(*tmp6);
               } else if (tmp9 == 1) {
                 break;
@@ -2015,7 +2015,7 @@ modelica_metatype omc_NFModifier_Modifier_create(threadData_t *threadData, model
               }
             }
             *tmp6 = mmc_mk_nil();
-            tmpMeta5 = __omcQ_24tmpVar3;
+            tmpMeta5 = __omcQ_24tmpVar5;
           }
           _submod_lst = tmpMeta5;
 

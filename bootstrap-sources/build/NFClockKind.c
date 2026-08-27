@@ -116,7 +116,7 @@ modelica_integer omc_NFClockKind_hashContinue(threadData_t *threadData, modelica
         case 3: {
           
           /* Pattern matching succeeded */
-          tmp1 = _hash + mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_clk), 2))));
+          tmp1 = _hash + (mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_clk), 2)))));
           goto tmp3_done;
         }
         case 4: {

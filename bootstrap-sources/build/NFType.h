@@ -589,11 +589,28 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_NFType_isVector,2,0) {(void*) boxptr_NF
 #define boxvar_NFType_isVector MMC_REFSTRUCTLIT(boxvar_lit_NFType_isVector)
 
 
+#define boxptr_NFType_unifyArrays_unify__dims omc_NFType_unifyArrays_unify__dims
+
+
+DLLDirection
+modelica_metatype omc_NFType_unifyArrays(threadData_t *threadData, modelica_metatype _ty1, modelica_metatype _ty2);
+#define boxptr_NFType_unifyArrays omc_NFType_unifyArrays
+static const MMC_DEFSTRUCTLIT(boxvar_lit_NFType_unifyArrays,2,0) {(void*) boxptr_NFType_unifyArrays,0}};
+#define boxvar_NFType_unifyArrays MMC_REFSTRUCTLIT(boxvar_lit_NFType_unifyArrays)
+
+
 DLLDirection
 modelica_metatype omc_NFType_simplifyConditionalArray(threadData_t *threadData, modelica_metatype _ty);
 #define boxptr_NFType_simplifyConditionalArray omc_NFType_simplifyConditionalArray
 static const MMC_DEFSTRUCTLIT(boxvar_lit_NFType_simplifyConditionalArray,2,0) {(void*) boxptr_NFType_simplifyConditionalArray,0}};
 #define boxvar_NFType_simplifyConditionalArray MMC_REFSTRUCTLIT(boxvar_lit_NFType_simplifyConditionalArray)
+
+
+DLLDirection
+modelica_metatype omc_NFType_matchedConditionalArrayType(threadData_t *threadData, modelica_metatype _ty);
+#define boxptr_NFType_matchedConditionalArrayType omc_NFType_matchedConditionalArrayType
+static const MMC_DEFSTRUCTLIT(boxvar_lit_NFType_matchedConditionalArrayType,2,0) {(void*) boxptr_NFType_matchedConditionalArrayType,0}};
+#define boxvar_NFType_matchedConditionalArrayType MMC_REFSTRUCTLIT(boxvar_lit_NFType_matchedConditionalArrayType)
 
 
 DLLDirection

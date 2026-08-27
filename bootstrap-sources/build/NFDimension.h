@@ -255,6 +255,14 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_NFDimension_isSizeOf,2,0) {(void*) boxp
 
 
 DLLDirection
+modelica_boolean omc_NFDimension_isSame(threadData_t *threadData, modelica_metatype _dim1, modelica_metatype _dim2);
+DLLDirection
+modelica_metatype boxptr_NFDimension_isSame(threadData_t *threadData, modelica_metatype _dim1, modelica_metatype _dim2);
+static const MMC_DEFSTRUCTLIT(boxvar_lit_NFDimension_isSame,2,0) {(void*) boxptr_NFDimension_isSame,0}};
+#define boxvar_NFDimension_isSame MMC_REFSTRUCTLIT(boxvar_lit_NFDimension_isSame)
+
+
+DLLDirection
 modelica_boolean omc_NFDimension_isEqualKnownSize(threadData_t *threadData, modelica_metatype _dim1, modelica_metatype _node1, modelica_integer _index1, modelica_metatype _dim2, modelica_metatype _node2, modelica_integer _index2);
 DLLDirection
 modelica_metatype boxptr_NFDimension_isEqualKnownSize(threadData_t *threadData, modelica_metatype _dim1, modelica_metatype _node1, modelica_metatype _index1, modelica_metatype _dim2, modelica_metatype _node2, modelica_metatype _index2);

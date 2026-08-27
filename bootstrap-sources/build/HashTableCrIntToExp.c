@@ -179,7 +179,7 @@ PROTECTED_FUNCTION_STATIC modelica_integer omc_HashTableCrIntToExp_hashFunc(thre
   MMC_SO();
   _tailrecursive: OMC_LABEL_UNUSED
   // _res has no default value.
-  _res = omc_ComponentReferenceBasics_hashComponentRef(threadData, omc_Util_tuple21(threadData, _tpl)) + mmc_unbox_integer(omc_Util_tuple22(threadData, _tpl));
+  _res = omc_ComponentReferenceBasics_hashComponentRef(threadData, omc_Util_tuple21(threadData, _tpl)) + (mmc_unbox_integer(omc_Util_tuple22(threadData, _tpl)));
   _return: OMC_LABEL_UNUSED
   #if defined(OMC_MINIMAL_RUNTIME) || defined(OMC_FMI_RUNTIME)
   omc_util_restore_pool_state(omc_pool_state);

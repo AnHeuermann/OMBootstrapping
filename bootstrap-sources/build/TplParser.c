@@ -18143,7 +18143,7 @@ modelica_integer omc_TplParser_charsTillEndOfLine(threadData_t *threadData, mode
         goto _return;
       }
 
-      _outCharsTillEnd = _outCharsTillEnd + ((_i == ((modelica_integer) 9))?((modelica_integer) 4):((modelica_integer) 1));
+      _outCharsTillEnd = _outCharsTillEnd + (((_i == ((modelica_integer) 9))?((modelica_integer) 4):((modelica_integer) 1)));
     }
   }
   _return: OMC_LABEL_UNUSED

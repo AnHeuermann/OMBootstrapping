@@ -9,12 +9,12 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT1,2,_OMC_LIT1_data);
 #define _OMC_LIT2_data "System.realpath failed for "
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT2,27,_OMC_LIT2_data);
 #define _OMC_LIT2 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT2)
-#define _OMC_LIT3_data "//OpenModelica/OMCompiler/Compiler/Util/System.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT3,72,_OMC_LIT3_data);
+#define _OMC_LIT3_data "System.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT3,9,_OMC_LIT3_data);
 #define _OMC_LIT3 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT3)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT4_6,1.784885416e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT4_6,0.0);
 #define _OMC_LIT4_6 MMC_REFREALLIT(_OMC_LIT_STRUCT4_6)
-static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT4,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT3,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1197)),MMC_IMMEDIATE(MMC_TAGFIXNUM(5)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1197)),MMC_IMMEDIATE(MMC_TAGFIXNUM(84)),_OMC_LIT4_6}};
+static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT4,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT3,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1216)),MMC_IMMEDIATE(MMC_TAGFIXNUM(5)),MMC_IMMEDIATE(MMC_TAGFIXNUM(1216)),MMC_IMMEDIATE(MMC_TAGFIXNUM(84)),_OMC_LIT4_6}};
 #define _OMC_LIT4 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT4)
 #define _OMC_LIT5_data ""
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT5,0,_OMC_LIT5_data);
@@ -385,6 +385,13 @@ modelica_metatype boxptr_System_getMemorySize(threadData_t *threadData)
   _memory = omc_System_getMemorySize(threadData);
   out_memory = mmc_mk_rcon(_memory);
   return out_memory;
+}
+
+void omc_System_reportProgressMessage(threadData_t *threadData, modelica_string _message)
+{
+
+  System_reportProgressMessage(MMC_STRINGDATA(_message));
+  return;
 }
 
 void omc_System_reportProgress(threadData_t *threadData, modelica_integer _permille, modelica_integer _phase)
@@ -2512,6 +2519,43 @@ modelica_metatype boxptr_System_lookupFunction(threadData_t *threadData, modelic
   return out_outFuncHandle;
 }
 
+modelica_string omc_System_getLoadLibraryError(threadData_t *threadData)
+{
+  const char* _outError_ext;
+  modelica_string _outError = NULL;
+  // _outError has no default value.
+
+  _outError_ext = System_getLoadLibraryError();
+  _outError = (modelica_string)mmc_mk_scon(_outError_ext);
+  return _outError;
+}
+
+modelica_integer omc_System_loadLibraryLazy(threadData_t *threadData, modelica_string _inLib, modelica_boolean _relativePath, modelica_boolean _printDebug)
+{
+  int _relativePath_ext;
+  int _printDebug_ext;
+  int _outLibHandle_ext;
+  modelica_integer _outLibHandle;
+  // _outLibHandle has no default value.
+  _relativePath_ext = (int) _relativePath;
+  _printDebug_ext = (int) _printDebug;
+  _outLibHandle_ext = System_loadLibraryLazy(MMC_STRINGDATA(_inLib), _relativePath_ext, _printDebug_ext);
+  _outLibHandle = (modelica_integer)_outLibHandle_ext;
+  return _outLibHandle;
+}
+modelica_metatype boxptr_System_loadLibraryLazy(threadData_t *threadData, modelica_metatype _inLib, modelica_metatype _relativePath, modelica_metatype _printDebug)
+{
+  modelica_integer tmp1;
+  modelica_integer tmp2;
+  modelica_integer _outLibHandle;
+  modelica_metatype out_outLibHandle;
+  tmp1 = mmc_unbox_integer(_relativePath);
+  tmp2 = mmc_unbox_integer(_printDebug);
+  _outLibHandle = omc_System_loadLibraryLazy(threadData, _inLib, tmp1, tmp2);
+  out_outLibHandle = mmc_mk_icon(_outLibHandle);
+  return out_outLibHandle;
+}
+
 modelica_integer omc_System_loadLibrary(threadData_t *threadData, modelica_string _inLib, modelica_boolean _relativePath, modelica_boolean _printDebug)
 {
   int _relativePath_ext;
@@ -2900,3 +2944,4 @@ modelica_string omc_System_trim(threadData_t *threadData, modelica_string _inStr
   _outString = (modelica_string)mmc_mk_scon(_outString_ext);
   return _outString;
 }
+

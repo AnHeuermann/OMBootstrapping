@@ -180,17 +180,17 @@ modelica_string omc_SerializeSparsityPattern_serialize(threadData_t *threadData,
           _fname = tmpMeta9;
 
           {
-            modelica_metatype __omcQ_24tmpVar1;
+            modelica_metatype __omcQ_24tmpVar3;
             modelica_metatype* tmp12;
             modelica_metatype tmpMeta13;
-            modelica_metatype __omcQ_24tmpVar0;
+            modelica_metatype __omcQ_24tmpVar2;
             modelica_integer tmp14;
             modelica_metatype _column_loopVar = 0;
             modelica_metatype _column;
             _column_loopVar = _pattern;
             tmpMeta13 = MMC_REFSTRUCTLIT(mmc_nil);
-            __omcQ_24tmpVar1 = tmpMeta13; /* defaultValue */
-            tmp12 = &__omcQ_24tmpVar1;
+            __omcQ_24tmpVar3 = tmpMeta13; /* defaultValue */
+            tmp12 = &__omcQ_24tmpVar3;
             while(1) {
               tmp14 = 1;
               if (!listEmpty(_column_loopVar)) {
@@ -199,8 +199,8 @@ modelica_string omc_SerializeSparsityPattern_serialize(threadData_t *threadData,
                 tmp14--;
               }
               if (tmp14 == 0) {
-                __omcQ_24tmpVar0 = mmc_mk_integer(listLength(omc_Util_tuple22(threadData, _column)));
-                *tmp12 = mmc_mk_cons(__omcQ_24tmpVar0,0);
+                __omcQ_24tmpVar2 = mmc_mk_integer(listLength(omc_Util_tuple22(threadData, _column)));
+                *tmp12 = mmc_mk_cons(__omcQ_24tmpVar2,0);
                 tmp12 = &MMC_CDR(*tmp12);
               } else if (tmp14 == 1) {
                 break;
@@ -209,23 +209,23 @@ modelica_string omc_SerializeSparsityPattern_serialize(threadData_t *threadData,
               }
             }
             *tmp12 = mmc_mk_nil();
-            tmpMeta11 = __omcQ_24tmpVar1;
+            tmpMeta11 = __omcQ_24tmpVar3;
           }
           tmpMeta10 = mmc_mk_cons(mmc_mk_integer(((modelica_integer) 0)), tmpMeta11);
           _columnPointers = listArray(tmpMeta10);
 
           {
-            modelica_metatype __omcQ_24tmpVar3;
+            modelica_metatype __omcQ_24tmpVar5;
             modelica_metatype* tmp16;
             modelica_metatype tmpMeta17;
-            modelica_metatype __omcQ_24tmpVar2;
+            modelica_metatype __omcQ_24tmpVar4;
             modelica_integer tmp18;
             modelica_metatype _column_loopVar = 0;
             modelica_metatype _column;
             _column_loopVar = _pattern;
             tmpMeta17 = MMC_REFSTRUCTLIT(mmc_nil);
-            __omcQ_24tmpVar3 = tmpMeta17; /* defaultValue */
-            tmp16 = &__omcQ_24tmpVar3;
+            __omcQ_24tmpVar5 = tmpMeta17; /* defaultValue */
+            tmp16 = &__omcQ_24tmpVar5;
             while(1) {
               tmp18 = 1;
               if (!listEmpty(_column_loopVar)) {
@@ -234,8 +234,8 @@ modelica_string omc_SerializeSparsityPattern_serialize(threadData_t *threadData,
                 tmp18--;
               }
               if (tmp18 == 0) {
-                __omcQ_24tmpVar2 = omc_Util_tuple22(threadData, _column);
-                *tmp16 = mmc_mk_cons(__omcQ_24tmpVar2,0);
+                __omcQ_24tmpVar4 = omc_Util_tuple22(threadData, _column);
+                *tmp16 = mmc_mk_cons(__omcQ_24tmpVar4,0);
                 tmp16 = &MMC_CDR(*tmp16);
               } else if (tmp18 == 1) {
                 break;
@@ -244,7 +244,7 @@ modelica_string omc_SerializeSparsityPattern_serialize(threadData_t *threadData,
               }
             }
             *tmp16 = mmc_mk_nil();
-            tmpMeta15 = __omcQ_24tmpVar3;
+            tmpMeta15 = __omcQ_24tmpVar5;
           }
           _rowIndices = listArray(omc_List_flatten(threadData, tmpMeta15));
 

@@ -22,6 +22,7 @@ extern "C" {
 #include "NFComponentRef.h"
 #include "NFExpression.h"
 #include "NFOperator.h"
+#include "NFScalarize.h"
 #include "NFSimplifyExp.h"
 #include "NFType.h"
 #include "Pointer.h"

@@ -1185,36 +1185,6 @@ extern struct record_description FMI_FmiImport_FMIIMPORT__desc;
 #define FMI__FMIIMPORT_3dBOX14 3
 #define FMI__FMIIMPORT(platform,fmuFileName,fmuWorkingDirectory,fmiLogLevel,fmiDebugOutput,fmiContext,fmiInstance,fmiInfo,fmiTypeDefinitionsList,fmiExperimentAnnotation,fmiModelVariablesInstance,fmiModelVariablesList,generateInputConnectors,generateOutputConnectors) (mmc_mk_box(15, 3,&FMI_FmiImport_FMIIMPORT__desc,platform,fmuFileName,fmuWorkingDirectory,fmiLogLevel,fmiDebugOutput,fmiContext,fmiInstance,fmiInfo,fmiTypeDefinitionsList,fmiExperimentAnnotation,fmiModelVariablesInstance,fmiModelVariablesList,generateInputConnectors,generateOutputConnectors))
 #ifdef ADD_METARECORD_DEFINITIONS
-#ifndef Gettext_TranslatableContent_notrans__desc_added
-#define Gettext_TranslatableContent_notrans__desc_added
-ADD_METARECORD_DEFINITIONS const char* Gettext_TranslatableContent_notrans__desc__fields[1] = {"str"};
-ADD_METARECORD_DEFINITIONS struct record_description Gettext_TranslatableContent_notrans__desc = {
-  "Gettext_TranslatableContent_notrans",
-  "Gettext.TranslatableContent.notrans",
-  Gettext_TranslatableContent_notrans__desc__fields
-};
-#endif
-#else /* Only use the file as a header */
-extern struct record_description Gettext_TranslatableContent_notrans__desc;
-#endif
-#define Gettext__notrans_3dBOX1 4
-#define Gettext__notrans(str) (mmc_mk_box2(4,&Gettext_TranslatableContent_notrans__desc,str))
-#ifdef ADD_METARECORD_DEFINITIONS
-#ifndef Gettext_TranslatableContent_gettext__desc_added
-#define Gettext_TranslatableContent_gettext__desc_added
-ADD_METARECORD_DEFINITIONS const char* Gettext_TranslatableContent_gettext__desc__fields[1] = {"msgid"};
-ADD_METARECORD_DEFINITIONS struct record_description Gettext_TranslatableContent_gettext__desc = {
-  "Gettext_TranslatableContent_gettext",
-  "Gettext.TranslatableContent.gettext",
-  Gettext_TranslatableContent_gettext__desc__fields
-};
-#endif
-#else /* Only use the file as a header */
-extern struct record_description Gettext_TranslatableContent_gettext__desc;
-#endif
-#define Gettext__gettext_3dBOX1 3
-#define Gettext__gettext(msgid) (mmc_mk_box2(3,&Gettext_TranslatableContent_gettext__desc,msgid))
-#ifdef ADD_METARECORD_DEFINITIONS
 #ifndef ErrorTypes_Severity_NOTIFICATION__desc_added
 #define ErrorTypes_Severity_NOTIFICATION__desc_added
 ADD_METARECORD_DEFINITIONS const char* ErrorTypes_Severity_NOTIFICATION__desc__fields[1] = {"no fields"};
@@ -1758,21 +1728,6 @@ extern struct record_description Values_IntRealOp_MULOP__desc;
 static const MMC_DEFSTRUCTLIT(Values__MULOP__struct,1,3) {&Values_IntRealOp_MULOP__desc}};
 static void *Values__MULOP = MMC_REFSTRUCTLIT(Values__MULOP__struct);
 #ifdef ADD_METARECORD_DEFINITIONS
-#ifndef GlobalScript_SimulationOptions_SIMULATION__OPTIONS__desc_added
-#define GlobalScript_SimulationOptions_SIMULATION__OPTIONS__desc_added
-ADD_METARECORD_DEFINITIONS const char* GlobalScript_SimulationOptions_SIMULATION__OPTIONS__desc__fields[12] = {"startTime","stopTime","numberOfIntervals","stepSize","tolerance","method","fileNamePrefix","options","outputFormat","variableFilter","cflags","simflags"};
-ADD_METARECORD_DEFINITIONS struct record_description GlobalScript_SimulationOptions_SIMULATION__OPTIONS__desc = {
-  "GlobalScript_SimulationOptions_SIMULATION__OPTIONS",
-  "GlobalScript.SimulationOptions.SIMULATION_OPTIONS",
-  GlobalScript_SimulationOptions_SIMULATION__OPTIONS__desc__fields
-};
-#endif
-#else /* Only use the file as a header */
-extern struct record_description GlobalScript_SimulationOptions_SIMULATION__OPTIONS__desc;
-#endif
-#define GlobalScript__SIMULATION_5fOPTIONS_3dBOX12 3
-#define GlobalScript__SIMULATION_5fOPTIONS(startTime,stopTime,numberOfIntervals,stepSize,tolerance,method,fileNamePrefix,options,outputFormat,variableFilter,cflags,simflags) (mmc_mk_box(13, 3,&GlobalScript_SimulationOptions_SIMULATION__OPTIONS__desc,startTime,stopTime,numberOfIntervals,stepSize,tolerance,method,fileNamePrefix,options,outputFormat,variableFilter,cflags,simflags))
-#ifdef ADD_METARECORD_DEFINITIONS
 #ifndef GlobalScript_Statement_IEXP__desc_added
 #define GlobalScript_Statement_IEXP__desc_added
 ADD_METARECORD_DEFINITIONS const char* GlobalScript_Statement_IEXP__desc__fields[2] = {"exp","info"};
@@ -1817,96 +1772,6 @@ extern struct record_description GlobalScript_Statements_ISTMTS__desc;
 #endif
 #define GlobalScript__ISTMTS_3dBOX2 3
 #define GlobalScript__ISTMTS(interactiveStmtLst,semicolon) (mmc_mk_box3(3,&GlobalScript_Statements_ISTMTS__desc,interactiveStmtLst,semicolon))
-#ifdef ADD_METARECORD_DEFINITIONS
-#ifndef GlobalScript_Variable_IVAR__desc_added
-#define GlobalScript_Variable_IVAR__desc_added
-ADD_METARECORD_DEFINITIONS const char* GlobalScript_Variable_IVAR__desc__fields[3] = {"varIdent","value","type_"};
-ADD_METARECORD_DEFINITIONS struct record_description GlobalScript_Variable_IVAR__desc = {
-  "GlobalScript_Variable_IVAR",
-  "GlobalScript.Variable.IVAR",
-  GlobalScript_Variable_IVAR__desc__fields
-};
-#endif
-#else /* Only use the file as a header */
-extern struct record_description GlobalScript_Variable_IVAR__desc;
-#endif
-#define GlobalScript__IVAR_3dBOX3 3
-#define GlobalScript__IVAR(varIdent,value,type_) (mmc_mk_box4(3,&GlobalScript_Variable_IVAR__desc,varIdent,value,type_))
-#ifdef ADD_METARECORD_DEFINITIONS
-#ifndef GlobalScript_Component_EXTENDSITEM__desc_added
-#define GlobalScript_Component_EXTENDSITEM__desc_added
-ADD_METARECORD_DEFINITIONS const char* GlobalScript_Component_EXTENDSITEM__desc__fields[2] = {"the1","the2"};
-ADD_METARECORD_DEFINITIONS struct record_description GlobalScript_Component_EXTENDSITEM__desc = {
-  "GlobalScript_Component_EXTENDSITEM",
-  "GlobalScript.Component.EXTENDSITEM",
-  GlobalScript_Component_EXTENDSITEM__desc__fields
-};
-#endif
-#else /* Only use the file as a header */
-extern struct record_description GlobalScript_Component_EXTENDSITEM__desc;
-#endif
-#define GlobalScript__EXTENDSITEM_3dBOX2 4
-#define GlobalScript__EXTENDSITEM(the1,the2) (mmc_mk_box3(4,&GlobalScript_Component_EXTENDSITEM__desc,the1,the2))
-#ifdef ADD_METARECORD_DEFINITIONS
-#ifndef GlobalScript_Component_COMPONENTITEM__desc_added
-#define GlobalScript_Component_COMPONENTITEM__desc_added
-ADD_METARECORD_DEFINITIONS const char* GlobalScript_Component_COMPONENTITEM__desc__fields[3] = {"the1","the2","the3"};
-ADD_METARECORD_DEFINITIONS struct record_description GlobalScript_Component_COMPONENTITEM__desc = {
-  "GlobalScript_Component_COMPONENTITEM",
-  "GlobalScript.Component.COMPONENTITEM",
-  GlobalScript_Component_COMPONENTITEM__desc__fields
-};
-#endif
-#else /* Only use the file as a header */
-extern struct record_description GlobalScript_Component_COMPONENTITEM__desc;
-#endif
-#define GlobalScript__COMPONENTITEM_3dBOX3 3
-#define GlobalScript__COMPONENTITEM(the1,the2,the3) (mmc_mk_box4(3,&GlobalScript_Component_COMPONENTITEM__desc,the1,the2,the3))
-#ifdef ADD_METARECORD_DEFINITIONS
-#ifndef GlobalScript_Components_COMPONENTS__desc_added
-#define GlobalScript_Components_COMPONENTS__desc_added
-ADD_METARECORD_DEFINITIONS const char* GlobalScript_Components_COMPONENTS__desc__fields[2] = {"componentLst","the"};
-ADD_METARECORD_DEFINITIONS struct record_description GlobalScript_Components_COMPONENTS__desc = {
-  "GlobalScript_Components_COMPONENTS",
-  "GlobalScript.Components.COMPONENTS",
-  GlobalScript_Components_COMPONENTS__desc__fields
-};
-#endif
-#else /* Only use the file as a header */
-extern struct record_description GlobalScript_Components_COMPONENTS__desc;
-#endif
-#define GlobalScript__COMPONENTS_3dBOX2 3
-#define GlobalScript__COMPONENTS(componentLst,the) (mmc_mk_box3(3,&GlobalScript_Components_COMPONENTS__desc,componentLst,the))
-#ifdef ADD_METARECORD_DEFINITIONS
-#ifndef GlobalScript_ComponentReplacement_COMPONENTREPLACEMENT__desc_added
-#define GlobalScript_ComponentReplacement_COMPONENTREPLACEMENT__desc_added
-ADD_METARECORD_DEFINITIONS const char* GlobalScript_ComponentReplacement_COMPONENTREPLACEMENT__desc__fields[3] = {"which1","the2","the3"};
-ADD_METARECORD_DEFINITIONS struct record_description GlobalScript_ComponentReplacement_COMPONENTREPLACEMENT__desc = {
-  "GlobalScript_ComponentReplacement_COMPONENTREPLACEMENT",
-  "GlobalScript.ComponentReplacement.COMPONENTREPLACEMENT",
-  GlobalScript_ComponentReplacement_COMPONENTREPLACEMENT__desc__fields
-};
-#endif
-#else /* Only use the file as a header */
-extern struct record_description GlobalScript_ComponentReplacement_COMPONENTREPLACEMENT__desc;
-#endif
-#define GlobalScript__COMPONENTREPLACEMENT_3dBOX3 3
-#define GlobalScript__COMPONENTREPLACEMENT(which1,the2,the3) (mmc_mk_box4(3,&GlobalScript_ComponentReplacement_COMPONENTREPLACEMENT__desc,which1,the2,the3))
-#ifdef ADD_METARECORD_DEFINITIONS
-#ifndef GlobalScript_ComponentReplacementRules_COMPONENTREPLACEMENTRULES__desc_added
-#define GlobalScript_ComponentReplacementRules_COMPONENTREPLACEMENTRULES__desc_added
-ADD_METARECORD_DEFINITIONS const char* GlobalScript_ComponentReplacementRules_COMPONENTREPLACEMENTRULES__desc__fields[2] = {"componentReplacementLst","the"};
-ADD_METARECORD_DEFINITIONS struct record_description GlobalScript_ComponentReplacementRules_COMPONENTREPLACEMENTRULES__desc = {
-  "GlobalScript_ComponentReplacementRules_COMPONENTREPLACEMENTRULES",
-  "GlobalScript.ComponentReplacementRules.COMPONENTREPLACEMENTRULES",
-  GlobalScript_ComponentReplacementRules_COMPONENTREPLACEMENTRULES__desc__fields
-};
-#endif
-#else /* Only use the file as a header */
-extern struct record_description GlobalScript_ComponentReplacementRules_COMPONENTREPLACEMENTRULES__desc;
-#endif
-#define GlobalScript__COMPONENTREPLACEMENTRULES_3dBOX2 3
-#define GlobalScript__COMPONENTREPLACEMENTRULES(componentReplacementLst,the) (mmc_mk_box3(3,&GlobalScript_ComponentReplacementRules_COMPONENTREPLACEMENTRULES__desc,componentReplacementLst,the))
 #ifdef ADD_METARECORD_DEFINITIONS
 #ifndef Absyn_ForIterator_ITERATOR__desc_added
 #define Absyn_ForIterator_ITERATOR__desc_added

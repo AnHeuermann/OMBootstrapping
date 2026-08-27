@@ -2739,7 +2739,7 @@ PROTECTED_FUNCTION_STATIC modelica_real omc_Uncertainties_rateVariable(threadDat
   tmpMeta2 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta1), 2));
   _cr = tmpMeta2;
 
-  tmp3 = 1.0 + ((modelica_real)omc_ComponentReference_crefDepth(threadData, _cr));
+  tmp3 = 1.0 + (((modelica_real)omc_ComponentReference_crefDepth(threadData, _cr)));
   if (tmp3 == 0) {MMC_THROW_INTERNAL();}
   _i = (1.0) / tmp3;
 
@@ -10570,9 +10570,9 @@ modelica_metatype omc_Uncertainties_EliminatePredecessorBlockTarget(threadData_t
 
       if(listMember(_OMC_LIT67, _blocksvarlist))
       {
-        _targetblocks = omc_List_firstN(threadData, _inlist1, ((modelica_integer) 1) + listLength(_inlist1) - _count);
+        _targetblocks = omc_List_firstN(threadData, _inlist1, ((modelica_integer) 1) + (listLength(_inlist1) - _count));
 
-        _targetblocksvar = omc_List_firstN(threadData, _inlist2, ((modelica_integer) 1) + listLength(_inlist2) - _count);
+        _targetblocksvar = omc_List_firstN(threadData, _inlist2, ((modelica_integer) 1) + (listLength(_inlist2) - _count));
 
         break;
       }

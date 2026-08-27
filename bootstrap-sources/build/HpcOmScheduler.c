@@ -5057,17 +5057,17 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmScheduler_computeGraphValue
     else
     {
       {
-        modelica_metatype __omcQ_24tmpVar1;
+        modelica_metatype __omcQ_24tmpVar3;
         modelica_metatype* tmp7;
         modelica_metatype tmpMeta8;
-        modelica_metatype __omcQ_24tmpVar0;
+        modelica_metatype __omcQ_24tmpVar2;
         modelica_integer tmp9;
         modelica_metatype _n_loopVar = 0;
         modelica_metatype _n;
         _n_loopVar = _childNodes;
         tmpMeta8 = MMC_REFSTRUCTLIT(mmc_nil);
-        __omcQ_24tmpVar1 = tmpMeta8; /* defaultValue */
-        tmp7 = &__omcQ_24tmpVar1;
+        __omcQ_24tmpVar3 = tmpMeta8; /* defaultValue */
+        tmp7 = &__omcQ_24tmpVar3;
         while(1) {
           tmp9 = 1;
           if (!listEmpty(_n_loopVar)) {
@@ -5076,8 +5076,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmScheduler_computeGraphValue
             tmp9--;
           }
           if (tmp9 == 0) {
-            __omcQ_24tmpVar0 = mmc_mk_real(omc_HpcOmTaskGraph_getCommCostTimeBetweenNodes(threadData, _nodeIdx, mmc_unbox_integer(_n), _iTaskGraphMeta));
-            *tmp7 = mmc_mk_cons(__omcQ_24tmpVar0,0);
+            __omcQ_24tmpVar2 = mmc_mk_real(omc_HpcOmTaskGraph_getCommCostTimeBetweenNodes(threadData, _nodeIdx, mmc_unbox_integer(_n), _iTaskGraphMeta));
+            *tmp7 = mmc_mk_cons(__omcQ_24tmpVar2,0);
             tmp7 = &MMC_CDR(*tmp7);
           } else if (tmp9 == 1) {
             break;
@@ -5086,7 +5086,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmScheduler_computeGraphValue
           }
         }
         *tmp7 = mmc_mk_nil();
-        tmpMeta6 = __omcQ_24tmpVar1;
+        tmpMeta6 = __omcQ_24tmpVar3;
       }
       _commCostsToChilds = tmpMeta6;
 
@@ -5960,7 +5960,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmScheduler_quicksortWithOrde
 
           omc_HpcOmScheduler_getMemberOnTrueWithIdx(threadData, _p, _rightLst, boxvar_realGt ,&_rIdx ,&_b2);
 
-          _rIdx = ((modelica_integer) 1) + _size - _rIdx;
+          _rIdx = ((modelica_integer) 1) + (_size - _rIdx);
 
           _lstTmp = (_b1?omc_HpcOmScheduler_swapEntriesInList(threadData, _pivotIdx, _lIdx, _lstIn):_lstIn);
 
@@ -9395,7 +9395,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmScheduler_TDS__duplicateSys
           }
           else
           {
-            tmpMeta12 = omc_List_intRange2(threadData, _simEqSysIdxIn, ((modelica_integer) -1) + _simEqSysIdxIn + _numEqs);
+            tmpMeta12 = omc_List_intRange2(threadData, _simEqSysIdxIn, ((modelica_integer) -1) + (_simEqSysIdxIn + _numEqs));
           }
           _systSimEqSysIdcs2 = tmpMeta12;
 
@@ -9686,7 +9686,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmScheduler_TDS__duplicateTas
 
   _numVars = listLength(_simVarLst);
 
-  _simVarSysIdcs2 = omc_List_intRange2(threadData, _simVarIdx, ((modelica_integer) -1) + _simVarIdx + _numVars);
+  _simVarSysIdcs2 = omc_List_intRange2(threadData, _simVarIdx, ((modelica_integer) -1) + (_simVarIdx + _numVars));
 
   tmpMeta25 = stringAppend(_OMC_LIT84,intString(_threadIdx));
   _crefAppend = tmpMeta25;
@@ -9711,7 +9711,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmScheduler_TDS__duplicateTas
 
   _numEqs = listLength(_simEqSysts);
 
-  _simEqSysIdcs2 = omc_List_intRange2(threadData, _simEqSysIdx, ((modelica_integer) -1) + _simEqSysIdx + _numEqs);
+  _simEqSysIdcs2 = omc_List_intRange2(threadData, _simEqSysIdx, ((modelica_integer) -1) + (_simEqSysIdx + _numEqs));
 
   _simEqSystsDupl = omc_List_map1__2(threadData, _simEqSysts, boxvar_HpcOmScheduler_replaceExpsInSimEqSystem, _repl, NULL);
 
@@ -9746,7 +9746,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmScheduler_TDS__duplicateTas
 
   _numInitEqs = listLength(_crefs);
 
-  _simEqSysIdcsInit = omc_List_intRange2(threadData, _simEqSysIdx2, ((modelica_integer) -1) + _simEqSysIdx2 + _numInitEqs);
+  _simEqSysIdcsInit = omc_List_intRange2(threadData, _simEqSysIdx2, ((modelica_integer) -1) + (_simEqSysIdx2 + _numInitEqs));
 
   _initEqs = omc_List_thread3Map(threadData, _crefsDupl, _crefs, _simEqSysIdcsInit, boxvar_HpcOmScheduler_makeSEScrefAssignment);
 
@@ -9768,7 +9768,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmScheduler_TDS__duplicateTas
 
   _procAssOut = arrayUpdate(_procAssIn, _threadIdx, _thread);
 
-  _comps = omc_List_intRange2(threadData, _compIdx, ((modelica_integer) -1) + _compIdx + listLength(_comps));
+  _comps = omc_List_intRange2(threadData, _compIdx, ((modelica_integer) -1) + (_compIdx + listLength(_comps)));
 
   _compIdx = _compIdx + listLength(_comps);
 
@@ -11999,13 +11999,13 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmScheduler_TDS__schedule1(th
           _taskIdx = ((modelica_integer) 1) + arrayLength(_iTaskGraph);
 
           {
-            modelica_integer __omcQ_24tmpVar3;
-            modelica_integer __omcQ_24tmpVar2;
+            modelica_integer __omcQ_24tmpVar5;
+            modelica_integer __omcQ_24tmpVar4;
             modelica_integer tmp35;
             modelica_metatype _v_loopVar = 0;
             modelica_metatype _v;
             _v_loopVar = _algVars;
-            __omcQ_24tmpVar3 = ((modelica_integer) -4611686018427387903); /* defaultValue */
+            __omcQ_24tmpVar5 = ((modelica_integer) -4611686018427387903); /* defaultValue */
             while(1) {
               tmp35 = 1;
               if (!listEmpty(_v_loopVar)) {
@@ -12014,25 +12014,25 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmScheduler_TDS__schedule1(th
                 tmp35--;
               }
               if (tmp35 == 0) {
-                __omcQ_24tmpVar2 = mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_v), 7))));
-                __omcQ_24tmpVar3 = modelica_integer_max((modelica_integer)(__omcQ_24tmpVar2),(modelica_integer)(__omcQ_24tmpVar3));
+                __omcQ_24tmpVar4 = mmc_unbox_integer((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_v), 7))));
+                __omcQ_24tmpVar5 = modelica_integer_max((modelica_integer)(__omcQ_24tmpVar4),(modelica_integer)(__omcQ_24tmpVar5));
               } else if (tmp35 == 1) {
                 break;
               } else {
                 goto goto_2;
               }
             }
-            tmp34 = __omcQ_24tmpVar3;
+            tmp34 = __omcQ_24tmpVar5;
           }
-          _simVarIdx = ((modelica_integer) 1) + tmp34;
+          _simVarIdx = ((modelica_integer) 1) + (tmp34);
 
           _simEqSysIdx = ((modelica_integer) 1) + omc_SimCodeUtil_getMaxSimEqSystemIndex(threadData, _iSimCode);
 
-          _lsIdx = ((modelica_integer) 1) + mmc_unbox_integer(omc_List_fold(threadData, omc_List_map(threadData, omc_List_flatten(threadData, _odes), boxvar_SimCodeUtil_getLSindex), boxvar_intMax, mmc_mk_integer(((modelica_integer) 0))));
+          _lsIdx = ((modelica_integer) 1) + (mmc_unbox_integer(omc_List_fold(threadData, omc_List_map(threadData, omc_List_flatten(threadData, _odes), boxvar_SimCodeUtil_getLSindex), boxvar_intMax, mmc_mk_integer(((modelica_integer) 0)))));
 
-          _nlsIdx = ((modelica_integer) 1) + mmc_unbox_integer(omc_List_fold(threadData, omc_List_map(threadData, omc_List_flatten(threadData, _odes), boxvar_SimCodeUtil_getNLSindex), boxvar_intMax, mmc_mk_integer(((modelica_integer) 0))));
+          _nlsIdx = ((modelica_integer) 1) + (mmc_unbox_integer(omc_List_fold(threadData, omc_List_map(threadData, omc_List_flatten(threadData, _odes), boxvar_SimCodeUtil_getNLSindex), boxvar_intMax, mmc_mk_integer(((modelica_integer) 0)))));
 
-          _mIdx = ((modelica_integer) 1) + mmc_unbox_integer(omc_List_fold(threadData, omc_List_map(threadData, omc_List_flatten(threadData, _odes), boxvar_SimCodeUtil_getMixedindex), boxvar_intMax, mmc_mk_integer(((modelica_integer) 0))));
+          _mIdx = ((modelica_integer) 1) + (mmc_unbox_integer(omc_List_fold(threadData, omc_List_map(threadData, omc_List_flatten(threadData, _odes), boxvar_SimCodeUtil_getMixedindex), boxvar_intMax, mmc_mk_integer(((modelica_integer) 0)))));
 
           tmpMeta36 = mmc_mk_box8(0, mmc_mk_integer(_threadIdx), mmc_mk_integer(_taskIdx), mmc_mk_integer(_compIdx), mmc_mk_integer(_simVarIdx), mmc_mk_integer(_simEqSysIdx), mmc_mk_integer(_lsIdx), mmc_mk_integer(_nlsIdx), mmc_mk_integer(_mIdx));
           _taskAss = omc_HpcOmScheduler_TDS__duplicateTasks(threadData, _clusters, _taskAss, _procAss, tmpMeta36, _iTaskGraph, _iTaskGraphT, _taskGraph, _taskDuplAss, _iTaskGraphMeta, _iSimCode, _schedule, _iSccSimEqMapping, _duplSccSimEqMap, _duplComps ,&_procAss ,&_taskGraph ,&_taskDuplAss ,&_idcs ,&_simCode ,&_schedule ,&_duplSccSimEqMap ,&_duplComps);
@@ -13066,7 +13066,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_HpcOmScheduler_getHedge(threadDa
 
           _l_eint = omc_List_fold(threadData, _childnodes, boxvar_HpcOmScheduler_listNodes, _l_eint);
 
-          _n = ((modelica_integer) 1) + _position + listLength(_childnodes);
+          _n = ((modelica_integer) 1) + (_position + listLength(_childnodes));
 
           _l_eptr = omc_List_appendElt(threadData, mmc_mk_integer(_n), _l_eptr);
           tmpMeta21 = mmc_mk_box5(0, mmc_mk_integer(((modelica_integer) 1) + _node), mmc_mk_integer(_n), _l_eptr, _l_eint, _l_hewgts);
@@ -17808,7 +17808,7 @@ PROTECTED_FUNCTION_STATIC modelica_real omc_HpcOmScheduler_calculateFinishTimeBy
           _startTime = fmax(_iThreadReadyTime,_iPredecessorTaskLastFinished);
 
           _commCost = omc_HpcOmScheduler_getMaxCommCostsByTaskList(threadData, _iTask, _predecessorTasksOtherTh, _iCommCosts);
-          tmp1 = _startTime + _commCost + _calcTime;
+          tmp1 = _startTime + (_commCost + _calcTime);
           goto tmp3_done;
         }
         case 1: {

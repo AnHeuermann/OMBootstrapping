@@ -1424,7 +1424,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_LexerJSON_lex(threadData_t *thre
 
     _tokens = omc_LexerJSON_consume(threadData, _cTok, _tokens, _contents, _startSt, _currSt, _pos, _sPos, _ePos, _linenr, _lineNrStart, _buffer, _states, _fileName, _errorTokens ,&_numBacktrack ,&_startSt ,&_currSt ,&_pos ,&_sPos ,&_ePos ,&_linenr ,&_lineNrStart ,&_buffer ,&_states ,&_errorTokens);
 
-    _i = ((modelica_integer) 1) + _i - _numBacktrack;
+    _i = ((modelica_integer) 1) + (_i - _numBacktrack);
   }
 
   _tokens = listReverseInPlace(_tokens);
@@ -1577,7 +1577,7 @@ modelica_string omc_LexerJSON_tokenContent(threadData_t *threadData, modelica_me
   _byteOffset = tmp4  /* pattern as ty=Integer */;
   _length = tmp6  /* pattern as ty=Integer */;
 
-  _contents = ((_length > ((modelica_integer) 0))?substring(_contents, _byteOffset, ((modelica_integer) -1) + _byteOffset + _length):_OMC_LIT22);
+  _contents = ((_length > ((modelica_integer) 0))?substring(_contents, _byteOffset, ((modelica_integer) -1) + (_byteOffset + _length)):_OMC_LIT22);
   _return: OMC_LABEL_UNUSED
   return _contents;
 }
@@ -1633,7 +1633,7 @@ modelica_string omc_LexerJSON_printToken(threadData_t *threadData, modelica_meta
   _byteOffset = tmp6  /* pattern as ty=Integer */;
   _length = tmp8  /* pattern as ty=Integer */;
 
-  _contents = ((_length > ((modelica_integer) 0))?substring(_contents, _byteOffset, ((modelica_integer) -1) + _byteOffset + _length):_OMC_LIT22);
+  _contents = ((_length > ((modelica_integer) 0))?substring(_contents, _byteOffset, ((modelica_integer) -1) + (_byteOffset + _length)):_OMC_LIT22);
 
   tmp9 = enum_to_modelica_string((modelica_integer)_id, tmp10, ((modelica_integer) 0), 1 /* true */);
   tmpMeta11 = stringAppend(_OMC_LIT23,tmp9);

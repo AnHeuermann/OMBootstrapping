@@ -27,10 +27,10 @@ static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT9,5,3) {&ErrorTypes_Message_MESSAGE
 #define _OMC_LIT10_data "NFOperatorOverloading.instOperatorFunctions got non-instantiated function"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT10,73,_OMC_LIT10_data);
 #define _OMC_LIT10 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT10)
-#define _OMC_LIT11_data "//OpenModelica/OMCompiler/Compiler/NFFrontEnd/NFOperatorOverloading.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT11,93,_OMC_LIT11_data);
+#define _OMC_LIT11_data "NFOperatorOverloading.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT11,24,_OMC_LIT11_data);
 #define _OMC_LIT11 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT11)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT12_6,1.784622031e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT12_6,0.0);
 #define _OMC_LIT12_6 MMC_REFREALLIT(_OMC_LIT_STRUCT12_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT12,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT11,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(119)),MMC_IMMEDIATE(MMC_TAGFIXNUM(11)),MMC_IMMEDIATE(MMC_TAGFIXNUM(119)),MMC_IMMEDIATE(MMC_TAGFIXNUM(94)),_OMC_LIT12_6}};
 #define _OMC_LIT12 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT12)
@@ -86,7 +86,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_NFOperatorOverloading_patchOpera
           tmpMeta7 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta6), 2));
           tmpMeta8 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta6), 3));
           tmpMeta9 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta6), 6));
-
+          
           _fn = tmpMeta7;
           _ty = tmpMeta8;
           _args = tmpMeta9;
@@ -97,7 +97,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_NFOperatorOverloading_patchOpera
           goto tmp3_done;
         }
         case 1: {
-
+          
           /* Pattern matching succeeded */
           tmpMeta1 = _exp;
           goto tmp3_done;
@@ -230,7 +230,7 @@ modelica_metatype omc_NFOperatorOverloading_lookupOperatorFunctionsInType(thread
           modelica_metatype tmpMeta11;
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,11,2) == 0) goto tmp3_end;
           tmpMeta6 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 2));
-
+          
           _node = tmpMeta6;
           /* Pattern matching succeeded */
           { /* matchcontinue expression */
@@ -291,7 +291,7 @@ modelica_metatype omc_NFOperatorOverloading_lookupOperatorFunctionsInType(thread
         }
         case 1: {
           modelica_metatype tmpMeta12;
-
+          
           /* Pattern matching succeeded */
           tmpMeta12 = MMC_REFSTRUCTLIT(mmc_nil);
           tmpMeta1 = tmpMeta12;
@@ -376,7 +376,7 @@ modelica_metatype omc_NFOperatorOverloading_instOperatorFunctions(threadData_t *
           modelica_metatype tmpMeta12;
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,3,5) == 0) goto tmp3_end;
           tmpMeta6 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 3));
-
+          
           _mclss = tmpMeta6;
           /* Pattern matching succeeded */
           {
@@ -403,7 +403,7 @@ modelica_metatype omc_NFOperatorOverloading_instOperatorFunctions(threadData_t *
           goto tmp3_done;
         }
         case 1: {
-
+          
           /* Pattern matching succeeded */
           omc_Error_terminate(threadData, _OMC_LIT10, _OMC_LIT12);
           goto goto_2;
@@ -524,3 +524,4 @@ modelica_metatype boxptr_NFOperatorOverloading_instConstructor(threadData_t *thr
   /* skip box _recordNode; NFInstNode.InstNode */
   return _recordNode;
 }
+

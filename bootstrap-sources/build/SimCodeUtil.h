@@ -383,6 +383,13 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_SimCodeUtil_make2CMakeInclude,2,0) {(vo
 
 
 DLLDirection
+modelica_string omc_SimCodeUtil_stripIncludeFlag(threadData_t *threadData, modelica_string _include);
+#define boxptr_SimCodeUtil_stripIncludeFlag omc_SimCodeUtil_stripIncludeFlag
+static const MMC_DEFSTRUCTLIT(boxvar_lit_SimCodeUtil_stripIncludeFlag,2,0) {(void*) boxptr_SimCodeUtil_stripIncludeFlag,0}};
+#define boxvar_SimCodeUtil_stripIncludeFlag MMC_REFSTRUCTLIT(boxvar_lit_SimCodeUtil_stripIncludeFlag)
+
+
+DLLDirection
 modelica_boolean omc_SimCodeUtil_cvodeFmiFlagIsSet(threadData_t *threadData, modelica_metatype _fmiSimulationFlags);
 DLLDirection
 modelica_metatype boxptr_SimCodeUtil_cvodeFmiFlagIsSet(threadData_t *threadData, modelica_metatype _fmiSimulationFlags);
@@ -401,7 +408,7 @@ static const MMC_DEFSTRUCTLIT(boxvar_lit_SimCodeUtil_getCmakeSundialsLinkCode,2,
 
 
 DLLDirection
-modelica_string omc_SimCodeUtil_getCmakeLinkLibrariesCode(threadData_t *threadData, modelica_metatype _libs);
+modelica_string omc_SimCodeUtil_getCmakeLinkLibrariesCode(threadData_t *threadData, modelica_metatype _libs, modelica_string *out_cmakeCode);
 #define boxptr_SimCodeUtil_getCmakeLinkLibrariesCode omc_SimCodeUtil_getCmakeLinkLibrariesCode
 static const MMC_DEFSTRUCTLIT(boxvar_lit_SimCodeUtil_getCmakeLinkLibrariesCode,2,0) {(void*) boxptr_SimCodeUtil_getCmakeLinkLibrariesCode,0}};
 #define boxvar_SimCodeUtil_getCmakeLinkLibrariesCode MMC_REFSTRUCTLIT(boxvar_lit_SimCodeUtil_getCmakeLinkLibrariesCode)
@@ -554,6 +561,23 @@ modelica_metatype omc_SimCodeUtil_getFMI3VariableAliases(threadData_t *threadDat
 #define boxptr_SimCodeUtil_getFMI3VariableAliases omc_SimCodeUtil_getFMI3VariableAliases
 static const MMC_DEFSTRUCTLIT(boxvar_lit_SimCodeUtil_getFMI3VariableAliases,2,0) {(void*) boxptr_SimCodeUtil_getFMI3VariableAliases,0}};
 #define boxvar_SimCodeUtil_getFMI3VariableAliases MMC_REFSTRUCTLIT(boxvar_lit_SimCodeUtil_getFMI3VariableAliases)
+
+
+DLLDirection
+modelica_string omc_SimCodeUtil_clearFMI3VariableAliases(threadData_t *threadData);
+#define boxptr_SimCodeUtil_clearFMI3VariableAliases omc_SimCodeUtil_clearFMI3VariableAliases
+static const MMC_DEFSTRUCTLIT(boxvar_lit_SimCodeUtil_clearFMI3VariableAliases,2,0) {(void*) boxptr_SimCodeUtil_clearFMI3VariableAliases,0}};
+#define boxvar_SimCodeUtil_clearFMI3VariableAliases MMC_REFSTRUCTLIT(boxvar_lit_SimCodeUtil_clearFMI3VariableAliases)
+
+
+DLLDirection
+modelica_string omc_SimCodeUtil_cacheFMI3VariableAliases(threadData_t *threadData, modelica_metatype _simCode);
+#define boxptr_SimCodeUtil_cacheFMI3VariableAliases omc_SimCodeUtil_cacheFMI3VariableAliases
+static const MMC_DEFSTRUCTLIT(boxvar_lit_SimCodeUtil_cacheFMI3VariableAliases,2,0) {(void*) boxptr_SimCodeUtil_cacheFMI3VariableAliases,0}};
+#define boxvar_SimCodeUtil_cacheFMI3VariableAliases MMC_REFSTRUCTLIT(boxvar_lit_SimCodeUtil_cacheFMI3VariableAliases)
+
+
+#define boxptr_SimCodeUtil_fmi3AliasTargetValueReference omc_SimCodeUtil_fmi3AliasTargetValueReference
 
 
 DLLDirection
@@ -773,6 +797,23 @@ DLLDirection
 modelica_metatype boxptr_SimCodeUtil_getFMI3ValueReferenceFromFMIIndex(threadData_t *threadData, modelica_metatype _inSimCode, modelica_metatype _inFMIIndex);
 static const MMC_DEFSTRUCTLIT(boxvar_lit_SimCodeUtil_getFMI3ValueReferenceFromFMIIndex,2,0) {(void*) boxptr_SimCodeUtil_getFMI3ValueReferenceFromFMIIndex,0}};
 #define boxvar_SimCodeUtil_getFMI3ValueReferenceFromFMIIndex MMC_REFSTRUCTLIT(boxvar_lit_SimCodeUtil_getFMI3ValueReferenceFromFMIIndex)
+
+
+DLLDirection
+modelica_string omc_SimCodeUtil_clearFMI3ValueReferences(threadData_t *threadData);
+#define boxptr_SimCodeUtil_clearFMI3ValueReferences omc_SimCodeUtil_clearFMI3ValueReferences
+static const MMC_DEFSTRUCTLIT(boxvar_lit_SimCodeUtil_clearFMI3ValueReferences,2,0) {(void*) boxptr_SimCodeUtil_clearFMI3ValueReferences,0}};
+#define boxvar_SimCodeUtil_clearFMI3ValueReferences MMC_REFSTRUCTLIT(boxvar_lit_SimCodeUtil_clearFMI3ValueReferences)
+
+
+DLLDirection
+modelica_string omc_SimCodeUtil_cacheFMI3ValueReferences(threadData_t *threadData, modelica_metatype _simCode);
+#define boxptr_SimCodeUtil_cacheFMI3ValueReferences omc_SimCodeUtil_cacheFMI3ValueReferences
+static const MMC_DEFSTRUCTLIT(boxvar_lit_SimCodeUtil_cacheFMI3ValueReferences,2,0) {(void*) boxptr_SimCodeUtil_cacheFMI3ValueReferences,0}};
+#define boxvar_SimCodeUtil_cacheFMI3ValueReferences MMC_REFSTRUCTLIT(boxvar_lit_SimCodeUtil_cacheFMI3ValueReferences)
+
+
+#define boxptr_SimCodeUtil_fmi3ModelVariableLists omc_SimCodeUtil_fmi3ModelVariableLists
 
 
 DLLDirection

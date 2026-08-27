@@ -755,13 +755,13 @@ modelica_integer omc_ZeroCrossings_length(threadData_t *threadData, modelica_met
   // _i has no default value.
   _zcs = omc_DoubleEnded_toListNoCopyNoClear(threadData, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_zc_set), 2))));
   {
-    modelica_integer __omcQ_24tmpVar1;
-    modelica_integer __omcQ_24tmpVar0;
+    modelica_integer __omcQ_24tmpVar3;
+    modelica_integer __omcQ_24tmpVar2;
     modelica_integer tmp2;
     modelica_metatype _zc_loopVar = 0;
     modelica_metatype _zc;
     _zc_loopVar = _zcs;
-    __omcQ_24tmpVar1 = ((modelica_integer) 0); /* defaultValue */
+    __omcQ_24tmpVar3 = ((modelica_integer) 0); /* defaultValue */
     while(1) {
       tmp2 = 1;
       if (!listEmpty(_zc_loopVar)) {
@@ -770,15 +770,15 @@ modelica_integer omc_ZeroCrossings_length(threadData_t *threadData, modelica_met
         tmp2--;
       }
       if (tmp2 == 0) {
-        __omcQ_24tmpVar0 = omc_ZeroCrossings_zeroCrossingSize(threadData, _zc);
-        __omcQ_24tmpVar1 = __omcQ_24tmpVar1 + __omcQ_24tmpVar0;
+        __omcQ_24tmpVar2 = omc_ZeroCrossings_zeroCrossingSize(threadData, _zc);
+        __omcQ_24tmpVar3 = __omcQ_24tmpVar3 + __omcQ_24tmpVar2;
       } else if (tmp2 == 1) {
         break;
       } else {
         MMC_THROW_INTERNAL();
       }
     }
-    tmp1 = __omcQ_24tmpVar1;
+    tmp1 = __omcQ_24tmpVar3;
   }
   _i = tmp1;
   _return: OMC_LABEL_UNUSED

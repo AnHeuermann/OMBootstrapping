@@ -722,7 +722,7 @@ void omc_Util_profilerresults(threadData_t *threadData)
 
   fputs(MMC_STRINGDATA(_OMC_LIT5),stdout);
 
-  fputs(MMC_STRINGDATA(realString(_tg + (-_t1) - _t2)),stdout);
+  fputs(MMC_STRINGDATA(realString(_tg + ((-_t1) - _t2))),stdout);
 
   fputs(MMC_STRINGDATA(_OMC_LIT2),stdout);
   _return: OMC_LABEL_UNUSED
@@ -1230,7 +1230,7 @@ modelica_integer omc_Util_realRangeSize(threadData_t *threadData, modelica_real 
   // _outSize has no default value.
   tmp1 = _inStep;
   if (tmp1 == 0) {MMC_THROW_INTERNAL();}
-  _outSize = ((modelica_integer) 1) + ((modelica_integer)floor(floor(5e-15 + (_inStop - _inStart) / tmp1)));
+  _outSize = ((modelica_integer) 1) + ((modelica_integer)floor(floor(5e-15 + ((_inStop - _inStart) / tmp1))));
 
   _outSize = modelica_integer_max((modelica_integer)(_outSize),(modelica_integer)(((modelica_integer) 0)));
   _return: OMC_LABEL_UNUSED
@@ -1573,10 +1573,10 @@ modelica_string omc_Util_stringPadLeft(threadData_t *threadData, modelica_string
   if((_pad_length > ((modelica_integer) 0)))
   {
     {
-      modelica_metatype __omcQ_24tmpVar1;
+      modelica_metatype __omcQ_24tmpVar3;
       modelica_metatype* tmp2;
       modelica_metatype tmpMeta3;
-      modelica_string __omcQ_24tmpVar0;
+      modelica_string __omcQ_24tmpVar2;
       modelica_integer tmp4;
       modelica_integer tmp5;
       modelica_integer tmp6;
@@ -1586,8 +1586,8 @@ modelica_string omc_Util_stringPadLeft(threadData_t *threadData, modelica_string
       _i = ((modelica_integer) 1) /* Range start-value */;
       _i = (((modelica_integer) 1) /* Range start-value */)-tmp5;
       tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-      __omcQ_24tmpVar1 = tmpMeta3; /* defaultValue */
-      tmp2 = &__omcQ_24tmpVar1;
+      __omcQ_24tmpVar3 = tmpMeta3; /* defaultValue */
+      tmp2 = &__omcQ_24tmpVar3;
       while(1) {
         tmp4 = 1;
         if (tmp5 > 0 ? _i+tmp5 <= tmp6 : _i+tmp5 >= tmp6) {
@@ -1595,8 +1595,8 @@ modelica_string omc_Util_stringPadLeft(threadData_t *threadData, modelica_string
           tmp4--;
         }
         if (tmp4 == 0) {
-          __omcQ_24tmpVar0 = _inPadString;
-          *tmp2 = mmc_mk_cons(__omcQ_24tmpVar0,0);
+          __omcQ_24tmpVar2 = _inPadString;
+          *tmp2 = mmc_mk_cons(__omcQ_24tmpVar2,0);
           tmp2 = &MMC_CDR(*tmp2);
         } else if (tmp4 == 1) {
           break;
@@ -1605,7 +1605,7 @@ modelica_string omc_Util_stringPadLeft(threadData_t *threadData, modelica_string
         }
       }
       *tmp2 = mmc_mk_nil();
-      tmpMeta1 = __omcQ_24tmpVar1;
+      tmpMeta1 = __omcQ_24tmpVar3;
     }
     _pad_str = stringAppendList(tmpMeta1);
 
@@ -1647,10 +1647,10 @@ modelica_string omc_Util_stringPadRight(threadData_t *threadData, modelica_strin
   if((_pad_length > ((modelica_integer) 0)))
   {
     {
-      modelica_metatype __omcQ_24tmpVar3;
+      modelica_metatype __omcQ_24tmpVar5;
       modelica_metatype* tmp2;
       modelica_metatype tmpMeta3;
-      modelica_string __omcQ_24tmpVar2;
+      modelica_string __omcQ_24tmpVar4;
       modelica_integer tmp4;
       modelica_integer tmp5;
       modelica_integer tmp6;
@@ -1660,8 +1660,8 @@ modelica_string omc_Util_stringPadRight(threadData_t *threadData, modelica_strin
       _i = ((modelica_integer) 1) /* Range start-value */;
       _i = (((modelica_integer) 1) /* Range start-value */)-tmp5;
       tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-      __omcQ_24tmpVar3 = tmpMeta3; /* defaultValue */
-      tmp2 = &__omcQ_24tmpVar3;
+      __omcQ_24tmpVar5 = tmpMeta3; /* defaultValue */
+      tmp2 = &__omcQ_24tmpVar5;
       while(1) {
         tmp4 = 1;
         if (tmp5 > 0 ? _i+tmp5 <= tmp6 : _i+tmp5 >= tmp6) {
@@ -1669,8 +1669,8 @@ modelica_string omc_Util_stringPadRight(threadData_t *threadData, modelica_strin
           tmp4--;
         }
         if (tmp4 == 0) {
-          __omcQ_24tmpVar2 = _inPadString;
-          *tmp2 = mmc_mk_cons(__omcQ_24tmpVar2,0);
+          __omcQ_24tmpVar4 = _inPadString;
+          *tmp2 = mmc_mk_cons(__omcQ_24tmpVar4,0);
           tmp2 = &MMC_CDR(*tmp2);
         } else if (tmp4 == 1) {
           break;
@@ -1679,7 +1679,7 @@ modelica_string omc_Util_stringPadRight(threadData_t *threadData, modelica_strin
         }
       }
       *tmp2 = mmc_mk_nil();
-      tmpMeta1 = __omcQ_24tmpVar3;
+      tmpMeta1 = __omcQ_24tmpVar5;
     }
     _pad_str = stringAppendList(tmpMeta1);
 

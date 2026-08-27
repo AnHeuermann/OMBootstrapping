@@ -718,17 +718,17 @@ modelica_metatype omc_DynamicOptimization_simplifyConstraints(threadData_t *thre
                 _var_lst = omc_BackendEquation_equationsLstVars(threadData, tmpMeta33, _vars);
 
                 {
-                  modelica_metatype __omcQ_24tmpVar1;
+                  modelica_metatype __omcQ_24tmpVar3;
                   modelica_metatype* tmp35;
                   modelica_metatype tmpMeta36;
-                  modelica_metatype __omcQ_24tmpVar0;
+                  modelica_metatype __omcQ_24tmpVar2;
                   modelica_integer tmp37;
                   modelica_metatype _vv_loopVar = 0;
                   modelica_metatype _vv;
                   _vv_loopVar = _var_lst;
                   tmpMeta36 = MMC_REFSTRUCTLIT(mmc_nil);
-                  __omcQ_24tmpVar1 = tmpMeta36; /* defaultValue */
-                  tmp35 = &__omcQ_24tmpVar1;
+                  __omcQ_24tmpVar3 = tmpMeta36; /* defaultValue */
+                  tmp35 = &__omcQ_24tmpVar3;
                   while(1) {
                     tmp37 = 1;
                     while (!listEmpty(_vv_loopVar)) {
@@ -740,8 +740,8 @@ modelica_metatype omc_DynamicOptimization_simplifyConstraints(threadData_t *thre
                       }
                     }
                     if (tmp37 == 0) {
-                      __omcQ_24tmpVar0 = _vv;
-                      *tmp35 = mmc_mk_cons(__omcQ_24tmpVar0,0);
+                      __omcQ_24tmpVar2 = _vv;
+                      *tmp35 = mmc_mk_cons(__omcQ_24tmpVar2,0);
                       tmp35 = &MMC_CDR(*tmp35);
                     } else if (tmp37 == 1) {
                       break;
@@ -750,7 +750,7 @@ modelica_metatype omc_DynamicOptimization_simplifyConstraints(threadData_t *thre
                     }
                   }
                   *tmp35 = mmc_mk_nil();
-                  tmpMeta34 = __omcQ_24tmpVar1;
+                  tmpMeta34 = __omcQ_24tmpVar3;
                 }
                 _var_lst_opt = tmpMeta34;
 
@@ -760,17 +760,17 @@ modelica_metatype omc_DynamicOptimization_simplifyConstraints(threadData_t *thre
                 _var_lst = omc_BackendEquation_equationsLstVars(threadData, tmpMeta38, _globalKnownVars);
 
                 {
-                  modelica_metatype __omcQ_24tmpVar3;
+                  modelica_metatype __omcQ_24tmpVar5;
                   modelica_metatype* tmp40;
                   modelica_metatype tmpMeta41;
-                  modelica_metatype __omcQ_24tmpVar2;
+                  modelica_metatype __omcQ_24tmpVar4;
                   modelica_integer tmp42;
                   modelica_metatype _vv_loopVar = 0;
                   modelica_metatype _vv;
                   _vv_loopVar = _var_lst;
                   tmpMeta41 = MMC_REFSTRUCTLIT(mmc_nil);
-                  __omcQ_24tmpVar3 = tmpMeta41; /* defaultValue */
-                  tmp40 = &__omcQ_24tmpVar3;
+                  __omcQ_24tmpVar5 = tmpMeta41; /* defaultValue */
+                  tmp40 = &__omcQ_24tmpVar5;
                   while(1) {
                     tmp42 = 1;
                     while (!listEmpty(_vv_loopVar)) {
@@ -782,8 +782,8 @@ modelica_metatype omc_DynamicOptimization_simplifyConstraints(threadData_t *thre
                       }
                     }
                     if (tmp42 == 0) {
-                      __omcQ_24tmpVar2 = _vv;
-                      *tmp40 = mmc_mk_cons(__omcQ_24tmpVar2,0);
+                      __omcQ_24tmpVar4 = _vv;
+                      *tmp40 = mmc_mk_cons(__omcQ_24tmpVar4,0);
                       tmp40 = &MMC_CDR(*tmp40);
                     } else if (tmp42 == 1) {
                       break;
@@ -792,7 +792,7 @@ modelica_metatype omc_DynamicOptimization_simplifyConstraints(threadData_t *thre
                     }
                   }
                   *tmp40 = mmc_mk_nil();
-                  tmpMeta39 = __omcQ_24tmpVar3;
+                  tmpMeta39 = __omcQ_24tmpVar5;
                 }
                 _var_lst_opt = listAppend(_var_lst_opt, tmpMeta39);
 
@@ -859,17 +859,17 @@ modelica_metatype omc_DynamicOptimization_simplifyConstraints(threadData_t *thre
                           if(_b3)
                           {
                             {
-                              modelica_metatype __omcQ_24tmpVar5;
+                              modelica_metatype __omcQ_24tmpVar7;
                               modelica_metatype* tmp53;
                               modelica_metatype tmpMeta54;
-                              modelica_metatype __omcQ_24tmpVar4;
+                              modelica_metatype __omcQ_24tmpVar6;
                               modelica_integer tmp55;
                               modelica_metatype _vv_loopVar = 0;
                               modelica_metatype _vv;
                               _vv_loopVar = _var_lst;
                               tmpMeta54 = MMC_REFSTRUCTLIT(mmc_nil);
-                              __omcQ_24tmpVar5 = tmpMeta54; /* defaultValue */
-                              tmp53 = &__omcQ_24tmpVar5;
+                              __omcQ_24tmpVar7 = tmpMeta54; /* defaultValue */
+                              tmp53 = &__omcQ_24tmpVar7;
                               while(1) {
                                 tmp55 = 1;
                                 while (!listEmpty(_vv_loopVar)) {
@@ -881,8 +881,8 @@ modelica_metatype omc_DynamicOptimization_simplifyConstraints(threadData_t *thre
                                   }
                                 }
                                 if (tmp55 == 0) {
-                                  __omcQ_24tmpVar4 = _vv;
-                                  *tmp53 = mmc_mk_cons(__omcQ_24tmpVar4,0);
+                                  __omcQ_24tmpVar6 = _vv;
+                                  *tmp53 = mmc_mk_cons(__omcQ_24tmpVar6,0);
                                   tmp53 = &MMC_CDR(*tmp53);
                                 } else if (tmp55 == 1) {
                                   break;
@@ -891,7 +891,7 @@ modelica_metatype omc_DynamicOptimization_simplifyConstraints(threadData_t *thre
                                 }
                               }
                               *tmp53 = mmc_mk_nil();
-                              tmpMeta52 = __omcQ_24tmpVar5;
+                              tmpMeta52 = __omcQ_24tmpVar7;
                             }
                             _var_lst = tmpMeta52;
                           }
@@ -903,17 +903,17 @@ modelica_metatype omc_DynamicOptimization_simplifyConstraints(threadData_t *thre
                           if(_b3)
                           {
                             {
-                              modelica_metatype __omcQ_24tmpVar7;
+                              modelica_metatype __omcQ_24tmpVar9;
                               modelica_metatype* tmp57;
                               modelica_metatype tmpMeta58;
-                              modelica_metatype __omcQ_24tmpVar6;
+                              modelica_metatype __omcQ_24tmpVar8;
                               modelica_integer tmp59;
                               modelica_metatype _vv_loopVar = 0;
                               modelica_metatype _vv;
                               _vv_loopVar = _var_lst1;
                               tmpMeta58 = MMC_REFSTRUCTLIT(mmc_nil);
-                              __omcQ_24tmpVar7 = tmpMeta58; /* defaultValue */
-                              tmp57 = &__omcQ_24tmpVar7;
+                              __omcQ_24tmpVar9 = tmpMeta58; /* defaultValue */
+                              tmp57 = &__omcQ_24tmpVar9;
                               while(1) {
                                 tmp59 = 1;
                                 while (!listEmpty(_vv_loopVar)) {
@@ -925,8 +925,8 @@ modelica_metatype omc_DynamicOptimization_simplifyConstraints(threadData_t *thre
                                   }
                                 }
                                 if (tmp59 == 0) {
-                                  __omcQ_24tmpVar6 = _vv;
-                                  *tmp57 = mmc_mk_cons(__omcQ_24tmpVar6,0);
+                                  __omcQ_24tmpVar8 = _vv;
+                                  *tmp57 = mmc_mk_cons(__omcQ_24tmpVar8,0);
                                   tmp57 = &MMC_CDR(*tmp57);
                                 } else if (tmp59 == 1) {
                                   break;
@@ -935,7 +935,7 @@ modelica_metatype omc_DynamicOptimization_simplifyConstraints(threadData_t *thre
                                 }
                               }
                               *tmp57 = mmc_mk_nil();
-                              tmpMeta56 = __omcQ_24tmpVar7;
+                              tmpMeta56 = __omcQ_24tmpVar9;
                             }
                             _var_lst1 = tmpMeta56;
                           }

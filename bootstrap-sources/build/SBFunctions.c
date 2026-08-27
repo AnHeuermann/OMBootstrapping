@@ -1247,11 +1247,11 @@ modelica_metatype omc_SBFunctions_reduceMapN(threadData_t *threadData, modelica_
 
                   arrayUpdate(_resg,_dim,_OMC_LIT3);
 
-                  arrayUpdate(_reso,_dim,mmc_mk_real(((modelica_real)((modelica_integer) -1) + _loint + _k - _off)));
+                  arrayUpdate(_reso,_dim,mmc_mk_real(((modelica_real)((modelica_integer) -1) + (_loint + (_k - _off)))));
 
                   arrayUpdate(_new_l,_k,omc_SBLinearMap_new(threadData, _resg, _reso));
 
-                  _new_inter = omc_SBInterval_new(threadData, ((modelica_integer) -1) + _loint + _k, _off, _hiint);
+                  _new_inter = omc_SBInterval_new(threadData, ((modelica_integer) -1) + (_loint + _k), _off, _hiint);
 
                   _aux_as = omc_SBAtomicSet_replace(threadData, _new_inter, _dim, _adom);
 

@@ -164,6 +164,8 @@ extern struct record_description NFTyping_TypingError_NO__ERROR__desc;
 
 extern struct record_description NFTyping_TypingError_OUT__OF__BOUNDS__desc;
 
+extern struct record_description NFTyping_TypingError_UNKNOWN__TYPE__desc;
+
 extern struct record_description SourceInfo_SOURCEINFO__desc;
 
 

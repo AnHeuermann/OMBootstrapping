@@ -9,10 +9,10 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT1,24,_OMC_LIT1_data);
 #define _OMC_LIT2_data "\n"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT2,1,_OMC_LIT2_data);
 #define _OMC_LIT2 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT2)
-#define _OMC_LIT3_data "//OpenModelica/OMCompiler/Compiler/FrontEnd/ClassLoader.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT3,81,_OMC_LIT3_data);
+#define _OMC_LIT3_data "ClassLoader.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT3,14,_OMC_LIT3_data);
 #define _OMC_LIT3 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT3)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT4_6,1.784622031e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT4_6,0.0);
 #define _OMC_LIT4_6 MMC_REFREALLIT(_OMC_LIT_STRUCT4_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT4,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT3,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(814)),MMC_IMMEDIATE(MMC_TAGFIXNUM(13)),MMC_IMMEDIATE(MMC_TAGFIXNUM(814)),MMC_IMMEDIATE(MMC_TAGFIXNUM(189)),_OMC_LIT4_6}};
 #define _OMC_LIT4 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT4)
@@ -258,14 +258,14 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT101,14,_OMC_LIT101_data);
 #define _OMC_LIT102_data " to exist"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT102,9,_OMC_LIT102_data);
 #define _OMC_LIT102 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT102)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT103_6,1.784622031e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT103_6,0.0);
 #define _OMC_LIT103_6 MMC_REFREALLIT(_OMC_LIT_STRUCT103_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT103,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT3,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(415)),MMC_IMMEDIATE(MMC_TAGFIXNUM(13)),MMC_IMMEDIATE(MMC_TAGFIXNUM(415)),MMC_IMMEDIATE(MMC_TAGFIXNUM(88)),_OMC_LIT103_6}};
 #define _OMC_LIT103 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT103)
 #define _OMC_LIT104_data "package.order"
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT104,13,_OMC_LIT104_data);
 #define _OMC_LIT104 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT104)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT105_6,1.784622031e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT105_6,0.0);
 #define _OMC_LIT105_6 MMC_REFREALLIT(_OMC_LIT_STRUCT105_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT105,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT3,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(321)),MMC_IMMEDIATE(MMC_TAGFIXNUM(11)),MMC_IMMEDIATE(MMC_TAGFIXNUM(321)),MMC_IMMEDIATE(MMC_TAGFIXNUM(93)),_OMC_LIT105_6}};
 #define _OMC_LIT105 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT105)
@@ -275,7 +275,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT106,56,_OMC_LIT106_data);
 #define _OMC_LIT107_data " pack="
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT107,6,_OMC_LIT107_data);
 #define _OMC_LIT107 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT107)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT108_6,1.784622031e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT108_6,0.0);
 #define _OMC_LIT108_6 MMC_REFREALLIT(_OMC_LIT_STRUCT108_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT108,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT3,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(340)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(340)),MMC_IMMEDIATE(MMC_TAGFIXNUM(128)),_OMC_LIT108_6}};
 #define _OMC_LIT108 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT108)
@@ -429,7 +429,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getProgramFromStrate
         switch (MMC_SWITCH_CAST(tmp4)) {
         case 0: {
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,0,1) == 0) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           if((!omc_BaseHashTable_hasKey(threadData, _filename, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_strategy), 2))))))
           {
@@ -486,7 +486,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getProgramFromStrate
         }
         case 1: {
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,1,1) == 0) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           tmpMeta1 = omc_Parser_parse(threadData, _filename, (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_strategy), 2))), _OMC_LIT5, mmc_mk_none(), omc_Config_acceptedGrammar(threadData), omc_Flags_getConfigEnum(threadData, _OMC_LIT43), omc_Flags_getConfigBool(threadData, _OMC_LIT47));
           goto tmp3_done;
@@ -631,7 +631,7 @@ PROTECTED_FUNCTION_STATIC modelica_string omc_ClassLoader_packageOrderName(threa
           goto tmp3_done;
         }
         case 1: {
-
+          
           /* Pattern matching succeeded */
           tmp1 = _OMC_LIT54;
           goto tmp3_done;
@@ -662,8 +662,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_matchCompNames(threa
   _tailrecursive: OMC_LABEL_UNUSED
   // _outNames has no default value.
   // _matchedNames has no default value.
-
-
+  
+  
   { /* match expression */
     modelica_metatype tmp4_1;modelica_metatype tmp4_2;
     tmp4_1 = _names;
@@ -688,7 +688,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_matchCompNames(threa
         switch (MMC_SWITCH_CAST(tmp4)) {
         case 0: {
           if (!listEmpty(tmp4_2)) goto tmp3_end;
-
+          
           /* Pattern matching succeeded */
           tmpMeta[0+0] = _names;
           tmp1_c1 = 1 /* true */;
@@ -764,8 +764,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getPackageContentNam
   _tailrecursive: OMC_LABEL_UNUSED
   // _outOrder has no default value.
   // _outNames has no default value.
-
-
+  
+  
   { /* match expression */
     modelica_metatype tmp4_1;modelica_metatype tmp4_2;
     tmp4_1 = _inNamesToSort;
@@ -802,7 +802,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getPackageContentNam
         switch (MMC_SWITCH_CAST(tmp4)) {
         case 0: {
           if (!listEmpty(tmp4_2)) goto tmp3_end;
-
+          
           _namesToSort = tmp4_1;
           /* Pattern matching succeeded */
           tmpMeta[0+0] = _po;
@@ -832,7 +832,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getPackageContentNam
           if (mmc__uniontype__metarecord__typedef__equal(tmpMeta11,3,3) == 0) goto tmp3_end;
           tmpMeta12 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta11), 4));
           tmpMeta13 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta10), 6));
-
+          
           _name1 = tmpMeta6;
           _ei = tmpMeta8;
           _comps = tmpMeta12;
@@ -879,7 +879,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getPackageContentNam
           tmpMeta21 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta20), 3));
           tmpMeta22 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta21), 2));
           tmpMeta23 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta21), 11));
-
+          
           _name1 = tmpMeta15;
           _namesToSort = tmpMeta16;
           _ei = tmpMeta17;
@@ -927,7 +927,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getPackageContentNam
           tmpMeta30 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta29), 3));
           tmpMeta31 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta30), 2));
           tmpMeta32 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta30), 11));
-
+          
           _name2 = tmpMeta31;
           _info = tmpMeta32;
           /* Pattern matching succeeded */
@@ -975,7 +975,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getPackageContentNam
           tmpMeta43 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta41), 2));
           tmpMeta44 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta43), 2));
           tmpMeta45 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta38), 6));
-
+          
           _name2 = tmpMeta44;
           _info = tmpMeta45;
           /* Pattern matching succeeded */
@@ -1001,7 +1001,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getPackageContentNam
           if (listEmpty(tmp4_2)) goto tmp3_end;
           tmpMeta49 = MMC_CAR(tmp4_2);
           tmpMeta50 = MMC_CDR(tmp4_2);
-
+          
           _ei = tmpMeta49;
           _elts = tmpMeta50;
           _namesToSort = tmp4_1;
@@ -1071,7 +1071,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getPackageContentNam
         switch (MMC_SWITCH_CAST(tmp4)) {
         case 0: {
           if (!listEmpty(tmp4_2)) goto tmp3_end;
-
+          
           _namesToSort = tmp4_1;
           /* Pattern matching succeeded */
           tmpMeta1 = listAppend(omc_List_mapReverse(threadData, _namesToSort, boxvar_ClassLoader_makeClassLoad), _acc);
@@ -1086,7 +1086,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getPackageContentNam
           tmpMeta7 = MMC_CDR(tmp4_2);
           if (mmc__uniontype__metarecord__typedef__equal(tmpMeta6,0,1) == 0) goto tmp3_end;
           tmpMeta8 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta6), 2));
-
+          
           _elts = tmpMeta8;
           _rcp = tmpMeta7;
           _namesToSort = tmp4_1;
@@ -1109,7 +1109,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getPackageContentNam
           tmpMeta10 = MMC_CDR(tmp4_2);
           if (mmc__uniontype__metarecord__typedef__equal(tmpMeta9,1,1) == 0) goto tmp3_end;
           tmpMeta11 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmpMeta9), 2));
-
+          
           _elts = tmpMeta11;
           _rcp = tmpMeta10;
           _namesToSort = tmp4_1;
@@ -1131,7 +1131,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getPackageContentNam
           if (listEmpty(tmp4_2)) goto tmp3_end;
           tmpMeta12 = MMC_CAR(tmp4_2);
           tmpMeta13 = MMC_CDR(tmp4_2);
-
+          
           _cp = tmpMeta12;
           _rcp = tmpMeta13;
           _namesToSort = tmp4_1;
@@ -1316,7 +1316,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_checkPackageOrderFil
           goto tmp2_done;
         }
         case 1: {
-
+          
           /* Pattern matching succeeded */
           goto tmp2_done;
         }
@@ -2053,7 +2053,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_mergeBefore(threadDa
         }
         case 2: {
           modelica_metatype tmpMeta18;
-
+          
           /* Pattern matching succeeded */
           tmpMeta18 = mmc_mk_cons(_cp, _cps);
           tmpMeta1 = tmpMeta18;
@@ -2148,7 +2148,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_loadCompletePackageF
           modelica_metatype tmpMeta20;
           modelica_metatype tmpMeta21;
           modelica_metatype tmpMeta22;
-
+          
           _pack = tmp4_1;
           _mp = tmp4_2;
           _within_ = tmp4_3;
@@ -2220,7 +2220,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_loadCompletePackageF
           modelica_metatype tmpMeta24;
           modelica_metatype tmpMeta25;
           modelica_metatype tmpMeta26;
-
+          
           _pack = tmp4_1;
           _mp = tmp4_2;
           /* Pattern matching succeeded */
@@ -2293,19 +2293,19 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getAllFilesFromDirec
     tmpMeta2 = stringAppend(_dir,_pd);
     tmpMeta3 = stringAppend(tmpMeta2,_OMC_LIT64);
     {
-      modelica_metatype __omcQ_24tmpVar1;
+      modelica_metatype __omcQ_24tmpVar3;
       modelica_metatype* tmp5;
       modelica_metatype tmpMeta6;
       modelica_metatype tmpMeta7;
       modelica_metatype tmpMeta8;
-      modelica_string __omcQ_24tmpVar0;
+      modelica_string __omcQ_24tmpVar2;
       modelica_integer tmp9;
       modelica_metatype _f_loopVar = 0;
       modelica_metatype _f;
       _f_loopVar = omc_System_mocFiles(threadData, _dir);
       tmpMeta6 = MMC_REFSTRUCTLIT(mmc_nil);
-      __omcQ_24tmpVar1 = tmpMeta6; /* defaultValue */
-      tmp5 = &__omcQ_24tmpVar1;
+      __omcQ_24tmpVar3 = tmpMeta6; /* defaultValue */
+      tmp5 = &__omcQ_24tmpVar3;
       while(1) {
         tmp9 = 1;
         if (!listEmpty(_f_loopVar)) {
@@ -2316,8 +2316,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getAllFilesFromDirec
         if (tmp9 == 0) {
           tmpMeta7 = stringAppend(_dir,_pd);
           tmpMeta8 = stringAppend(tmpMeta7,_f);
-          __omcQ_24tmpVar0 = tmpMeta8;
-          *tmp5 = mmc_mk_cons(__omcQ_24tmpVar0,0);
+          __omcQ_24tmpVar2 = tmpMeta8;
+          *tmp5 = mmc_mk_cons(__omcQ_24tmpVar2,0);
           tmp5 = &MMC_CDR(*tmp5);
         } else if (tmp9 == 1) {
           break;
@@ -2326,7 +2326,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getAllFilesFromDirec
         }
       }
       *tmp5 = mmc_mk_nil();
-      tmpMeta4 = __omcQ_24tmpVar1;
+      tmpMeta4 = __omcQ_24tmpVar3;
     }
     tmpMeta1 = mmc_mk_cons(tmpMeta3, listAppend(tmpMeta4, _acc));
     _files = tmpMeta1;
@@ -2336,19 +2336,19 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getAllFilesFromDirec
     tmpMeta11 = stringAppend(_dir,_pd);
     tmpMeta12 = stringAppend(tmpMeta11,_OMC_LIT65);
     {
-      modelica_metatype __omcQ_24tmpVar3;
+      modelica_metatype __omcQ_24tmpVar5;
       modelica_metatype* tmp14;
       modelica_metatype tmpMeta15;
       modelica_metatype tmpMeta16;
       modelica_metatype tmpMeta17;
-      modelica_string __omcQ_24tmpVar2;
+      modelica_string __omcQ_24tmpVar4;
       modelica_integer tmp18;
       modelica_metatype _f_loopVar = 0;
       modelica_metatype _f;
       _f_loopVar = omc_System_moFiles(threadData, _dir);
       tmpMeta15 = MMC_REFSTRUCTLIT(mmc_nil);
-      __omcQ_24tmpVar3 = tmpMeta15; /* defaultValue */
-      tmp14 = &__omcQ_24tmpVar3;
+      __omcQ_24tmpVar5 = tmpMeta15; /* defaultValue */
+      tmp14 = &__omcQ_24tmpVar5;
       while(1) {
         tmp18 = 1;
         if (!listEmpty(_f_loopVar)) {
@@ -2359,8 +2359,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getAllFilesFromDirec
         if (tmp18 == 0) {
           tmpMeta16 = stringAppend(_dir,_pd);
           tmpMeta17 = stringAppend(tmpMeta16,_f);
-          __omcQ_24tmpVar2 = tmpMeta17;
-          *tmp14 = mmc_mk_cons(__omcQ_24tmpVar2,0);
+          __omcQ_24tmpVar4 = tmpMeta17;
+          *tmp14 = mmc_mk_cons(__omcQ_24tmpVar4,0);
           tmp14 = &MMC_CDR(*tmp14);
         } else if (tmp18 == 1) {
           break;
@@ -2369,26 +2369,26 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getAllFilesFromDirec
         }
       }
       *tmp14 = mmc_mk_nil();
-      tmpMeta13 = __omcQ_24tmpVar3;
+      tmpMeta13 = __omcQ_24tmpVar5;
     }
     tmpMeta10 = mmc_mk_cons(tmpMeta12, listAppend(tmpMeta13, _acc));
     _files = tmpMeta10;
   }
 
   {
-    modelica_metatype __omcQ_24tmpVar5;
+    modelica_metatype __omcQ_24tmpVar7;
     modelica_metatype* tmp20;
     modelica_metatype tmpMeta21;
     modelica_metatype tmpMeta22;
     modelica_metatype tmpMeta23;
-    modelica_string __omcQ_24tmpVar4;
+    modelica_string __omcQ_24tmpVar6;
     modelica_integer tmp24;
     modelica_metatype _d_loopVar = 0;
     modelica_metatype _d;
     _d_loopVar = omc_List_filter2OnTrue(threadData, omc_System_subDirectories(threadData, _dir), boxvar_ClassLoader_existPackage, _dir, mmc_mk_boolean(_encrypted));
     tmpMeta21 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar5 = tmpMeta21; /* defaultValue */
-    tmp20 = &__omcQ_24tmpVar5;
+    __omcQ_24tmpVar7 = tmpMeta21; /* defaultValue */
+    tmp20 = &__omcQ_24tmpVar7;
     while(1) {
       tmp24 = 1;
       if (!listEmpty(_d_loopVar)) {
@@ -2399,8 +2399,8 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getAllFilesFromDirec
       if (tmp24 == 0) {
         tmpMeta22 = stringAppend(_dir,_pd);
         tmpMeta23 = stringAppend(tmpMeta22,_d);
-        __omcQ_24tmpVar4 = tmpMeta23;
-        *tmp20 = mmc_mk_cons(__omcQ_24tmpVar4,0);
+        __omcQ_24tmpVar6 = tmpMeta23;
+        *tmp20 = mmc_mk_cons(__omcQ_24tmpVar6,0);
         tmp20 = &MMC_CDR(*tmp20);
       } else if (tmp24 == 1) {
         break;
@@ -2409,7 +2409,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_getAllFilesFromDirec
       }
     }
     *tmp20 = mmc_mk_nil();
-    tmpMeta19 = __omcQ_24tmpVar5;
+    tmpMeta19 = __omcQ_24tmpVar7;
   }
   _subdirs = tmpMeta19;
 
@@ -2694,7 +2694,7 @@ PROTECTED_FUNCTION_STATIC modelica_metatype omc_ClassLoader_loadClassFromMps(thr
                   goto tmp11_done;
                 }
                 case 1: {
-
+                  
                   /* Pattern matching succeeded */
                   tmp9 = _OMC_LIT115;
                   goto tmp11_done;
@@ -2849,7 +2849,7 @@ modelica_metatype omc_ClassLoader_loadClass(threadData_t *threadData, modelica_m
           modelica_metatype tmpMeta6;
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,1,1) == 0) goto tmp3_end;
           tmpMeta6 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 2));
-
+          
           _classname = tmpMeta6;
           _mp = tmp4_2;
           tmp4 += 1; /* Pattern matching succeeded; we may skip some cases if we fail */
@@ -2867,7 +2867,7 @@ modelica_metatype omc_ClassLoader_loadClass(threadData_t *threadData, modelica_m
           modelica_metatype tmpMeta7;
           if (mmc__uniontype__metarecord__typedef__equal(tmp4_1,0,2) == 0) goto tmp3_end;
           tmpMeta7 = MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(tmp4_1), 2));
-
+          
           _pack = tmpMeta7;
           _mp = tmp4_2;
           /* Pattern matching succeeded */
@@ -2883,7 +2883,7 @@ modelica_metatype omc_ClassLoader_loadClass(threadData_t *threadData, modelica_m
         }
         case 2: {
           modelica_boolean tmp8;
-
+          
           /* Pattern matching succeeded */
           /* Pattern-matching assignment */
           tmp8 = omc_Flags_isSet(threadData, _OMC_LIT127);
@@ -2926,3 +2926,4 @@ modelica_metatype boxptr_ClassLoader_loadClass(threadData_t *threadData, modelic
   /* skip box _outProgram; Absyn.Program */
   return _outProgram;
 }
+

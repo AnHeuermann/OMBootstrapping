@@ -115,10 +115,10 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT38,13,_OMC_LIT38_data);
 #define _OMC_LIT39_data "TypesDump.printBindingStr failed."
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT39,33,_OMC_LIT39_data);
 #define _OMC_LIT39 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT39)
-#define _OMC_LIT40_data "/home/andreas/workdir/OM/OpenModelica/OMCompiler/Compiler/FrontEnd/TypesDump.mo"
-static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT40,79,_OMC_LIT40_data);
+#define _OMC_LIT40_data "TypesDump.mo"
+static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT40,12,_OMC_LIT40_data);
 #define _OMC_LIT40 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT40)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT41_6,1.784622031e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT41_6,0.0);
 #define _OMC_LIT41_6 MMC_REFREALLIT(_OMC_LIT_STRUCT41_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT41,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT40,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(787)),MMC_IMMEDIATE(MMC_TAGFIXNUM(9)),MMC_IMMEDIATE(MMC_TAGFIXNUM(787)),MMC_IMMEDIATE(MMC_TAGFIXNUM(77)),_OMC_LIT41_6}};
 #define _OMC_LIT41 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT41)
@@ -251,7 +251,7 @@ static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT83,5,_OMC_LIT83_data);
 #define _OMC_LIT84_data "TypesDump.printConstStr failed."
 static const MMC_DEFSTRINGLIT(_OMC_LIT_STRUCT84,31,_OMC_LIT84_data);
 #define _OMC_LIT84 MMC_REFSTRINGLIT(_OMC_LIT_STRUCT84)
-static const MMC_DEFREALLIT(_OMC_LIT_STRUCT85_6,1.784622031e9);
+static const MMC_DEFREALLIT(_OMC_LIT_STRUCT85_6,0.0);
 #define _OMC_LIT85_6 MMC_REFREALLIT(_OMC_LIT_STRUCT85_6)
 static const MMC_DEFSTRUCTLIT(_OMC_LIT_STRUCT85,8,3) {&SourceInfo_SOURCEINFO__desc,_OMC_LIT40,MMC_IMMEDIATE(MMC_TAGFIXNUM(0 /* false */)),MMC_IMMEDIATE(MMC_TAGFIXNUM(349)),MMC_IMMEDIATE(MMC_TAGFIXNUM(7)),MMC_IMMEDIATE(MMC_TAGFIXNUM(349)),MMC_IMMEDIATE(MMC_TAGFIXNUM(75)),_OMC_LIT85_6}};
 #define _OMC_LIT85 MMC_REFSTRUCTLIT(_OMC_LIT_STRUCT85)
@@ -2999,12 +2999,12 @@ modelica_string omc_TypesDump_unparseType(threadData_t *threadData, modelica_met
                   _names = tmpMeta55;
                   /* Pattern matching succeeded */
                   {
-                    modelica_metatype __omcQ_24tmpVar1;
+                    modelica_metatype __omcQ_24tmpVar3;
                     modelica_metatype* tmp57;
                     modelica_metatype tmpMeta58;
                     modelica_metatype tmpMeta59;
                     modelica_metatype tmpMeta60;
-                    modelica_string __omcQ_24tmpVar0;
+                    modelica_string __omcQ_24tmpVar2;
                     modelica_integer tmp61;
                     modelica_metatype _t_loopVar = 0;
                     modelica_metatype _t;
@@ -3013,8 +3013,8 @@ modelica_string omc_TypesDump_unparseType(threadData_t *threadData, modelica_met
                     _t_loopVar = _tys;
                     _n_loopVar = _names;
                     tmpMeta58 = MMC_REFSTRUCTLIT(mmc_nil);
-                    __omcQ_24tmpVar1 = tmpMeta58; /* defaultValue */
-                    tmp57 = &__omcQ_24tmpVar1;
+                    __omcQ_24tmpVar3 = tmpMeta58; /* defaultValue */
+                    tmp57 = &__omcQ_24tmpVar3;
                     while(1) {
                       tmp61 = 2;
                       if (!listEmpty(_t_loopVar)) {
@@ -3029,8 +3029,8 @@ modelica_string omc_TypesDump_unparseType(threadData_t *threadData, modelica_met
                       if (tmp61 == 0) {
                         tmpMeta59 = stringAppend(omc_TypesDump_unparseType(threadData, _t),_OMC_LIT31);
                         tmpMeta60 = stringAppend(tmpMeta59,_n);
-                        __omcQ_24tmpVar0 = tmpMeta60;
-                        *tmp57 = mmc_mk_cons(__omcQ_24tmpVar0,0);
+                        __omcQ_24tmpVar2 = tmpMeta60;
+                        *tmp57 = mmc_mk_cons(__omcQ_24tmpVar2,0);
                         tmp57 = &MMC_CDR(*tmp57);
                       } else if (tmp61 == 2) {
                         break;
@@ -3039,7 +3039,7 @@ modelica_string omc_TypesDump_unparseType(threadData_t *threadData, modelica_met
                       }
                     }
                     *tmp57 = mmc_mk_nil();
-                    tmpMeta56 = __omcQ_24tmpVar1;
+                    tmpMeta56 = __omcQ_24tmpVar3;
                   }
                   tmpMeta50 = tmpMeta56;
                   goto tmp52_done;
@@ -3049,17 +3049,17 @@ modelica_string omc_TypesDump_unparseType(threadData_t *threadData, modelica_met
                   
                   /* Pattern matching succeeded */
                   {
-                    modelica_metatype __omcQ_24tmpVar3;
+                    modelica_metatype __omcQ_24tmpVar5;
                     modelica_metatype* tmp63;
                     modelica_metatype tmpMeta64;
-                    modelica_string __omcQ_24tmpVar2;
+                    modelica_string __omcQ_24tmpVar4;
                     modelica_integer tmp65;
                     modelica_metatype _t_loopVar = 0;
                     modelica_metatype _t;
                     _t_loopVar = _tys;
                     tmpMeta64 = MMC_REFSTRUCTLIT(mmc_nil);
-                    __omcQ_24tmpVar3 = tmpMeta64; /* defaultValue */
-                    tmp63 = &__omcQ_24tmpVar3;
+                    __omcQ_24tmpVar5 = tmpMeta64; /* defaultValue */
+                    tmp63 = &__omcQ_24tmpVar5;
                     while(1) {
                       tmp65 = 1;
                       if (!listEmpty(_t_loopVar)) {
@@ -3068,8 +3068,8 @@ modelica_string omc_TypesDump_unparseType(threadData_t *threadData, modelica_met
                         tmp65--;
                       }
                       if (tmp65 == 0) {
-                        __omcQ_24tmpVar2 = omc_TypesDump_unparseType(threadData, _t);
-                        *tmp63 = mmc_mk_cons(__omcQ_24tmpVar2,0);
+                        __omcQ_24tmpVar4 = omc_TypesDump_unparseType(threadData, _t);
+                        *tmp63 = mmc_mk_cons(__omcQ_24tmpVar4,0);
                         tmp63 = &MMC_CDR(*tmp63);
                       } else if (tmp65 == 1) {
                         break;
@@ -3078,7 +3078,7 @@ modelica_string omc_TypesDump_unparseType(threadData_t *threadData, modelica_met
                       }
                     }
                     *tmp63 = mmc_mk_nil();
-                    tmpMeta62 = __omcQ_24tmpVar3;
+                    tmpMeta62 = __omcQ_24tmpVar5;
                   }
                   tmpMeta50 = tmpMeta62;
                   goto tmp52_done;
@@ -3170,17 +3170,17 @@ modelica_string omc_TypesDump_unparseType(threadData_t *threadData, modelica_met
           {
             tmpMeta75 = stringAppend(_res,_OMC_LIT106);
             {
-              modelica_metatype __omcQ_24tmpVar5;
+              modelica_metatype __omcQ_24tmpVar7;
               modelica_metatype* tmp77;
               modelica_metatype tmpMeta78;
-              modelica_string __omcQ_24tmpVar4;
+              modelica_string __omcQ_24tmpVar6;
               modelica_integer tmp79;
               modelica_metatype _tv_loopVar = 0;
               modelica_metatype _tv;
               _tv_loopVar = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inType), 3)));
               tmpMeta78 = MMC_REFSTRUCTLIT(mmc_nil);
-              __omcQ_24tmpVar5 = tmpMeta78; /* defaultValue */
-              tmp77 = &__omcQ_24tmpVar5;
+              __omcQ_24tmpVar7 = tmpMeta78; /* defaultValue */
+              tmp77 = &__omcQ_24tmpVar7;
               while(1) {
                 tmp79 = 1;
                 if (!listEmpty(_tv_loopVar)) {
@@ -3189,8 +3189,8 @@ modelica_string omc_TypesDump_unparseType(threadData_t *threadData, modelica_met
                   tmp79--;
                 }
                 if (tmp79 == 0) {
-                  __omcQ_24tmpVar4 = omc_TypesDump_unparseType(threadData, _tv);
-                  *tmp77 = mmc_mk_cons(__omcQ_24tmpVar4,0);
+                  __omcQ_24tmpVar6 = omc_TypesDump_unparseType(threadData, _tv);
+                  *tmp77 = mmc_mk_cons(__omcQ_24tmpVar6,0);
                   tmp77 = &MMC_CDR(*tmp77);
                 } else if (tmp79 == 1) {
                   break;
@@ -3199,7 +3199,7 @@ modelica_string omc_TypesDump_unparseType(threadData_t *threadData, modelica_met
                 }
               }
               *tmp77 = mmc_mk_nil();
-              tmpMeta76 = __omcQ_24tmpVar5;
+              tmpMeta76 = __omcQ_24tmpVar7;
             }
             tmpMeta80 = stringAppend(tmpMeta75,stringDelimitList(tmpMeta76, _OMC_LIT107));
             tmpMeta81 = stringAppend(tmpMeta80,_OMC_LIT64);
@@ -3228,17 +3228,17 @@ modelica_string omc_TypesDump_unparseType(threadData_t *threadData, modelica_met
           {
             tmpMeta84 = stringAppend(_res,_OMC_LIT106);
             {
-              modelica_metatype __omcQ_24tmpVar7;
+              modelica_metatype __omcQ_24tmpVar9;
               modelica_metatype* tmp86;
               modelica_metatype tmpMeta87;
-              modelica_string __omcQ_24tmpVar6;
+              modelica_string __omcQ_24tmpVar8;
               modelica_integer tmp88;
               modelica_metatype _tv_loopVar = 0;
               modelica_metatype _tv;
               _tv_loopVar = (MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_inType), 4)));
               tmpMeta87 = MMC_REFSTRUCTLIT(mmc_nil);
-              __omcQ_24tmpVar7 = tmpMeta87; /* defaultValue */
-              tmp86 = &__omcQ_24tmpVar7;
+              __omcQ_24tmpVar9 = tmpMeta87; /* defaultValue */
+              tmp86 = &__omcQ_24tmpVar9;
               while(1) {
                 tmp88 = 1;
                 if (!listEmpty(_tv_loopVar)) {
@@ -3247,8 +3247,8 @@ modelica_string omc_TypesDump_unparseType(threadData_t *threadData, modelica_met
                   tmp88--;
                 }
                 if (tmp88 == 0) {
-                  __omcQ_24tmpVar6 = omc_TypesDump_unparseType(threadData, _tv);
-                  *tmp86 = mmc_mk_cons(__omcQ_24tmpVar6,0);
+                  __omcQ_24tmpVar8 = omc_TypesDump_unparseType(threadData, _tv);
+                  *tmp86 = mmc_mk_cons(__omcQ_24tmpVar8,0);
                   tmp86 = &MMC_CDR(*tmp86);
                 } else if (tmp88 == 1) {
                   break;
@@ -3257,7 +3257,7 @@ modelica_string omc_TypesDump_unparseType(threadData_t *threadData, modelica_met
                 }
               }
               *tmp86 = mmc_mk_nil();
-              tmpMeta85 = __omcQ_24tmpVar7;
+              tmpMeta85 = __omcQ_24tmpVar9;
             }
             tmpMeta89 = stringAppend(tmpMeta84,stringDelimitList(tmpMeta85, _OMC_LIT107));
             tmpMeta90 = stringAppend(tmpMeta89,_OMC_LIT64);

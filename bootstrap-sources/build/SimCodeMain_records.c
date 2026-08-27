@@ -4,6 +4,32 @@
 extern "C" {
 #endif
 #ifdef ADD_METARECORD_DEFINITIONS
+#ifndef SimCodeMain_FmuTranslation_FMU__TRANSLATION__desc_added
+#define SimCodeMain_FmuTranslation_FMU__TRANSLATION__desc_added
+ADD_METARECORD_DEFINITIONS const char* SimCodeMain_FmuTranslation_FMU__TRANSLATION__desc__fields[7] = {"simCode","FMUVersion","kind","className","ast","debugFlags","configFlags"};
+ADD_METARECORD_DEFINITIONS struct record_description SimCodeMain_FmuTranslation_FMU__TRANSLATION__desc = {
+  "SimCodeMain_FmuTranslation_FMU__TRANSLATION",
+  "SimCodeMain.FmuTranslation.FMU_TRANSLATION",
+  SimCodeMain_FmuTranslation_FMU__TRANSLATION__desc__fields
+};
+#endif
+#else /* Only use the file as a header */
+extern struct record_description SimCodeMain_FmuTranslation_FMU__TRANSLATION__desc;
+#endif
+#ifdef ADD_METARECORD_DEFINITIONS
+#ifndef SimCodeMain_FmuTranslation_FMU__TRANSLATION__desc_added
+#define SimCodeMain_FmuTranslation_FMU__TRANSLATION__desc_added
+ADD_METARECORD_DEFINITIONS const char* SimCodeMain_FmuTranslation_FMU__TRANSLATION__desc__fields[7] = {"simCode","FMUVersion","kind","className","ast","debugFlags","configFlags"};
+ADD_METARECORD_DEFINITIONS struct record_description SimCodeMain_FmuTranslation_FMU__TRANSLATION__desc = {
+  "SimCodeMain_FmuTranslation_FMU__TRANSLATION",
+  "SimCodeMain.FmuTranslation.FMU_TRANSLATION",
+  SimCodeMain_FmuTranslation_FMU__TRANSLATION__desc__fields
+};
+#endif
+#else /* Only use the file as a header */
+extern struct record_description SimCodeMain_FmuTranslation_FMU__TRANSLATION__desc;
+#endif
+#ifdef ADD_METARECORD_DEFINITIONS
 #ifndef SimCodeMain_TranslateModelKind_NORMAL__desc_added
 #define SimCodeMain_TranslateModelKind_NORMAL__desc_added
 ADD_METARECORD_DEFINITIONS const char* SimCodeMain_TranslateModelKind_NORMAL__desc__fields[1] = {"no fields"};
@@ -32,7 +58,7 @@ extern struct record_description SimCodeMain_TranslateModelKind_XML__desc;
 #ifdef ADD_METARECORD_DEFINITIONS
 #ifndef SimCodeMain_TranslateModelKind_FMU__desc_added
 #define SimCodeMain_TranslateModelKind_FMU__desc_added
-ADD_METARECORD_DEFINITIONS const char* SimCodeMain_TranslateModelKind_FMU__desc__fields[2] = {"kind","targetName"};
+ADD_METARECORD_DEFINITIONS const char* SimCodeMain_TranslateModelKind_FMU__desc__fields[3] = {"kind","targetName","translateOnly"};
 ADD_METARECORD_DEFINITIONS struct record_description SimCodeMain_TranslateModelKind_FMU__desc = {
   "SimCodeMain_TranslateModelKind_FMU",
   "SimCodeMain.TranslateModelKind.FMU",
@@ -45,7 +71,7 @@ extern struct record_description SimCodeMain_TranslateModelKind_FMU__desc;
 #ifdef ADD_METARECORD_DEFINITIONS
 #ifndef SimCodeMain_TranslateModelKind_FMU__desc_added
 #define SimCodeMain_TranslateModelKind_FMU__desc_added
-ADD_METARECORD_DEFINITIONS const char* SimCodeMain_TranslateModelKind_FMU__desc__fields[2] = {"kind","targetName"};
+ADD_METARECORD_DEFINITIONS const char* SimCodeMain_TranslateModelKind_FMU__desc__fields[3] = {"kind","targetName","translateOnly"};
 ADD_METARECORD_DEFINITIONS struct record_description SimCodeMain_TranslateModelKind_FMU__desc = {
   "SimCodeMain_TranslateModelKind_FMU",
   "SimCodeMain.TranslateModelKind.FMU",

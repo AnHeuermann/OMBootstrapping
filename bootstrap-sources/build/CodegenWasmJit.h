@@ -14,6 +14,13 @@ extern struct record_description SourceInfo_SOURCEINFO__desc;
 
 
 DLLDirection
+modelica_metatype omc_CodegenWasmJit_fmuCsSolvers(threadData_t *threadData);
+#define boxptr_CodegenWasmJit_fmuCsSolvers omc_CodegenWasmJit_fmuCsSolvers
+static const MMC_DEFSTRUCTLIT(boxvar_lit_CodegenWasmJit_fmuCsSolvers,2,0) {(void*) boxptr_CodegenWasmJit_fmuCsSolvers,0}};
+#define boxvar_CodegenWasmJit_fmuCsSolvers MMC_REFSTRUCTLIT(boxvar_lit_CodegenWasmJit_fmuCsSolvers)
+
+
+DLLDirection
 modelica_integer omc_CodegenWasmJit_runSimulationWasmtime(threadData_t *threadData, modelica_string _fileNamePrefix, modelica_string _resultFile, modelica_string _simflags);
 DLLDirection
 modelica_metatype boxptr_CodegenWasmJit_runSimulationWasmtime(threadData_t *threadData, modelica_metatype _fileNamePrefix, modelica_metatype _resultFile, modelica_metatype _simflags);
@@ -40,6 +47,13 @@ void omc_CodegenWasmJit_emitMeFmu(threadData_t *threadData, modelica_metatype _s
 #define boxptr_CodegenWasmJit_emitMeFmu omc_CodegenWasmJit_emitMeFmu
 static const MMC_DEFSTRUCTLIT(boxvar_lit_CodegenWasmJit_emitMeFmu,2,0) {(void*) boxptr_CodegenWasmJit_emitMeFmu,0}};
 #define boxvar_CodegenWasmJit_emitMeFmu MMC_REFSTRUCTLIT(boxvar_lit_CodegenWasmJit_emitMeFmu)
+
+
+DLLDirection
+void omc_CodegenWasmJit_translateFmu(threadData_t *threadData, modelica_metatype _simCode, modelica_string _fmuType, modelica_string _simulationFlagsJson);
+#define boxptr_CodegenWasmJit_translateFmu omc_CodegenWasmJit_translateFmu
+static const MMC_DEFSTRUCTLIT(boxvar_lit_CodegenWasmJit_translateFmu,2,0) {(void*) boxptr_CodegenWasmJit_translateFmu,0}};
+#define boxvar_CodegenWasmJit_translateFmu MMC_REFSTRUCTLIT(boxvar_lit_CodegenWasmJit_translateFmu)
 
 
 DLLDirection

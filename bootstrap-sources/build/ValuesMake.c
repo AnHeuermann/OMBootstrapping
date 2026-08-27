@@ -25,17 +25,17 @@ modelica_metatype omc_ValuesMake_makeCodeTypeNameArray(threadData_t *threadData,
   _tailrecursive: OMC_LABEL_UNUSED
   // _val has no default value.
   {
-    modelica_metatype __omcQ_24tmpVar1;
+    modelica_metatype __omcQ_24tmpVar3;
     modelica_metatype* tmp2;
     modelica_metatype tmpMeta3;
-    modelica_metatype __omcQ_24tmpVar0;
+    modelica_metatype __omcQ_24tmpVar2;
     modelica_integer tmp4;
     modelica_metatype _p_loopVar = 0;
     modelica_metatype _p;
     _p_loopVar = _paths;
     tmpMeta3 = MMC_REFSTRUCTLIT(mmc_nil);
-    __omcQ_24tmpVar1 = tmpMeta3; /* defaultValue */
-    tmp2 = &__omcQ_24tmpVar1;
+    __omcQ_24tmpVar3 = tmpMeta3; /* defaultValue */
+    tmp2 = &__omcQ_24tmpVar3;
     while(1) {
       tmp4 = 1;
       if (!listEmpty(_p_loopVar)) {
@@ -44,8 +44,8 @@ modelica_metatype omc_ValuesMake_makeCodeTypeNameArray(threadData_t *threadData,
         tmp4--;
       }
       if (tmp4 == 0) {
-        __omcQ_24tmpVar0 = omc_ValuesMake_makeCodeTypeName(threadData, _p);
-        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar0,0);
+        __omcQ_24tmpVar2 = omc_ValuesMake_makeCodeTypeName(threadData, _p);
+        *tmp2 = mmc_mk_cons(__omcQ_24tmpVar2,0);
         tmp2 = &MMC_CDR(*tmp2);
       } else if (tmp4 == 1) {
         break;
@@ -54,7 +54,7 @@ modelica_metatype omc_ValuesMake_makeCodeTypeNameArray(threadData_t *threadData,
       }
     }
     *tmp2 = mmc_mk_nil();
-    tmpMeta1 = __omcQ_24tmpVar1;
+    tmpMeta1 = __omcQ_24tmpVar3;
   }
   _val = omc_ValuesMake_makeArray(threadData, tmpMeta1);
   _return: OMC_LABEL_UNUSED

@@ -4956,17 +4956,17 @@ modelica_string omc_ExpressionDump_printExp2Str(threadData_t *threadData, modeli
           _subs = tmpMeta77;
           tmp4 += 15; /* Pattern matching succeeded; we may skip some cases if we fail */
           {
-            modelica_metatype __omcQ_24tmpVar1;
+            modelica_metatype __omcQ_24tmpVar3;
             modelica_metatype* tmp79;
             modelica_metatype tmpMeta80;
-            modelica_metatype __omcQ_24tmpVar0;
+            modelica_metatype __omcQ_24tmpVar2;
             modelica_integer tmp81;
             modelica_metatype _sub_loopVar = 0;
             modelica_metatype _sub;
             _sub_loopVar = _subs;
             tmpMeta80 = MMC_REFSTRUCTLIT(mmc_nil);
-            __omcQ_24tmpVar1 = tmpMeta80; /* defaultValue */
-            tmp79 = &__omcQ_24tmpVar1;
+            __omcQ_24tmpVar3 = tmpMeta80; /* defaultValue */
+            tmp79 = &__omcQ_24tmpVar3;
             while(1) {
               tmp81 = 1;
               if (!listEmpty(_sub_loopVar)) {
@@ -4975,8 +4975,8 @@ modelica_string omc_ExpressionDump_printExp2Str(threadData_t *threadData, modeli
                 tmp81--;
               }
               if (tmp81 == 0) {
-                __omcQ_24tmpVar0 = omc_Expression_getSubscriptExp(threadData, _sub);
-                *tmp79 = mmc_mk_cons(__omcQ_24tmpVar0,0);
+                __omcQ_24tmpVar2 = omc_Expression_getSubscriptExp(threadData, _sub);
+                *tmp79 = mmc_mk_cons(__omcQ_24tmpVar2,0);
                 tmp79 = &MMC_CDR(*tmp79);
               } else if (tmp81 == 1) {
                 break;
@@ -4985,7 +4985,7 @@ modelica_string omc_ExpressionDump_printExp2Str(threadData_t *threadData, modeli
               }
             }
             *tmp79 = mmc_mk_nil();
-            tmpMeta78 = __omcQ_24tmpVar1;
+            tmpMeta78 = __omcQ_24tmpVar3;
           }
           _aexpl = tmpMeta78;
 

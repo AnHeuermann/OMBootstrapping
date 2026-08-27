@@ -795,7 +795,7 @@ modelica_metatype omc_NFConnectionSets_ConnectionSets_union(threadData_t *thread
       }
       else
       {
-        arrayUpdate((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_sets), 2))), _set1, mmc_mk_integer(((modelica_integer) -1) + mmc_unbox_integer(arrayGet((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_sets), 2))),_set1) /* DAE.ASUB */)));
+        arrayUpdate((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_sets), 2))), _set1, mmc_mk_integer(((modelica_integer) -1) + (mmc_unbox_integer(arrayGet((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_sets), 2))),_set1) /* DAE.ASUB */))));
 
         arrayUpdate((MMC_FETCH(MMC_OFFSET(MMC_UNTAGPTR(_sets), 2))), _set2, mmc_mk_integer(_set1));
       }
